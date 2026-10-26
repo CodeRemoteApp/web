@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Setup · Code Remote Docs</title>
 	<meta name="description" content="Install coderemote on your computer, share a folder and pair your iPhone in a couple of minutes.">
 	<link rel="icon" href="../icon.png?v=a562f5b3">
@@ -10,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=aa033854">
+	<link rel="stylesheet" href="../style.css?v=fddebe15">
 </head>
 <body>
 	<header class="site">
@@ -19,7 +20,13 @@
 			<nav class="links">
 				<a href="./">Docs</a>
 				<a href="../support.html">Support</a>
-				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote"><img src="../github.png" alt="" width="18" height="18">GitHub</a>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Appearance" title="Appearance"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Appearance">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>System<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Light<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Dark<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -31,6 +38,7 @@
 				<ul>
 					<li><a href="./" aria-current="page">Setup</a></li>
 					<li><a href="commands.html">Commands</a></li>
+					<li><a href="preview.html">Ports &amp; preview</a></li>
 					<li><a href="configuration.html">Configuration</a></li>
 				</ul>
 			</nav>
@@ -113,7 +121,11 @@
 				<p>The tunnel URL and token stay the same between runs, so a paired phone reconnects on its own the next time you run <code>coderemote up</code>. You only scan again after <code>rotate-token</code>.</p>
 
 				<h2 id="update">Update or uninstall</h2>
+				<p><code>coderemote up</code> tells you when there's a newer version, under the pairing links.</p>
 				<pre class="cmd"><span class="c"># update to the latest release</span>
+<span class="p">$ </span>coderemote update
+
+<span class="c"># the same, for versions without the update command</span>
 <span class="p">$ </span>npm install -g coderemote@latest
 
 <span class="c"># remove it, with its token and tunnel settings</span>
@@ -141,5 +153,6 @@
 		</div>
 	</footer>
 	<script src="../motion.js?v=9bb63cfd" defer></script>
+	<script src="../theme.js?v=be525c74" defer></script>
 </body>
 </html>

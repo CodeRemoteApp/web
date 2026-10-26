@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Code Remote: your computer, from your iPhone</title>
 	<meta name="description" content="Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.">
 	<link rel="icon" href="icon.png?v=a562f5b3">
@@ -10,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css?v=aa033854">
+	<link rel="stylesheet" href="style.css?v=fddebe15">
 	<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -21,7 +22,13 @@
 				<a class="hide-sm" href="#how">How it works</a>
 				<a href="docs/">Docs</a>
 				<a href="support.html">Support</a>
-				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote"><img src="github.png" alt="" width="18" height="18">GitHub</a>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Appearance" title="Appearance"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Appearance">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>System<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Light<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Dark<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -32,7 +39,7 @@
 				<div class="hero-grid">
 					<div class="hero-copy">
 						<h1>Your computer, in your pocket.</h1>
-						<p class="lede">Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone. One command on the computer, one QR scan on the phone. No SSH keys, no port forwarding, no VPN.</p>
+						<p class="lede">Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone. No SSH keys, no port forwarding, no VPN.</p>
 						<div class="actions">
 							<a class="button primary" href="docs/">Get started</a>
 							<a class="button ghost" href="https://www.npmjs.com/package/coderemote">View on npm</a>
@@ -141,6 +148,21 @@
 						<h3>Terminal</h3>
 						<p>A real shell with a key bar for Ctrl, Tab, Esc and arrows. Sessions keep running while your phone sleeps, so long builds and coding agents survive.</p>
 					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="8" width="28" height="24" rx="4"/><path d="M12 16h10M12 24h10"/><circle class="fill" cx="27" cy="16" r="2.5"/><circle class="fill" cx="27" cy="24" r="2.5"/></svg>
+						<h3>Ports</h3>
+						<p>See which servers are listening, which terminal started them, and stop the one that's stuck on port 3000.</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="11" y="5" width="18" height="30" rx="4"/><path d="M11 11h18"/><path class="fill" d="M17 18l7 4-7 4z"/></svg>
+						<h3>Preview &amp; share</h3>
+						<p>Open your dev server on the phone with a tap, through its own private tunnel. Need a second opinion? Share a public link that ends after an hour or a day.</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 14h23l-5-5M32 26H9l5 5"/><circle class="fill" cx="8" cy="14" r="2.5"/><circle class="fill" cx="32" cy="26" r="2.5"/></svg>
+						<h3>Requests</h3>
+						<p>Watch every request that reaches your dev server, with headers and bodies. Handy when a webhook fires and you're away from your desk.</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -193,5 +215,6 @@
 		</div>
 	</footer>
 	<script src="motion.js?v=9bb63cfd" defer></script>
+	<script src="theme.js?v=be525c74" defer></script>
 </body>
 </html>

@@ -16,8 +16,10 @@
 	--mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
+/* Dark follows the system unless the header's picker chose a theme (data-theme on <html>). */
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root:not([data-theme="light"]) {
+		color-scheme: dark;
 		--bg: #1f1e1d;
 		--surface: #2a2927;
 		--text: #f0eee6;
@@ -30,6 +32,20 @@
 		--ink: #141413;
 		--accent-deep: #c96442;
 	}
+}
+:root[data-theme="dark"] {
+	color-scheme: dark;
+	--bg: #1f1e1d;
+	--surface: #2a2927;
+	--text: #f0eee6;
+	--muted: #a8a59b;
+	--line: #3a3936;
+	--accent: #d97757;
+	--code-bg: #141413;
+	--code-text: #f0eee6;
+	--blob: #b85f42;
+	--ink: #141413;
+	--accent-deep: #c96442;
 }
 
 * { box-sizing: border-box; }
@@ -64,6 +80,7 @@ header.site .wrap {
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	white-space: nowrap;
 	font-weight: 600;
 	text-decoration: none;
 	letter-spacing: -0.01em;
@@ -75,7 +92,35 @@ nav.links a:hover { color: var(--text); }
 nav.links a.gh { display: inline-flex; align-items: center; gap: 7px; }
 nav.links a.gh img { opacity: 0.75; transition: opacity 0.2s; }
 nav.links a.gh:hover img { opacity: 1; }
-@media (prefers-color-scheme: dark) { nav.links a.gh img { filter: invert(1); } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) nav.links a.gh img { filter: invert(1); } }
+:root[data-theme="dark"] nav.links a.gh img { filter: invert(1); }
+nav.links { align-items: center; }
+
+/* Appearance picker (theme.js) */
+button.theme {
+	display: inline-flex; align-items: center; justify-content: center;
+	width: 32px; height: 32px; margin: -6px -6px -6px 0; padding: 0;
+	border: 0; border-radius: 8px; background: none; color: var(--muted); cursor: pointer;
+}
+button.theme:hover, button.theme:focus-visible { color: var(--text); background: var(--surface); }
+button.theme svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+button.theme svg .half { fill: currentColor; stroke: none; }
+.theme-menu {
+	position: absolute; inset: auto; margin: 0; padding: 6px; min-width: 150px;
+	border: 1px solid var(--line); border-radius: 12px; background: var(--bg); color: var(--text);
+	box-shadow: 0 12px 32px rgb(0 0 0 / 0.14); font: 14px/1.2 var(--sans);
+}
+.theme-menu button {
+	display: flex; align-items: center; gap: 10px; width: 100%; padding: 9px 10px;
+	border: 0; border-radius: 8px; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer;
+}
+.theme-menu button:hover, .theme-menu button:focus-visible { background: var(--surface); outline: none; }
+.theme-menu svg {
+	width: 16px; height: 16px; flex: none; color: var(--muted);
+	fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+}
+.theme-menu .check { margin-left: auto; color: var(--accent); visibility: hidden; }
+.theme-menu [aria-checked="true"] .check { visibility: visible; }
 
 /* Hero */
 .hero { padding: 96px 0 72px; }

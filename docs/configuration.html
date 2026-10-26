@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Configuration · Code Remote Docs</title>
 	<meta name="description" content="Where coderemote keeps its settings, the environment variables it reads, access modes and fixes for common problems.">
 	<link rel="icon" href="../icon.png?v=a562f5b3">
@@ -10,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=aa033854">
+	<link rel="stylesheet" href="../style.css?v=fddebe15">
 </head>
 <body>
 	<header class="site">
@@ -19,7 +20,13 @@
 			<nav class="links">
 				<a href="./">Docs</a>
 				<a href="../support.html">Support</a>
-				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote"><img src="../github.png" alt="" width="18" height="18">GitHub</a>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Appearance" title="Appearance"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Appearance">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>System<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Light<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Dark<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -31,6 +38,7 @@
 				<ul>
 					<li><a href="./">Setup</a></li>
 					<li><a href="commands.html">Commands</a></li>
+					<li><a href="preview.html">Ports &amp; preview</a></li>
 					<li><a href="configuration.html" aria-current="page">Configuration</a></li>
 				</ul>
 			</nav>
@@ -46,14 +54,16 @@
 					<li><strong>The pairing token.</strong> The agent then checks the random token from the QR code, kept in the iPhone Keychain.</li>
 				</ol>
 				<p>With <code>coderemote up --allow-anonymous</code> the first check is skipped and the token alone grants access. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.</p>
+				<p>A <a href="preview.html#share">public link</a> to a preview is the one exception: until it ends, anyone with it can open that one dev server, with neither check. It never reaches the agent, its files or its terminal.</p>
 
 				<h2 id="files">Files on your computer</h2>
 				<p>Everything lives in <code>~/.coderemote</code>, readable only by you:</p>
 				<table>
 					<tr><th>Path</th><th>What it holds</th></tr>
-					<tr><td><code>config.json</code></td><td>The access token and the id of this computer's tunnel. Keeping it keeps every pairing.</td></tr>
+					<tr><td><code>config.json</code></td><td>The access token, the id of this computer's tunnel and of its preview tunnel. Keeping it keeps every pairing.</td></tr>
 					<tr><td><code>bin/</code></td><td>The Dev Tunnels CLI downloaded on first run.</td></tr>
 					<tr><td><code>agents/</code></td><td>One entry per running agent, so <code>status</code>, <code>kill</code> and <code>stop</code> can find it.</td></tr>
+					<tr><td><code>update.json</code></td><td>The latest version on npm and when <code>up</code> last asked, at most once a day.</td></tr>
 				</table>
 				<p>Deleting the folder resets Code Remote: the next <code>up</code> creates a new token and tunnel, and every device has to pair again.</p>
 
@@ -62,10 +72,12 @@
 					<tr><th>Variable</th><th>What it does</th></tr>
 					<tr><td><code>CODEREMOTE_DEVTUNNEL</code></td><td>Path to a <code>devtunnel</code> binary to use. Otherwise one on your <code>PATH</code> is used, then the downloaded copy.</td></tr>
 					<tr><td><code>CODEREMOTE_CODE</code></td><td>Path to VS Code's <code>code</code> command, for <code>up --web</code>. Otherwise <code>code</code> on your <code>PATH</code>.</td></tr>
+					<tr><td><code>CODEREMOTE_NO_UPDATE_CHECK</code></td><td>Set to <code>1</code> and <code>up</code> no longer asks npm whether there's a newer version.</td></tr>
 				</table>
 
 				<h2 id="tunnel">The tunnel</h2>
 				<p>Each computer has one tunnel. Its URL stays the same between runs, and <code>up</code> renews it each time so it doesn't expire. Share one folder at a time; to reach several projects, share their parent folder and the Git tab finds every repository inside it.</p>
+				<p>The tunnel carries the label <code>coderemote</code>, which is how the app's <a href="preview.html#tunnel">Tunnel sheet</a> finds your other machines. Previews use a second tunnel, labelled <code>coderemote-preview</code>, created on the first preview and replaced on the next run (<a href="preview.html#how">how it works</a>). Both show up in <code>devtunnel list</code>.</p>
 
 				<h2 id="troubleshooting">Troubleshooting</h2>
 				<h3>"Port 31580 is already in use"</h3>
@@ -79,13 +91,19 @@
 				<h3>The sign-in expired</h3>
 				<p><code>up</code> notices and opens the browser again. Without a browser, run <code>coderemote login --device-code</code>.</p>
 
+				<h3>The Ports tab says "Update coderemote"</h3>
+				<p>The computer runs a coderemote from before ports and previews. Run <code>coderemote update</code> (or <code>npm install -g coderemote@latest</code>), then restart <code>coderemote up</code>.</p>
+
+				<h3>A preview says "nothing is listening on port …"</h3>
+				<p>The dev server behind it stopped or restarted on another port. Start it again and reload; the Ports tab shows what's listening now.</p>
+
 				<h3>Installing on Linux fails</h3>
 				<p>The terminal support compiles on install and needs <code>python3</code>, <code>make</code> and a C++ compiler (<code>build-essential</code> on Debian and Ubuntu). Signing in needs <code>libsecret-1-0</code>.</p>
 
 				<p>Still stuck? See <a href="../support.html">Support</a>.</p>
 
 				<nav class="pager" aria-label="Previous page">
-					<a href="commands.html"><span>Previous</span>Commands</a>
+					<a href="preview.html"><span>Previous</span>Ports &amp; preview</a>
 				</nav>
 			</article>
 		</div>
@@ -103,5 +121,6 @@
 			</nav>
 		</div>
 	</footer>
+	<script src="../theme.js?v=be525c74" defer></script>
 </body>
 </html>

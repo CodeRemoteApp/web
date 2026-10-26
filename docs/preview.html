@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>Ports &amp; preview · Code Remote Docs</title>
+	<meta name="description" content="See the servers listening on your computer, open a dev server on your iPhone, share a public link for a while, and watch the requests that reach it.">
+	<link rel="icon" href="../icon.png?v=a562f5b3">
+	<link rel="apple-touch-icon" href="../icon.png?v=a562f5b3">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css?v=fddebe15">
+</head>
+<body>
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../icon.png?v=a562f5b3" alt="">Code Remote</a>
+			<nav class="links">
+				<a href="./">Docs</a>
+				<a href="../support.html">Support</a>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Appearance" title="Appearance"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Appearance">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>System<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Light<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Dark<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="Docs">
+				<h4>Docs</h4>
+				<ul>
+					<li><a href="./">Setup</a></li>
+					<li><a href="commands.html">Commands</a></li>
+					<li><a href="preview.html" aria-current="page">Ports &amp; preview</a></li>
+					<li><a href="configuration.html">Configuration</a></li>
+				</ul>
+				<h4>On this page</h4>
+				<ul class="sub">
+					<li><a href="#ports">The Ports tab</a></li>
+					<li><a href="#preview">Preview</a></li>
+					<li><a href="#share">Share a public link</a></li>
+					<li><a href="#requests">Requests</a></li>
+					<li><a href="#tunnel">The Tunnel sheet</a></li>
+					<li><a href="#how">How it works</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>Ports &amp; preview</h1>
+				<p class="lede">Open the dev servers on your computer from your iPhone, share one for a while, and see the requests that reach it.</p>
+				<p>All of this needs coderemote 0.2.0 or later on the computer. With an older one the app says so: run <code>coderemote update</code> (or <code>npm install -g coderemote@latest</code>) and start <code>coderemote up</code> again.</p>
+
+				<h2 id="ports">The Ports tab</h2>
+				<p>Lists the TCP ports your user is listening on, refreshed every few seconds:</p>
+				<ul>
+					<li><strong>Started in Code Remote</strong>: servers you started from a terminal in the app, with a shortcut back to that terminal.</li>
+					<li><strong>Other</strong>: everything else running in a project folder, such as a server you started on the computer itself.</li>
+					<li><strong>Background</strong>: apps and macOS services, hidden until you ask for them.</li>
+				</ul>
+				<p>Swipe a port to stop the process behind it (it gets <code>SIGTERM</code>, like <kbd>Ctrl</kbd>+<kbd>C</kbd>); hold it for <strong>Force Stop</strong> (<code>SIGKILL</code>). Only a process that is listening right now can be stopped, and never another user's. Stopping another coderemote agent asks first, since every device paired with it loses its folder.</p>
+
+				<h2 id="preview">Preview</h2>
+				<p>Tap a port to open it in the app. The first time takes a few seconds while the computer opens it on the tunnel; after that it loads like any page, already signed in as you.</p>
+				<ul>
+					<li>Servers on <code>localhost</code>, <code>127.0.0.1</code> or <code>::1</code> all work: there's no need to make your dev server listen on every interface.</li>
+					<li>Requests reach your server addressed to <code>localhost:&lt;port&gt;</code>, so servers that check the host name (Vite, for one) accept them as they are.</li>
+					<li><strong>Copy Link</strong> and <strong>Open in Safari</strong> give you the preview's address. It's private: Safari asks you to sign in with the same account first.</li>
+					<li><strong>Stop Preview</strong> takes the port off the tunnel. Your server keeps running.</li>
+				</ul>
+				<p>Previewed ports are marked in the Ports tab.</p>
+
+				<h2 id="share">Share a public link</h2>
+				<p>To show your work to someone without an account, open the preview's menu and choose <strong>Share Publicly</strong>, for one hour, eight hours or a day. Until then, anyone with the link can open that port without signing in.</p>
+				<ul>
+					<li>Only that port is shared. The agent, its files and its terminal stay private, on a tunnel of their own.</li>
+					<li>A banner shows until when the link is public, with <strong>Make Private</strong> to end it now. The Ports tab marks the port with a globe.</li>
+					<li>The link also stops working when you stop the preview or the agent.</li>
+				</ul>
+				<p>Remember that it's a development server: share it with people you'd show your screen to, and make it private when you're done.</p>
+
+				<h2 id="requests">Requests</h2>
+				<p>The list icon in a preview shows the requests that reached that port, newest first and live: method, path, status, time and size, colored by status. Tap one for its headers and bodies; JSON is indented and compressed bodies are unpacked.</p>
+				<ul>
+					<li>It works for anything that comes through the preview link: the page itself, its API calls, a webhook you pointed at a shared link.</li>
+					<li>The latest 200 requests per port are kept, with bodies up to 64 KB. WebSockets (hot reload) pass through untouched; only their handshake is listed.</li>
+					<li>They stay on your computer, in memory: <strong>Clear</strong> forgets them, and so does stopping <code>coderemote up</code>.</li>
+				</ul>
+
+				<h2 id="tunnel">The Tunnel sheet</h2>
+				<p>The tunnel button at the top of the Ports tab shows:</p>
+				<ul>
+					<li><strong>This machine</strong>: the tunnel's address, who can get in, when it expires (pushed back every time <code>coderemote up</code> starts), the clients connected now, traffic so far, and how many ports are being previewed.</li>
+					<li><strong>Machines on your account</strong>: every computer running coderemote with the same GitHub or Microsoft account, online or not, and whether this iPhone is paired with it. To add one, run <code>coderemote up</code> there and scan its QR code.</li>
+				</ul>
+
+				<h2 id="how">How it works</h2>
+				<p>Previews don't go through the agent's own tunnel. The first time you preview a port, the agent creates a second private tunnel, labelled <code>coderemote-preview</code>, and forwards your ports there. Adding or removing a port restarts that tunnel's connection, so other open previews blink for a moment, while your terminals, files and git never notice.</p>
+				<p>Each previewed port goes through a small proxy in the agent, which is what records the requests. That's why a preview's address carries the proxy's port number rather than your server's (<code>…-49213.usw2.devtunnels.ms</code> for a server on 5173): the app always shows your server's own port.</p>
+				<p>The preview tunnel is replaced the next time you run <code>coderemote up</code>, so shared links never outlive the agent that made them.</p>
+
+				<nav class="pager" aria-label="More pages">
+					<a href="commands.html"><span>Previous</span>Commands</a>
+					<a class="next" href="configuration.html"><span>Next</span>Configuration</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">Home</a>
+				<a href="./">Docs</a>
+				<a href="../privacy.html">Privacy</a>
+				<a href="../terms.html">Terms</a>
+				<a href="../support.html">Support</a>
+			</nav>
+		</div>
+	</footer>
+	<script src="../theme.js?v=be525c74" defer></script>
+</body>
+</html>
