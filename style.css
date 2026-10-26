@@ -72,6 +72,10 @@ header.site .wrap {
 nav.links { display: flex; gap: 24px; font-size: 15px; }
 nav.links a { text-decoration: none; color: var(--muted); }
 nav.links a:hover { color: var(--text); }
+nav.links a.gh { display: inline-flex; align-items: center; gap: 7px; }
+nav.links a.gh img { opacity: 0.75; transition: opacity 0.2s; }
+nav.links a.gh:hover img { opacity: 1; }
+@media (prefers-color-scheme: dark) { nav.links a.gh img { filter: invert(1); } }
 
 /* Hero */
 .hero { padding: 96px 0 72px; }
