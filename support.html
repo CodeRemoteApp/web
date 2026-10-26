@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Support · Code Remote</title>
+	<meta name="description" content="Get help with Code Remote: setup, common questions and how to contact us.">
+	<link rel="icon" href="icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="./"><img src="icon.png" alt="">Code Remote</a>
+			<nav class="links">
+				<a href="support.html">Support</a>
+				<a href="https://github.com/CodeRemoteApp/coderemote">GitHub</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="prose">
+		<div class="wrap narrow">
+			<h1>Support</h1>
+			<p class="meta">We usually reply within a few days.</p>
+
+			<div class="callout">
+				<p>Email <a href="mailto:trantienthanh2412@gmail.com">trantienthanh2412@gmail.com</a>, or open an issue on <a href="https://github.com/CodeRemoteApp/coderemote/issues">GitHub</a>. Please include your iOS version, your coderemote version (<code>npm ls -g coderemote</code>) and what you were doing.</p>
+			</div>
+
+			<h2>Getting started</h2>
+			<p>On your computer (macOS, Node.js 20 or newer):</p>
+			<pre class="cmd" style="margin-top:0"><span class="p">$ </span>npm install -g coderemote
+<span class="p">$ </span>cd ~/projects/my-app &amp;&amp; coderemote up</pre>
+			<p>Then scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).</p>
+
+			<h2>Common questions</h2>
+			<h3>The App can't connect to my computer.</h3>
+			<p>Check that <code>coderemote up</code> is still running on the computer and that the computer is awake and online. Run <code>coderemote status</code> to see running agents. If you signed in with a different account on the phone, sign in again with the same GitHub or Microsoft account the computer uses.</p>
+
+			<h3>I lost my phone, or a pairing link leaked.</h3>
+			<p>Run <code>coderemote rotate-token</code> on the computer. Every paired device loses access immediately; pair again by scanning the new QR code.</p>
+
+			<h3>Do terminal sessions survive when my phone locks?</h3>
+			<p>Yes. Sessions keep running on the computer with their recent output. Reopen the App and they reattach. End them with <code>coderemote kill</code>.</p>
+
+			<h3>Can I share more than one folder?</h3>
+			<p>One at a time for now. Share a parent folder to reach several projects; the Git tab finds every repository inside it.</p>
+
+			<h3>Does my code go through your servers?</h3>
+			<p>No. Code Remote has no servers. Traffic passes, encrypted, through Microsoft's Dev Tunnels relay between your phone and your computer. See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+			<h2>Security issues</h2>
+			<p>Please don't report vulnerabilities in public issues. Follow the <a href="https://github.com/CodeRemoteApp/coderemote/blob/main/SECURITY.md">security policy</a> instead.</p>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="./">Home</a>
+				<a href="privacy.html">Privacy</a>
+				<a href="terms.html">Terms</a>
+				<a href="support.html">Support</a>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>

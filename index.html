@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code Remote: your computer, from your iPhone</title>
+	<meta name="description" content="Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.">
+	<link rel="icon" href="icon.png">
+	<link rel="apple-touch-icon" href="icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="./"><img src="icon.png" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="hide-sm" href="#how">How it works</a>
+				<a href="support.html">Support</a>
+				<a href="https://github.com/CodeRemoteApp/coderemote">GitHub</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="wrap">
+				<h1>Your computer, in your pocket.</h1>
+				<p class="lede">Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone. One command on the computer, one QR scan on the phone. No SSH keys, no port forwarding, no VPN.</p>
+				<div class="actions">
+					<a class="button primary" href="https://github.com/CodeRemoteApp/coderemote#quick-start">Get started</a>
+					<a class="button ghost" href="https://www.npmjs.com/package/coderemote">View on npm</a>
+					<span class="note">iPhone app coming soon to the App Store.</span>
+				</div>
+				<pre class="cmd"><span class="c"># on your computer</span>
+<span class="p">$ </span>npm install -g coderemote
+<span class="p">$ </span>cd ~/projects/my-app &amp;&amp; coderemote up
+<span class="c"># scan the QR code with your iPhone. Done.</span></pre>
+			</div>
+		</section>
+
+		<section class="block">
+			<div class="wrap">
+				<h2>Everything you need to keep working.</h2>
+				<div class="grid">
+					<div class="card">
+						<h3>Files</h3>
+						<p>Browse, open, edit, create, rename and delete files in the folder you share.</p>
+					</div>
+					<div class="card">
+						<h3>Git</h3>
+						<p>See changes and diffs, stage, commit, pull, push and read history, across every repository in the folder.</p>
+					</div>
+					<div class="card">
+						<h3>Terminal</h3>
+						<p>A real shell with a key bar for Ctrl, Tab, Esc and arrows. Sessions keep running while your phone sleeps, so long builds and coding agents survive.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="block" id="how">
+			<div class="wrap narrow">
+				<h2>How it works</h2>
+				<ol class="steps">
+					<li><div><h3>Start the agent</h3><p>Run <code>coderemote up</code> in a project folder. A small agent starts on your computer, listening on 127.0.0.1 only.</p></div></li>
+					<li><div><h3>It connects outward</h3><p>The agent publishes itself through a private Microsoft Dev Tunnel. Nothing on your network has to be opened, and it works behind NAT, firewalls and hotel Wi-Fi.</p></div></li>
+					<li><div><h3>Pair your phone</h3><p>Scan the QR code. Only your GitHub or Microsoft account gets through the relay, and every request also needs the pairing token, kept in the iPhone Keychain.</p></div></li>
+				</ol>
+			</div>
+		</section>
+
+		<section class="block">
+			<div class="wrap">
+				<h2>Private by design.</h2>
+				<div class="grid">
+					<div class="card">
+						<h3>No servers of ours</h3>
+						<p>Your phone talks to your computer. Code Remote runs no backend and has no accounts.</p>
+					</div>
+					<div class="card">
+						<h3>Nothing collected</h3>
+						<p>No analytics, no tracking, no ads. Your files and commands never reach us.</p>
+					</div>
+					<div class="card">
+						<h3>Open source</h3>
+						<p>The computer side is free software under the AGPL. Read every line on GitHub.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<span>© 2026 Thanh Tran. Code Remote is not affiliated with Microsoft or GitHub.</span>
+			<nav>
+				<a href="privacy.html">Privacy</a>
+				<a href="terms.html">Terms</a>
+				<a href="support.html">Support</a>
+				<a href="https://github.com/CodeRemoteApp/coderemote">GitHub</a>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>
