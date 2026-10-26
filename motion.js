@@ -43,99 +43,75 @@ if (reduce || !hasIO) {
 	});
 }
 
-// The hero terminal plays `coderemote up` the way the CLI prints it, as a scroll story: typed
-// commands, spinners that tick into checkmarks, then the output and QR code line by line. The
-// window grows with its output and stops at each data-wait line until you scroll to its bottom.
-// All of it is in the HTML already, so without JS (or with reduced motion) it simply shows.
+// The hero terminal is a scroll story: it sticks to the top of the screen while its output plays
+// in step with the scroll position, from typing `npm install` to the QR code, and runs backwards
+// when you scroll back up. Each line takes a slice of the scroll; spinners count their seconds
+// across theirs. All of it is in the HTML already, so without JS (or with reduced motion) it shows.
 const demo = document.getElementById('demo');
-if (demo && !reduce && hasIO) {
+const story = demo?.parentElement;
+if (demo && !reduce) {
 	const FRAMES = '⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏';
-	const wait = (ms) => new Promise((r) => setTimeout(r, ms));
-	const blink = () => Object.assign(document.createElement('span'), { className: 'blink', textContent: '▍' });
-	const cursor = blink();
-	// An empty line with the cursor, shown while the command is waiting for the reader.
-	const idle = Object.assign(document.createElement('div'), { className: 'ln on' });
-	idle.append(blink());
+	// Pixels of scroll per unit of weight below.
+	const PX = 150;
+	const cursor = Object.assign(document.createElement('span'), { className: 'blink', textContent: '▍' });
 
-	const grow = () => {
-		demo.style.height = `${demo.scrollHeight}px`;
-	};
-	const show = (el) => {
-		el.classList.add('on');
-		grow();
-	};
-	// Resolves once the bottom of the window is on screen.
-	const reached = () =>
-		new Promise((resolve) => {
-			const check = () => {
-				if (demo.getBoundingClientRect().bottom > innerHeight * 0.92) return;
-				removeEventListener('scroll', check);
-				resolve();
-			};
-			addEventListener('scroll', check, { passive: true });
-			check();
-		});
+	let at = 0;
+	const steps = [...demo.querySelectorAll('.ln')].map((el, i) => {
+		const t = el.querySelector('.t');
+		const mark = el.querySelector('.mark');
+		const secs = el.querySelector('.secs');
+		const step = { el, t, text: t?.textContent, mark, secs, total: secs && parseFloat(secs.textContent) };
+		const w =
+			i === 0 ? 0
+			: t ? step.text.length * 0.04
+			: mark ? 0.25 + Number(el.dataset.spin) / 2000
+			: el.closest('.qr') ? 0.06
+			: el.textContent.trim() ? 0.25
+			: 0.1;
+		Object.assign(step, { start: at, end: (at += w) });
+		return step;
+	});
 
-	demo.classList.add('armed');
-	demo.style.height = '0px';
-	grow();
-
-	const play = async () => {
-		for (const el of demo.querySelectorAll('.ln')) {
-			if ('type' in el.dataset) {
-				const t = el.querySelector('.t');
-				const text = t.textContent;
-				t.textContent = '';
-				t.after(cursor);
-				show(el);
-				await ('wait' in el.dataset ? reached() : wait(500));
-				for (const ch of text) {
-					t.textContent += ch;
-					await wait(30 + Math.random() * 60);
-				}
-				await wait(450);
-				cursor.remove();
-			} else if (el.dataset.spin) {
-				const ms = Number(el.dataset.spin);
-				const mark = el.querySelector('.mark');
-				const secs = el.querySelector('.secs');
-				const total = parseFloat(secs.textContent);
-				mark.className = 'mark spin';
-				show(el);
-				const start = performance.now();
-				for (let f = 0, p = 0; p < 1; f++) {
-					mark.textContent = FRAMES[f % FRAMES.length];
-					secs.textContent = `${(total * p).toFixed(1)}s`;
-					await wait(80);
-					p = Math.min(1, (performance.now() - start) / ms);
-				}
-				mark.className = 'mark ok';
-				mark.textContent = '✔';
-				secs.textContent = `${total.toFixed(1)}s`;
+	const render = () => {
+		const y = (16 - story.getBoundingClientRect().top) / PX;
+		const p = Math.min(at, Math.max(0, y));
+		for (const s of steps) {
+			const k = s.end > s.start ? Math.min(1, Math.max(0, (p - s.start) / (s.end - s.start))) : 1;
+			if (s.t) {
+				s.el.classList.toggle('on', p >= s.start);
+				s.t.textContent = s.text.slice(0, Math.round(k * s.text.length));
+				if (p >= s.start && k < 1) s.t.after(cursor);
+			} else if (s.mark) {
+				s.el.classList.toggle('on', k > 0);
+				const done = k >= 1;
+				s.mark.className = done ? 'mark ok' : 'mark spin';
+				s.mark.textContent = done ? '✔' : FRAMES[Math.floor(k * (s.end - s.start) * 40) % FRAMES.length];
+				s.secs.textContent = `${(s.total * k).toFixed(1)}s`;
 			} else {
-				if ('wait' in el.dataset) {
-					demo.append(idle);
-					grow();
-					await reached();
-					await wait(300);
-					idle.remove();
-				}
-				await wait(Number(el.dataset.delay ?? (el.closest('.qr') ? 30 : 80)));
-				show(el);
+				s.el.classList.toggle('on', p >= s.end);
 			}
 		}
-		// Finished: let the height follow the content again (window resizes rewrap the lines).
-		await wait(500);
-		demo.style.height = '';
+		if (!steps.some((s) => s.t && p >= s.start && p < s.end)) cursor.remove();
 	};
 
-	const io = new IntersectionObserver(
-		(entries) => {
-			if (!entries[0].isIntersecting) return;
-			io.disconnect();
-			play();
-		},
-		{ threshold: 0.3 },
-	);
-	io.observe(demo);
+	// The story is as tall as the finished terminal plus the scroll it takes to play.
+	const size = () => {
+		demo.classList.remove('armed');
+		story.style.height = `${demo.offsetHeight + at * PX}px`;
+		demo.classList.add('armed');
+		render();
+	};
+
+	let queued = false;
+	addEventListener('scroll', () => {
+		if (queued) return;
+		queued = true;
+		requestAnimationFrame(() => {
+			queued = false;
+			render();
+		});
+	}, { passive: true });
+	addEventListener('resize', size);
+	story.classList.add('armed');
+	size();
 }
