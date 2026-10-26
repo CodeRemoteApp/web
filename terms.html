@@ -24,8 +24,34 @@
 
 	<main class="prose">
 		<div class="wrap narrow">
-			<h1>Terms of Use</h1>
-			<p class="meta">Effective October 26, 2026</p>
+			<div class="legal-head">
+				<div>
+					<h1>Terms of Use</h1>
+					<p class="meta">Effective October 26, 2026</p>
+				</div>
+				<svg class="legal-art art" viewBox="0 0 220 200" aria-hidden="true">
+					<path class="blob" d="M38 52C70 12 168 8 196 50c26 40 22 106-16 128-44 26-120 24-150-8C4 142 8 88 38 52Z"/>
+					<g class="spark"><path d="M24 30l3.5 10 10 3.5-10 3.5-3.5 10-3.5-10-10-3.5 10-3.5z"/></g>
+					<g class="spark s2"><path d="M202 160l2.5 7 7 2.5-7 2.5-2.5 7-2.5-7-7-2.5 7-2.5z"/></g>
+					<g transform="rotate(-6 110 100)">
+						<path class="paper" d="M62 34h70l22 22v112H62z"/>
+						<path class="fold" d="M132 34v22h22z"/>
+						<path class="line" d="M76 58h44M76 74h64M76 90h58M76 106h64M76 122h36"/>
+						<path class="line" d="M76 152h64" stroke-dasharray="2 6"/>
+						<path id="sig" class="signature" pathLength="1" d="M78 146c4-14 10-20 12-12s-6 14-2 10 10-16 14-10-2 10 4 6 8-10 12-6 4 6 10 2 6-6 10-4"/>
+					</g>
+					<g>
+						<animateMotion dur="3s" fill="freeze" keyPoints="0;0;1;1" keyTimes="0;0.25;0.85;1" calcMode="linear">
+							<mpath href="#sig"/>
+						</animateMotion>
+						<g transform="rotate(-6)">
+							<path class="ink" d="M0 0l3-11 8 8z"/>
+							<path class="pen-body" d="M3-11l40-40a6 6 0 0 1 8 8L11-3z"/>
+							<path class="pen-band" d="M30-38l8 8-4 4-8-8z"/>
+						</g>
+					</g>
+				</svg>
+			</div>
 
 			<p>These terms apply to the Code Remote iPhone app (the "App") and the <code>coderemote</code> command-line tool (the "CLI"), together "Code Remote", made by Thanh Tran ("we", "us"). By using Code Remote you agree to them. If you don't agree, don't use Code Remote.</p>
 
@@ -80,5 +106,6 @@
 			</nav>
 		</div>
 	</footer>
+	<script src="motion.js" defer></script>
 </body>
 </html>

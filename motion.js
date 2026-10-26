@@ -1,11 +1,28 @@
-// Fades sections in as they scroll into view, and stops the hero animation for people who
-// asked the system to reduce motion (SMIL animations ignore the CSS media query).
-const reduce = matchMedia('(prefers-reduced-motion: reduce)');
-const art = document.querySelector('.hero-art');
-if (reduce.matches && art) art.pauseAnimations();
+// Fades sections in as they scroll into view, and keeps the illustrations cheap: they pause
+// while off screen, and stop at their final frame for people who asked the system to reduce
+// motion (SMIL animations ignore the CSS media query).
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const arts = document.querySelectorAll('svg.art');
+const hasIO = 'IntersectionObserver' in window;
+
+if (reduce) {
+	arts.forEach((svg) => {
+		svg.setCurrentTime(10);
+		svg.pauseAnimations();
+	});
+} else if (hasIO) {
+	const io = new IntersectionObserver((entries) => {
+		for (const e of entries) {
+			e.target.classList.toggle('paused', !e.isIntersecting);
+			if (e.isIntersecting) e.target.unpauseAnimations();
+			else e.target.pauseAnimations();
+		}
+	});
+	arts.forEach((svg) => io.observe(svg));
+}
 
 const items = document.querySelectorAll('.reveal');
-if (reduce.matches || !('IntersectionObserver' in window)) {
+if (reduce || !hasIO) {
 	items.forEach((el) => el.classList.add('in'));
 } else {
 	const io = new IntersectionObserver(

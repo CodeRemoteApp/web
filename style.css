@@ -155,6 +155,45 @@ code {
 .prose { padding: 72px 0 96px; }
 .prose h1 { font: 400 clamp(36px, 6vw, 52px)/1.1 var(--serif); letter-spacing: -0.02em; margin: 0 0 12px; }
 .prose .meta { color: var(--muted); font-size: 15px; margin: 0 0 48px; }
+.legal-head { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; margin-bottom: 8px; }
+.legal-head .meta { margin-bottom: 0; }
+.legal-art { width: 210px; height: auto; overflow: visible; animation: rise 1s 0.1s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.legal-head + * { margin-top: 40px; }
+@media (max-width: 600px) {
+	.legal-head { grid-template-columns: 1fr; }
+	.legal-art { width: 160px; order: -1; }
+}
+
+/* Legal illustrations: shared */
+.legal-art .blob { fill: var(--blob); }
+.legal-art .paper { fill: #faf9f5; stroke: #141413; stroke-width: 3; stroke-linejoin: round; }
+.legal-art .fold { fill: #ebe8df; stroke: #141413; stroke-width: 3; stroke-linejoin: round; }
+.legal-art .line { fill: none; stroke: #141413; stroke-opacity: 0.3; stroke-width: 3; stroke-linecap: round; }
+.legal-art .ink { fill: #141413; }
+.legal-art .spark path { fill: var(--text); }
+.legal-art .spark { transform-box: fill-box; transform-origin: center; animation: twinkle 3.6s ease-in-out infinite; }
+.legal-art .spark.s2 { animation-delay: 1.5s; }
+
+/* Terms: a pen signs the page */
+.legal-art .signature {
+	fill: none; stroke: #141413; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;
+	stroke-dasharray: 1; stroke-dashoffset: 0; animation: sign 3s linear both;
+}
+@keyframes sign { 0%, 25% { stroke-dashoffset: 1; } 85%, 100% { stroke-dashoffset: 0; } }
+.legal-art .pen-body { fill: #c96442; stroke: #141413; stroke-width: 2.5; stroke-linejoin: round; }
+.legal-art .pen-band { fill: #faf9f5; stroke: #141413; stroke-width: 2.5; }
+
+/* Privacy: lines get redacted, then the lock clicks shut */
+.legal-art .redact { fill: #141413; transform-box: fill-box; transform-origin: left center; animation: redact 0.6s cubic-bezier(0.6, 0, 0.3, 1) both; }
+.legal-art .redact.d2 { animation-delay: 0.35s; }
+.legal-art .redact.d3 { animation-delay: 0.7s; }
+@keyframes redact { from { transform: scaleX(0); } }
+.legal-art .lock { fill: #faf9f5; stroke: #141413; stroke-width: 3; }
+.legal-art .shackle { fill: none; stroke: #141413; stroke-width: 6; stroke-linecap: round; animation: latch 0.7s 1.3s cubic-bezier(0.5, 0, 0.3, 1.4) both; }
+@keyframes latch { from { transform: translateY(-12px); } }
+.legal-art .click { fill: none; stroke: #141413; stroke-width: 2.5; stroke-linecap: round; opacity: 0; animation: click 0.6s 1.9s ease-out both; }
+@keyframes click { 0% { opacity: 0; transform: scale(0.6); } 40% { opacity: 1; } 100% { opacity: 0; transform: scale(1.15); } }
+.legal-art .click { transform-box: fill-box; transform-origin: center; }
 .prose h2 { font: 400 26px/1.3 var(--serif); margin: 48px 0 12px; }
 .prose h3 { font: 600 17px/1.4 var(--sans); margin: 28px 0 8px; }
 .prose p, .prose li { color: var(--text); }
@@ -174,7 +213,9 @@ code {
 @media (min-width: 900px) {
 	.hero-grid { grid-template-columns: 1.15fr 1fr; gap: 48px; }
 }
-.hero-art { width: 100%; max-width: 480px; height: auto; justify-self: center; overflow: visible; }
+.hero-art { width: 100%; max-width: 480px; height: auto; justify-self: center; overflow: visible; contain: layout paint; }
+/* motion.js adds .paused while an illustration is off screen, so scrolling doesn't repaint it */
+.art.paused, .art.paused * { animation-play-state: paused !important; }
 .hero-art .blob { fill: var(--blob); }
 .hero-art .device { fill: #faf9f5; stroke: var(--ink); stroke-width: 3; stroke-linejoin: round; }
 .hero-art .ink-thin { fill: none; stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
@@ -200,16 +241,12 @@ code {
 .hero-art .s3 { animation-delay: 2.4s; }
 .hero-art .squiggle { fill: none; stroke: #faf9f5; stroke-width: 3; stroke-linecap: round; opacity: 0.8; }
 .hero-art .phone { animation: float 6s ease-in-out infinite; }
-.hero-art .row { animation: shimmer 4.8s ease-in-out infinite; }
-.hero-art .r2 { animation-delay: 0.4s; }
-.hero-art .r3 { animation-delay: 0.8s; }
 
 @keyframes blink { 50% { opacity: 0; } }
 @keyframes flow { to { stroke-dashoffset: -24; } }
 @keyframes pulse { 0% { transform: scale(0.6); opacity: 1; } 100% { transform: scale(2.1); opacity: 0; } }
 @keyframes twinkle { 0%, 100% { transform: scale(1) rotate(0); opacity: 1; } 50% { transform: scale(0.55) rotate(45deg); opacity: 0.5; } }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-@keyframes shimmer { 0%, 70%, 100% { fill: #ebe8df; } 80% { fill: #ddd6c8; } }
 
 pre.cmd .blink { color: #d97757; animation: blink 1.1s steps(1) infinite; margin-left: 2px; }
 
@@ -222,8 +259,8 @@ pre.cmd .blink { color: #d97757; animation: blink 1.1s steps(1) infinite; margin
 .card .icon circle.fill { fill: var(--accent); stroke: none; }
 .card .icon path.fill[d^="M6"] { fill: var(--accent); stroke: none; opacity: 0.9; }
 .card .icon .dash { stroke: var(--accent); stroke-dasharray: 2 4; animation: flow 1.4s linear infinite; }
-.card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px -18px rgba(20, 20, 19, 0.35); }
+.card { transition: transform 0.3s ease; }
+.card:hover { transform: translateY(-3px); }
 
 /* Entrance and scroll reveal (hidden only when JS runs, so the page works without it) */
 .hero-copy > * { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
