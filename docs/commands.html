@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Commands · Code Remote Docs</title>
-	<meta name="description" content="Every coderemote command and option: up, status, kill, stop, serve, rotate-token, login and help.">
+	<meta name="description" content="Every coderemote command and option: up, status, kill, stop, serve, rotate-token, login, update and help.">
 	<link rel="icon" href="../icon.png?v=a562f5b3">
 	<link rel="apple-touch-icon" href="../icon.png?v=a562f5b3">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,7 @@
 					<li><a href="#serve">serve</a></li>
 					<li><a href="#rotate-token">rotate-token</a></li>
 					<li><a href="#login">login</a></li>
+					<li><a href="#update">update</a></li>
 					<li><a href="#help">help</a></li>
 					<li><a href="#options">options</a></li>
 				</ul>
@@ -58,6 +59,7 @@
 <span class="p">$ </span>coderemote serve                 <span class="c"># share on 127.0.0.1 only, no tunnel</span>
 <span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
 <span class="p">$ </span>coderemote login                 <span class="c"># sign in to Dev Tunnels again</span>
+<span class="p">$ </span>coderemote update                <span class="c"># install the latest version</span>
 <span class="p">$ </span>coderemote help                  <span class="c"># all options</span></pre>
 
 				<h2 id="up"><code>up</code></h2>
@@ -118,6 +120,12 @@ Token rotated. Re-pair your devices, and restart running agents.</pre>
 <span class="p">$ </span>coderemote login --microsoft      <span class="c"># a Microsoft account</span>
 <span class="p">$ </span>coderemote login --device-code    <span class="c"># no browser here: enter a code on another device</span></pre>
 				<p>The phone must sign in with the same account, unless you run <code>up --allow-anonymous</code>.</p>
+
+				<h2 id="update"><code>update</code></h2>
+				<p>Installs the latest coderemote, with the package manager you installed it with (npm, pnpm, yarn or bun). When there's a newer version, <code>up</code> says so under the pairing links; it asks npm at most once a day and never slows startup. Set <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> to turn that off.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote update
+<span class="p">$ </span>coderemote --version             <span class="c"># the version you're running</span></pre>
+				<p>Agents already running keep the old version until you restart them: <code>coderemote stop --all</code>, then <code>coderemote up</code> again.</p>
 
 				<h2 id="help"><code>help</code></h2>
 				<p>Prints every command and option. <code>coderemote</code> on its own, or <code>--help</code> anywhere on the line, does the same, so a typo never starts sharing a folder by accident.</p>
