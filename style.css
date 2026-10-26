@@ -107,7 +107,7 @@ nav.links a.gh:hover img { opacity: 1; }
 .note { font-size: 14px; color: var(--muted); }
 
 /* Terminal snippet */
-pre.cmd {
+.cmd {
 	margin: 56px 0 0;
 	padding: 22px 24px;
 	background: var(--code-bg);
@@ -116,8 +116,8 @@ pre.cmd {
 	font: 15px/1.7 var(--mono);
 	overflow-x: auto;
 }
-pre.cmd .p { color: #d97757; user-select: none; }
-pre.cmd .c { color: #8d8a80; }
+.cmd .p { color: #d97757; user-select: none; }
+.cmd .c { color: #8d8a80; }
 
 /* Sections */
 section.block { padding: 72px 0; border-top: 1px solid var(--line); }
@@ -252,7 +252,18 @@ code {
 @keyframes twinkle { 0%, 100% { transform: scale(1) rotate(0); opacity: 1; } 50% { transform: scale(0.55) rotate(45deg); opacity: 0.5; } }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
-pre.cmd .blink { color: #d97757; animation: blink 1.1s steps(1) infinite; margin-left: 2px; }
+.cmd .blink { color: #d97757; animation: blink 1.1s steps(1) infinite; margin-left: 2px; }
+
+/* Hero terminal: motion.js hides the lines (.armed), then shows them one by one like the real CLI */
+.term .ln { white-space: pre-wrap; min-height: 1.7em; }
+.term .qr .ln { white-space: pre; line-height: 1; min-height: 0; }
+.term .mark.ok { color: #8fbf7f; }
+.term .mark.spin { color: #7cc3c9; }
+.term.armed { overflow: hidden; transition: height 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.term.armed .ln:not(.on) { display: none; }
+.term.armed .ln.on { animation: ln-in 0.25s ease-out; }
+@keyframes ln-in { from { opacity: 0; transform: translateY(3px); } }
+@media (max-width: 600px) { .cmd { font-size: 13px; padding: 18px; } }
 
 /* Card icons */
 .card .icon {
@@ -280,6 +291,50 @@ pre.cmd .blink { color: #d97757; animation: blink 1.1s steps(1) infinite; margin
 	*, *::before, *::after { animation: none !important; transition: none !important; }
 	.js .reveal { opacity: 1; transform: none; }
 }
+
+/* Docs: a sidebar of pages beside the prose */
+.docs { padding: 56px 0 96px; }
+.docs .wrap { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 56px; align-items: start; }
+.docs-nav { position: sticky; top: 32px; font-size: 15px; }
+.docs-nav h4 { font: 600 12px/1 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+.docs-nav ul { list-style: none; margin: 0 0 28px; padding: 0; display: grid; gap: 2px; }
+.docs-nav a { display: block; padding: 6px 12px; margin-left: -12px; border-radius: 8px; text-decoration: none; color: var(--muted); }
+.docs-nav a:hover { color: var(--text); background: var(--surface); }
+.docs-nav a[aria-current="page"] { color: var(--text); background: var(--surface); font-weight: 500; }
+.docs-nav ul.sub a { font-size: 14px; padding: 4px 12px; font-family: var(--mono); }
+.docs .prose { padding: 0; max-width: 720px; }
+.prose h2[id], .prose h3[id] { scroll-margin-top: 24px; }
+.prose h2 code { font-size: 0.8em; padding: 3px 9px; }
+.prose pre.cmd { margin: 16px 0 24px; font-size: 14px; }
+.prose ol { padding-left: 22px; }
+.prose ol li::marker { color: var(--accent); font-family: var(--serif); }
+.prose table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 15px; }
+.prose th { text-align: left; font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }
+.prose th, .prose td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose td:first-child { white-space: nowrap; }
+.prose td code { white-space: nowrap; }
+.prose .lede { font-size: 19px; color: var(--muted); margin: 0 0 8px; }
+kbd { font: 0.85em var(--mono); padding: 1px 6px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; background: var(--surface); }
+.pager { display: flex; justify-content: space-between; gap: 16px; margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); }
+.pager a { display: grid; gap: 2px; padding: 14px 18px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; min-width: 0; }
+.pager a:hover { border-color: var(--accent); color: inherit; }
+.pager a span { font-size: 13px; color: var(--muted); }
+.pager a.next { margin-left: auto; text-align: right; }
+@media (max-width: 860px) {
+	.docs { padding-top: 32px; }
+	.docs .wrap { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+	.docs-nav { position: static; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+	.docs-nav ul { display: flex; flex-wrap: wrap; gap: 4px 8px; margin-bottom: 16px; }
+	.docs-nav a { margin-left: 0; }
+	.docs-nav ul.sub, .docs-nav h4 + ul.sub, .docs-nav ul + h4 { display: none; }
+	.prose td:first-child { white-space: normal; }
+}
+
+/* Docs illustration: a QR code is scanned onto the phone */
+.legal-art .scan { fill: none; stroke: var(--accent-deep); stroke-width: 3; stroke-linecap: round; animation: scan 2.6s ease-in-out infinite; }
+@keyframes scan { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(46px); } }
+.legal-art .qr { fill: #141413; }
+.legal-art .phone { animation: float 6s ease-in-out infinite; }
 
 /* Footer */
 footer.site { border-top: 1px solid var(--line); padding: 40px 0 56px; font-size: 14px; color: var(--muted); }

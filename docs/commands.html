@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Commands · Code Remote Docs</title>
+	<meta name="description" content="Every coderemote command and option: up, status, kill, stop, serve, rotate-token, login and help.">
+	<link rel="icon" href="../icon.png">
+	<link rel="apple-touch-icon" href="../icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../icon.png" alt="">Code Remote</a>
+			<nav class="links">
+				<a href="./">Docs</a>
+				<a href="../support.html">Support</a>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote"><img src="../github.png" alt="" width="18" height="18">GitHub</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="Docs">
+				<h4>Docs</h4>
+				<ul>
+					<li><a href="./">Setup</a></li>
+					<li><a href="commands.html" aria-current="page">Commands</a></li>
+					<li><a href="configuration.html">Configuration</a></li>
+				</ul>
+				<h4>On this page</h4>
+				<ul class="sub">
+					<li><a href="#up">up</a></li>
+					<li><a href="#status">status</a></li>
+					<li><a href="#kill">kill</a></li>
+					<li><a href="#stop">stop</a></li>
+					<li><a href="#serve">serve</a></li>
+					<li><a href="#rotate-token">rotate-token</a></li>
+					<li><a href="#login">login</a></li>
+					<li><a href="#help">help</a></li>
+					<li><a href="#options">options</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>Commands</h1>
+				<p class="lede">Everything <code>coderemote</code> can do, one command at a time.</p>
+
+				<pre class="cmd"><span class="p">$ </span>coderemote up                    <span class="c"># share this folder, print the pairing QR</span>
+<span class="p">$ </span>coderemote status                <span class="c"># running agents and their terminal sessions</span>
+<span class="p">$ </span>coderemote kill &lt;id&gt;... | --all  <span class="c"># end terminal sessions</span>
+<span class="p">$ </span>coderemote stop [--all]          <span class="c"># stop the agent for this folder</span>
+<span class="p">$ </span>coderemote serve                 <span class="c"># share on 127.0.0.1 only, no tunnel</span>
+<span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
+<span class="p">$ </span>coderemote login                 <span class="c"># sign in to Dev Tunnels again</span>
+<span class="p">$ </span>coderemote help                  <span class="c"># all options</span></pre>
+
+				<h2 id="up"><code>up</code></h2>
+				<p>Shares the current folder through a private Microsoft Dev Tunnel and prints the pairing QR code. This is the command you use day to day.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote up
+<span class="p">$ </span>coderemote up --root ~/projects   <span class="c"># share another folder</span>
+<span class="p">$ </span>coderemote up --web               <span class="c"># also open it in VS Code on vscode.dev</span></pre>
+				<p>It starts a small agent on <code>127.0.0.1</code>, signs you in to Dev Tunnels if needed, connects out to the relay and prints three things: the folder being shared, who can get in, and the links to pair with. It keeps running until you press <kbd>Ctrl</kbd>+<kbd>C</kbd> or close the terminal.</p>
+				<table>
+					<tr><th>Option</th><th>What it does</th></tr>
+					<tr><td><code>--root DIR</code></td><td>Share <code>DIR</code> instead of the current folder.</td></tr>
+					<tr><td><code>--port N</code></td><td>Listen on local port <code>N</code> (default <code>31580</code>). Change it when another program already holds that port.</td></tr>
+					<tr><td><code>--allow-anonymous</code></td><td>Skip the account sign-in on the phone: the pairing token alone grants access. Alias <code>--no-auth</code>.</td></tr>
+					<tr><td><code>--web</code></td><td>Also run VS Code's <code>code tunnel</code> and print a vscode.dev link that opens the folder in the full editor in a browser.</td></tr>
+				</table>
+				<div class="callout">
+					<p><code>--web</code> uses VS Code's own tunnel, not Code Remote's. It signs in with its own GitHub account and gives the browser the whole machine, not just the shared folder. It needs VS Code's <code>code</code> command on your <code>PATH</code>.</p>
+				</div>
+
+				<h2 id="status"><code>status</code></h2>
+				<p>Lists the agents running on this computer and the terminal sessions in each. Alias <code>ps</code>.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote status
+/Users/you/projects/my-app  (pid 4121, port 31580, up 2h)
+  https://…devtunnels.ms
+  3f9a2c1e  zsh          pid 4188    2h   1 attached
+  b71d04aa  claude       pid 5230    14m  detached</pre>
+				<p>Each session shows its id, title, process id, age and whether a phone is attached right now. A <em>detached</em> session is still running; it waits for the app to reattach.</p>
+
+				<h2 id="kill"><code>kill</code></h2>
+				<p>Ends terminal sessions. The first few characters of an id from <code>status</code> are enough.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote kill b71d
+killed b71d04aa (claude) in /Users/you/projects/my-app
+
+<span class="p">$ </span>coderemote kill --all              <span class="c"># every session in every agent</span></pre>
+				<p>The agent itself keeps running; use <code>stop</code> for that.</p>
+
+				<h2 id="stop"><code>stop</code></h2>
+				<p>Stops the agent sharing the current folder, ending its tunnel and terminal sessions. Handy when <code>up</code> runs in a window you can't reach.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote stop                   <span class="c"># the agent for this folder</span>
+<span class="p">$ </span>coderemote stop --all             <span class="c"># every agent on this computer</span></pre>
+
+				<h2 id="serve"><code>serve</code></h2>
+				<p>Starts the agent on <code>127.0.0.1</code> only, with no tunnel and no sign-in, and prints the local URL and token. For local testing and development; your phone can't reach it.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote serve
+coderemote agent on http://127.0.0.1:31580
+Sharing: /Users/you/projects/my-app
+Token: …</pre>
+
+				<h2 id="rotate-token"><code>rotate-token</code></h2>
+				<p>Replaces the access token. Every paired phone and browser loses access at once. Use it if you lose your phone or a pairing link leaks.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote rotate-token
+Token rotated. Re-pair your devices, and restart running agents.</pre>
+				<p>Then restart <code>coderemote up</code> and scan the new QR code on the devices you still trust.</p>
+
+				<h2 id="login"><code>login</code></h2>
+				<p>Signs in to Microsoft Dev Tunnels. <code>up</code> does this by itself when needed, so you only run it to switch accounts or when there's no browser.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote login                  <span class="c"># GitHub, in the browser</span>
+<span class="p">$ </span>coderemote login --microsoft      <span class="c"># a Microsoft account</span>
+<span class="p">$ </span>coderemote login --device-code    <span class="c"># no browser here: enter a code on another device</span></pre>
+				<p>The phone must sign in with the same account, unless you run <code>up --allow-anonymous</code>.</p>
+
+				<h2 id="help"><code>help</code></h2>
+				<p>Prints every command and option. <code>coderemote</code> on its own, or <code>--help</code> anywhere on the line, does the same, so a typo never starts sharing a folder by accident.</p>
+
+				<h2 id="options">Options</h2>
+				<table>
+					<tr><th>Option</th><th>Commands</th><th>Default</th></tr>
+					<tr><td><code>--root DIR</code></td><td><code>up</code>, <code>serve</code>, <code>stop</code></td><td>current folder</td></tr>
+					<tr><td><code>--port N</code></td><td><code>up</code>, <code>serve</code></td><td><code>31580</code></td></tr>
+					<tr><td><code>--allow-anonymous</code></td><td><code>up</code></td><td>off</td></tr>
+					<tr><td><code>--web</code></td><td><code>up</code></td><td>off</td></tr>
+					<tr><td><code>--all</code></td><td><code>kill</code>, <code>stop</code></td><td></td></tr>
+					<tr><td><code>--microsoft</code>, <code>--device-code</code></td><td><code>login</code></td><td>GitHub, in the browser</td></tr>
+				</table>
+
+				<nav class="pager" aria-label="More pages">
+					<a href="./"><span>Previous</span>Setup</a>
+					<a class="next" href="configuration.html"><span>Next</span>Configuration</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">Home</a>
+				<a href="./">Docs</a>
+				<a href="../privacy.html">Privacy</a>
+				<a href="../terms.html">Terms</a>
+				<a href="../support.html">Support</a>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>

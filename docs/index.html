@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Setup · Code Remote Docs</title>
+	<meta name="description" content="Install coderemote on your computer, share a folder and pair your iPhone in a couple of minutes.">
+	<link rel="icon" href="../icon.png">
+	<link rel="apple-touch-icon" href="../icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../icon.png" alt="">Code Remote</a>
+			<nav class="links">
+				<a href="./">Docs</a>
+				<a href="../support.html">Support</a>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote"><img src="../github.png" alt="" width="18" height="18">GitHub</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="Docs">
+				<h4>Docs</h4>
+				<ul>
+					<li><a href="./" aria-current="page">Setup</a></li>
+					<li><a href="commands.html">Commands</a></li>
+					<li><a href="configuration.html">Configuration</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<div class="legal-head">
+					<div>
+						<h1>Setup</h1>
+						<p class="lede">One command on the computer, one scan on the phone.</p>
+					</div>
+					<svg class="legal-art art" viewBox="0 0 220 200" aria-hidden="true">
+						<path class="blob" d="M38 52C70 12 168 8 196 50c26 40 22 106-16 128-44 26-120 24-150-8C4 142 8 88 38 52Z"/>
+						<g class="spark"><path d="M24 30l3.5 10 10 3.5-10 3.5-3.5 10-3.5-10-10-3.5 10-3.5z"/></g>
+						<g class="spark s2"><path d="M202 160l2.5 7 7 2.5-7 2.5-2.5 7-2.5-7-7-2.5 7-2.5z"/></g>
+						<g transform="rotate(-4 90 100)">
+							<rect class="paper" x="34" y="44" width="96" height="96" rx="10"/>
+							<path class="qr" d="M48 58h22v22H48zM94 58h22v22H94zM48 104h22v22H48z"/>
+							<path class="paper" d="M54 64h10v10H54zM100 64h10v10h-10zM54 110h10v10H54z"/>
+							<path class="qr" d="M78 58h8v8h-8zM78 74h8v8h-8zM94 88h8v8h-8zM78 96h8v8h-8zM108 100h8v8h-8zM94 112h8v8h-8zM78 116h8v10h-8zM108 118h8v8h-8zM48 88h8v8h-8zM62 88h8v8h-8z"/>
+							<path class="scan" d="M40 60h84"/>
+						</g>
+						<g class="phone">
+							<rect class="paper" x="138" y="72" width="54" height="100" rx="12"/>
+							<path class="line" d="M156 82h18M150 104h30M150 118h22M150 132h26"/>
+						</g>
+					</svg>
+				</div>
+
+				<h2 id="requirements">Requirements</h2>
+				<ul>
+					<li>A Mac with <strong>Node.js 20</strong> or newer. Linux is expected to work but isn't tested yet.</li>
+					<li>A <strong>GitHub</strong> or <strong>Microsoft</strong> account, used to sign in to Microsoft Dev Tunnels.</li>
+					<li>The <strong>Code Remote</strong> app on your iPhone.</li>
+				</ul>
+				<p>You don't need SSH, open ports, a VPN or VS Code.</p>
+
+				<h2 id="install">1. Install the CLI</h2>
+				<pre class="cmd"><span class="p">$ </span>npm install -g coderemote</pre>
+				<p>Check it worked with <code>coderemote help</code>.</p>
+
+				<h2 id="share">2. Share a folder</h2>
+				<p>Go to the folder you want to reach from your phone and start the agent:</p>
+				<pre class="cmd"><span class="p">$ </span>cd ~/projects/my-app
+<span class="p">$ </span>coderemote up</pre>
+				<p>The first run sets itself up:</p>
+				<ol>
+					<li>It downloads Microsoft's Dev Tunnels CLI into <code>~/.coderemote/bin</code> (once, signature checked).</li>
+					<li>It opens your browser to sign in with GitHub. To use a Microsoft account instead, run <code>coderemote login --microsoft</code> before <code>up</code>.</li>
+					<li>It creates a private tunnel for this computer and prints a QR code.</li>
+				</ol>
+				<pre class="cmd"><span class="c">✔ Starting agent</span>
+<span class="c">✔ Checking dev tunnels sign-in</span>
+<span class="c">✔ Connecting to the relay</span>
+
+  Sharing: /Users/you/projects/my-app
+  Access:  sign-in required as you (GitHub)
+
+  Web:  https://…devtunnels.ms/#token=…
+  App:  vsremote://pair?url=…&amp;token=…
+
+  <span class="c">[QR code]</span></pre>
+
+				<h2 id="pair">3. Pair your iPhone</h2>
+				<p>Scan the QR code with the iPhone Camera, or tap <strong>+</strong> in the app and scan it there. The app then asks you to sign in through the system browser with the <em>same</em> GitHub or Microsoft account the computer uses. Passkeys and "Sign in with Google" work.</p>
+				<p>That's it. Files, Git and Terminal for the shared folder are now on your phone.</p>
+
+				<div class="callout">
+					<p>The QR code and the links contain your access token. Don't post them anywhere. If one leaks, run <code>coderemote rotate-token</code>.</p>
+				</div>
+
+				<h2 id="everyday">Everyday use</h2>
+				<h3>Keep the terminal open</h3>
+				<p><code>coderemote up</code> runs in the foreground. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> or close the window to stop sharing; terminal sessions end with it.</p>
+
+				<h3>Keep the computer awake</h3>
+				<p>A sleeping Mac can't answer the phone. On a laptop, start the agent under <code>caffeinate</code> so the Mac stays awake while it runs:</p>
+				<pre class="cmd"><span class="p">$ </span>caffeinate -i coderemote up</pre>
+
+				<h3>Pairing survives restarts</h3>
+				<p>The tunnel URL and token stay the same between runs, so a paired phone reconnects on its own the next time you run <code>coderemote up</code>. You only scan again after <code>rotate-token</code>.</p>
+
+				<h2 id="update">Update or uninstall</h2>
+				<pre class="cmd"><span class="c"># update to the latest release</span>
+<span class="p">$ </span>npm install -g coderemote@latest
+
+<span class="c"># remove it, with its token and tunnel settings</span>
+<span class="p">$ </span>coderemote stop --all
+<span class="p">$ </span>npm uninstall -g coderemote
+<span class="p">$ </span>rm -rf ~/.coderemote</pre>
+
+				<nav class="pager" aria-label="Next page">
+					<a class="next" href="commands.html"><span>Next</span>Commands</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">Home</a>
+				<a href="./">Docs</a>
+				<a href="../privacy.html">Privacy</a>
+				<a href="../terms.html">Terms</a>
+				<a href="../support.html">Support</a>
+			</nav>
+		</div>
+	</footer>
+	<script src="../motion.js" defer></script>
+</body>
+</html>
