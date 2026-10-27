@@ -6,18 +6,18 @@
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Code Remote: your computer, from your iPhone</title>
 	<meta name="description" content="Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.">
-	<link rel="icon" href="icon.png?v=ef5882cb">
-	<link rel="apple-touch-icon" href="icon.png?v=ef5882cb">
+	<link rel="icon" href="icon.png?v=5b5ab4e9">
+	<link rel="apple-touch-icon" href="icon.png?v=5b5ab4e9">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css?v=e0f53cd9">
+	<link rel="stylesheet" href="style.css?v=68be0ff4">
 	<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 	<header class="site">
 		<div class="wrap">
-			<a class="brand" href="./"><img src="icon.png?v=ef5882cb" alt="">Code Remote</a>
+			<a class="brand" href="./"><img src="icon.png?v=5b5ab4e9" alt="">Code Remote</a>
 			<nav class="links">
 				<a class="hide-sm" href="#how">How it works</a>
 				<a href="docs/">Docs</a>
@@ -135,9 +135,7 @@
 				<div class="grid">
 					<div class="card feature reveal">
 						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
-							<path class="blob" d="M70 46C112 8 222 6 262 42c40 36 34 102-12 124-52 24-150 20-190-6C22 134 28 84 70 46Z"/>
-							<g class="spark"><path d="M44 36l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
-							<path class="device" d="M100 64a8 8 0 0 1 8-8h34l12 12h58a8 8 0 0 1 8 8v80H100z"/>
+							<path class="accent" d="M100 64a8 8 0 0 1 8-8h34l12 12h58a8 8 0 0 1 8 8v80H100z"/>
 							<g class="lift">
 								<rect class="device" x="116" y="42" width="84" height="66" rx="4" transform="rotate(-6 158 75)"/>
 								<path class="faint" d="M128 58h44M128 70h56M128 82h36" transform="rotate(-6 158 75)"/>
@@ -147,8 +145,8 @@
 								<path class="ink" d="M146 54h30" transform="rotate(5 174 71)"/>
 								<path class="faint" d="M146 66h50M146 78h40" transform="rotate(5 174 71)"/>
 							</g>
-							<path class="accent" d="M92 88h144l-9 64a8 8 0 0 1-8 7H109a8 8 0 0 1-8-7z"/>
-							<path class="cream-line" d="M112 140h40"/>
+							<path class="device" d="M92 88h144l-9 64a8 8 0 0 1-8 7H109a8 8 0 0 1-8-7z"/>
+							<rect class="accent" x="110" y="128" width="46" height="18" rx="5"/>
 						</svg>
 						<div class="feature-body">
 							<h3>Files</h3>
@@ -157,10 +155,8 @@
 					</div>
 					<div class="card feature reveal">
 						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
-							<path class="blob" d="M60 58C96 14 208 4 258 38c46 32 46 100 4 126-48 30-160 28-204-4C20 132 30 94 60 58Z"/>
-							<g class="spark"><path d="M282 30l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
 							<path class="rail" d="M42 120h236"/>
-							<path class="rail" d="M96 120c22 0 20-56 48-56h40c28 0 26 56 48 56"/>
+							<path class="rail hot-rail" d="M96 120c22 0 20-56 48-56h40c28 0 26 56 48 56"/>
 							<path class="flow" d="M96 120c22 0 20-56 48-56h40c28 0 26 56 48 56"/>
 							<circle class="node" cx="66" cy="120" r="9"/>
 							<circle class="node" cx="128" cy="120" r="9"/>
@@ -169,10 +165,6 @@
 							<circle class="ring" cx="186" cy="64" r="10"/>
 							<circle class="node hot" cx="186" cy="64" r="9"/>
 							<circle class="node" cx="254" cy="120" r="9"/>
-							<g class="chip">
-								<rect class="device" x="204" y="20" width="78" height="28" rx="8"/>
-								<text class="mono" x="216" y="39"><tspan class="plus">+12</tspan> <tspan class="minus">−3</tspan></text>
-							</g>
 						</svg>
 						<div class="feature-body">
 							<h3>Git</h3>
@@ -181,8 +173,6 @@
 					</div>
 					<div class="card feature reveal">
 						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
-							<path class="blob" d="M66 40C114 4 226 10 264 50c36 38 26 100-20 118-54 20-148 14-186-12C18 128 22 72 66 40Z"/>
-							<g class="spark"><path d="M38 132l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
 							<rect class="screen" x="66" y="24" width="188" height="104" rx="10"/>
 							<circle class="dot" cx="82" cy="38" r="3"/><circle class="dot" cx="93" cy="38" r="3"/><circle class="dot" cx="104" cy="38" r="3"/>
 							<path class="prompt" d="M82 60l7 5-7 5"/>
@@ -191,7 +181,7 @@
 							<path class="prompt" d="M82 112l7 5-7 5" transform="translate(0 -6)"/>
 							<rect class="cursor" x="96" y="108" width="8" height="12" rx="1.5"/>
 							<g class="keys">
-								<g class="key k1"><rect class="device" x="62" y="140" width="44" height="26" rx="7"/><text class="mono" x="84" y="157">ctrl</text></g>
+								<g class="key k1"><rect class="accent" x="62" y="140" width="44" height="26" rx="7"/><text class="mono cream" x="84" y="157">ctrl</text></g>
 								<g class="key k2"><rect class="device" x="112" y="140" width="44" height="26" rx="7"/><text class="mono" x="134" y="157">tab</text></g>
 								<g class="key k3"><rect class="device" x="162" y="140" width="44" height="26" rx="7"/><text class="mono" x="184" y="157">esc</text></g>
 								<g class="key k4"><rect class="device" x="212" y="140" width="44" height="26" rx="7"/><path class="ink" d="M228 156l6-6 6 6"/></g>
@@ -204,8 +194,6 @@
 					</div>
 					<div class="card feature reveal">
 						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
-							<path class="blob" d="M58 52C98 10 214 2 262 40c44 34 40 104-8 126-52 22-152 18-194-8C20 132 24 88 58 52Z"/>
-							<g class="spark"><path d="M286 136l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
 							<g>
 								<rect class="device" x="74" y="28" width="172" height="34" rx="9"/>
 								<circle class="ring" cx="94" cy="45" r="6"/><circle class="live" cx="94" cy="45" r="5"/>
@@ -219,10 +207,10 @@
 								<path class="faint" d="M176 89h48"/>
 							</g>
 							<g class="stuck">
-								<rect class="accent" x="74" y="116" width="172" height="34" rx="9"/>
-								<circle class="cream-dot" cx="94" cy="133" r="5"/>
-								<text class="mono cream" x="110" y="138">:3000</text>
-								<circle class="stop" cx="222" cy="133" r="10"/>
+								<rect class="device" x="74" y="116" width="172" height="34" rx="9"/>
+								<circle class="hot-dot" cx="94" cy="133" r="5"/>
+								<text class="mono" x="110" y="138">:3000</text>
+								<circle class="stop hot-stop" cx="222" cy="133" r="10"/>
 								<path class="ink" d="M218 129l8 8M226 129l-8 8"/>
 							</g>
 						</svg>
@@ -233,8 +221,6 @@
 					</div>
 					<div class="card feature reveal">
 						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
-							<path class="blob" d="M74 38C120 2 224 12 262 52c34 36 24 98-22 116-52 20-150 12-186-14C18 128 30 72 74 38Z"/>
-							<g class="spark"><path d="M46 40l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
 							<path class="rail" d="M168 92c30 0 40-34 72-34"/>
 							<path class="flow" d="M168 92c30 0 40-34 72-34"/>
 							<g class="phone">
@@ -258,8 +244,6 @@
 					</div>
 					<div class="card feature reveal">
 						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
-							<path class="blob" d="M62 48C104 8 216 4 260 42c42 36 38 100-8 122-50 24-152 20-192-6C20 132 24 86 62 48Z"/>
-							<g class="spark"><path d="M280 26l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
 							<circle class="device" cx="72" cy="70" r="28"/>
 							<path class="faint" d="M44 70h56M72 42c-14 16-14 40 0 56M72 42c14 16 14 40 0 56"/>
 							<rect class="device" x="220" y="46" width="56" height="48" rx="8"/>
@@ -274,7 +258,7 @@
 							</circle>
 							<g class="log">
 								<rect class="device" x="62" y="118" width="196" height="40" rx="10"/>
-								<text class="mono" x="78" y="143"><tspan class="method">POST</tspan> /webhook</text>
+								<text class="mono" x="78" y="143"><tspan class="method-ink">POST</tspan> /webhook</text>
 								<rect class="accent" x="206" y="128" width="38" height="20" rx="10"/>
 								<text class="mono cream" x="225" y="142" text-anchor="middle">200</text>
 							</g>
