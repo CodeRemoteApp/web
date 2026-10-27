@@ -92,6 +92,8 @@
 					<li>The latest 200 requests per port are kept, with bodies up to 64 KB. WebSockets (hot reload) pass through untouched; only their handshake is listed.</li>
 					<li>They stay on your computer, in memory: <strong>Clear</strong> forgets them, and so does stopping <code>coderemote up</code>.</li>
 				</ul>
+				<p>The bar under the list narrows it down. The filter button picks a kind (<strong>All</strong>, <strong>Fetch/XHR</strong>, <strong>CSS</strong>, <strong>Image</strong> or <strong>JS</strong>, judged from the response type and the file extension), and the search field matches the method and path.</p>
+				<p>The same log can be read in a terminal on the computer with <a href="commands.html#requests"><code>coderemote requests</code></a>, so a coding agent like Claude Code can debug with it. Tokens and cookies are masked there unless it asks for them.</p>
 
 				<h2 id="tunnel">The Tunnel sheet</h2>
 				<p>The tunnel button at the top of the Ports tab shows:</p>
