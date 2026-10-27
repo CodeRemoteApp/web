@@ -6,18 +6,18 @@
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Code Remote: your computer, from your iPhone</title>
 	<meta name="description" content="Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.">
-	<link rel="icon" href="icon.png?v=a562f5b3">
-	<link rel="apple-touch-icon" href="icon.png?v=a562f5b3">
+	<link rel="icon" href="icon.png?v=ef5882cb">
+	<link rel="apple-touch-icon" href="icon.png?v=ef5882cb">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css?v=fddebe15">
+	<link rel="stylesheet" href="style.css?v=e0f53cd9">
 	<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 	<header class="site">
 		<div class="wrap">
-			<a class="brand" href="./"><img src="icon.png?v=a562f5b3" alt="">Code Remote</a>
+			<a class="brand" href="./"><img src="icon.png?v=ef5882cb" alt="">Code Remote</a>
 			<nav class="links">
 				<a class="hide-sm" href="#how">How it works</a>
 				<a href="docs/">Docs</a>
@@ -133,35 +133,156 @@
 			<div class="wrap">
 				<h2 class="reveal">Everything you need to keep working.</h2>
 				<div class="grid">
-					<div class="card reveal">
-						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 12a3 3 0 0 1 3-3h7l4 4h11a3 3 0 0 1 3 3v13a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z"/><path class="fill" d="M6 17h28v12a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z"/></svg>
-						<h3>Files</h3>
-						<p>Browse, open, edit, create, rename and delete files in the folder you share.</p>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<path class="blob" d="M70 46C112 8 222 6 262 42c40 36 34 102-12 124-52 24-150 20-190-6C22 134 28 84 70 46Z"/>
+							<g class="spark"><path d="M44 36l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
+							<path class="device" d="M100 64a8 8 0 0 1 8-8h34l12 12h58a8 8 0 0 1 8 8v80H100z"/>
+							<g class="lift">
+								<rect class="device" x="116" y="42" width="84" height="66" rx="4" transform="rotate(-6 158 75)"/>
+								<path class="faint" d="M128 58h44M128 70h56M128 82h36" transform="rotate(-6 158 75)"/>
+							</g>
+							<g class="lift l2">
+								<rect class="device" x="132" y="38" width="84" height="66" rx="4" transform="rotate(5 174 71)"/>
+								<path class="ink" d="M146 54h30" transform="rotate(5 174 71)"/>
+								<path class="faint" d="M146 66h50M146 78h40" transform="rotate(5 174 71)"/>
+							</g>
+							<path class="accent" d="M92 88h144l-9 64a8 8 0 0 1-8 7H109a8 8 0 0 1-8-7z"/>
+							<path class="cream-line" d="M112 140h40"/>
+						</svg>
+						<div class="feature-body">
+							<h3>Files</h3>
+							<p>Browse, open, edit, create, rename and delete files in the folder you share.</p>
+						</div>
 					</div>
-					<div class="card reveal">
-						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><circle cx="12" cy="9" r="4"/><circle cx="12" cy="31" r="4"/><circle class="fill" cx="29" cy="15" r="4"/><path d="M12 13v14M29 19c0 7-8 6-15 10"/></svg>
-						<h3>Git</h3>
-						<p>See changes and diffs, stage, commit, pull, push and read history, across every repository in the folder.</p>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<path class="blob" d="M60 58C96 14 208 4 258 38c46 32 46 100 4 126-48 30-160 28-204-4C20 132 30 94 60 58Z"/>
+							<g class="spark"><path d="M282 30l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
+							<path class="rail" d="M42 120h236"/>
+							<path class="rail" d="M96 120c22 0 20-56 48-56h40c28 0 26 56 48 56"/>
+							<path class="flow" d="M96 120c22 0 20-56 48-56h40c28 0 26 56 48 56"/>
+							<circle class="node" cx="66" cy="120" r="9"/>
+							<circle class="node" cx="128" cy="120" r="9"/>
+							<circle class="node" cx="190" cy="120" r="9"/>
+							<circle class="node" cx="144" cy="64" r="9"/>
+							<circle class="ring" cx="186" cy="64" r="10"/>
+							<circle class="node hot" cx="186" cy="64" r="9"/>
+							<circle class="node" cx="254" cy="120" r="9"/>
+							<g class="chip">
+								<rect class="device" x="204" y="20" width="78" height="28" rx="8"/>
+								<text class="mono" x="216" y="39"><tspan class="plus">+12</tspan> <tspan class="minus">−3</tspan></text>
+							</g>
+						</svg>
+						<div class="feature-body">
+							<h3>Git</h3>
+							<p>See changes and diffs, stage, commit, pull, push and read history, across every repository in the folder.</p>
+						</div>
 					</div>
-					<div class="card reveal">
-						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="8" width="30" height="24" rx="4"/><path d="M11 16l5 4-5 4M19 25h9"/></svg>
-						<h3>Terminal</h3>
-						<p>A real shell with a key bar for Ctrl, Tab, Esc and arrows. Sessions keep running while your phone sleeps, so long builds and coding agents survive.</p>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<path class="blob" d="M66 40C114 4 226 10 264 50c36 38 26 100-20 118-54 20-148 14-186-12C18 128 22 72 66 40Z"/>
+							<g class="spark"><path d="M38 132l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
+							<rect class="screen" x="66" y="24" width="188" height="104" rx="10"/>
+							<circle class="dot" cx="82" cy="38" r="3"/><circle class="dot" cx="93" cy="38" r="3"/><circle class="dot" cx="104" cy="38" r="3"/>
+							<path class="prompt" d="M82 60l7 5-7 5"/>
+							<path class="cream-line" d="M96 70h70"/>
+							<path class="cream-faint" d="M82 88h120M82 104h84"/>
+							<path class="prompt" d="M82 112l7 5-7 5" transform="translate(0 -6)"/>
+							<rect class="cursor" x="96" y="108" width="8" height="12" rx="1.5"/>
+							<g class="keys">
+								<g class="key k1"><rect class="device" x="62" y="140" width="44" height="26" rx="7"/><text class="mono" x="84" y="157">ctrl</text></g>
+								<g class="key k2"><rect class="device" x="112" y="140" width="44" height="26" rx="7"/><text class="mono" x="134" y="157">tab</text></g>
+								<g class="key k3"><rect class="device" x="162" y="140" width="44" height="26" rx="7"/><text class="mono" x="184" y="157">esc</text></g>
+								<g class="key k4"><rect class="device" x="212" y="140" width="44" height="26" rx="7"/><path class="ink" d="M228 156l6-6 6 6"/></g>
+							</g>
+						</svg>
+						<div class="feature-body">
+							<h3>Terminal</h3>
+							<p>A real shell with a key bar for Ctrl, Tab, Esc and arrows. Sessions keep running while your phone sleeps, so long builds and coding agents survive.</p>
+						</div>
 					</div>
-					<div class="card reveal">
-						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="8" width="28" height="24" rx="4"/><path d="M12 16h10M12 24h10"/><circle class="fill" cx="27" cy="16" r="2.5"/><circle class="fill" cx="27" cy="24" r="2.5"/></svg>
-						<h3>Ports</h3>
-						<p>See which servers are listening, which terminal started them, and stop the one that's stuck on port 3000.</p>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<path class="blob" d="M58 52C98 10 214 2 262 40c44 34 40 104-8 126-52 22-152 18-194-8C20 132 24 88 58 52Z"/>
+							<g class="spark"><path d="M286 136l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
+							<g>
+								<rect class="device" x="74" y="28" width="172" height="34" rx="9"/>
+								<circle class="ring" cx="94" cy="45" r="6"/><circle class="live" cx="94" cy="45" r="5"/>
+								<text class="mono" x="110" y="50">:5173</text>
+								<path class="faint" d="M176 45h48"/>
+							</g>
+							<g>
+								<rect class="device" x="74" y="72" width="172" height="34" rx="9"/>
+								<circle class="ring r2" cx="94" cy="89" r="6"/><circle class="live" cx="94" cy="89" r="5"/>
+								<text class="mono" x="110" y="94">:8080</text>
+								<path class="faint" d="M176 89h48"/>
+							</g>
+							<g class="stuck">
+								<rect class="accent" x="74" y="116" width="172" height="34" rx="9"/>
+								<circle class="cream-dot" cx="94" cy="133" r="5"/>
+								<text class="mono cream" x="110" y="138">:3000</text>
+								<circle class="stop" cx="222" cy="133" r="10"/>
+								<path class="ink" d="M218 129l8 8M226 129l-8 8"/>
+							</g>
+						</svg>
+						<div class="feature-body">
+							<h3>Ports</h3>
+							<p>See which servers are listening, which terminal started them, and stop the one that's stuck on port 3000.</p>
+						</div>
 					</div>
-					<div class="card reveal">
-						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="11" y="5" width="18" height="30" rx="4"/><path d="M11 11h18"/><path class="fill" d="M17 18l7 4-7 4z"/></svg>
-						<h3>Preview &amp; share</h3>
-						<p>Open your dev server on the phone with a tap, through its own private tunnel. Need a second opinion? Share a public link that ends after an hour or a day.</p>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<path class="blob" d="M74 38C120 2 224 12 262 52c34 36 24 98-22 116-52 20-150 12-186-14C18 128 30 72 74 38Z"/>
+							<g class="spark"><path d="M46 40l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
+							<path class="rail" d="M168 92c30 0 40-34 72-34"/>
+							<path class="flow" d="M168 92c30 0 40-34 72-34"/>
+							<g class="phone">
+								<rect class="device" x="98" y="18" width="84" height="150" rx="16"/>
+								<path class="ink" d="M126 30h28"/>
+								<rect class="row" x="108" y="42" width="64" height="12" rx="6"/>
+								<rect class="accent" x="108" y="62" width="64" height="44" rx="6"/>
+								<path class="play" d="M135 76l12 8-12 8z"/>
+								<path class="faint" d="M110 120h56M110 134h40M110 148h48"/>
+							</g>
+							<g class="chip">
+								<rect class="device" x="214" y="40" width="80" height="36" rx="18"/>
+								<circle class="ink" cx="236" cy="58" r="8"/><path class="ink" d="M236 53v5l3 3"/>
+								<text class="mono" x="252" y="63">1h</text>
+							</g>
+						</svg>
+						<div class="feature-body">
+							<h3>Preview &amp; share</h3>
+							<p>Open your dev server on the phone with a tap, through its own private tunnel. Need a second opinion? Share a public link that ends after an hour or a day.</p>
+						</div>
 					</div>
-					<div class="card reveal">
-						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 14h23l-5-5M32 26H9l5 5"/><circle class="fill" cx="8" cy="14" r="2.5"/><circle class="fill" cx="32" cy="26" r="2.5"/></svg>
-						<h3>Requests</h3>
-						<p>Watch every request that reaches your dev server, with headers and bodies. Handy when a webhook fires and you're away from your desk.</p>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<path class="blob" d="M62 48C104 8 216 4 260 42c42 36 38 100-8 122-50 24-152 20-192-6C20 132 24 86 62 48Z"/>
+							<g class="spark"><path d="M280 26l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
+							<circle class="device" cx="72" cy="70" r="28"/>
+							<path class="faint" d="M44 70h56M72 42c-14 16-14 40 0 56M72 42c14 16 14 40 0 56"/>
+							<rect class="device" x="220" y="46" width="56" height="48" rx="8"/>
+							<path class="ink" d="M232 60h32M232 72h32M232 84h20"/>
+							<circle class="cream-dot hot" cx="264" cy="84" r="3"/>
+							<path id="req-path" class="rail" d="M100 70c40-26 80-26 120 0"/>
+							<circle class="packet" r="5">
+								<animateMotion dur="2.8s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines="0.45 0 0.55 1"><mpath href="#req-path"/></animateMotion>
+							</circle>
+							<circle class="packet back" r="4">
+								<animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite" calcMode="spline" keyPoints="1;0" keyTimes="0;1" keySplines="0.45 0 0.55 1"><mpath href="#req-path"/></animateMotion>
+							</circle>
+							<g class="log">
+								<rect class="device" x="62" y="118" width="196" height="40" rx="10"/>
+								<text class="mono" x="78" y="143"><tspan class="method">POST</tspan> /webhook</text>
+								<rect class="accent" x="206" y="128" width="38" height="20" rx="10"/>
+								<text class="mono cream" x="225" y="142" text-anchor="middle">200</text>
+							</g>
+						</svg>
+						<div class="feature-body">
+							<h3>Requests</h3>
+							<p>Watch every request that reaches your dev server, with headers and bodies. Handy when a webhook fires and you're away from your desk.</p>
+						</div>
 					</div>
 				</div>
 			</div>
