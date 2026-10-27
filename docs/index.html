@@ -6,17 +6,17 @@
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Setup · Code Remote Docs</title>
 	<meta name="description" content="Install coderemote on your computer, share a folder and pair your iPhone in a couple of minutes.">
-	<link rel="icon" href="../icon.png?v=672b5d96">
-	<link rel="apple-touch-icon" href="../icon.png?v=672b5d96">
+	<link rel="icon" href="../icon.png?v=ea967511">
+	<link rel="apple-touch-icon" href="../icon.png?v=ea967511">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=68be0ff4">
+	<link rel="stylesheet" href="../style.css?v=7aea64a0">
 </head>
 <body>
 	<header class="site">
 		<div class="wrap">
-			<a class="brand" href="../"><img src="../icon.png?v=672b5d96" alt="">Code Remote</a>
+			<a class="brand" href="../"><img src="../icon.png?v=ea967511" alt="">Code Remote</a>
 			<nav class="links">
 				<a href="./">Docs</a>
 				<a href="../support.html">Support</a>
@@ -104,6 +104,16 @@
 				<h2 id="pair">3. Pair your iPhone</h2>
 				<p>Scan the QR code with the iPhone Camera, or tap <strong>+</strong> in the app and scan it there. The app then asks you to sign in through the system browser with the <em>same</em> GitHub or Microsoft account the computer uses. Passkeys and "Sign in with Google" work.</p>
 				<p>That's it. Files, Git and Terminal for the shared folder are now on your phone.</p>
+
+				<figure class="shots">
+					<ol>
+						<li><img src="../screens/setup-1-install.webp" width="461" height="1000" loading="lazy" alt="Quick setup step 1: Install the CLI with npm install -g coderemote"></li>
+						<li><img src="../screens/setup-2-folder.webp" width="461" height="1000" loading="lazy" alt="Quick setup step 2: Go to your project with cd ~/projects/my-app"></li>
+						<li><img src="../screens/setup-3-up.webp" width="461" height="1000" loading="lazy" alt="Quick setup step 3: Start the agent with coderemote up"></li>
+						<li><img src="../screens/setup-4-scan.webp" width="461" height="1000" loading="lazy" alt="Quick setup step 4: Scan the QR code"></li>
+					</ol>
+					<figcaption>The app walks you through the same steps under Quick setup.</figcaption>
+				</figure>
 
 				<div class="callout">
 					<p>The QR code and the links contain your access token. Don't post them anywhere. If one leaks, run <code>coderemote rotate-token</code>.</p>
