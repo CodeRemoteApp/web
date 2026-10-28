@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Coding agents · Code Remote Docs</title>
-	<meta name="description" content="Follow Claude Code sessions from your iPhone, answer their permission prompts and questions, and get notified when they need you.">
+	<meta name="description" content="Start, prompt and follow Claude Code sessions from your iPhone, answer their permission prompts and questions, and get notified when they need you.">
 	<link rel="icon" href="../icon.png?v=60d57516">
 	<link rel="apple-touch-icon" href="../icon.png?v=60d57516">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,6 +47,7 @@
 					<li><a href="#setup">Set up</a></li>
 					<li><a href="#sessions">The Agents tab</a></li>
 					<li><a href="#answer">Answer from the phone</a></li>
+					<li><a href="#drive">Start and drive sessions</a></li>
 					<li><a href="#notifications">Notifications</a></li>
 					<li><a href="#how">How it works</a></li>
 				</ul>
@@ -75,6 +76,16 @@
 					<li>For a question, tap an answer, or <strong>Other…</strong> to type one.</li>
 				</ul>
 				<p>The prompt stays open on the computer too. Whichever side answers first wins: answer at the computer and the card (and its notification) goes away on the phone. A prompt nobody answers from the phone within an hour is left to the computer.</p>
+
+				<h2 id="drive">Start and drive sessions</h2>
+				<p>Tap <strong>+</strong> in the Agents tab to start Claude Code on the computer: pick a folder in the shared one, a model, and how it asks for permission (<strong>Ask First</strong>, <strong>Accept Edits</strong>, <strong>Plan Only</strong> or <strong>Auto</strong>). It runs in a terminal of the app, so you can type to it from the session's message box:</p>
+				<ul>
+					<li>Write a prompt and send it; while Claude works, what you send waits its turn, as it would at the computer. <strong>Stop</strong> interrupts it (like <kbd>Esc</kbd>).</li>
+					<li><strong>+</strong> attaches photos, videos, files, a photo from the camera or a copied image. They go to <code>~/.coderemote/uploads/</code> on the computer (outside your project, deleted after a week), and Claude sees images as images; for other files it gets their path.</li>
+					<li>The <strong>⚡</strong> menu has <strong>Next Permission Mode</strong> (<kbd>Shift</kbd>+<kbd>Tab</kbd>), <code>/compact</code>, <code>/clear</code>, <code>/model</code> and <strong>Open in Terminal</strong>. In the terminal, <strong>Chat</strong> comes back.</li>
+					<li>An ended session offers <strong>Resume Here</strong>, which continues the conversation in a new terminal.</li>
+				</ul>
+				<p>A session you started in a terminal on the computer can be followed and answered here but not typed into, since it isn't the app's terminal; resume it here once it ends.</p>
 
 				<h2 id="notifications">Notifications</h2>
 				<p>Turn them on per computer in the machine's info (hold it in the machine list, or <strong>Machine Info</strong> in a tab's menu): <strong>Needs an answer</strong> and <strong>Finished a long task</strong> (one that took a minute or more), with a test button.</p>
