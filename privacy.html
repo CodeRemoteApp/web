@@ -35,7 +35,7 @@
 			<div class="legal-head">
 				<div>
 					<h1>Privacy Policy</h1>
-					<p class="meta">Effective October 26, 2026</p>
+					<p class="meta">Effective October 28, 2026</p>
 				</div>
 				<svg class="legal-art art" viewBox="0 0 220 200" aria-hidden="true">
 					<path class="blob" d="M38 52C70 12 168 8 196 50c26 40 22 106-16 128-44 26-120 24-150-8C4 142 8 88 38 52Z"/>
@@ -60,29 +60,35 @@
 			</div>
 
 			<div class="callout">
-				<p><strong>In short:</strong> Code Remote doesn't collect, store or sell any personal data. It has no accounts, no analytics, no ads and no servers of its own. Your phone connects to your own computer, and what you see and type stays between the two.</p>
+				<p><strong>In short:</strong> Code Remote doesn't collect, store or sell any personal data. It has no accounts, no analytics and no ads. Your phone connects to your own computer, and what you see and type stays between the two. The one server we run passes notifications on to Apple, can't read them, and keeps nothing.</p>
 			</div>
 
 			<p>This policy covers the Code Remote iPhone app (the "App") and the <code>coderemote</code> command-line tool for your computer (the "CLI"), together "Code Remote". Code Remote is made by Thanh Tran ("we", "us").</p>
 
 			<h2>What we collect</h2>
-			<p>Nothing. We don't operate any server that the App or the CLI reports to. We don't use analytics, crash reporting, advertising or tracking SDKs, and we don't track you across other apps or websites. We have no way to see your files, your git repositories, your terminal sessions or the commands you run.</p>
+			<p>Nothing. We don't use analytics, crash reporting, advertising or tracking SDKs, and we don't track you across other apps or websites. We have no way to see your files, your git repositories, your terminal sessions, your coding agents' sessions or the commands you run.</p>
+
+			<h3 id="notifications">Notifications</h3>
+			<p>If you turn on notifications for a computer (optional), that computer can tell your iPhone when a coding agent such as Claude Code needs an answer or has finished. Apple only delivers notifications sent with the app's own key, so your computer sends them through a small relay we run on Cloudflare Workers, which adds that key and passes them to Apple's push service right away. The relay receives your iPhone's push token, a ticket that lets your computer notify that iPhone, and the notification. What the notification says (the session, the command, the question) is encrypted on your computer with a key that only your iPhone and that computer have; the relay and Apple see only a generic "A session needs your attention". The relay has no database and no request logs, and keeps nothing once it has passed a notification on; the only state is a short-lived counter, keyed by a hash of the push token, that limits how many notifications one device can get per minute. Its source code is public in the <a href="https://github.com/CodeRemoteApp/coderemote/tree/main/apps/push-relay">coderemote repository</a>.</p>
 
 			<h2>What stays on your devices</h2>
 			<h3>On your iPhone</h3>
 			<ul>
 				<li><strong>Pairings:</strong> the address of each computer you pair with and its access token, stored in the iOS Keychain.</li>
 				<li><strong>Tunnel sign-in tokens:</strong> the token Microsoft Dev Tunnels issues after you sign in, stored in the iOS Keychain.</li>
+				<li><strong>Notification keys:</strong> for each computer you turn notifications on for, the key that decrypts its notifications, stored in the iOS Keychain and shared only with the App's notification extension.</li>
 				<li><strong>Settings:</strong> your preferences in the App, stored on the device.</li>
 			</ul>
 			<p>Deleting a computer in the App, or deleting the App, removes this data from your iPhone. It may be included in your own encrypted device backups, under Apple's control.</p>
 
 			<h3>On your computer</h3>
-			<p>The CLI keeps its access token and configuration in <code>~/.coderemote/</code> (readable only by your user account). Running <code>coderemote rotate-token</code> revokes every paired device.</p>
+			<p>The CLI keeps its access token and configuration in <code>~/.coderemote/</code> (readable only by your user account), including, for each iPhone that turned notifications on, its push token, ticket and notification key. Running <code>coderemote rotate-token</code> revokes every paired device and deletes those.</p>
+			<p>If you run <code>coderemote setup claude</code>, Claude Code reports its sessions (prompts, replies, the tools it runs and their output) to the <code>coderemote</code> running on the same computer, which keeps them in memory to show in the App and forgets them when it stops. Nothing of it leaves your computer except through your own connection to the App, and in the encrypted notifications above.</p>
 
 			<h2>Device permissions</h2>
 			<ul>
 				<li><strong>Camera:</strong> used only to scan the pairing QR code that the CLI shows. Images are processed on the device and never saved or sent anywhere.</li>
+				<li><strong>Notifications:</strong> optional, asked when you turn notifications on for a computer. You can turn them off per computer in the App, or for the whole App in iOS Settings.</li>
 				<li><strong>Face ID:</strong> optional, to unlock computers you choose to lock. Face ID is handled entirely by iOS; the App only learns whether authentication succeeded.</li>
 			</ul>
 
@@ -91,6 +97,7 @@
 			<ul>
 				<li><strong>Microsoft Dev Tunnels.</strong> Traffic between the App and your computer passes through Microsoft's Dev Tunnels relay, encrypted in transit (HTTPS / WSS). The CLI downloads Microsoft's Dev Tunnels command-line tool on first run, and that tool may send diagnostic data to Microsoft. See the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</li>
 				<li><strong>GitHub or Microsoft sign-in.</strong> When you sign in to Dev Tunnels, you do so on GitHub's or Microsoft's own page in the system browser. We never see your password. See the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
+				<li><strong>Apple Push Notification service and Cloudflare.</strong> Notifications reach your iPhone through Apple's push service, sent by our relay on Cloudflare Workers, as described under <a href="#notifications">Notifications</a>. See <a href="https://www.apple.com/legal/privacy/">Apple's</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's</a> privacy policies.</li>
 				<li><strong>npm.</strong> Installing the CLI downloads it from the npm registry, operated by GitHub.</li>
 				<li><strong>Apple.</strong> If you download the App from the App Store, Apple may share anonymous usage and crash statistics with us when you've agreed to that in iOS settings. These are aggregated by Apple and don't identify you.</li>
 			</ul>

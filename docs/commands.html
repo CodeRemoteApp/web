@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Commands · Code Remote Docs</title>
-	<meta name="description" content="Every coderemote command and option: up, status, kill, stop, serve, requests, rotate-token, login, update and help.">
+	<meta name="description" content="Every coderemote command and option: up, status, kill, stop, serve, requests, setup, rotate-token, login, update and help.">
 	<link rel="icon" href="../icon.png?v=60d57516">
 	<link rel="apple-touch-icon" href="../icon.png?v=60d57516">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +39,7 @@
 					<li><a href="./">Setup</a></li>
 					<li><a href="commands.html" aria-current="page">Commands</a></li>
 					<li><a href="preview.html">Ports &amp; preview</a></li>
+					<li><a href="agents.html">Coding agents</a></li>
 					<li><a href="configuration.html">Configuration</a></li>
 				</ul>
 				<h4>On this page</h4>
@@ -49,6 +50,7 @@
 					<li><a href="#stop">stop</a></li>
 					<li><a href="#serve">serve</a></li>
 					<li><a href="#requests">requests</a></li>
+					<li><a href="#setup">setup</a></li>
 					<li><a href="#rotate-token">rotate-token</a></li>
 					<li><a href="#login">login</a></li>
 					<li><a href="#update">update</a></li>
@@ -68,6 +70,7 @@
 <span class="p">$ </span>coderemote serve                 <span class="c"># share on 127.0.0.1 only, no tunnel</span>
 <span class="p">$ </span>coderemote requests [PORT]       <span class="c"># requests that reached a previewed port</span>
 <span class="p">$ </span>coderemote request &lt;ID&gt;          <span class="c"># headers and bodies of one request</span>
+<span class="p">$ </span>coderemote setup claude          <span class="c"># follow Claude Code sessions in the app</span>
 <span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
 <span class="p">$ </span>coderemote login                 <span class="c"># sign in to Dev Tunnels again</span>
 <span class="p">$ </span>coderemote update                <span class="c"># install the latest version</span>
@@ -145,6 +148,10 @@ Token: …</pre>
 					<p>Secrets are masked unless you ask for them: <code>Authorization</code> headers (the scheme, such as <code>Bearer</code>, stays), cookie values (their names stay), headers named like a token, key or session, and fields such as <code>password</code> or <code>access_token</code> in query strings, JSON and form bodies. The output says how many values it hid. Add <code>--show-secrets</code> when the agent needs one, for example to reuse a session token in a test.</p>
 				</div>
 				<p>Nothing is written to disk: the command reads the log the agent keeps in memory, the latest 200 requests per port.</p>
+
+				<h2 id="setup"><code>setup claude</code></h2>
+				<p>Installs the Code Remote plugin into Claude Code, so its sessions show in the app's Agents tab and you can answer their prompts from the phone. <code>--remove</code> uninstalls it. See <a href="agents.html">Coding agents</a>.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup claude</pre>
 
 				<h2 id="rotate-token"><code>rotate-token</code></h2>
 				<p>Replaces the access token. Every paired phone and browser loses access at once. Use it if you lose your phone or a pairing link leaks.</p>

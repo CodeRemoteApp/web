@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>Coding agents · Code Remote Docs</title>
+	<meta name="description" content="Follow Claude Code sessions from your iPhone, answer their permission prompts and questions, and get notified when they need you.">
+	<link rel="icon" href="../icon.png?v=60d57516">
+	<link rel="apple-touch-icon" href="../icon.png?v=60d57516">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css?v=7aea64a0">
+</head>
+<body>
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../icon.png?v=60d57516" alt="">Code Remote</a>
+			<nav class="links">
+				<a href="./">Docs</a>
+				<a href="../support.html">Support</a>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Appearance" title="Appearance"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Appearance">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>System<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Light<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Dark<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="Docs">
+				<h4>Docs</h4>
+				<ul>
+					<li><a href="./">Setup</a></li>
+					<li><a href="commands.html">Commands</a></li>
+					<li><a href="preview.html">Ports &amp; preview</a></li>
+					<li><a href="agents.html" aria-current="page">Coding agents</a></li>
+					<li><a href="configuration.html">Configuration</a></li>
+				</ul>
+				<h4>On this page</h4>
+				<ul class="sub">
+					<li><a href="#setup">Set up</a></li>
+					<li><a href="#sessions">The Agents tab</a></li>
+					<li><a href="#answer">Answer from the phone</a></li>
+					<li><a href="#notifications">Notifications</a></li>
+					<li><a href="#how">How it works</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>Coding agents</h1>
+				<p class="lede">Follow every Claude Code session on your computer from your iPhone, answer its permission prompts and questions there, and get a notification when it needs you.</p>
+				<p>The Agents tab and notifications are part of Code Remote Pro, and need a recent coderemote on the computer: run <code>coderemote update</code> and start <code>coderemote up</code> again if the app says so.</p>
+
+				<h2 id="setup">Set up</h2>
+				<p>Once per computer, with Claude Code installed:</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup claude</pre>
+				<p>This installs the Code Remote plugin into Claude Code (the same as <code>/plugin install coderemote --marketplace CodeRemoteApp/coderemote</code> inside Claude Code). Claude Code sessions you start afterwards, in a folder shared with <code>coderemote up</code>, show up in the app. Sessions already running appear after you restart them. To undo it: <code>coderemote setup claude --remove</code>.</p>
+				<p>The plugin does nothing when no <code>coderemote</code> is running, or when the session's folder isn't shared: Claude Code then works exactly as without it.</p>
+
+				<h2 id="sessions">The Agents tab</h2>
+				<p>Lists the sessions on the machine, grouped into <strong>Needs You</strong> (waiting for an answer), <strong>Working</strong>, <strong>Idle</strong> and <strong>Ended</strong>; the tab shows how many need you. Open one to see what it did: your prompts, Claude's replies, and each tool it ran. Commands show with their output, file edits as the lines they change (tap for the whole change or the file), and reads open the file.</p>
+				<p>A session started in a terminal in the app has <strong>Open in Terminal</strong>, to type into it directly. Sessions you started on the computer show the same timeline.</p>
+				<p>Sessions live in coderemote's memory: stopping <code>coderemote up</code> clears the list, and ended sessions disappear after a day.</p>
+
+				<h2 id="answer">Answer from the phone</h2>
+				<p>When Claude asks for permission to run something, or asks you a question, a card appears at the bottom of the session:</p>
+				<ul>
+					<li><strong>Allow</strong> or <strong>Deny</strong>. The <strong>⋯</strong> menu has the same "always allow" choices Claude Code offers on the computer, and <strong>Deny with Message</strong> to tell Claude what to do instead.</li>
+					<li>For a question, tap an answer, or <strong>Other…</strong> to type one.</li>
+				</ul>
+				<p>The prompt stays open on the computer too. Whichever side answers first wins: answer at the computer and the card (and its notification) goes away on the phone. A prompt nobody answers from the phone within an hour is left to the computer.</p>
+
+				<h2 id="notifications">Notifications</h2>
+				<p>Turn them on per computer in the machine's info (hold it in the machine list, or <strong>Machine Info</strong> in a tab's menu): <strong>Needs an answer</strong> and <strong>Finished a long task</strong> (one that took a minute or more), with a test button.</p>
+				<p>Long-press a permission notification to <strong>Allow</strong> or <strong>Deny</strong> without opening the app (after Face ID); a single question offers its answers the same way. Nothing is sent while you're using the computer (on a Mac) or have the machine open in the app.</p>
+
+				<h2 id="how">How it works</h2>
+				<p>The plugin runs <code>coderemote hook</code> for each Claude Code event (a prompt, a tool call, a reply, a permission prompt). It hands the event to the <code>coderemote</code> sharing the session's folder, on the same computer, authenticated by a secret that never leaves it. A permission prompt waits there for an answer from the phone while Claude Code shows its own prompt as usual.</p>
+				<p>Notifications go from your computer through a relay that adds the app's Apple push key; their content is encrypted for your iPhone, so neither the relay nor Apple can read it, and the relay keeps nothing. See the <a href="../privacy.html#notifications">privacy policy</a>.</p>
+			</article>
+		</div>
+	</main>
+
+
+	<footer class="site">
+		<div class="wrap">
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">Home</a>
+				<a href="./">Docs</a>
+				<a href="../privacy.html">Privacy</a>
+				<a href="../terms.html">Terms</a>
+				<a href="../support.html">Support</a>
+			</nav>
+		</div>
+	</footer>
+	<script src="../theme.js?v=be525c74" defer></script>
+</body>
+</html>
