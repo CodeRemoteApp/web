@@ -71,6 +71,7 @@
 <span class="p">$ </span>coderemote requests [PORT]       <span class="c"># requests that reached a previewed port</span>
 <span class="p">$ </span>coderemote request &lt;ID&gt;          <span class="c"># headers and bodies of one request</span>
 <span class="p">$ </span>coderemote setup claude          <span class="c"># follow Claude Code sessions in the app</span>
+<span class="p">$ </span>coderemote setup codex           <span class="c"># the same for Codex</span>
 <span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
 <span class="p">$ </span>coderemote login                 <span class="c"># sign in to Dev Tunnels again</span>
 <span class="p">$ </span>coderemote update                <span class="c"># install the latest version</span>
@@ -149,9 +150,10 @@ Token: …</pre>
 				</div>
 				<p>Nothing is written to disk: the command reads the log the agent keeps in memory, the latest 200 requests per port.</p>
 
-				<h2 id="setup"><code>setup claude</code></h2>
-				<p>Installs the Code Remote plugin into Claude Code, so its sessions show in the app's Agents tab and you can answer their prompts from the phone. <code>--remove</code> uninstalls it. See <a href="agents.html">Coding agents</a>.</p>
-				<pre class="cmd"><span class="p">$ </span>coderemote setup claude</pre>
+				<h2 id="setup"><code>setup claude</code>, <code>setup codex</code></h2>
+				<p>Installs the Code Remote plugin into Claude Code or Codex, so its sessions show in the app's Agents tab and you can answer their prompts from the phone. Codex runs the plugin's hooks only after you trust them once: open Codex and type <code>/hooks</code>. <code>--remove</code> uninstalls it. See <a href="agents.html">Coding agents</a>.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup claude
+<span class="p">$ </span>coderemote setup codex</pre>
 
 				<h2 id="rotate-token"><code>rotate-token</code></h2>
 				<p>Replaces the access token. Every paired phone and browser loses access at once. Use it if you lose your phone or a pairing link leaks.</p>
