@@ -45,6 +45,7 @@
 				<h4>On this page</h4>
 				<ul class="sub">
 					<li><a href="#setup">Set up</a></li>
+					<li><a href="#codex">Codex</a></li>
 					<li><a href="#sessions">The Agents tab</a></li>
 					<li><a href="#answer">Answer from the phone</a></li>
 					<li><a href="#drive">Start and drive sessions</a></li>
@@ -63,6 +64,11 @@
 				<pre class="cmd"><span class="p">$ </span>coderemote setup claude</pre>
 				<p>This installs the Code Remote plugin into Claude Code (the same as <code>/plugin install coderemote --marketplace CodeRemoteApp/coderemote</code> inside Claude Code). Claude Code sessions you start afterwards, in a folder shared with <code>coderemote up</code>, show up in the app. Sessions already running appear after you restart them. To undo it: <code>coderemote setup claude --remove</code>.</p>
 				<p>The plugin does nothing when no <code>coderemote</code> is running, or when the session's folder isn't shared: Claude Code then works exactly as without it.</p>
+				<h3 id="codex">Codex</h3>
+				<p>Codex 0.139 or later works too:</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup codex</pre>
+				<p>Then open Codex once, type <code>/hooks</code> and trust the Code Remote hooks: Codex runs a plugin's hooks only after you have reviewed them. Codex sessions show in the Agents tab labelled Codex.</p>
+				<p>One difference: Codex shows its own approval prompt only after the hook steps aside. So while you're using the computer (or have the machine open in the app), Codex asks in its terminal as usual and the app shows "Answer on your computer"; when you're away, the request waits for your phone, with a notification, for up to ten minutes before Codex asks in the terminal. Codex has no "always allow" from a hook.</p>
 
 				<h2 id="sessions">The Agents tab</h2>
 				<p>Lists the sessions on the machine, grouped into <strong>Needs You</strong> (waiting for an answer), <strong>Working</strong>, <strong>Idle</strong> and <strong>Ended</strong>; the tab shows how many need you. Open one to see what it did: your prompts, Claude's replies, and each tool it ran. Commands show with their output, file edits as the lines they change (tap for the whole change or the file), and reads open the file.</p>
