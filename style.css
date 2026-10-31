@@ -152,6 +152,10 @@ button.theme svg .half { fill: currentColor; stroke: none; }
 .button.primary { background: var(--text); color: var(--bg); }
 .button.primary:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
 .button.ghost:hover { border-color: var(--accent); }
+.button.with-icon { display: inline-flex; align-items: center; gap: 8px; }
+.button.with-icon img { margin-top: -2px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .button.with-icon img { filter: invert(1); } }
+:root[data-theme="dark"] .button.with-icon img { filter: invert(1); }
 .note { font-size: 14px; color: var(--muted); }
 
 /* Terminal snippet */
