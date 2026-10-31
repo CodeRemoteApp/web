@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Privacy Policy · Code Remote</title>
@@ -35,7 +44,7 @@
 			<div class="legal-head">
 				<div>
 					<h1>Privacy Policy</h1>
-					<p class="meta">Effective October 28, 2026</p>
+					<p class="meta">Effective October 31, 2026</p>
 				</div>
 				<svg class="legal-art art" viewBox="0 0 220 200" aria-hidden="true">
 					<path class="blob" d="M38 52C70 12 168 8 196 50c26 40 22 106-16 128-44 26-120 24-150-8C4 142 8 88 38 52Z"/>
@@ -60,16 +69,19 @@
 			</div>
 
 			<div class="callout">
-				<p><strong>In short:</strong> Code Remote doesn't collect, store or sell any personal data. It has no accounts, no analytics and no ads. Your phone connects to your own computer, and what you see and type stays between the two. The one server we run passes notifications on to Apple, can't read them, and keeps nothing.</p>
+				<p><strong>In short:</strong> Code Remote doesn't collect, store or sell any personal data. The App and the CLI have no accounts, no analytics and no ads. Your phone connects to your own computer, and what you see and type stays between the two. The one server we run passes notifications on to Apple, can't read them, and keeps nothing.</p>
 			</div>
 
 			<p>This policy covers the Code Remote iPhone app (the "App") and the <code>coderemote</code> command-line tool for your computer (the "CLI"), together "Code Remote". Code Remote is made by Thanh Tran ("we", "us").</p>
 
 			<h2>What we collect</h2>
-			<p>Nothing. We don't use analytics, crash reporting, advertising or tracking SDKs, and we don't track you across other apps or websites. We have no way to see your files, your git repositories, your terminal sessions, your coding agents' sessions or the commands you run.</p>
+			<p>Nothing, in the App or the CLI. They don't use analytics, crash reporting, advertising or tracking SDKs, and we don't track you across other apps or websites. We have no way to see your files, your git repositories, your terminal sessions, your coding agents' sessions or the commands you run.</p>
 
 			<h3 id="notifications">Notifications</h3>
 			<p>If you turn on notifications for a computer (optional), that computer can tell your iPhone when a coding agent such as Claude Code needs an answer or has finished. Apple only delivers notifications sent with the app's own key, so your computer sends them through a small relay we run on Cloudflare Workers, which adds that key and passes them to Apple's push service right away. The relay receives your iPhone's push token, a ticket that lets your computer notify that iPhone, and the notification. What the notification says (the session, the command, the question) is encrypted on your computer with a key that only your iPhone and that computer have; the relay and Apple see only a generic "A session needs your attention". The relay has no database and no request logs, and keeps nothing once it has passed a notification on; the only state is a short-lived counter, keyed by a hash of the push token, that limits how many notifications one device can get per minute. Its source code is public in the <a href="https://github.com/CodeRemoteApp/coderemote/tree/main/apps/push-relay">coderemote repository</a>.</p>
+
+			<h3 id="website">This website</h3>
+			<p>This website (coderemoteapp.github.io/web) uses Google Analytics to count visits and see which pages are read, so we know what to improve. Google Analytics sets cookies in your browser and receives the pages you visit, your browser and device type, your approximate location (country or city, derived from your IP address, which Google Analytics doesn't store) and the site you came from. We see only aggregated reports, and use them for nothing else. We don't link them to the App or the CLI, and the App and the CLI never load Google Analytics. You can block it with your browser's tracking protection or a content blocker, or with Google's <a href="https://tools.google.com/dlpage/gaoptout">opt-out add-on</a>. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from sites that use its services</a>. The site itself is hosted on GitHub Pages, which may log visitors' IP addresses for security; see the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
 
 			<h2>What stays on your devices</h2>
 			<h3>On your iPhone</h3>
@@ -107,7 +119,7 @@
 			<p>Code Remote is a developer tool and isn't directed at children under 13. Because we collect no data, we don't knowingly collect data from children.</p>
 
 			<h2>Your rights</h2>
-			<p>Because we hold no personal data about you, there is nothing for us to access, correct, export or delete. You control everything Code Remote stores, on your own devices, as described above.</p>
+			<p>Because we hold no personal data about you, there is nothing for us to access, correct, export or delete. Website analytics are kept by Google, as aggregated reports for us; you can block them as described under <a href="#website">This website</a>. You control everything Code Remote stores, on your own devices, as described above.</p>
 
 			<h2>Changes</h2>
 			<p>If this policy changes, we'll update it on this page and change the effective date above. If a change ever means Code Remote starts collecting data, we'll say so in the App before it happens.</p>
