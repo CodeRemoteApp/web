@@ -74,6 +74,7 @@
 					<li>Requests reach your server addressed to <code>localhost:&lt;port&gt;</code>, so servers that check the host name (Vite, for one) accept them as they are.</li>
 					<li><strong>Copy Link</strong> and <strong>Open in Safari</strong> give you the preview's address. It's private: Safari asks you to sign in with the same account first.</li>
 					<li><strong>Stop Preview</strong> takes the port off the tunnel. Your server keeps running.</li>
+					<li>When your server stops (you stop it in the Ports tab, close its terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd>, or it crashes), its preview ends by itself once nothing has listened on the port for 30 seconds, public link included. A server that restarts within that time keeps its preview. One you stop from the Ports tab loses it right away. Needs coderemote 0.3.8 or later.</li>
 				</ul>
 				<p>Previewed ports are marked in the Ports tab.</p>
 
