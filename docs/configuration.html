@@ -86,8 +86,14 @@
 
 				<h2 id="tunnel">The tunnel</h2>
 				<p>Each computer has one tunnel. Its URL stays the same between runs, and <code>up</code> renews it each time so it doesn't expire. Share one folder at a time; to reach several projects, share their parent folder and the Git tab finds every repository inside it.</p>
-				<p>The tunnel carries the label <code>coderemote</code>, which is how the app's <a href="preview.html#tunnel">Tunnel sheet</a> finds your other machines. Previews use a second tunnel, labelled <code>coderemote-preview</code>, created on the first preview and deleted when the agent stops (<a href="preview.html#how">how it works</a>). <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> lists both, with your other computers' tunnels.</p>
+				<p>The tunnel carries the label <code>coderemote</code>, which is how the app finds your other machines. Previews use a second tunnel, labelled <code>coderemote-preview</code>, created on the first preview and deleted when the agent stops (<a href="preview.html#how">how it works</a>). <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> lists both, with your other computers' tunnels.</p>
 				<p>A Dev Tunnels account may keep 10 tunnels. Computers you no longer use keep theirs until you delete them with <code>coderemote tunnels delete</code>.</p>
+				<h3 id="in-the-app">In the app</h3>
+				<ul>
+					<li><strong>Machine Info</strong> (a machine's menu) shows its tunnel: the address, the account, who can get in, when it expires (pushed back every time <code>coderemote up</code> starts), the clients connected now, traffic so far, and how many ports are being previewed.</li>
+					<li><strong>Settings › Connections</strong> lists the accounts your paired computers connect through. Each shows every computer running coderemote on that account, online or not, whether this iPhone is paired with it, and how many of the account's 10 tunnels are in use. To add a computer, run <code>coderemote up</code> there and scan its QR code.</li>
+				</ul>
+				<p>The app only shows them: tunnels belong to the computers' owner, so you list and delete them on a computer signed in to the account, with <a href="commands.html#tunnels"><code>coderemote tunnels</code></a>. Touch and hold a machine in Connections to copy its tunnel ID for that. Removing a machine from the app's list only forgets it on that iPhone.</p>
 
 				<h2 id="troubleshooting">Troubleshooting</h2>
 				<h3>"Port 31580 is already in use"</h3>

@@ -48,7 +48,6 @@
 					<li><a href="#preview">Preview</a></li>
 					<li><a href="#share">Share a public link</a></li>
 					<li><a href="#requests">Requests</a></li>
-					<li><a href="#tunnel">The Tunnel sheet</a></li>
 					<li><a href="#how">How it works</a></li>
 				</ul>
 			</nav>
@@ -96,13 +95,6 @@
 				</ul>
 				<p>The bar under the list narrows it down. The filter button picks a kind (<strong>All</strong>, <strong>Fetch/XHR</strong>, <strong>CSS</strong>, <strong>Image</strong> or <strong>JS</strong>, judged from the response type and the file extension), and the search field matches the method and path.</p>
 				<p>The same log can be read in a terminal on the computer with <a href="commands.html#requests"><code>coderemote requests</code></a>, so a coding agent like Claude Code can debug with it. Tokens and cookies are masked there unless it asks for them.</p>
-
-				<h2 id="tunnel">The Tunnel sheet</h2>
-				<p>The tunnel button at the top of the Ports tab shows:</p>
-				<ul>
-					<li><strong>This machine</strong>: the tunnel's address, who can get in, when it expires (pushed back every time <code>coderemote up</code> starts), the clients connected now, traffic so far, and how many ports are being previewed.</li>
-					<li><strong>Machines on your account</strong>: every computer running coderemote with the same GitHub or Microsoft account, online or not, and whether this iPhone is paired with it. To add one, run <code>coderemote up</code> there and scan its QR code.</li>
-				</ul>
 
 				<h2 id="how">How it works</h2>
 				<p>Previews don't go through the agent's own tunnel. The first time you preview a port, the agent creates a second private tunnel, labelled <code>coderemote-preview</code>, and forwards your ports there. Adding or removing a port restarts that tunnel's connection, so other open previews blink for a moment, while your terminals, files and git never notice.</p>
