@@ -166,6 +166,13 @@ button.theme svg .half { fill: currentColor; stroke: none; }
 }
 .cmd .p { color: #d97757; user-select: none; }
 .cmd .c { color: #8d8a80; }
+/* Command syntax (tabs.js): on the code background, which is dark in both themes */
+.cmd .t-cmd { color: #7cc3c9; }
+.cmd .t-flag { color: #c4a5e8; }
+.cmd .t-str { color: #a3cf8f; }
+.cmd .t-op { color: #e8826a; }
+.cmd .t-arg { color: #e3c27a; }
+.cmd .t-var { color: #e3c27a; }
 
 /* Sections */
 section.block { padding: 72px 0; border-top: 1px solid var(--line); }
