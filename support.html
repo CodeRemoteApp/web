@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css?v=7aea64a0">
+	<link rel="stylesheet" href="style.css?v=917dc61d">
 </head>
 <body>
 	<header class="site">
@@ -36,12 +36,12 @@
 			<p class="meta">We usually reply within a few days.</p>
 
 			<div class="callout">
-				<p>Email <a href="mailto:trantienthanh2412@gmail.com">trantienthanh2412@gmail.com</a>, or open an issue on <a href="https://github.com/CodeRemoteApp/coderemote/issues">GitHub</a>. Please include your iOS version, your coderemote version (<code>npm ls -g coderemote</code>) and what you were doing.</p>
+				<p>Email <a href="mailto:trantienthanh2412@gmail.com">trantienthanh2412@gmail.com</a>, or open an issue on <a href="https://github.com/CodeRemoteApp/coderemote/issues">GitHub</a>. Please include your iOS version, your computer's system, your coderemote version (<code>coderemote --version</code>) and what you were doing.</p>
 			</div>
 
 			<h2>Getting started</h2>
-			<p>On your computer (macOS, Node.js 20 or newer):</p>
-			<pre class="cmd" style="margin-top:0"><span class="p">$ </span>npm install -g coderemote
+			<p>On your computer (macOS, Windows 10/11 or Linux), install coderemote with the install script, npm or Homebrew (<a href="docs/#install">every way, for each system</a>), then share a folder:</p>
+			<pre class="cmd" style="margin-top:0"><span class="p">$ </span>curl -fsSL https://raw.githubusercontent.com/CodeRemoteApp/coderemote/main/install.sh | sh
 <span class="p">$ </span>cd ~/projects/my-app &amp;&amp; coderemote up</pre>
 			<p>Then scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).</p>
 
@@ -54,6 +54,9 @@
 
 			<h3>Do terminal sessions survive when my phone locks?</h3>
 			<p>Yes. Sessions keep running on the computer with their recent output. Reopen the App and they reattach. End them with <code>coderemote kill</code>.</p>
+
+			<h3>coderemote says my Dev Tunnels account already has 10 tunnels.</h3>
+			<p>That's the most an account may keep. Run <code>coderemote tunnels</code> to see them, and delete the ones nothing uses any more, such as an old computer's, with <code>coderemote tunnels delete &lt;id&gt;</code>. See <a href="docs/commands.html#tunnels">tunnels</a>.</p>
 
 			<h3>Can I share more than one folder?</h3>
 			<p>One at a time for now. Share a parent folder to reach several projects; the Git tab finds every repository inside it.</p>
@@ -79,5 +82,6 @@
 		</div>
 	</footer>
 	<script src="theme.js?v=be525c74" defer></script>
+	<script src="tabs.js?v=e9e85381" defer></script>
 </body>
 </html>

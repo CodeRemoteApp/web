@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css?v=7aea64a0">
+	<link rel="stylesheet" href="style.css?v=917dc61d">
 	<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -19,6 +19,7 @@
 		<div class="wrap">
 			<a class="brand" href="./"><img src="icon.png?v=9a4c0c40" alt="">Code Remote</a>
 			<nav class="links">
+				<a class="hide-sm" href="#install">Install</a>
 				<a class="hide-sm" href="#how">How it works</a>
 				<a href="docs/">Docs</a>
 				<a href="support.html">Support</a>
@@ -41,7 +42,7 @@
 						<h1>Your computer, in your pocket.</h1>
 						<p class="lede">Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone. No SSH keys, no port forwarding, no VPN.</p>
 						<div class="actions">
-							<a class="button primary" href="docs/">Get started</a>
+							<a class="button primary" href="#install">Get started</a>
 							<a class="button ghost" href="https://www.npmjs.com/package/coderemote">View on npm</a>
 							<span class="note">iPhone app coming soon to the App Store.</span>
 						</div>
@@ -129,6 +130,41 @@
 			</div>
 		</section>
 
+		<section class="block" id="install">
+			<div class="wrap install-home">
+				<h2 class="reveal">Install on your computer.</h2>
+				<div class="install reveal" data-tabs>
+					<div class="tabs" role="tablist" aria-label="Install method">
+						<button type="button" role="tab" data-tab="unix" aria-selected="true">macOS/Linux</button>
+						<button type="button" role="tab" data-tab="windows" aria-selected="false" tabindex="-1">Windows</button>
+						<button type="button" role="tab" data-tab="npm" aria-selected="false" tabindex="-1">npm</button>
+						<button type="button" role="tab" data-tab="brew" aria-selected="false" tabindex="-1">Homebrew</button>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="unix" aria-label="macOS and Linux">
+						<p class="tab-label">macOS and Linux</p>
+						<p>Paste it into Terminal. No Node.js? It downloads one for coderemote alone.</p>
+						<pre class="cmd" data-copy>curl -fsSL https://raw.githubusercontent.com/CodeRemoteApp/coderemote/main/install.sh | sh</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="windows" aria-label="Windows">
+						<p class="tab-label">Windows</p>
+						<p>Paste it into PowerShell on Windows 10 or 11. No Node.js? It downloads one for coderemote alone.</p>
+						<pre class="cmd" data-copy>irm https://raw.githubusercontent.com/CodeRemoteApp/coderemote/main/install.ps1 | iex</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="npm" aria-label="npm">
+						<p class="tab-label">npm</p>
+						<p>On any system with Node.js 22 or newer.</p>
+						<pre class="cmd" data-copy>npm install -g coderemote</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="brew" aria-label="Homebrew">
+						<p class="tab-label">Homebrew</p>
+						<p>On macOS and Linux.</p>
+						<pre class="cmd" data-copy>brew install coderemoteapp/tap/coderemote</pre>
+					</div>
+				</div>
+				<p class="then reveal">Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone. Updating, uninstalling and the rest are in the <a href="docs/#install">setup guide</a>.</p>
+			</div>
+		</section>
+
 		<section class="block">
 			<div class="wrap">
 				<h2 class="reveal">Everything you need to keep working.</h2>
@@ -189,7 +225,7 @@
 						</svg>
 						<div class="feature-body">
 							<h3>Terminal</h3>
-							<p>A real shell with a key bar for Ctrl, Tab, Esc and arrows. Sessions keep running while your phone sleeps, so long builds and coding agents survive.</p>
+							<p>A real shell (PowerShell on Windows) with a key bar for Ctrl, Tab, Esc and arrows. Sessions keep running while your phone sleeps, so long builds and coding agents survive.</p>
 						</div>
 					</div>
 					<div class="card feature reveal">
@@ -321,5 +357,6 @@
 	</footer>
 	<script src="motion.js?v=9bb63cfd" defer></script>
 	<script src="theme.js?v=be525c74" defer></script>
+	<script src="tabs.js?v=e9e85381" defer></script>
 </body>
 </html>

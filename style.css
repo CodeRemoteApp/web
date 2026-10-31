@@ -466,3 +466,45 @@ footer.site a:hover { color: var(--text); }
 	.hero { padding: 64px 0 48px; }
 	section.block { padding: 56px 0; }
 }
+
+/* Install tabs (tabs.js): one panel per install method. Without JS all panels show, each under its label. */
+.install { margin: 20px 0 32px; }
+.install .tabs { display: none; }
+.install.ready .tabs {
+	display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; margin-bottom: 18px;
+	background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+}
+.install .tabs button {
+	padding: 7px 14px; border: 0; border-radius: 8px; background: none; cursor: pointer;
+	color: var(--muted); font: 500 15px/1.3 var(--sans);
+}
+.install .tabs button:hover { color: var(--text); }
+.install .tabs button[aria-selected="true"] { background: var(--bg); color: var(--text); box-shadow: 0 1px 3px rgb(0 0 0 / 0.12); }
+.install .tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.install.ready .tab-label { display: none; }
+.install .tab-label { font: 600 15px/1.4 var(--sans); margin: 24px 0 4px; }
+.install .panel > p { margin: 0 0 14px; color: var(--muted); }
+.install h4 { font: 600 13px/1 var(--sans); letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 22px 0 10px; }
+.install pre.cmd { margin: 0; font-size: 14px; }
+.install .panel > :last-child { margin-bottom: 0; }
+@media (max-width: 600px) {
+	.install.ready .tabs { display: flex; }
+	.install .tabs button { flex: 1 1 auto; padding: 7px 8px; font-size: 14px; }
+}
+
+/* Copy buttons on command blocks (tabs.js) */
+.cmd-box { position: relative; }
+pre.cmd.has-copy { padding-right: 60px; }
+.install pre.cmd { white-space: pre-wrap; word-break: break-all; }
+.cmd-box .copy {
+	position: absolute; top: 12px; right: 12px; display: inline-flex; align-items: center; justify-content: center;
+	width: 32px; height: 32px; padding: 0; border: 0; border-radius: 8px; cursor: pointer;
+	background: rgb(240 238 230 / 0.08); color: #a8a59b;
+}
+.cmd-box .copy:hover, .cmd-box .copy:focus-visible { background: rgb(240 238 230 / 0.16); color: #f0eee6; outline: none; }
+.cmd-box .copy svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Landing: install section */
+.install-home { max-width: 760px; }
+.install-home .install { margin: 0; }
+.install-home .then { margin: 28px 0 0; color: var(--muted); }

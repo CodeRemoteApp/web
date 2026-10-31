@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=7aea64a0">
+	<link rel="stylesheet" href="../style.css?v=917dc61d">
 </head>
 <body>
 	<header class="site">
@@ -58,15 +58,16 @@
 				<p>A <a href="preview.html#share">public link</a> to a preview is the one exception: until it ends, anyone with it can open that one dev server, with neither check. It never reaches the agent, its files or its terminal.</p>
 
 				<h2 id="files">Files on your computer</h2>
-				<p>Everything lives in <code>~/.coderemote</code>, readable only by you:</p>
+				<p>Everything lives in <code>~/.coderemote</code> (<code>%USERPROFILE%\.coderemote</code> on Windows), readable only by you:</p>
 				<table>
 					<tr><th>Path</th><th>What it holds</th></tr>
 					<tr><td><code>config.json</code></td><td>The access token, the id of this computer's tunnel and of its preview tunnel. Keeping it keeps every pairing.</td></tr>
 					<tr><td><code>bin/</code></td><td>The Dev Tunnels CLI downloaded on first run.</td></tr>
 					<tr><td><code>agents/</code></td><td>One entry per running agent, so <code>status</code>, <code>kill</code> and <code>stop</code> can find it.</td></tr>
 					<tr><td><code>update.json</code></td><td>The latest version on npm and when <code>up</code> last asked, at most once a day.</td></tr>
+					<tr><td><code>runtime/</code></td><td>Only after the <a href="./#install">install script</a> downloaded Node.js: that Node.js with coderemote installed into it, and in <code>runtime/bin</code> the <code>coderemote</code> and <code>node</code> commands it put on your <code>PATH</code>.</td></tr>
 				</table>
-				<p>Deleting the folder resets Code Remote: the next <code>up</code> creates a new token and tunnel, and every device has to pair again.</p>
+				<p>Deleting the folder (keep <code>runtime/</code> if the install script made it) resets Code Remote: the next <code>up</code> creates a new token and tunnel, and every device has to pair again.</p>
 
 				<h2 id="env">Environment variables</h2>
 				<table>
@@ -75,30 +76,41 @@
 					<tr><td><code>CODEREMOTE_CODE</code></td><td>Path to VS Code's <code>code</code> command, for <code>up --web</code>. Otherwise <code>code</code> on your <code>PATH</code>.</td></tr>
 					<tr><td><code>CODEREMOTE_NO_UPDATE_CHECK</code></td><td>Set to <code>1</code> and <code>up</code> no longer asks npm whether there's a newer version.</td></tr>
 				</table>
+				<p>The install scripts read a few of their own:</p>
+				<table>
+					<tr><th>Variable</th><th>What it does</th></tr>
+					<tr><td><code>CODEREMOTE_VERSION</code></td><td>The version or npm dist-tag to install, such as <code>0.3.7</code> or <code>next</code>. Default <code>latest</code>.</td></tr>
+					<tr><td><code>CODEREMOTE_PRIVATE_NODE</code></td><td>Set to <code>1</code> to download Node.js for coderemote even when yours is new enough.</td></tr>
+					<tr><td><code>CODEREMOTE_NO_MODIFY_PATH</code></td><td>Set to <code>1</code> to leave your <code>PATH</code> and shell startup files alone; the script says which folder to add.</td></tr>
+				</table>
 
 				<h2 id="tunnel">The tunnel</h2>
 				<p>Each computer has one tunnel. Its URL stays the same between runs, and <code>up</code> renews it each time so it doesn't expire. Share one folder at a time; to reach several projects, share their parent folder and the Git tab finds every repository inside it.</p>
-				<p>The tunnel carries the label <code>coderemote</code>, which is how the app's <a href="preview.html#tunnel">Tunnel sheet</a> finds your other machines. Previews use a second tunnel, labelled <code>coderemote-preview</code>, created on the first preview and replaced on the next run (<a href="preview.html#how">how it works</a>). Both show up in <code>devtunnel list</code>.</p>
+				<p>The tunnel carries the label <code>coderemote</code>, which is how the app's <a href="preview.html#tunnel">Tunnel sheet</a> finds your other machines. Previews use a second tunnel, labelled <code>coderemote-preview</code>, created on the first preview and deleted when the agent stops (<a href="preview.html#how">how it works</a>). <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> lists both, with your other computers' tunnels.</p>
+				<p>A Dev Tunnels account may keep 10 tunnels. Computers you no longer use keep theirs until you delete them with <code>coderemote tunnels delete</code>.</p>
 
 				<h2 id="troubleshooting">Troubleshooting</h2>
 				<h3>"Port 31580 is already in use"</h3>
 				<p>Another agent or program holds the port. <code>coderemote status</code> shows agents; for anything else, see what holds it:</p>
-				<pre class="cmd"><span class="p">$ </span>lsof -nP -iTCP:31580 -sTCP:LISTEN</pre>
+				<pre class="cmd"><span class="p">$ </span>lsof -nP -iTCP:31580 -sTCP:LISTEN      <span class="c"># macOS, Linux</span>
+<span class="p">PS&gt; </span>netstat -ano | findstr :31580         <span class="c"># Windows</span></pre>
 				<p>Stop it, run <code>coderemote stop --all</code>, or pick another port with <code>--port</code>.</p>
 
 				<h3>The phone can't connect</h3>
 				<p>Check that <code>coderemote up</code> is still running and the computer is awake and online. Make sure the phone signed in with the same account the computer uses (shown on the <code>Access:</code> line).</p>
 
+				<h3 id="tunnel-limit">"Your Dev Tunnels account already has 10 tunnels"</h3>
+				<p>The account is full and none of its tunnels was an idle preview tunnel that could go. The message lists them: delete the ones nothing uses any more, such as an old computer's, with <a href="commands.html#tunnels"><code>coderemote tunnels delete &lt;id&gt;</code></a>, then run <code>coderemote up</code> again.</p>
 				<h3>The sign-in expired</h3>
 				<p><code>up</code> notices and opens the browser again. Without a browser, run <code>coderemote login --device-code</code>.</p>
 
 				<h3>The Ports tab says "Update coderemote"</h3>
-				<p>The computer runs a coderemote from before ports and previews. Run <code>coderemote update</code> (or <code>npm install -g coderemote@latest</code>), then restart <code>coderemote up</code>.</p>
+				<p>The computer runs a coderemote from before ports and previews. Run <code>coderemote update</code>, then restart <code>coderemote up</code>.</p>
 
 				<h3>A preview says "nothing is listening on port …"</h3>
 				<p>The dev server behind it stopped or restarted on another port. Start it again and reload; the Ports tab shows what's listening now.</p>
 
-				<h3>Installing on Linux fails</h3>
+				<h3 id="linux">Installing on Linux fails</h3>
 				<p>The terminal support compiles on install and needs <code>python3</code>, <code>make</code> and a C++ compiler (<code>build-essential</code> on Debian and Ubuntu). Signing in needs <code>libsecret-1-0</code>.</p>
 
 				<p>Still stuck? See <a href="../support.html">Support</a>.</p>
@@ -123,5 +135,6 @@
 		</div>
 	</footer>
 	<script src="../theme.js?v=be525c74" defer></script>
+	<script src="../tabs.js?v=e9e85381" defer></script>
 </body>
 </html>

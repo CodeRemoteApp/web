@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Setup · Code Remote Docs</title>
-	<meta name="description" content="Install coderemote on your computer, share a folder and pair your iPhone in a couple of minutes.">
+	<meta name="description" content="Install coderemote on macOS, Windows or Linux (install script, npm or Homebrew), share a folder and pair your iPhone in a couple of minutes.">
 	<link rel="icon" href="../icon.png?v=9a4c0c40">
 	<link rel="apple-touch-icon" href="../icon.png?v=9a4c0c40">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=7aea64a0">
+	<link rel="stylesheet" href="../style.css?v=917dc61d">
 </head>
 <body>
 	<header class="site">
@@ -70,15 +70,55 @@
 
 				<h2 id="requirements">Requirements</h2>
 				<ul>
-					<li>A Mac with <strong>Node.js 20</strong> or newer. Linux is expected to work but isn't tested yet.</li>
+					<li>A <strong>Mac</strong> or a <strong>Windows 10/11</strong> PC. Linux is expected to work but isn't tested yet.</li>
+					<li><strong>Node.js 22</strong> or newer, only if you install with npm. The install scripts use yours when it's new enough and otherwise download one for coderemote alone; Homebrew brings its own.</li>
 					<li>A <strong>GitHub</strong> or <strong>Microsoft</strong> account, used to sign in to Microsoft Dev Tunnels.</li>
 					<li>The <strong>Code Remote</strong> app on your iPhone.</li>
 				</ul>
 				<p>You don't need SSH, open ports, a VPN or VS Code.</p>
 
 				<h2 id="install">1. Install the CLI</h2>
-				<pre class="cmd"><span class="p">$ </span>npm install -g coderemote</pre>
-				<p>Check it worked with <code>coderemote help</code>.</p>
+				<div class="install" data-tabs>
+					<div class="tabs" role="tablist" aria-label="Install method">
+						<button type="button" role="tab" data-tab="unix" aria-selected="true">macOS/Linux</button>
+						<button type="button" role="tab" data-tab="windows" aria-selected="false" tabindex="-1">Windows</button>
+						<button type="button" role="tab" data-tab="npm" aria-selected="false" tabindex="-1">npm</button>
+						<button type="button" role="tab" data-tab="brew" aria-selected="false" tabindex="-1">Homebrew</button>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="unix" aria-label="macOS and Linux">
+						<p class="tab-label">macOS and Linux</p>
+						<p>The install script, in Terminal. It uses your Node.js when it's 22 or newer; otherwise it downloads Node.js into <code>~/.coderemote/runtime</code>, for coderemote alone, and adds it to your <code>PATH</code>.</p>
+						<h4>Install</h4>
+						<pre class="cmd" data-copy>curl -fsSL https://raw.githubusercontent.com/CodeRemoteApp/coderemote/main/install.sh | sh</pre>
+						<h4>Update</h4>
+						<pre class="cmd" data-copy>coderemote update</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="windows" aria-label="Windows">
+						<p class="tab-label">Windows</p>
+						<p>The install script, in PowerShell on Windows 10 or 11. It uses your Node.js when it's 22 or newer; otherwise it downloads Node.js into <code>%USERPROFILE%\.coderemote\runtime</code>, for coderemote alone, and adds it to your <code>PATH</code>. Open a new terminal afterwards.</p>
+						<h4>Install</h4>
+						<pre class="cmd" data-copy>irm https://raw.githubusercontent.com/CodeRemoteApp/coderemote/main/install.ps1 | iex</pre>
+						<h4>Update</h4>
+						<pre class="cmd" data-copy>coderemote update</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="npm" aria-label="npm">
+						<p class="tab-label">npm</p>
+						<p>On any system with Node.js 22 or newer and npm. pnpm, yarn and bun work too.</p>
+						<h4>Install</h4>
+						<pre class="cmd" data-copy>npm install -g coderemote</pre>
+						<h4>Update</h4>
+						<pre class="cmd" data-copy>coderemote update</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="brew" aria-label="Homebrew">
+						<p class="tab-label">Homebrew</p>
+						<p>On macOS and Linux, from the Code Remote tap. Homebrew installs Node.js with it.</p>
+						<h4>Install</h4>
+						<pre class="cmd" data-copy>brew install coderemoteapp/tap/coderemote</pre>
+						<h4>Update</h4>
+						<pre class="cmd" data-copy>brew upgrade coderemote</pre>
+					</div>
+				</div>
+				<p>Check it worked with <code>coderemote --version</code>. On Linux, the terminal support compiles on install: see <a href="configuration.html#linux">Installing on Linux fails</a> if it doesn't.</p>
 
 				<h2 id="share">2. Share a folder</h2>
 				<p>Go to the folder you want to reach from your phone and start the agent:</p>
@@ -125,24 +165,53 @@
 				<p><code>coderemote up</code> runs in the foreground. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> or close the window to stop sharing; terminal sessions end with it.</p>
 
 				<h3>Keep the computer awake</h3>
-				<p>A sleeping Mac can't answer the phone. On a laptop, start the agent under <code>caffeinate</code> so the Mac stays awake while it runs:</p>
+				<p>A sleeping computer can't answer the phone. On a Mac laptop, start the agent under <code>caffeinate</code> so the Mac stays awake while it runs:</p>
 				<pre class="cmd"><span class="p">$ </span>caffeinate -i coderemote up</pre>
+				<p>On Windows, set <strong>Settings › System › Power</strong> so the PC doesn't sleep while it's plugged in.</p>
+
+				<h3>Terminals on Windows</h3>
+				<p>Terminals you open from the phone run PowerShell: <code>pwsh</code> when PowerShell 7 is installed, Windows PowerShell otherwise.</p>
 
 				<h3>Pairing survives restarts</h3>
 				<p>The tunnel URL and token stay the same between runs, so a paired phone reconnects on its own the next time you run <code>coderemote up</code>. You only scan again after <code>rotate-token</code>.</p>
 
 				<h2 id="update">Update or uninstall</h2>
-				<p><code>coderemote up</code> tells you when there's a newer version, under the pairing links.</p>
-				<pre class="cmd"><span class="c"># update to the latest release</span>
-<span class="p">$ </span>coderemote update
-
-<span class="c"># the same, for versions without the update command</span>
-<span class="p">$ </span>npm install -g coderemote@latest
-
-<span class="c"># remove it, with its token and tunnel settings</span>
-<span class="p">$ </span>coderemote stop --all
+				<p><code>coderemote up</code> tells you when there's a newer version, under the pairing links. <code>coderemote update</code> installs it the way you installed coderemote: with npm (or pnpm, yarn, bun), Homebrew, or into the install script's own Node.js. Running the install script again does the same.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote update</pre>
+				<p>To uninstall, stop the agents first, then remove coderemote and its folder, which holds the token and tunnel settings:</p>
+				<div class="install" data-tabs>
+					<div class="tabs" role="tablist" aria-label="Install method">
+						<button type="button" role="tab" data-tab="unix" aria-selected="true">macOS/Linux</button>
+						<button type="button" role="tab" data-tab="windows" aria-selected="false" tabindex="-1">Windows</button>
+						<button type="button" role="tab" data-tab="npm" aria-selected="false" tabindex="-1">npm</button>
+						<button type="button" role="tab" data-tab="brew" aria-selected="false" tabindex="-1">Homebrew</button>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="unix" aria-label="macOS and Linux">
+						<p class="tab-label">macOS and Linux, installed with the script</p>
+						<pre class="cmd"><span class="p">$ </span>coderemote stop --all
+<span class="p">$ </span>rm -rf ~/.coderemote</pre>
+						<p>Then delete the <code># coderemote</code> lines the script added to your shell's startup file (<code>~/.zshrc</code>, <code>~/.bashrc</code> or <code>~/.profile</code>). If the script used your own Node.js, it installed with npm: also run <code>npm uninstall -g coderemote</code>.</p>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="windows" aria-label="Windows">
+						<p class="tab-label">Windows, installed with the script</p>
+						<pre class="cmd"><span class="p">PS&gt; </span>coderemote stop --all
+<span class="p">PS&gt; </span>Remove-Item -Recurse -Force ~\.coderemote</pre>
+						<p>Then remove <code>%USERPROFILE%\.coderemote\runtime\bin</code> from your user <code>Path</code> in <strong>Edit environment variables for your account</strong>. If the script used your own Node.js, it installed with npm: also run <code>npm uninstall -g coderemote</code>.</p>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="npm" aria-label="npm">
+						<p class="tab-label">npm</p>
+						<pre class="cmd"><span class="p">$ </span>coderemote stop --all
 <span class="p">$ </span>npm uninstall -g coderemote
 <span class="p">$ </span>rm -rf ~/.coderemote</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="brew" aria-label="Homebrew">
+						<p class="tab-label">Homebrew</p>
+						<pre class="cmd"><span class="p">$ </span>coderemote stop --all
+<span class="p">$ </span>brew uninstall coderemote
+<span class="p">$ </span>rm -rf ~/.coderemote</pre>
+					</div>
+				</div>
+				<p>Deleting <code>~/.coderemote</code> leaves this computer's tunnels on your Dev Tunnels account. To delete them too, list them with <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> and delete this computer's with <code>coderemote tunnels delete &lt;id&gt;... --force</code> before you remove coderemote.</p>
 
 				<nav class="pager" aria-label="Next page">
 					<a class="next" href="commands.html"><span>Next</span>Commands</a>
@@ -165,5 +234,6 @@
 	</footer>
 	<script src="../motion.js?v=9bb63cfd" defer></script>
 	<script src="../theme.js?v=be525c74" defer></script>
+	<script src="../tabs.js?v=e9e85381" defer></script>
 </body>
 </html>

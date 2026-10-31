@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Commands · Code Remote Docs</title>
-	<meta name="description" content="Every coderemote command and option: up, status, kill, stop, serve, requests, setup, rotate-token, login, update and help.">
+	<meta name="description" content="Every coderemote command and option: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update and help.">
 	<link rel="icon" href="../icon.png?v=9a4c0c40">
 	<link rel="apple-touch-icon" href="../icon.png?v=9a4c0c40">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=7aea64a0">
+	<link rel="stylesheet" href="../style.css?v=917dc61d">
 </head>
 <body>
 	<header class="site">
@@ -52,6 +52,7 @@
 					<li><a href="#requests">requests</a></li>
 					<li><a href="#setup">setup</a></li>
 					<li><a href="#rotate-token">rotate-token</a></li>
+					<li><a href="#tunnels">tunnels</a></li>
 					<li><a href="#login">login</a></li>
 					<li><a href="#update">update</a></li>
 					<li><a href="#help">help</a></li>
@@ -73,6 +74,8 @@
 <span class="p">$ </span>coderemote setup claude          <span class="c"># follow Claude Code sessions in the app</span>
 <span class="p">$ </span>coderemote setup codex           <span class="c"># the same for Codex</span>
 <span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
+<span class="p">$ </span>coderemote tunnels               <span class="c"># your Dev Tunnels account's tunnels</span>
+<span class="p">$ </span>coderemote tunnels delete &lt;id&gt;   <span class="c"># delete ones nothing uses</span>
 <span class="p">$ </span>coderemote login                 <span class="c"># sign in to Dev Tunnels again</span>
 <span class="p">$ </span>coderemote update                <span class="c"># install the latest version</span>
 <span class="p">$ </span>coderemote help                  <span class="c"># all options</span></pre>
@@ -161,6 +164,24 @@ Token: …</pre>
 Token rotated. Re-pair your devices, and restart running agents.</pre>
 				<p>Then restart <code>coderemote up</code> and scan the new QR code on the devices you still trust.</p>
 
+				<h2 id="tunnels"><code>tunnels</code></h2>
+				<p>Lists the tunnels on your Dev Tunnels account and deletes the ones nothing uses any more. An account may keep 10 tunnels. Each computer running coderemote uses one, plus one more for <a href="preview.html#how">previews</a> while its agent runs, and old computers or reinstalls leave theirs behind. Needs coderemote 0.3.6 or later.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote tunnels
+  silent-lake-pqv9b80.usw2  online · this computer's agent on port 31580 · coderemote my-mac
+  brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
+  quiet-fox-3hd8w2c.usw2    coderemote old-laptop
+
+<span class="p">$ </span>coderemote tunnels delete quiet-fox-3hd8w2c
+deleted quiet-fox-3hd8w2c.usw2</pre>
+				<p>Each line shows the tunnel's id, <em>online</em> when an agent serves it right now, what this computer uses it for, and its description, which names the computer that made it. The region suffix (<code>.usw2</code>) is optional when you give an id.</p>
+				<table>
+					<tr><th>Command or option</th><th>What it does</th></tr>
+					<tr><td><code>tunnels</code></td><td>One line per tunnel on the account you're signed in with.</td></tr>
+					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>Deletes those tunnels. One that is online, or that this computer uses, is kept unless you add <code>--force</code>.</td></tr>
+					<tr><td><code>--force</code></td><td>Delete it anyway. Its URL is gone, so the phones paired with it have to pair again; on this computer the next <code>up</code> makes a new one.</td></tr>
+				</table>
+				<p>You rarely need it by hand: when the account is full, <code>up</code> and previews first delete preview tunnels no agent serves. Only when that doesn't free a slot does <code>up</code> stop, list the account's tunnels and ask you to delete some.</p>
+
 				<h2 id="login"><code>login</code></h2>
 				<p>Signs in to Microsoft Dev Tunnels. <code>up</code> does this by itself when needed, so you only run it to switch accounts or when there's no browser.</p>
 				<pre class="cmd"><span class="p">$ </span>coderemote login                  <span class="c"># GitHub, in the browser</span>
@@ -169,7 +190,7 @@ Token rotated. Re-pair your devices, and restart running agents.</pre>
 				<p>The phone must sign in with the same account, unless you run <code>up --allow-anonymous</code>.</p>
 
 				<h2 id="update"><code>update</code></h2>
-				<p>Installs the latest coderemote, with the package manager you installed it with (npm, pnpm, yarn or bun). When there's a newer version, <code>up</code> says so under the pairing links; it asks npm at most once a day and never slows startup. Set <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> to turn that off.</p>
+				<p>Installs the latest coderemote the way you installed it: with npm (or pnpm, yarn, bun), with Homebrew, or into the Node.js the <a href="./#install">install script</a> downloaded. When there's a newer version, <code>up</code> says so under the pairing links; it asks npm at most once a day and never slows startup. Set <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> to turn that off.</p>
 				<pre class="cmd"><span class="p">$ </span>coderemote update
 <span class="p">$ </span>coderemote --version             <span class="c"># the version you're running</span></pre>
 				<p>Agents already running keep the old version until you restart them: <code>coderemote stop --all</code>, then <code>coderemote up</code> again.</p>
@@ -185,6 +206,7 @@ Token rotated. Re-pair your devices, and restart running agents.</pre>
 					<tr><td><code>--allow-anonymous</code></td><td><code>up</code></td><td>off</td></tr>
 					<tr><td><code>--web</code></td><td><code>up</code></td><td>off</td></tr>
 					<tr><td><code>--all</code></td><td><code>kill</code>, <code>stop</code></td><td></td></tr>
+					<tr><td><code>--force</code></td><td><code>tunnels delete</code></td><td>off</td></tr>
 					<tr><td><code>--microsoft</code>, <code>--device-code</code></td><td><code>login</code></td><td>GitHub, in the browser</td></tr>
 				</table>
 
@@ -209,5 +231,6 @@ Token rotated. Re-pair your devices, and restart running agents.</pre>
 		</div>
 	</footer>
 	<script src="../theme.js?v=be525c74" defer></script>
+	<script src="../tabs.js?v=e9e85381" defer></script>
 </body>
 </html>
