@@ -521,3 +521,23 @@ pre.cmd.has-copy { padding-right: 60px; }
 .install-home { max-width: 760px; }
 .install-home .install { margin: 0; }
 .install-home .then { margin: 28px 0 0; color: var(--muted); }
+
+/* Landing: beta invite form (beta.js) */
+.beta-home { max-width: 760px; }
+.beta-home h2 { margin-bottom: 16px; }
+.beta-home .lede { color: var(--muted); margin: 0 0 28px; }
+.beta-form { display: grid; gap: 18px; }
+.beta-form .field { display: grid; gap: 6px; margin: 0; }
+.beta-form label { font-weight: 500; font-size: 15px; }
+.beta-form .optional, .beta-form .hint { color: var(--muted); font-weight: 400; }
+.beta-form .hint { font-size: 14px; }
+.beta-form input, .beta-form textarea {
+	width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px;
+	background: var(--surface); color: var(--text); font: 16px/1.4 var(--sans);
+}
+.beta-form textarea { resize: vertical; }
+.beta-form input:focus, .beta-form textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgb(201 100 66 / 0.18); }
+.beta-form button { cursor: pointer; font-family: inherit; }
+.beta-form button:disabled { opacity: 0.6; cursor: progress; }
+.beta-form .note.error { color: var(--accent); }
+.beta-form .trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
