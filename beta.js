@@ -8,7 +8,7 @@ for (const form of document.querySelectorAll('[data-beta]')) {
 		event.preventDefault();
 		button.disabled = true;
 		status.classList.remove('error');
-		status.textContent = 'Sending…';
+		status.textContent = form.dataset.sending ?? 'Sending…';
 		try {
 			const res = await fetch(form.action, {
 				method: 'POST',
@@ -17,13 +17,13 @@ for (const form of document.querySelectorAll('[data-beta]')) {
 			});
 			if (!res.ok) {
 				const data = await res.json().catch(() => ({}));
-				throw new Error(data.errors?.map((e) => e.message).join(' ') || 'Something went wrong.');
+				throw new Error(data.errors?.map((e) => e.message).join(' ') || form.dataset.failed ?? 'Something went wrong.');
 			}
 			form.reset();
-			status.textContent = "Thanks! We'll send your TestFlight invite soon.";
+			status.textContent = form.dataset.thanks ?? "Thanks! We'll send your TestFlight invite soon.";
 		} catch (err) {
 			status.classList.add('error');
-			status.textContent = `${err.message} Please try again, or email trantienthanh2412@gmail.com.`;
+			status.textContent = `${err.message} ${form.dataset.retry ?? 'Please try again, or email trantienthanh2412@gmail.com.'}`;
 		} finally {
 			button.disabled = false;
 		}

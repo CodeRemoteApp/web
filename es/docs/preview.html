@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>Puertos y vista previa · Documentación de Code Remote</title>
+	<meta name="description" content="Mira los servidores que escuchan en tu ordenador, abre un servidor de desarrollo en tu iPhone, comparte un enlace público por un tiempo y observa las peticiones que le llegan.">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/es/docs/preview.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/preview.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/preview.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/preview.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/preview.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/preview.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/preview.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="Copiar" data-copied-label="Copiado">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">Documentación</a>
+				<a class="nav-link" href="../compare.html">Comparar</a>
+				<a class="nav-link" href="../support.html">Soporte</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="Menú" title="Menú"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="Menú">
+					<a role="menuitem" href="./">Documentación</a>
+					<a role="menuitem" href="../compare.html">Comparar</a>
+					<a role="menuitem" href="../support.html">Soporte</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="Idioma" title="Idioma"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="Idioma">
+					<a role="menuitemradio" href="../../docs/preview.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../vi/docs/preview.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../ja/docs/preview.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../zh-hans/docs/preview.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="preview.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="true">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Apariencia" title="Apariencia"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Apariencia">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>Sistema<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Claro<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Oscuro<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="Documentación">
+				<h4>Documentación</h4>
+				<ul>
+					<li><a href="./">Introducción</a></li>
+					<li><a href="setup.html">Instalación</a></li>
+					<li><a href="commands.html">Comandos</a></li>
+					<li><a href="preview.html" aria-current="page">Puertos y vista previa</a></li>
+					<li><a href="agents.html">Agentes de programación</a></li>
+					<li><a href="configuration.html">Configuración</a></li>
+				</ul>
+				<h4>En esta página</h4>
+				<ul class="sub">
+					<li><a href="#ports">La pestaña Ports</a></li>
+					<li><a href="#preview">Vista previa</a></li>
+					<li><a href="#share">Comparte un enlace público</a></li>
+					<li><a href="#requests">Peticiones</a></li>
+					<li><a href="#how">Cómo funciona</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>Puertos y vista previa</h1>
+				<p class="lede">Abre desde tu iPhone los servidores de desarrollo de tu ordenador, comparte uno por un tiempo y mira las peticiones que le llegan.</p>
+				<p>Todo esto necesita coderemote 0.2.0 o posterior en el ordenador. Con uno más antiguo la app lo dice: ejecuta <code>coderemote update</code> (o <code>npm install -g coderemote@latest</code>) y vuelve a iniciar <code>coderemote up</code>.</p>
+
+				<h2 id="ports">La pestaña Ports</h2>
+				<p>Lista los puertos TCP en los que escucha tu usuario, actualizado cada pocos segundos:</p>
+				<ul>
+					<li><strong>Started in Code Remote</strong>: servidores que iniciaste desde un terminal de la app, con un acceso directo de vuelta a ese terminal.</li>
+					<li><strong>Other</strong>: todo lo demás que se ejecuta en una carpeta de proyecto, como un servidor que iniciaste en el propio ordenador.</li>
+					<li><strong>Background</strong>: apps y servicios del sistema, ocultos hasta que los pidas.</li>
+				</ul>
+				<p>Desliza un puerto para detener el proceso que hay detrás (recibe <code>SIGTERM</code>, como <kbd>Ctrl</kbd>+<kbd>C</kbd>); mantenlo pulsado para <strong>Force Stop</strong> (<code>SIGKILL</code>). Solo se puede detener un proceso que esté escuchando ahora mismo, y nunca el de otro usuario. Detener otro agente de coderemote pregunta primero, ya que todos los dispositivos emparejados con él pierden su carpeta.</p>
+
+				<h2 id="preview">Vista previa</h2>
+				<p>Toca un puerto para abrirlo en la app. La primera vez tarda unos segundos mientras el ordenador lo abre en el túnel; después carga como cualquier página, ya con tu sesión iniciada.</p>
+				<ul>
+					<li>Funcionan los servidores en <code>localhost</code>, <code>127.0.0.1</code> o <code>::1</code>: no hace falta que tu servidor de desarrollo escuche en todas las interfaces.</li>
+					<li>Las peticiones llegan a tu servidor dirigidas a <code>localhost:&lt;port&gt;</code>, así que los servidores que comprueban el nombre de host (Vite, por ejemplo) las aceptan tal cual.</li>
+					<li><strong>Copy Link</strong> y <strong>Open in Safari</strong> te dan la dirección de la vista previa. Es privada: Safari te pide primero iniciar sesión con la misma cuenta.</li>
+					<li><strong>Stop Preview</strong> quita el puerto del túnel. Tu servidor sigue funcionando.</li>
+					<li>Cuando tu servidor se detiene (lo paras en la pestaña Ports, cierras su terminal, pulsas <kbd>Ctrl</kbd>+<kbd>C</kbd> o falla), su vista previa termina sola cuando nada ha escuchado en el puerto durante 30 segundos, enlace público incluido. Un servidor que se reinicia en ese tiempo conserva su vista previa. Uno que detienes desde la pestaña Ports la pierde al instante. Necesita coderemote 0.3.8 o posterior.</li>
+				</ul>
+				<p>Los puertos previsualizados se marcan en la pestaña Ports.</p>
+
+				<h2 id="share">Comparte un enlace público</h2>
+				<p>Para enseñar tu trabajo a alguien sin cuenta, abre el menú de la vista previa y elige <strong>Share Publicly</strong>, durante una hora, ocho horas o un día. Hasta entonces, cualquiera con el enlace puede abrir ese puerto sin iniciar sesión.</p>
+				<ul>
+					<li>Solo se comparte ese puerto. El agente, sus archivos y su terminal siguen siendo privados, en un túnel propio.</li>
+					<li>Un banner muestra hasta cuándo es público el enlace, con <strong>Make Private</strong> para terminarlo ya. La pestaña Ports marca el puerto con un globo terráqueo.</li>
+					<li>El enlace también deja de funcionar cuando detienes la vista previa o el agente.</li>
+				</ul>
+				<p>Recuerda que es un servidor de desarrollo: compártelo con personas a las que enseñarías tu pantalla, y vuelve a hacerlo privado cuando termines.</p>
+
+				<h2 id="requests">Peticiones</h2>
+				<p>El icono de lista en una vista previa muestra las peticiones que llegaron a ese puerto, las más recientes primero y en vivo: método, ruta, estado, hora y tamaño, coloreados según el estado. Toca una para ver sus cabeceras y cuerpos; el JSON se muestra con sangría y los cuerpos comprimidos se descomprimen.</p>
+				<ul>
+					<li>Funciona con todo lo que llega por el enlace de vista previa: la propia página, sus llamadas a la API, un webhook que apuntaste a un enlace compartido.</li>
+					<li>Se conservan las últimas 200 peticiones por puerto, con cuerpos de hasta 64 KB. Los WebSockets (hot reload) pasan sin tocarse; solo se lista su handshake.</li>
+					<li>Permanecen en tu ordenador, en memoria: <strong>Clear</strong> las olvida, y detener <code>coderemote up</code> también.</li>
+				</ul>
+				<p>La barra bajo la lista permite acotarla. El botón de filtro elige un tipo (<strong>All</strong>, <strong>Fetch/XHR</strong>, <strong>CSS</strong>, <strong>Image</strong> o <strong>JS</strong>, según el tipo de respuesta y la extensión del archivo), y el campo de búsqueda coincide con el método y la ruta.</p>
+				<p>El mismo registro se puede leer en un terminal del ordenador con <a href="commands.html#requests"><code>coderemote requests</code></a>, de modo que un agente de programación como Claude Code puede depurar con él. Allí los tokens y las cookies se ocultan a menos que los pida.</p>
+
+				<h2 id="how">Cómo funciona</h2>
+				<p>Las vistas previas no pasan por el túnel del propio agente. La primera vez que previsualizas un puerto, el agente crea un segundo túnel privado, con la etiqueta <code>coderemote-preview</code>, y reenvía tus puertos allí. Añadir o quitar un puerto reinicia la conexión de ese túnel, así que otras vistas previas abiertas parpadean un momento, mientras tus terminales, archivos y git ni se enteran.</p>
+				<p>Cada puerto previsualizado pasa por un pequeño proxy del agente, que es lo que registra las peticiones. Por eso la dirección de una vista previa lleva el número de puerto del proxy y no el de tu servidor (<code>…-49213.usw2.devtunnels.ms</code> para un servidor en el 5173): la app siempre muestra el puerto propio de tu servidor.</p>
+				<p>El agente elimina el túnel de vista previa cuando se detiene; si no puede (porque el ordenador se quedó sin conexión, por ejemplo), lo hace el siguiente <code>coderemote up</code>. Los enlaces compartidos nunca sobreviven al agente que los creó, y las vistas previas antiguas no consumen los 10 túneles de tu cuenta. Cuando la cuenta está llena de todos modos, una vista previa nueva elimina primero los túneles de vista previa que ningún agente sirve; si no basta, la app lo dice, y <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> en el ordenador muestra qué eliminar.</p>
+
+				<nav class="pager" aria-label="Más páginas">
+					<a href="commands.html"><span>Anterior</span>Comandos</a>
+					<a class="next" href="configuration.html"><span>Siguiente</span>Configuración</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Más de Thanh Tran</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">Inicio</a>
+				<a href="./">Documentación</a>
+				<a href="../../privacy.html">Privacidad</a>
+				<a href="../../terms.html">Términos</a>
+				<a href="../compare.html">Comparar</a>
+				<a href="../support.html">Soporte</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">La política de privacidad y los términos solo están en inglés; la versión en inglés es la vinculante.</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

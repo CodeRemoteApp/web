@@ -20,9 +20,19 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=f404c4c5">
+	<link rel="stylesheet" href="../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/docs/agents.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/agents.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/agents.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/agents.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/agents.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/agents.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/agents.html">
+	<script>try{var m={"vi":"../vi/docs/agents.html","ja":"../ja/docs/agents.html","zh-hans":"../zh-hans/docs/agents.html","es":"../es/docs/agents.html"},l=localStorage.getItem("lang");if(m[l])location.replace(m[l]+location.search+location.hash)}catch(e){}</script>
+	<!-- i18n:end head -->
 </head>
-<body>
+<body data-copy-label="Copy" data-copied-label="Copied">
 	<header class="site">
 		<div class="wrap">
 			<a class="brand" href="../"><img src="../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
@@ -37,6 +47,16 @@
 					<a role="menuitem" href="../support.html">Support</a>
 				</div>
 				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="Language" title="Language"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="Language">
+					<a role="menuitemradio" href="agents.html" lang="en" hreflang="en" data-lang="en" aria-checked="true">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../vi/docs/agents.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../ja/docs/agents.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../zh-hans/docs/agents.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../es/docs/agents.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
 				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Appearance" title="Appearance"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
 				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Appearance">
 					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>System<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
@@ -145,7 +165,10 @@
 			</nav>
 		</div>
 	</footer>
-	<script src="../theme.js?v=49ae9c01" defer></script>
-	<script src="../tabs.js?v=8e4ab86b" defer></script>
+	<script src="../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../tabs.js?v=6123b019" defer></script>
 </body>
 </html>

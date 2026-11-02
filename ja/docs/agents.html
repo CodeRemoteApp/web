@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>コーディングエージェント · Code Remote ドキュメント</title>
+	<meta name="description" content="iPhone から Claude Code と Codex のセッションを開始・操作・追跡し、権限の確認や質問に回答し、対応が必要なときに通知を受け取れます。">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/ja/docs/agents.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/agents.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/agents.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/agents.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/agents.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/agents.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/agents.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="コピー" data-copied-label="コピーしました">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">ドキュメント</a>
+				<a class="nav-link" href="../compare.html">比較</a>
+				<a class="nav-link" href="../support.html">サポート</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="メニュー" title="メニュー"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="メニュー">
+					<a role="menuitem" href="./">ドキュメント</a>
+					<a role="menuitem" href="../compare.html">比較</a>
+					<a role="menuitem" href="../support.html">サポート</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="言語" title="言語"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="言語">
+					<a role="menuitemradio" href="../../docs/agents.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../vi/docs/agents.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="agents.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="true">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../zh-hans/docs/agents.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../es/docs/agents.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="外観" title="外観"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="外観">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>システム<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>ライト<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>ダーク<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="ドキュメント">
+				<h4>ドキュメント</h4>
+				<ul>
+					<li><a href="./">はじめに</a></li>
+					<li><a href="setup.html">セットアップ</a></li>
+					<li><a href="commands.html">コマンド</a></li>
+					<li><a href="preview.html">ポートとプレビュー</a></li>
+					<li><a href="agents.html" aria-current="page">コーディングエージェント</a></li>
+					<li><a href="configuration.html">設定</a></li>
+				</ul>
+				<h4>このページの内容</h4>
+				<ul class="sub">
+					<li><a href="#setup">セットアップ</a></li>
+					<li><a href="#codex">Codex</a></li>
+					<li><a href="#sessions">Agents タブ</a></li>
+					<li><a href="#answer">iPhone から回答する</a></li>
+					<li><a href="#drive">セッションの開始と操作</a></li>
+					<li><a href="#notifications">通知</a></li>
+					<li><a href="#how">仕組み</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>コーディングエージェント</h1>
+				<p class="lede">コンピューター上のすべての Claude Code セッションを iPhone で追い、権限の確認や質問にそこから回答し、対応が必要なときは通知を受け取れます。</p>
+				<p>Agents タブと通知は Code Remote Pro の一部で、コンピューターに最近の coderemote が必要です。アプリが求めたら、<code>coderemote update</code> を実行して <code>coderemote up</code> を起動し直してください。</p>
+
+				<h2 id="setup">セットアップ</h2>
+				<p>Claude Code をインストール済みのコンピューターで、1 回だけ:</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup claude</pre>
+				<p>これで Code Remote プラグインが Claude Code にインストールされます(Claude Code 内での <code>/plugin install coderemote --marketplace CodeRemoteApp/coderemote</code> と同じ)。その後、<code>coderemote up</code> で共有したフォルダで開始した Claude Code のセッションが、アプリに表示されます。すでに動いているセッションは、再起動すると表示されます。元に戻すには: <code>coderemote setup claude --remove</code>。</p>
+				<p><code>coderemote</code> が動いていないとき、またはセッションのフォルダが共有されていないときは、プラグインは何もしません。そのとき Claude Code は、プラグインがない場合とまったく同じに動きます。</p>
+				<h3 id="codex">Codex</h3>
+				<p>Codex 0.139 以降でも使えます:</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup codex</pre>
+				<p>次に Codex を一度開き、<code>/hooks</code> と入力して Code Remote の hook を信頼します。Codex はプラグインの hook を、確認した後でしか実行しません。Codex のセッションは Agents タブに Codex のラベル付きで表示されます。</p>
+				<p>1 つ違いがあります。Codex は、hook が身を引いた後にだけ自分の承認確認を表示します。そのため、コンピューターを使っている間(またはアプリでそのマシンを開いている間)は、Codex はいつもどおりターミナルで尋ね、アプリには「Answer on your computer」と表示されます。席を離れているときは、リクエストは通知付きで iPhone を最大 10 分待ち、その後 Codex がターミナルで尋ねます。Codex には hook からの「常に許可」はありません。</p>
+
+				<h2 id="sessions">Agents タブ</h2>
+				<p>マシン上のセッションを、<strong>Needs You</strong>(回答待ち)、<strong>Working</strong>、<strong>Idle</strong>、<strong>Ended</strong> に分けて一覧表示します。タブには、あなたの対応が必要な数が表示されます。セッションを開くと、プロンプト、Claude の返信、実行した各ツールなど、何をしたかが分かります。コマンドは出力付き、ファイルの編集は変更された行として表示され(タップで変更全体またはファイルを表示)、読み取りはファイルを開きます。</p>
+				<p>アプリのターミナルで開始したセッションには <strong>Open in Terminal</strong> があり、直接入力できます。コンピューターで開始したセッションも同じタイムラインで表示されます。</p>
+				<p>セッションは coderemote のメモリ上にあります。<code>coderemote up</code> を止めると一覧は消え、終了したセッションは 1 日後に消えます。</p>
+
+				<h2 id="answer">iPhone から回答する</h2>
+				<p>Claude が何かを実行する許可を求めたり、質問したりすると、セッションの下部にカードが表示されます:</p>
+				<ul>
+					<li><strong>Allow</strong> または <strong>Deny</strong>。<strong>⋯</strong> メニューには、コンピューターの Claude Code と同じ「常に許可」の選択肢があり、<strong>Deny with Message</strong> で代わりにしてほしいことを Claude に伝えられます。</li>
+					<li>質問には、回答をタップするか、<strong>Other…</strong> で自分で入力します。</li>
+				</ul>
+				<p>確認はコンピューター側でも開いたままです。先に答えたほうが優先されます。コンピューターで答えれば、iPhone のカード(と通知)は消えます。iPhone から 1 時間以内に誰も答えない確認は、コンピューターに任されます。</p>
+
+				<h2 id="drive">セッションの開始と操作</h2>
+				<p>Agents タブの <strong>+</strong> をタップして、コンピューターでコーディングエージェントを開始します。<strong>Agent</strong>(Claude Code、設定済みなら Codex)と <strong>Folder</strong> を選びます。共有フォルダが開くので、サブフォルダに入り、名前で絞り込み、<strong>Use This Folder</strong> をタップします。その後:</p>
+				<ul>
+					<li>Claude Code では、モデルと、権限の確認方法(<strong>Ask First</strong>、<strong>Accept Edits</strong>、<strong>Plan Only</strong>、<strong>Auto</strong>)を選びます。</li>
+					<li>Codex では、Codex 自身が提供するモデルから選び(<strong>Default</strong> は Codex の設定にあるもの)、<strong>Ask before running outside the sandbox</strong> を許可するかを決めます。オフにすると、Codex は sandbox が許さないことを、確認せずに拒否します。</li>
+				</ul>
+				<p>セッションはアプリのターミナル内で動くので、セッションのメッセージ欄から入力できます:</p>
+				<ul>
+					<li>プロンプトを書いて送信します。Claude の作業中に送ったものは、コンピューターの前にいるときと同じく順番を待ちます。<strong>Stop</strong> で中断できます(<kbd>Esc</kbd> と同じ)。</li>
+					<li><strong>+</strong> で写真、動画、ファイル、カメラで撮った写真、コピーした画像を添付できます。これらはコンピューターの <code>~/.coderemote/uploads/</code>(プロジェクトの外、1 週間後に削除)に送られ、Claude は画像を画像として見ます。他のファイルはパスが渡されます。</li>
+					<li><strong>⚡</strong> メニューには <strong>Next Permission Mode</strong>(<kbd>Shift</kbd>+<kbd>Tab</kbd>)、<code>/compact</code>、<code>/clear</code>、<code>/model</code>、<strong>Open in Terminal</strong> があります(Codex には切り替える権限モードも <code>/clear</code> もありません)。ターミナルでは、<strong>…</strong> メニューの <strong>Chat</strong> で戻れます。</li>
+					<li>終了したセッションには <strong>Resume Here</strong> があり、新しいターミナルで会話を続けられます。</li>
+				</ul>
+				<p>コンピューターのターミナルで開始したセッションは、ここで追跡して回答できますが、アプリのターミナルではないため入力はできません。終了したら、ここで再開してください。</p>
+
+				<h2 id="notifications">通知</h2>
+				<p>コンピューターごとに、マシン情報(マシン一覧で長押し、またはタブのメニューの <strong>Machine Info</strong>)でオンにします: <strong>回答が必要なとき</strong>と<strong>長いタスクが終わったとき</strong>(1 分以上かかったもの)。テストボタンもあります。</p>
+				<p>権限の通知を長押しすると、アプリを開かずに(Face ID の後で)<strong>許可</strong>または<strong>拒否</strong>できます。単一の質問も同じ方法で回答できます。コンピューターを使っている間(Mac の場合)や、アプリでそのマシンを開いている間は何も送信されません。</p>
+
+				<h2 id="how">仕組み</h2>
+				<p>プラグインは Claude Code のイベント(プロンプト、ツール呼び出し、返信、権限の確認)ごとに <code>coderemote hook</code> を実行します。イベントは、同じコンピューター上でそのセッションのフォルダを共有している <code>coderemote</code> に、外に出ることのない秘密情報で認証されて渡されます。権限の確認は、Claude Code が通常どおり自分の確認を表示している間も、iPhone からの回答をそこで待ちます。</p>
+				<p>通知はコンピューターから、アプリの Apple プッシュキーを付加するリレーを通って届きます。内容は iPhone 向けに暗号化されているため、リレーも Apple も読むことはできず、リレーは何も保存しません。<a href="../../privacy.html#notifications">プライバシーポリシー</a>をご覧ください。</p>
+			</article>
+		</div>
+	</main>
+
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Thanh Tran の他のアプリ</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">ホーム</a>
+				<a href="./">ドキュメント</a>
+				<a href="../../privacy.html">プライバシー</a>
+				<a href="../../terms.html">利用規約</a>
+				<a href="../compare.html">比較</a>
+				<a href="../support.html">サポート</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">プライバシーポリシーと利用規約は英語版のみで、英語版が正式なものです。</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

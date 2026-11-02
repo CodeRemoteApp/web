@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>コマンド · Code Remote ドキュメント</title>
+	<meta name="description" content="coderemote のすべてのコマンドとオプション: up、status、kill、stop、serve、requests、setup、rotate-token、tunnels、login、update、help。">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/ja/docs/commands.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/commands.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/commands.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/commands.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/commands.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/commands.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/commands.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="コピー" data-copied-label="コピーしました">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">ドキュメント</a>
+				<a class="nav-link" href="../compare.html">比較</a>
+				<a class="nav-link" href="../support.html">サポート</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="メニュー" title="メニュー"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="メニュー">
+					<a role="menuitem" href="./">ドキュメント</a>
+					<a role="menuitem" href="../compare.html">比較</a>
+					<a role="menuitem" href="../support.html">サポート</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="言語" title="言語"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="言語">
+					<a role="menuitemradio" href="../../docs/commands.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../vi/docs/commands.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="commands.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="true">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../zh-hans/docs/commands.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../es/docs/commands.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="外観" title="外観"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="外観">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>システム<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>ライト<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>ダーク<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="ドキュメント">
+				<h4>ドキュメント</h4>
+				<ul>
+					<li><a href="./">はじめに</a></li>
+					<li><a href="setup.html">セットアップ</a></li>
+					<li><a href="commands.html" aria-current="page">コマンド</a></li>
+					<li><a href="preview.html">ポートとプレビュー</a></li>
+					<li><a href="agents.html">コーディングエージェント</a></li>
+					<li><a href="configuration.html">設定</a></li>
+				</ul>
+				<h4>このページの内容</h4>
+				<ul class="sub">
+					<li><a href="#up">up</a></li>
+					<li><a href="#status">status</a></li>
+					<li><a href="#kill">kill</a></li>
+					<li><a href="#stop">stop</a></li>
+					<li><a href="#serve">serve</a></li>
+					<li><a href="#requests">requests</a></li>
+					<li><a href="#setup">setup</a></li>
+					<li><a href="#rotate-token">rotate-token</a></li>
+					<li><a href="#tunnels">tunnels</a></li>
+					<li><a href="#login">login</a></li>
+					<li><a href="#update">update</a></li>
+					<li><a href="#help">help</a></li>
+					<li><a href="#options">options</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>コマンド</h1>
+				<p class="lede"><code>coderemote</code> でできることを、コマンドごとに。</p>
+
+				<pre class="cmd"><span class="p">$ </span>coderemote up                    <span class="c"># share this folder, print the pairing QR</span>
+<span class="p">$ </span>coderemote status                <span class="c"># running agents and their terminal sessions</span>
+<span class="p">$ </span>coderemote kill &lt;id&gt;... | --all  <span class="c"># end terminal sessions</span>
+<span class="p">$ </span>coderemote stop [--all]          <span class="c"># stop the agent for this folder</span>
+<span class="p">$ </span>coderemote serve                 <span class="c"># share on 127.0.0.1 only, no tunnel</span>
+<span class="p">$ </span>coderemote requests [PORT]       <span class="c"># requests that reached a previewed port</span>
+<span class="p">$ </span>coderemote request &lt;ID&gt;          <span class="c"># headers and bodies of one request</span>
+<span class="p">$ </span>coderemote setup claude          <span class="c"># follow Claude Code sessions in the app</span>
+<span class="p">$ </span>coderemote setup codex           <span class="c"># the same for Codex</span>
+<span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
+<span class="p">$ </span>coderemote tunnels               <span class="c"># your Dev Tunnels account's tunnels</span>
+<span class="p">$ </span>coderemote tunnels delete &lt;id&gt;   <span class="c"># delete ones nothing uses</span>
+<span class="p">$ </span>coderemote login                 <span class="c"># sign in to Dev Tunnels again</span>
+<span class="p">$ </span>coderemote update                <span class="c"># install the latest version</span>
+<span class="p">$ </span>coderemote help                  <span class="c"># all options</span></pre>
+
+				<h2 id="up"><code>up</code></h2>
+				<p>現在のフォルダをプライベートな Microsoft Dev Tunnel で共有し、ペアリング用の QR コードを表示します。日常的に使うコマンドです。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote up
+<span class="p">$ </span>coderemote up --root ~/projects   <span class="c"># share another folder</span>
+<span class="p">$ </span>coderemote up --web               <span class="c"># also open it in VS Code on vscode.dev</span></pre>
+				<p><code>127.0.0.1</code> で小さなエージェントを起動し、必要なら Dev Tunnels にサインインし、リレーに外向きに接続して、共有しているフォルダ、アクセスできる人、ペアリング用のリンクの 3 つを表示します。<kbd>Ctrl</kbd>+<kbd>C</kbd> を押すかターミナルを閉じるまで動き続けます。</p>
+				<table>
+					<tr><th>オプション</th><th>動作</th></tr>
+					<tr><td><code>--root DIR</code></td><td>現在のフォルダの代わりに <code>DIR</code> を共有します。</td></tr>
+					<tr><td><code>--port N</code></td><td>ローカルのポート <code>N</code> で待ち受けます(デフォルトは <code>31580</code>)。別のプログラムがそのポートを使っているときに変更します。</td></tr>
+					<tr><td><code>--allow-anonymous</code></td><td>iPhone でのアカウントのサインインを省略します。ペアリングトークンだけでアクセスできます。別名は <code>--no-auth</code> です。</td></tr>
+					<tr><td><code>--web</code></td><td>VS Code の <code>code tunnel</code> も実行し、ブラウザのフルエディターでフォルダを開く vscode.dev のリンクを表示します。</td></tr>
+				</table>
+				<div class="callout">
+					<p><code>--web</code> は Code Remote のものではなく、VS Code 自身のトンネルを使います。専用の GitHub アカウントでサインインし、共有フォルダだけでなくマシン全体をブラウザに公開します。<code>PATH</code> に VS Code の <code>code</code> コマンドが必要です。</p>
+				</div>
+
+				<h2 id="status"><code>status</code></h2>
+				<p>このコンピューターで動いているエージェントと、それぞれのターミナルのセッションを一覧表示します。別名は <code>ps</code> です。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote status
+/Users/you/projects/my-app  (pid 4121, port 31580, up 2h)
+  https://…devtunnels.ms
+  3f9a2c1e  zsh          pid 4188    2h   1 attached
+  b71d04aa  claude       pid 5230    14m  detached</pre>
+				<p>各セッションには、id、タイトル、プロセス id、経過時間、いま iPhone が接続されているかが表示されます。<em>detached</em> のセッションはまだ動いており、アプリの再接続を待っています。</p>
+
+				<h2 id="kill"><code>kill</code></h2>
+				<p>ターミナルのセッションを終了します。<code>status</code> に表示される id の最初の数文字で十分です。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote kill b71d
+killed b71d04aa (claude) in /Users/you/projects/my-app
+
+<span class="p">$ </span>coderemote kill --all              <span class="c"># every session in every agent</span></pre>
+				<p>エージェント自体は動き続けます。止めるには <code>stop</code> を使います。</p>
+
+				<h2 id="stop"><code>stop</code></h2>
+				<p>現在のフォルダを共有しているエージェントを停止し、そのトンネルとターミナルのセッションを終了します。手の届かないウィンドウで <code>up</code> が動いているときに便利です。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote stop                   <span class="c"># the agent for this folder</span>
+<span class="p">$ </span>coderemote stop --all             <span class="c"># every agent on this computer</span></pre>
+
+				<h2 id="serve"><code>serve</code></h2>
+				<p>トンネルもサインインもなしで、<code>127.0.0.1</code> だけでエージェントを起動し、ローカルの URL とトークンを表示します。ローカルでのテストや開発向けで、iPhone からは届きません。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote serve
+coderemote agent on http://127.0.0.1:31580
+Sharing: /Users/you/projects/my-app
+Token: …</pre>
+
+				<h2 id="requests"><code>requests</code></h2>
+				<p>アプリから<a href="preview.html#requests">プレビュー</a>しているポートに届いたリクエストを、アプリに表示されるのと同じログとして出力します。ターミナルの Claude Code や Codex のようなコーディングエージェント向けに作られています。<code>coderemote requests</code> を実行するよう伝えれば、ページや webhook が実際に何を送り、サーバーが何を返したかを確認できます。coderemote 0.3.0 以降が必要です。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote requests
+#41    200   GET /api/me  8 ms  212 B  10:20:31
+#42    401   POST /api/orders  5 ms  38 B  10:20:33
+
+<span class="p">$ </span>coderemote request 42
+#42  POST /api/orders  ->  401
+  authorization: Bearer [redacted]
+  …</pre>
+				<p>そのフォルダのエージェントを見つけられるよう、共有フォルダ(またはその下)で実行します。エージェントが 1 つだけ動いているなら、どこからでも構いません。ポートを指定しないと、現在プレビュー中のすべてのポートを読みます。停止したプレビューもログは残るので、ポートを指定して読んでください。</p>
+				<table>
+					<tr><th>コマンドまたはオプション</th><th>動作</th></tr>
+					<tr><td><code>requests [PORT]</code></td><td>リクエストごとに 1 行、古いものから順に: id、ステータス、メソッドとパス、所要時間、サイズ、時刻。</td></tr>
+					<tr><td><code>request &lt;ID&gt; [PORT]</code></td><td>1 件のリクエストのヘッダーと本文。JSON は整形され、64 KB を超える本文は保持されません。</td></tr>
+					<tr><td><code>requests clear [PORT]</code></td><td>記録したリクエストを消去します。アプリの <strong>Clear</strong> と同じです。</td></tr>
+					<tr><td><code>--grep TEXT</code></td><td>メソッドまたはパスに <code>TEXT</code> を含むリクエストのみ。</td></tr>
+					<tr><td><code>--failed</code></td><td>エラーと <code>4xx</code>/<code>5xx</code> のレスポンスのみ。</td></tr>
+					<tr><td><code>--limit N</code></td><td>直近の <code>N</code> 件を表示します(デフォルトは 50)。</td></tr>
+					<tr><td><code>--json</code></td><td>スクリプト向けの機械可読な出力。</td></tr>
+					<tr><td><code>--show-secrets</code></td><td>デフォルトでマスクされる値を表示します(下記参照)。</td></tr>
+				</table>
+				<div class="callout">
+					<p>秘密情報は、求めない限りマスクされます: <code>Authorization</code> ヘッダー(<code>Bearer</code> などのスキームは残ります)、Cookie の値(名前は残ります)、token・key・session のような名前のヘッダー、クエリ文字列・JSON・フォームの本文にある <code>password</code> や <code>access_token</code> などのフィールド。出力には、隠した値の数が表示されます。たとえばテストでセッショントークンを再利用するなど、エージェントが必要とするときは <code>--show-secrets</code> を付けます。</p>
+				</div>
+				<p>ディスクには何も書き込まれません。このコマンドは、エージェントがメモリ内に保持しているログ(ポートごとに直近 200 件のリクエスト)を読み取ります。</p>
+
+				<h2 id="setup"><code>setup claude</code>, <code>setup codex</code></h2>
+				<p>Code Remote プラグインを Claude Code または Codex にインストールし、そのセッションをアプリの Agents タブに表示して、iPhone から確認に回答できるようにします。Codex はプラグインの hook を、一度信頼した後でしか実行しません。Codex を開いて <code>/hooks</code> と入力してください。<code>--remove</code> でアンインストールします。<a href="agents.html">コーディングエージェント</a>を参照。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup claude
+<span class="p">$ </span>coderemote setup codex</pre>
+
+				<h2 id="rotate-token"><code>rotate-token</code></h2>
+				<p>アクセストークンを置き換えます。ペアリング済みのすべての iPhone とブラウザが一度にアクセスできなくなります。iPhone を紛失したときやペアリングリンクが漏れたときに使います。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote rotate-token
+Token rotated. Re-pair your devices, and restart running agents.</pre>
+				<p>その後、<code>coderemote up</code> を再起動し、引き続き信頼するデバイスで新しい QR コードを読み取ってください。</p>
+
+				<h2 id="tunnels"><code>tunnels</code></h2>
+				<p>Dev Tunnels アカウントのトンネルを一覧表示し、使われていないものを削除します。アカウントで保持できるトンネルは 10 個です。coderemote を実行するコンピューターごとに 1 つ、エージェントの実行中は<a href="preview.html#how">プレビュー</a>用にもう 1 つ使い、古いコンピューターや再インストールは自分のトンネルを残します。coderemote 0.3.6 以降が必要です。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote tunnels
+  silent-lake-pqv9b80.usw2  online · this computer's agent on port 31580 · coderemote my-mac
+  brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
+  quiet-fox-3hd8w2c.usw2    coderemote old-laptop
+
+<span class="p">$ </span>coderemote tunnels delete quiet-fox-3hd8w2c
+deleted quiet-fox-3hd8w2c.usw2</pre>
+				<p>各行にはトンネルの id、エージェントがいま提供している場合は <em>online</em>、このコンピューターがそれを何に使っているか、そしてそれを作ったコンピューター名を示す説明が表示されます。id を指定するときは、リージョンの接尾辞(<code>.usw2</code>)は省略できます。</p>
+				<table>
+					<tr><th>コマンドまたはオプション</th><th>動作</th></tr>
+					<tr><td><code>tunnels</code></td><td>サインインしているアカウントのトンネルを 1 行ずつ表示します。</td></tr>
+					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>それらのトンネルを削除します。オンラインのもの、またはこのコンピューターが使っているものは、<code>--force</code> を付けない限り残されます。</td></tr>
+					<tr><td><code>--force</code></td><td>それでも削除します。その URL は失われ、それとペアリングされた iPhone はペアリングし直す必要があります。このコンピューターでは次の <code>up</code> が新しいものを作ります。</td></tr>
+				</table>
+				<p>手動で必要になることはほとんどありません。アカウントがいっぱいのときは、<code>up</code> とプレビューが、どのエージェントも使っていないプレビュー用トンネルを先に削除します。それでも空きができないときだけ、<code>up</code> は停止し、アカウントのトンネルを一覧表示して削除を促します。</p>
+
+				<h2 id="login"><code>login</code></h2>
+				<p>Microsoft Dev Tunnels にサインインします。必要なときは <code>up</code> が自動で行うので、アカウントを切り替えるときやブラウザがないときだけ実行します。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote login                  <span class="c"># GitHub, in the browser</span>
+<span class="p">$ </span>coderemote login --microsoft      <span class="c"># a Microsoft account</span>
+<span class="p">$ </span>coderemote login --device-code    <span class="c"># no browser here: enter a code on another device</span></pre>
+				<p><code>up --allow-anonymous</code> を使わない限り、iPhone も同じアカウントでサインインする必要があります。</p>
+
+				<h2 id="update"><code>update</code></h2>
+				<p>インストールしたときと同じ方法(npm、または pnpm、yarn、bun、Homebrew、あるいは<a href="setup.html#install">インストールスクリプト</a>がダウンロードした Node.js の中)で、最新の coderemote をインストールします。新しいバージョンがあると、<code>up</code> がペアリングリンクの下にお知らせします。npm への問い合わせは 1 日に 1 回までで、起動を遅くすることはありません。<code>CODEREMOTE_NO_UPDATE_CHECK=1</code> を設定すると無効にできます。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote update
+<span class="p">$ </span>coderemote --version             <span class="c"># the version you're running</span></pre>
+				<p>すでに動いているエージェントは、再起動するまで古いバージョンのままです: <code>coderemote stop --all</code> を実行してから、もう一度 <code>coderemote up</code> を実行してください。</p>
+
+				<h2 id="help"><code>help</code></h2>
+				<p>すべてのコマンドとオプションを表示します。<code>coderemote</code> だけ、または行のどこかに <code>--help</code> を付けても同じ動作になるので、打ち間違いでうっかりフォルダの共有が始まることはありません。</p>
+
+				<h2 id="options">オプション</h2>
+				<table>
+					<tr><th>オプション</th><th>コマンド</th><th>デフォルト</th></tr>
+					<tr><td><code>--root DIR</code></td><td><code>up</code>, <code>serve</code>, <code>stop</code></td><td>現在のフォルダ</td></tr>
+					<tr><td><code>--port N</code></td><td><code>up</code>, <code>serve</code></td><td><code>31580</code></td></tr>
+					<tr><td><code>--allow-anonymous</code></td><td><code>up</code></td><td>オフ</td></tr>
+					<tr><td><code>--web</code></td><td><code>up</code></td><td>オフ</td></tr>
+					<tr><td><code>--all</code></td><td><code>kill</code>, <code>stop</code></td><td></td></tr>
+					<tr><td><code>--force</code></td><td><code>tunnels delete</code></td><td>オフ</td></tr>
+					<tr><td><code>--microsoft</code>, <code>--device-code</code></td><td><code>login</code></td><td>GitHub(ブラウザで)</td></tr>
+				</table>
+
+				<nav class="pager" aria-label="その他のページ">
+					<a href="setup.html"><span>前へ</span>セットアップ</a>
+					<a class="next" href="preview.html"><span>次へ</span>ポートとプレビュー</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Thanh Tran の他のアプリ</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">ホーム</a>
+				<a href="./">ドキュメント</a>
+				<a href="../../privacy.html">プライバシー</a>
+				<a href="../../terms.html">利用規約</a>
+				<a href="../compare.html">比較</a>
+				<a href="../support.html">サポート</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">プライバシーポリシーと利用規約は英語版のみで、英語版が正式なものです。</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

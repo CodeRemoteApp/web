@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>对比 · Code Remote</title>
+	<meta name="description" content="Code Remote 与 Tailscale、Termius、Orca、远程桌面应用和纯 SSH 的对比:在你能从手机连接之前,它们各自需要电脑和网络做什么准备。">
+	<link rel="icon" href="../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/zh-hans/compare.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/compare.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/compare.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/compare.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/compare.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/compare.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/compare.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="复制" data-copied-label="已复制">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="./"><img src="../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="compare.html">对比</a>
+				<a class="nav-link" href="docs/">文档</a>
+				<a class="nav-link" href="support.html">支持</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="菜单" title="菜单"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="菜单">
+					<a role="menuitem" href="compare.html">对比</a>
+					<a role="menuitem" href="docs/">文档</a>
+					<a role="menuitem" href="support.html">支持</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="语言" title="语言"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="语言">
+					<a role="menuitemradio" href="../compare.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../vi/compare.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../ja/compare.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="compare.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="true">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../es/compare.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="外观" title="外观"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="外观">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>跟随系统<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>浅色<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>深色<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="prose">
+		<div class="wrap compare">
+			<h1>Code Remote 与常见方式的对比。</h1>
+			<p class="lede">要从手机连接你的开发机,大多数工具都需要你在电脑上下载应用、配置 VPN 或设置 SSH。Code Remote 只需要一条命令和一次二维码扫描。</p>
+
+			<pre class="cmd one-liner" data-copy>npx coderemote up</pre>
+			<p class="meta">需要 Node.js 22 或更高版本。没有 Node?<a href="docs/setup.html#install">安装脚本</a>会专门为 coderemote 获取一份。首次运行会让你用 GitHub 或 Microsoft 登录一次。</p>
+
+			<h2>Code Remote 与 Tailscale、Termius 和 Orca 的对比</h2>
+			<p class="meta">依据各工具 2026 年 11 月的公开页面。套餐和功能会变化,决定前请查看它们的页面。</p>
+			<div class="table-scroll">
+			<table class="compare-table">
+				<thead>
+					<tr><th></th><th class="us">Code Remote</th><th>Tailscale + 一个 SSH 应用</th><th>Termius</th><th>Orca</th></tr>
+				</thead>
+				<tbody>
+					<tr class="setup"><th scope="row">电脑上的设置</th><td class="us"><strong>一条命令:</strong><code>npx coderemote up</code>。不会留下任何安装。</td><td>安装 Tailscale,开启 SSH 服务器,登录</td><td>必须已有运行中的 SSH 服务器,并配置好密钥</td><td>安装 Orca 桌面应用</td></tr>
+					<tr class="setup"><th scope="row">手机上的设置</th><td class="us"><strong>扫描二维码。</strong>配对就是这么简单。</td><td>安装 Tailscale 和一个 SSH 应用,登录,导入密钥</td><td>安装 Termius,添加主机和密钥</td><td>安装配套应用并配对</td></tr>
+					<tr class="setup"><th scope="row">网络设置</th><td class="us"><strong>无需任何设置。</strong>它向外连接,所以 NAT、防火墙和酒店 Wi-Fi 都不成问题。</td><td>把两台设备加入同一个 tailnet</td><td>你要让机器可被访问:端口转发、VPN 或类似方式</td><td>在它所运行的那台电脑上可用。远程机器需通过 SSH。</td></tr>
+					<tr class="setup"><th scope="row">账号和密钥</th><td class="us"><strong>一次登录</strong>(GitHub 或 Microsoft)。无需创建或复制 SSH 密钥。</td><td>一个 Tailscale 账号,外加 SSH 密钥或 Tailscale SSH</td><td>每台主机各自的 SSH 密钥或密码。云同步需付费。</td><td>你自己的编程智能体账号</td></tr>
+					<tr><th scope="row">在手机上你能得到</th><td class="us">文件、git、终端、端口、开发服务器预览和请求日志,全部为触控而设计</td><td>终端,取决于 SSH 应用提供什么</td><td>终端和 SFTP 文件传输</td><td>智能体实时状态、用量和终端</td></tr>
+					<tr><th scope="row">它是什么</th><td class="us">电脑上的智能体加一个 iPhone 应用</td><td>带 SSH 应用的网状 VPN</td><td>SSH、Mosh 和 SFTP 客户端</td><td>用于并行运行编程智能体的开源桌面 IDE</td></tr>
+					<tr><th scope="row">费用</th><td class="us">免费的 iPhone Beta,免费的开源 CLI(AGPL)</td><td>在 Tailscale 限额内个人使用免费</td><td>免费的 Starter 方案,付费 Pro 提供同步等功能</td><td>开源(MIT)</td></tr>
+					<tr><th scope="row">最适合</th><td class="us"><strong>以最少的设置从手机连接你的开发机</strong></td><td>把许多机器连成一个私有网络</td><td>通过 SSH 管理许多服务器</td><td>在办公桌前同时运行多个智能体</td></tr>
+				</tbody>
+			</table>
+			</div>
+
+			<h2>为什么选择 Code Remote</h2>
+			<ul>
+				<li><strong>最短的路径。</strong>一条命令,一次扫描。其他工具需要安装两三样东西、两端各一个账号,以及密钥或网络设置。</li>
+				<li><strong>无需维护。</strong>无需一直保持连接的 VPN,无需加固的 SSH 服务器,无需轮换的密钥,无需更新的桌面应用。</li>
+				<li><strong>为手机而做。</strong>文件浏览器、git 审阅、终端按键栏和一键预览,而不是把终端硬塞进小屏幕。</li>
+				<li><strong>隐私优先的设计。</strong>智能体只监听 <code>127.0.0.1</code>,中间没有任何 Code Remote 服务器。<a href="docs/">了解其工作原理</a>。</li>
+			</ul>
+			<p>如果你要管理很多台机器或服务器,Tailscale 和 Termius 是正确的选择,Code Remote 并不能在这方面取代它们。Orca 是你在办公桌前运行智能体的地方,而 Code Remote 是你离开时连接机器的方式,所以两者可以并存。</p>
+
+			<h2>什么时候其他工具更合适</h2>
+			<ul>
+				<li><strong>你需要完整的桌面。</strong>Code Remote 面向开发者的工作:文件、git、终端、开发服务器。需要设计软件或图形界面安装程序时,请使用远程桌面应用。</li>
+				<li><strong>你已经到处在用 VPN 和 SSH。</strong>如果已经配置好并且用得顺手,在其上使用终端应用完全没问题。Code Remote 适合那些根本不想配置的时候。</li>
+				<li><strong>你用的不是 iPhone。</strong>Code Remote 应用只面向 iPhone。其他设备只能使用上面的工具。</li>
+			</ul>
+
+			<h2>依然保持简单的地方</h2>
+			<p>智能体只监听 <code>127.0.0.1</code>,并通过私有的 Microsoft Dev Tunnel 发布自己。只有你的 GitHub 或 Microsoft 账号才能通过,而且每个请求还需要保存在 iPhone 钥匙串中的配对令牌。<a href="docs/">了解其工作原理</a>。</p>
+
+			<div class="actions">
+				<a class="button primary" href="./#install">开始使用</a>
+				<a class="button ghost" href="./#beta">加入 iPhone Beta</a>
+			</div>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Thanh Tran 的更多作品</span>
+				<a href="https://commitplus.app/"><img src="../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="./">首页</a>
+				<a href="../privacy.html">隐私</a>
+				<a href="../terms.html">条款</a>
+				<a href="compare.html">对比</a>
+				<a href="docs/">文档</a>
+				<a href="support.html">支持</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">隐私政策和服务条款仅提供英文版,以英文版为准。</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

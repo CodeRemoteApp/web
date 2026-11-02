@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>Lệnh · Tài liệu Code Remote</title>
+	<meta name="description" content="Mọi lệnh và tùy chọn của coderemote: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update và help.">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/vi/docs/commands.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/commands.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/commands.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/commands.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/commands.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/commands.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/commands.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="Sao chép" data-copied-label="Đã sao chép">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">Tài liệu</a>
+				<a class="nav-link" href="../compare.html">So sánh</a>
+				<a class="nav-link" href="../support.html">Hỗ trợ</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="Menu" title="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="Menu">
+					<a role="menuitem" href="./">Tài liệu</a>
+					<a role="menuitem" href="../compare.html">So sánh</a>
+					<a role="menuitem" href="../support.html">Hỗ trợ</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="Ngôn ngữ" title="Ngôn ngữ"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="Ngôn ngữ">
+					<a role="menuitemradio" href="../../docs/commands.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="commands.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="true">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../ja/docs/commands.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../zh-hans/docs/commands.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../es/docs/commands.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Giao diện" title="Giao diện"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Giao diện">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>Hệ thống<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Sáng<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Tối<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="Tài liệu">
+				<h4>Tài liệu</h4>
+				<ul>
+					<li><a href="./">Giới thiệu</a></li>
+					<li><a href="setup.html">Cài đặt</a></li>
+					<li><a href="commands.html" aria-current="page">Lệnh</a></li>
+					<li><a href="preview.html">Cổng &amp; xem trước</a></li>
+					<li><a href="agents.html">Coding agents</a></li>
+					<li><a href="configuration.html">Cấu hình</a></li>
+				</ul>
+				<h4>Trong trang này</h4>
+				<ul class="sub">
+					<li><a href="#up">up</a></li>
+					<li><a href="#status">status</a></li>
+					<li><a href="#kill">kill</a></li>
+					<li><a href="#stop">stop</a></li>
+					<li><a href="#serve">serve</a></li>
+					<li><a href="#requests">requests</a></li>
+					<li><a href="#setup">setup</a></li>
+					<li><a href="#rotate-token">rotate-token</a></li>
+					<li><a href="#tunnels">tunnels</a></li>
+					<li><a href="#login">login</a></li>
+					<li><a href="#update">update</a></li>
+					<li><a href="#help">help</a></li>
+					<li><a href="#options">options</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>Lệnh</h1>
+				<p class="lede">Mọi thứ <code>coderemote</code> làm được, từng lệnh một.</p>
+
+				<pre class="cmd"><span class="p">$ </span>coderemote up                    <span class="c"># share this folder, print the pairing QR</span>
+<span class="p">$ </span>coderemote status                <span class="c"># running agents and their terminal sessions</span>
+<span class="p">$ </span>coderemote kill &lt;id&gt;... | --all  <span class="c"># end terminal sessions</span>
+<span class="p">$ </span>coderemote stop [--all]          <span class="c"># stop the agent for this folder</span>
+<span class="p">$ </span>coderemote serve                 <span class="c"># share on 127.0.0.1 only, no tunnel</span>
+<span class="p">$ </span>coderemote requests [PORT]       <span class="c"># requests that reached a previewed port</span>
+<span class="p">$ </span>coderemote request &lt;ID&gt;          <span class="c"># headers and bodies of one request</span>
+<span class="p">$ </span>coderemote setup claude          <span class="c"># follow Claude Code sessions in the app</span>
+<span class="p">$ </span>coderemote setup codex           <span class="c"># the same for Codex</span>
+<span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
+<span class="p">$ </span>coderemote tunnels               <span class="c"># your Dev Tunnels account's tunnels</span>
+<span class="p">$ </span>coderemote tunnels delete &lt;id&gt;   <span class="c"># delete ones nothing uses</span>
+<span class="p">$ </span>coderemote login                 <span class="c"># sign in to Dev Tunnels again</span>
+<span class="p">$ </span>coderemote update                <span class="c"># install the latest version</span>
+<span class="p">$ </span>coderemote help                  <span class="c"># all options</span></pre>
+
+				<h2 id="up"><code>up</code></h2>
+				<p>Chia sẻ thư mục hiện tại qua một Microsoft Dev Tunnel riêng và in ra mã QR ghép đôi. Đây là lệnh bạn dùng hằng ngày.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote up
+<span class="p">$ </span>coderemote up --root ~/projects   <span class="c"># share another folder</span>
+<span class="p">$ </span>coderemote up --web               <span class="c"># also open it in VS Code on vscode.dev</span></pre>
+				<p>Nó khởi động một agent nhỏ trên <code>127.0.0.1</code>, đăng nhập Dev Tunnels nếu cần, kết nối ra relay và in ra ba thứ: thư mục đang chia sẻ, ai vào được, và các liên kết để ghép đôi. Nó chạy cho đến khi bạn nhấn <kbd>Ctrl</kbd>+<kbd>C</kbd> hoặc đóng terminal.</p>
+				<table>
+					<tr><th>Tùy chọn</th><th>Nó làm gì</th></tr>
+					<tr><td><code>--root DIR</code></td><td>Chia sẻ <code>DIR</code> thay vì thư mục hiện tại.</td></tr>
+					<tr><td><code>--port N</code></td><td>Lắng nghe trên cổng cục bộ <code>N</code> (mặc định <code>31580</code>). Đổi khi một chương trình khác đang giữ cổng đó.</td></tr>
+					<tr><td><code>--allow-anonymous</code></td><td>Bỏ qua bước đăng nhập tài khoản trên điện thoại: chỉ riêng pairing token là đủ để truy cập. Bí danh <code>--no-auth</code>.</td></tr>
+					<tr><td><code>--web</code></td><td>Đồng thời chạy <code>code tunnel</code> của VS Code và in ra liên kết vscode.dev mở thư mục trong trình soạn thảo đầy đủ trên trình duyệt.</td></tr>
+				</table>
+				<div class="callout">
+					<p><code>--web</code> dùng tunnel riêng của VS Code, không phải của Code Remote. Nó đăng nhập bằng tài khoản GitHub riêng và cho trình duyệt truy cập toàn bộ máy, không chỉ thư mục được chia sẻ. Nó cần lệnh <code>code</code> của VS Code trong <code>PATH</code> của bạn.</p>
+				</div>
+
+				<h2 id="status"><code>status</code></h2>
+				<p>Liệt kê các agent đang chạy trên máy tính này và các phiên terminal trong mỗi agent. Bí danh <code>ps</code>.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote status
+/Users/you/projects/my-app  (pid 4121, port 31580, up 2h)
+  https://…devtunnels.ms
+  3f9a2c1e  zsh          pid 4188    2h   1 attached
+  b71d04aa  claude       pid 5230    14m  detached</pre>
+				<p>Mỗi phiên hiện id, tiêu đề, process id, tuổi và việc có điện thoại nào đang kết nối vào lúc này hay không. Một phiên <em>detached</em> vẫn đang chạy; nó chờ app kết nối lại.</p>
+
+				<h2 id="kill"><code>kill</code></h2>
+				<p>Kết thúc các phiên terminal. Vài ký tự đầu của một id từ <code>status</code> là đủ.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote kill b71d
+killed b71d04aa (claude) in /Users/you/projects/my-app
+
+<span class="p">$ </span>coderemote kill --all              <span class="c"># every session in every agent</span></pre>
+				<p>Bản thân agent vẫn chạy; dùng <code>stop</code> cho việc đó.</p>
+
+				<h2 id="stop"><code>stop</code></h2>
+				<p>Dừng agent đang chia sẻ thư mục hiện tại, kết thúc tunnel và các phiên terminal của nó. Tiện khi <code>up</code> chạy trong một cửa sổ bạn không với tới được.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote stop                   <span class="c"># the agent for this folder</span>
+<span class="p">$ </span>coderemote stop --all             <span class="c"># every agent on this computer</span></pre>
+
+				<h2 id="serve"><code>serve</code></h2>
+				<p>Khởi động agent chỉ trên <code>127.0.0.1</code>, không tunnel, không đăng nhập, và in ra URL cục bộ cùng token. Dành cho kiểm thử và phát triển cục bộ; điện thoại của bạn không truy cập được.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote serve
+coderemote agent on http://127.0.0.1:31580
+Sharing: /Users/you/projects/my-app
+Token: …</pre>
+
+				<h2 id="requests"><code>requests</code></h2>
+				<p>In ra các request đã đến một cổng bạn <a href="preview.html#requests">xem trước</a> từ app, cùng nhật ký mà app hiển thị. Nó được làm cho coding agent trong terminal, như Claude Code hay Codex: bảo nó chạy <code>coderemote requests</code> và nó thấy được trang của bạn hoặc một webhook thực sự đã gửi gì, và server của bạn đã trả lời gì. Cần coderemote 0.3.0 trở lên.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote requests
+#41    200   GET /api/me  8 ms  212 B  10:20:31
+#42    401   POST /api/orders  5 ms  38 B  10:20:33
+
+<span class="p">$ </span>coderemote request 42
+#42  POST /api/orders  ->  401
+  authorization: Bearer [redacted]
+  …</pre>
+				<p>Chạy trong thư mục được chia sẻ (hoặc bên dưới nó) để tìm đúng agent của thư mục đó; nếu chỉ có một agent đang chạy thì chạy ở đâu cũng được. Không có cổng thì nó đọc mọi cổng đang được xem trước. Một bản xem trước bạn đã dừng vẫn giữ nhật ký: nêu cổng của nó để đọc.</p>
+				<table>
+					<tr><th>Lệnh hoặc tùy chọn</th><th>Nó làm gì</th></tr>
+					<tr><td><code>requests [PORT]</code></td><td>Một dòng cho mỗi request, cũ nhất trước: id, status, method và đường dẫn, thời lượng, kích thước và thời gian.</td></tr>
+					<tr><td><code>request &lt;ID&gt; [PORT]</code></td><td>Header và body của một request. JSON được thụt lề; body trên 64 KB không được giữ.</td></tr>
+					<tr><td><code>requests clear [PORT]</code></td><td>Xóa các request đã ghi, giống <strong>Clear</strong> trong app.</td></tr>
+					<tr><td><code>--grep TEXT</code></td><td>Chỉ những request có method hoặc đường dẫn chứa <code>TEXT</code>.</td></tr>
+					<tr><td><code>--failed</code></td><td>Chỉ lỗi và các phản hồi <code>4xx</code>/<code>5xx</code>.</td></tr>
+					<tr><td><code>--limit N</code></td><td>Hiện <code>N</code> request gần nhất (mặc định 50).</td></tr>
+					<tr><td><code>--json</code></td><td>Output đọc được bằng máy, cho script.</td></tr>
+					<tr><td><code>--show-secrets</code></td><td>In ra các giá trị bị che theo mặc định (xem bên dưới).</td></tr>
+				</table>
+				<div class="callout">
+					<p>Bí mật được che trừ khi bạn yêu cầu: header <code>Authorization</code> (giữ lại scheme, như <code>Bearer</code>), giá trị cookie (giữ lại tên), header có tên giống token, key hoặc session, và các trường như <code>password</code> hay <code>access_token</code> trong query string, JSON và form body. Output cho biết đã ẩn bao nhiêu giá trị. Thêm <code>--show-secrets</code> khi agent cần một giá trị, ví dụ để dùng lại session token trong một bài test.</p>
+				</div>
+				<p>Không có gì được ghi xuống đĩa: lệnh đọc nhật ký mà agent giữ trong bộ nhớ, 200 request gần nhất cho mỗi cổng.</p>
+
+				<h2 id="setup"><code>setup claude</code>, <code>setup codex</code></h2>
+				<p>Cài plugin Code Remote vào Claude Code hoặc Codex, để các phiên của chúng hiện trong tab Agents của app và bạn trả lời được yêu cầu của chúng từ điện thoại. Codex chỉ chạy hook của plugin sau khi bạn tin cậy chúng một lần: mở Codex và gõ <code>/hooks</code>. <code>--remove</code> gỡ nó. Xem <a href="agents.html">Coding agents</a>.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup claude
+<span class="p">$ </span>coderemote setup codex</pre>
+
+				<h2 id="rotate-token"><code>rotate-token</code></h2>
+				<p>Thay access token. Mọi điện thoại và trình duyệt đã ghép đôi mất quyền truy cập cùng lúc. Dùng khi bạn mất điện thoại hoặc liên kết ghép đôi bị lộ.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote rotate-token
+Token rotated. Re-pair your devices, and restart running agents.</pre>
+				<p>Sau đó khởi động lại <code>coderemote up</code> và quét mã QR mới trên các thiết bị bạn vẫn tin tưởng.</p>
+
+				<h2 id="tunnels"><code>tunnels</code></h2>
+				<p>Liệt kê các tunnel trên tài khoản Dev Tunnels của bạn và xóa những cái không còn ai dùng. Một tài khoản được giữ 10 tunnel. Mỗi máy tính chạy coderemote dùng một cái, cộng thêm một cái cho <a href="preview.html#how">xem trước</a> trong lúc agent của nó chạy, và các máy cũ hay các lần cài lại để lại tunnel của chúng. Cần coderemote 0.3.6 trở lên.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote tunnels
+  silent-lake-pqv9b80.usw2  online · this computer's agent on port 31580 · coderemote my-mac
+  brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
+  quiet-fox-3hd8w2c.usw2    coderemote old-laptop
+
+<span class="p">$ </span>coderemote tunnels delete quiet-fox-3hd8w2c
+deleted quiet-fox-3hd8w2c.usw2</pre>
+				<p>Mỗi dòng hiện id của tunnel, <em>online</em> khi một agent đang phục vụ nó, máy tính này dùng nó để làm gì, và mô tả của nó, vốn nêu tên máy tính đã tạo ra nó. Hậu tố vùng (<code>.usw2</code>) là tùy chọn khi bạn đưa vào một id.</p>
+				<table>
+					<tr><th>Lệnh hoặc tùy chọn</th><th>Nó làm gì</th></tr>
+					<tr><td><code>tunnels</code></td><td>Một dòng cho mỗi tunnel của tài khoản bạn đang đăng nhập.</td></tr>
+					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>Xóa các tunnel đó. Tunnel đang online, hoặc đang được máy tính này dùng, sẽ được giữ lại trừ khi bạn thêm <code>--force</code>.</td></tr>
+					<tr><td><code>--force</code></td><td>Cứ xóa. URL của nó sẽ mất, nên các điện thoại đã ghép đôi với nó phải ghép đôi lại; trên máy tính này, lần <code>up</code> tiếp theo sẽ tạo cái mới.</td></tr>
+				</table>
+				<p>Bạn hiếm khi cần chạy tay: khi tài khoản đã đầy, <code>up</code> và phần xem trước sẽ xóa trước các preview tunnel không agent nào phục vụ. Chỉ khi điều đó không giải phóng được chỗ thì <code>up</code> mới dừng, liệt kê các tunnel của tài khoản và nhờ bạn xóa bớt.</p>
+
+				<h2 id="login"><code>login</code></h2>
+				<p>Đăng nhập vào Microsoft Dev Tunnels. <code>up</code> tự làm việc này khi cần, nên bạn chỉ chạy nó để đổi tài khoản hoặc khi không có trình duyệt.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote login                  <span class="c"># GitHub, in the browser</span>
+<span class="p">$ </span>coderemote login --microsoft      <span class="c"># a Microsoft account</span>
+<span class="p">$ </span>coderemote login --device-code    <span class="c"># no browser here: enter a code on another device</span></pre>
+				<p>Điện thoại phải đăng nhập bằng cùng tài khoản, trừ khi bạn chạy <code>up --allow-anonymous</code>.</p>
+
+				<h2 id="update"><code>update</code></h2>
+				<p>Cài coderemote bản mới nhất theo cách bạn đã cài: bằng npm (hoặc pnpm, yarn, bun), bằng Homebrew, hoặc vào Node.js mà <a href="setup.html#install">script cài đặt</a> đã tải. Khi có bản mới hơn, <code>up</code> sẽ báo ngay dưới các liên kết ghép đôi; nó hỏi npm tối đa một lần mỗi ngày và không bao giờ làm chậm lúc khởi động. Đặt <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> để tắt.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote update
+<span class="p">$ </span>coderemote --version             <span class="c"># the version you're running</span></pre>
+				<p>Các agent đang chạy vẫn giữ phiên bản cũ cho đến khi bạn khởi động lại chúng: <code>coderemote stop --all</code>, rồi <code>coderemote up</code> lần nữa.</p>
+
+				<h2 id="help"><code>help</code></h2>
+				<p>In ra mọi lệnh và tùy chọn. <code>coderemote</code> đứng một mình, hoặc <code>--help</code> ở bất kỳ đâu trong dòng lệnh, cũng làm vậy, nên gõ nhầm sẽ không bao giờ vô tình bắt đầu chia sẻ một thư mục.</p>
+
+				<h2 id="options">Tùy chọn</h2>
+				<table>
+					<tr><th>Tùy chọn</th><th>Lệnh</th><th>Mặc định</th></tr>
+					<tr><td><code>--root DIR</code></td><td><code>up</code>, <code>serve</code>, <code>stop</code></td><td>thư mục hiện tại</td></tr>
+					<tr><td><code>--port N</code></td><td><code>up</code>, <code>serve</code></td><td><code>31580</code></td></tr>
+					<tr><td><code>--allow-anonymous</code></td><td><code>up</code></td><td>tắt</td></tr>
+					<tr><td><code>--web</code></td><td><code>up</code></td><td>tắt</td></tr>
+					<tr><td><code>--all</code></td><td><code>kill</code>, <code>stop</code></td><td></td></tr>
+					<tr><td><code>--force</code></td><td><code>tunnels delete</code></td><td>tắt</td></tr>
+					<tr><td><code>--microsoft</code>, <code>--device-code</code></td><td><code>login</code></td><td>GitHub, trong trình duyệt</td></tr>
+				</table>
+
+				<nav class="pager" aria-label="Các trang khác">
+					<a href="setup.html"><span>Trước</span>Cài đặt</a>
+					<a class="next" href="preview.html"><span>Tiếp</span>Cổng &amp; xem trước</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Thêm từ Thanh Tran</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">Trang chủ</a>
+				<a href="./">Tài liệu</a>
+				<a href="../../privacy.html">Quyền riêng tư</a>
+				<a href="../../terms.html">Điều khoản</a>
+				<a href="../compare.html">So sánh</a>
+				<a href="../support.html">Hỗ trợ</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">Chính sách quyền riêng tư và Điều khoản chỉ có bản tiếng Anh; bản tiếng Anh là bản có hiệu lực.</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

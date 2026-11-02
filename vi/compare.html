@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>So sánh · Code Remote</title>
+	<meta name="description" content="Code Remote so với Tailscale, Termius, Orca, app điều khiển máy tính từ xa và SSH thuần: mỗi cái cần gì trên máy tính và mạng của bạn trước khi bạn có thể kết nối từ điện thoại.">
+	<link rel="icon" href="../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/vi/compare.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/compare.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/compare.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/compare.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/compare.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/compare.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/compare.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="Sao chép" data-copied-label="Đã sao chép">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="./"><img src="../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="compare.html">So sánh</a>
+				<a class="nav-link" href="docs/">Tài liệu</a>
+				<a class="nav-link" href="support.html">Hỗ trợ</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="Menu" title="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="Menu">
+					<a role="menuitem" href="compare.html">So sánh</a>
+					<a role="menuitem" href="docs/">Tài liệu</a>
+					<a role="menuitem" href="support.html">Hỗ trợ</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="Ngôn ngữ" title="Ngôn ngữ"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="Ngôn ngữ">
+					<a role="menuitemradio" href="../compare.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="compare.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="true">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../ja/compare.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../zh-hans/compare.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../es/compare.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Giao diện" title="Giao diện"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Giao diện">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>Hệ thống<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Sáng<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Tối<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="prose">
+		<div class="wrap compare">
+			<h1>Code Remote so với các cách thông thường.</h1>
+			<p class="lede">Để truy cập máy dev từ điện thoại, hầu hết công cụ yêu cầu bạn tải một app về máy tính, thiết lập VPN, hoặc cấu hình SSH. Code Remote chỉ cần một lệnh và một lần quét QR.</p>
+
+			<pre class="cmd one-liner" data-copy>npx coderemote up</pre>
+			<p class="meta">Cần Node.js 22 trở lên. Chưa có Node? <a href="docs/setup.html#install">Script cài đặt</a> sẽ tải một bản chỉ dành riêng cho coderemote. Lần chạy đầu tiên yêu cầu bạn đăng nhập một lần bằng GitHub hoặc Microsoft.</p>
+
+			<h2>Code Remote so với Tailscale, Termius và Orca</h2>
+			<p class="meta">Dựa trên các trang công khai của từng công cụ vào tháng 11 năm 2026. Gói và tính năng có thể thay đổi, hãy kiểm tra trang của họ trước khi quyết định.</p>
+			<div class="table-scroll">
+			<table class="compare-table">
+				<thead>
+					<tr><th></th><th class="us">Code Remote</th><th>Tailscale + một app SSH</th><th>Termius</th><th>Orca</th></tr>
+				</thead>
+				<tbody>
+					<tr class="setup"><th scope="row">Thiết lập trên máy tính</th><td class="us"><strong>Một lệnh:</strong> <code>npx coderemote up</code>. Không có gì ở lại trên máy.</td><td>Cài Tailscale, bật SSH server, đăng nhập</td><td>Phải có sẵn một SSH server đang chạy, với khóa đã thiết lập</td><td>Cài app desktop Orca</td></tr>
+					<tr class="setup"><th scope="row">Thiết lập trên điện thoại</th><td class="us"><strong>Quét mã QR.</strong> Ghép đôi chỉ có vậy.</td><td>Cài Tailscale và một app SSH, đăng nhập, nhập khóa</td><td>Cài Termius, thêm host và khóa</td><td>Cài app đi kèm và ghép đôi</td></tr>
+					<tr class="setup"><th scope="row">Thiết lập mạng</th><td class="us"><strong>Không cần gì.</strong> Nó kết nối ra ngoài, nên NAT, tường lửa và Wi-Fi khách sạn đều ổn.</td><td>Đưa cả hai thiết bị vào cùng một tailnet</td><td>Bạn tự làm cho máy truy cập được: chuyển tiếp cổng, VPN hoặc tương tự</td><td>Dùng được từ chính máy tính nó chạy. Máy ở xa đi qua SSH.</td></tr>
+					<tr class="setup"><th scope="row">Tài khoản và khóa</th><td class="us"><strong>Một lần đăng nhập</strong> (GitHub hoặc Microsoft). Không phải tạo hay sao chép khóa SSH.</td><td>Một tài khoản Tailscale, cộng với khóa SSH hoặc Tailscale SSH</td><td>Khóa SSH hoặc mật khẩu cho từng host. Đồng bộ đám mây là trả phí.</td><td>Tài khoản coding agent của riêng bạn</td></tr>
+					<tr><th scope="row">Trên điện thoại bạn có</th><td class="us">Tệp, git, terminal, cổng, xem trước dev server và nhật ký request, tất cả được làm cho cảm ứng</td><td>Một terminal, tùy theo app SSH cung cấp</td><td>Terminal và truyền tệp SFTP</td><td>Trạng thái agent trực tiếp, mức sử dụng và terminal</td></tr>
+					<tr><th scope="row">Đây là gì</th><td class="us">Một agent trên máy tính cộng với app iPhone</td><td>Một mạng VPN dạng mesh kèm app SSH</td><td>Một client SSH, Mosh và SFTP</td><td>Một IDE desktop mã nguồn mở để chạy coding agent song song</td></tr>
+					<tr><th scope="row">Chi phí</th><td class="us">Beta iPhone miễn phí, CLI mã nguồn mở miễn phí (AGPL)</td><td>Miễn phí cho cá nhân trong giới hạn của Tailscale</td><td>Gói Starter miễn phí, gói Pro trả phí cho đồng bộ và hơn thế</td><td>Mã nguồn mở (MIT)</td></tr>
+					<tr><th scope="row">Phù hợp nhất cho</th><td class="us"><strong>Truy cập máy dev từ điện thoại với ít thiết lập nhất</strong></td><td>Nối nhiều máy vào một mạng riêng</td><td>Quản lý nhiều server qua SSH</td><td>Chạy nhiều agent song song tại bàn làm việc</td></tr>
+				</tbody>
+			</table>
+			</div>
+
+			<h2>Vì sao chọn Code Remote</h2>
+			<ul>
+				<li><strong>Đường ngắn nhất.</strong> Một lệnh và một lần quét. Các công cụ khác cần hai hoặc ba bước cài đặt, tài khoản ở cả hai phía, cùng khóa hoặc thiết lập mạng.</li>
+				<li><strong>Không có gì phải bảo trì.</strong> Không VPN phải giữ kết nối, không SSH server phải gia cố, không khóa phải xoay vòng, không app desktop phải cập nhật.</li>
+				<li><strong>Làm cho điện thoại.</strong> Trình duyệt tệp, xem git, thanh phím cho terminal và xem trước bằng một chạm, thay vì một terminal bị nhồi vào màn hình nhỏ.</li>
+				<li><strong>Riêng tư từ thiết kế.</strong> Agent chỉ lắng nghe trên <code>127.0.0.1</code>, và không có máy chủ Code Remote nào ở giữa. <a href="docs/">Xem cách hoạt động</a>.</li>
+			</ul>
+			<p>Tailscale và Termius là lựa chọn đúng nếu bạn quản lý nhiều máy hoặc server, và Code Remote không thay thế chúng cho việc đó. Orca là nơi bạn chạy agent khi ngồi ở bàn, còn Code Remote là cách bạn với tới máy khi không ở gần nó, nên hai thứ có thể dùng song song.</p>
+
+			<h2>Khi nào một công cụ khác phù hợp hơn</h2>
+			<ul>
+				<li><strong>Bạn cần toàn bộ desktop.</strong> Code Remote dành cho công việc của lập trình viên: tệp, git, terminal, dev server. Với app thiết kế hay trình cài đặt có giao diện, hãy dùng app điều khiển máy tính từ xa.</li>
+				<li><strong>Bạn đã chạy VPN và SSH khắp nơi.</strong> Nếu đã thiết lập sẵn và thấy ổn, một app terminal chạy qua đó vẫn dùng tốt. Code Remote dành cho lúc bạn không muốn thiết lập gì cả.</li>
+				<li><strong>Bạn không dùng iPhone.</strong> App Code Remote chỉ dành cho iPhone. Mọi thiết bị khác phải dùng các công cụ ở trên.</li>
+			</ul>
+
+			<h2>Điều gì vẫn đơn giản</h2>
+			<p>Agent chỉ lắng nghe trên <code>127.0.0.1</code> và tự công bố qua một Microsoft Dev Tunnel riêng. Chỉ tài khoản GitHub hoặc Microsoft của bạn mới vào được, và mỗi request còn cần pairing token lưu trong Keychain của iPhone. <a href="docs/">Xem cách hoạt động</a>.</p>
+
+			<div class="actions">
+				<a class="button primary" href="./#install">Bắt đầu</a>
+				<a class="button ghost" href="./#beta">Tham gia beta trên iPhone</a>
+			</div>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Thêm từ Thanh Tran</span>
+				<a href="https://commitplus.app/"><img src="../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="./">Trang chủ</a>
+				<a href="../privacy.html">Quyền riêng tư</a>
+				<a href="../terms.html">Điều khoản</a>
+				<a href="compare.html">So sánh</a>
+				<a href="docs/">Tài liệu</a>
+				<a href="support.html">Hỗ trợ</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">Chính sách quyền riêng tư và Điều khoản chỉ có bản tiếng Anh; bản tiếng Anh là bản có hiệu lực.</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

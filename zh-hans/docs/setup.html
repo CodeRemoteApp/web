@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>安装 · Code Remote 文档</title>
+	<meta name="description" content="在 macOS、Windows 或 Linux 上安装 coderemote(安装脚本、npm 或 Homebrew),共享一个文件夹,几分钟内配对你的 iPhone。">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/zh-hans/docs/setup.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/setup.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/setup.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/setup.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/setup.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/setup.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/setup.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="复制" data-copied-label="已复制">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">文档</a>
+				<a class="nav-link" href="../compare.html">对比</a>
+				<a class="nav-link" href="../support.html">支持</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="菜单" title="菜单"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="菜单">
+					<a role="menuitem" href="./">文档</a>
+					<a role="menuitem" href="../compare.html">对比</a>
+					<a role="menuitem" href="../support.html">支持</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="语言" title="语言"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="语言">
+					<a role="menuitemradio" href="../../docs/setup.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../vi/docs/setup.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../ja/docs/setup.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="setup.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="true">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../es/docs/setup.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="外观" title="外观"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="外观">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>跟随系统<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>浅色<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>深色<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="文档">
+				<h4>文档</h4>
+				<ul>
+					<li><a href="./">简介</a></li>
+					<li><a href="setup.html" aria-current="page">安装</a></li>
+					<li><a href="commands.html">命令</a></li>
+					<li><a href="preview.html">端口与预览</a></li>
+					<li><a href="agents.html">编程智能体</a></li>
+					<li><a href="configuration.html">配置</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<div class="legal-head">
+					<div>
+						<h1>安装</h1>
+						<p class="lede">电脑上一条命令,手机上扫一下。</p>
+					</div>
+					<svg class="legal-art art" viewBox="0 0 220 200" aria-hidden="true">
+						<path class="blob" d="M38 52C70 12 168 8 196 50c26 40 22 106-16 128-44 26-120 24-150-8C4 142 8 88 38 52Z"/>
+						<g class="spark"><path d="M24 30l3.5 10 10 3.5-10 3.5-3.5 10-3.5-10-10-3.5 10-3.5z"/></g>
+						<g class="spark s2"><path d="M202 160l2.5 7 7 2.5-7 2.5-2.5 7-2.5-7-7-2.5 7-2.5z"/></g>
+						<g transform="rotate(-4 90 100)">
+							<rect class="paper" x="34" y="44" width="96" height="96" rx="10"/>
+							<path class="qr" d="M48 58h22v22H48zM94 58h22v22H94zM48 104h22v22H48z"/>
+							<path class="paper" d="M54 64h10v10H54zM100 64h10v10h-10zM54 110h10v10H54z"/>
+							<path class="qr" d="M78 58h8v8h-8zM78 74h8v8h-8zM94 88h8v8h-8zM78 96h8v8h-8zM108 100h8v8h-8zM94 112h8v8h-8zM78 116h8v10h-8zM108 118h8v8h-8zM48 88h8v8h-8zM62 88h8v8h-8z"/>
+							<path class="scan" d="M40 60h84"/>
+						</g>
+						<g class="phone">
+							<rect class="paper" x="138" y="72" width="54" height="100" rx="12"/>
+							<path class="line" d="M156 82h18M150 104h30M150 118h22M150 132h26"/>
+						</g>
+					</svg>
+				</div>
+
+				<h2 id="requirements">要求</h2>
+				<ul>
+					<li>一台 <strong>Mac</strong> 或 <strong>Windows 10/11</strong> 电脑。Linux 预计可以运行,但尚未经过测试。</li>
+					<li><strong>Node.js 22</strong> 或更高版本,仅在用 npm 安装时需要。安装脚本在你的版本足够新时会使用它,否则会专门为 coderemote 下载一份;Homebrew 自带一份。</li>
+					<li>一个 <strong>GitHub</strong> 或 <strong>Microsoft</strong> 账号,用于登录 Microsoft Dev Tunnels。</li>
+					<li>iPhone 上的 <strong>Code Remote</strong> 应用,目前在 TestFlight 上处于 Beta 阶段(<a href="../#beta">申请邀请</a>)。</li>
+				</ul>
+				<p>你不需要 SSH、开放端口、VPN 或 VS Code。</p>
+
+				<h2 id="install">1. 安装 CLI</h2>
+				<div class="install" data-tabs>
+					<div class="tabs" role="tablist" aria-label="安装方式">
+						<button type="button" role="tab" data-tab="unix" aria-selected="true">macOS/Linux</button>
+						<button type="button" role="tab" data-tab="windows" aria-selected="false" tabindex="-1">Windows</button>
+						<button type="button" role="tab" data-tab="npm" aria-selected="false" tabindex="-1">npm</button>
+						<button type="button" role="tab" data-tab="brew" aria-selected="false" tabindex="-1">Homebrew</button>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="unix" aria-label="macOS 和 Linux">
+						<p class="tab-label">macOS 和 Linux</p>
+						<p>安装脚本,在终端中运行。当你的 Node.js 为 22 或更高版本时会使用它;否则会把 Node.js 下载到 <code>~/.coderemote/runtime</code>,仅供 coderemote 使用,并把它加入你的 <code>PATH</code>。</p>
+						<h4>安装</h4>
+						<pre class="cmd" data-copy>curl -fsSL https://raw.githubusercontent.com/CodeRemoteApp/coderemote/main/install.sh | sh</pre>
+						<h4>更新</h4>
+						<pre class="cmd" data-copy>coderemote update</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="windows" aria-label="Windows">
+						<p class="tab-label">Windows</p>
+						<p>安装脚本,在 Windows 10 或 11 的 PowerShell 中运行。当你的 Node.js 为 22 或更高版本时会使用它;否则会把 Node.js 下载到 <code>%USERPROFILE%\.coderemote\runtime</code>,仅供 coderemote 使用,并把它加入你的 <code>PATH</code>。之后请打开一个新的终端。</p>
+						<h4>安装</h4>
+						<pre class="cmd" data-copy>irm https://raw.githubusercontent.com/CodeRemoteApp/coderemote/main/install.ps1 | iex</pre>
+						<h4>更新</h4>
+						<pre class="cmd" data-copy>coderemote update</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="npm" aria-label="npm">
+						<p class="tab-label">npm</p>
+						<p>适用于任何装有 Node.js 22 或更高版本和 npm 的系统。pnpm、yarn 和 bun 也可以。</p>
+						<h4>安装</h4>
+						<pre class="cmd" data-copy>npm install -g coderemote</pre>
+						<h4>更新</h4>
+						<pre class="cmd" data-copy>coderemote update</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="brew" aria-label="Homebrew">
+						<p class="tab-label">Homebrew</p>
+						<p>在 macOS 和 Linux 上,从 Code Remote 的 tap 安装。Homebrew 会一并安装 Node.js。</p>
+						<h4>安装</h4>
+						<pre class="cmd" data-copy>brew install coderemoteapp/tap/coderemote</pre>
+						<h4>更新</h4>
+						<pre class="cmd" data-copy>brew upgrade coderemote</pre>
+					</div>
+				</div>
+				<p>用 <code>coderemote --version</code> 检查是否成功。在 Linux 上,终端支持会在安装时编译:如果失败,请参阅<a href="configuration.html#linux">在 Linux 上安装失败</a>。</p>
+
+				<h2 id="share">2. 共享一个文件夹</h2>
+				<p>进入你想从手机访问的文件夹,启动智能体:</p>
+				<pre class="cmd"><span class="p">$ </span>cd ~/projects/my-app
+<span class="p">$ </span>coderemote up</pre>
+				<p>首次运行会自行完成设置:</p>
+				<ol>
+					<li>它会把 Microsoft 的 Dev Tunnels CLI 下载到 <code>~/.coderemote/bin</code>(仅一次,并校验签名)。</li>
+					<li>它会打开浏览器让你用 GitHub 登录。要改用 Microsoft 账号,请在 <code>up</code> 之前先运行 <code>coderemote login --microsoft</code>。</li>
+					<li>它会为这台电脑创建一个私有隧道,并打印一个二维码。</li>
+				</ol>
+				<pre class="cmd"><span class="c">✔ Starting agent</span>
+<span class="c">✔ Checking dev tunnels sign-in</span>
+<span class="c">✔ Connecting to the relay</span>
+
+  Sharing: /Users/you/projects/my-app
+  Access:  sign-in required as you (GitHub)
+
+  Web:  https://…devtunnels.ms/#token=…
+  App:  vsremote://pair?url=…&amp;token=…
+
+  <span class="c">[QR code]</span></pre>
+
+				<h2 id="pair">3. 配对你的 iPhone</h2>
+				<p>用 iPhone 相机扫描二维码,或点按应用中的 <strong>+</strong> 并在那里扫描。然后应用会要求你通过系统浏览器,用电脑所使用的<em>同一个</em> GitHub 或 Microsoft 账号登录。通行密钥和"Sign in with Google"都可以使用。</p>
+				<p>就这样。共享文件夹的文件、Git 和终端现在都在你的手机上了。</p>
+
+				<figure class="shots">
+					<ol>
+						<li><img src="../../screens/setup-1-install.webp" width="461" height="1000" loading="lazy" alt="Quick setup 第 1 步:用 npm install -g coderemote 安装 CLI"></li>
+						<li><img src="../../screens/setup-2-folder.webp" width="461" height="1000" loading="lazy" alt="Quick setup 第 2 步:用 cd ~/projects/my-app 进入你的项目"></li>
+						<li><img src="../../screens/setup-3-up.webp" width="461" height="1000" loading="lazy" alt="Quick setup 第 3 步:用 coderemote up 启动智能体"></li>
+						<li><img src="../../screens/setup-4-scan.webp" width="461" height="1000" loading="lazy" alt="Quick setup 第 4 步:扫描二维码"></li>
+					</ol>
+					<figcaption>应用会在 Quick setup 中带你走完同样的步骤。</figcaption>
+				</figure>
+
+				<div class="callout">
+					<p>二维码和链接中包含你的访问令牌,不要把它们发布到任何地方。如果泄露,请运行 <code>coderemote rotate-token</code>。</p>
+				</div>
+
+				<h2 id="everyday">日常使用</h2>
+				<h3>保持终端开启</h3>
+				<p><code>coderemote up</code> 在前台运行。按 <kbd>Ctrl</kbd>+<kbd>C</kbd> 或关闭窗口即可停止共享;终端会话会随之结束。</p>
+
+				<h3>保持电脑唤醒</h3>
+				<p>休眠的电脑无法回应手机。在 Mac 笔记本上,请在 <code>caffeinate</code> 之下启动智能体,这样 Mac 在它运行期间会保持唤醒:</p>
+				<pre class="cmd"><span class="p">$ </span>caffeinate -i coderemote up</pre>
+				<p>在 Windows 上,请设置 <strong>Settings › System › Power</strong>,让电脑在接通电源时不进入睡眠。</p>
+
+				<h3>Windows 上的终端</h3>
+				<p>你从手机打开的终端运行 PowerShell:安装了 PowerShell 7 时是 <code>pwsh</code>,否则是 Windows PowerShell。</p>
+
+				<h3>重启后配对依然有效</h3>
+				<p>隧道 URL 和令牌在多次运行之间保持不变,所以已配对的手机会在你下次运行 <code>coderemote up</code> 时自动重新连接。只有在 <code>rotate-token</code> 之后才需要重新扫描。</p>
+
+				<h2 id="update">更新或卸载</h2>
+				<p>有新版本时,<code>coderemote up</code> 会在配对链接下方告诉你。<code>coderemote update</code> 会以你安装 coderemote 的方式安装它:使用 npm(或 pnpm、yarn、bun)、Homebrew,或安装到安装脚本自带的 Node.js 中。再次运行安装脚本也能达到同样的效果。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote update</pre>
+				<p>要卸载,先停止智能体,然后移除 coderemote 及其文件夹,其中保存着令牌和隧道设置:</p>
+				<div class="install" data-tabs>
+					<div class="tabs" role="tablist" aria-label="安装方式">
+						<button type="button" role="tab" data-tab="unix" aria-selected="true">macOS/Linux</button>
+						<button type="button" role="tab" data-tab="windows" aria-selected="false" tabindex="-1">Windows</button>
+						<button type="button" role="tab" data-tab="npm" aria-selected="false" tabindex="-1">npm</button>
+						<button type="button" role="tab" data-tab="brew" aria-selected="false" tabindex="-1">Homebrew</button>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="unix" aria-label="macOS 和 Linux">
+						<p class="tab-label">macOS 和 Linux,通过脚本安装</p>
+						<pre class="cmd"><span class="p">$ </span>coderemote stop --all
+<span class="p">$ </span>rm -rf ~/.coderemote</pre>
+						<p>然后删除脚本添加到你 shell 启动文件(<code>~/.zshrc</code>、<code>~/.bashrc</code> 或 <code>~/.profile</code>)中的 <code># coderemote</code> 行。如果脚本使用的是你自己的 Node.js,那它是通过 npm 安装的:还要运行 <code>npm uninstall -g coderemote</code>。</p>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="windows" aria-label="Windows">
+						<p class="tab-label">Windows,通过脚本安装</p>
+						<pre class="cmd"><span class="p">PS&gt; </span>coderemote stop --all
+<span class="p">PS&gt; </span>Remove-Item -Recurse -Force ~\.coderemote</pre>
+						<p>然后在 <strong>Edit environment variables for your account</strong> 中,从你用户的 <code>Path</code> 里移除 <code>%USERPROFILE%\.coderemote\runtime\bin</code>。如果脚本使用的是你自己的 Node.js,那它是通过 npm 安装的:还要运行 <code>npm uninstall -g coderemote</code>。</p>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="npm" aria-label="npm">
+						<p class="tab-label">npm</p>
+						<pre class="cmd"><span class="p">$ </span>coderemote stop --all
+<span class="p">$ </span>npm uninstall -g coderemote
+<span class="p">$ </span>rm -rf ~/.coderemote</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="brew" aria-label="Homebrew">
+						<p class="tab-label">Homebrew</p>
+						<pre class="cmd"><span class="p">$ </span>coderemote stop --all
+<span class="p">$ </span>brew uninstall coderemote
+<span class="p">$ </span>rm -rf ~/.coderemote</pre>
+					</div>
+				</div>
+				<p>删除 <code>~/.coderemote</code> 会把这台电脑的隧道留在你的 Dev Tunnels 账号上。要连它们一起删除,请先用 <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> 列出,并在移除 coderemote 之前,用 <code>coderemote tunnels delete &lt;id&gt;... --force</code> 删除这台电脑的隧道。</p>
+
+				<nav class="pager" aria-label="更多页面">
+					<a href="./"><span>上一页</span>简介</a>
+					<a class="next" href="commands.html"><span>下一页</span>命令</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Thanh Tran 的更多作品</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">首页</a>
+				<a href="./">文档</a>
+				<a href="../../privacy.html">隐私</a>
+				<a href="../../terms.html">条款</a>
+				<a href="../compare.html">对比</a>
+				<a href="../support.html">支持</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">隐私政策和服务条款仅提供英文版,以英文版为准。</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../motion.js?v=9bb63cfd" defer></script>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

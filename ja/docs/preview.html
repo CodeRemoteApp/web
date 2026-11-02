@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>ポートとプレビュー · Code Remote ドキュメント</title>
+	<meta name="description" content="コンピューターで待ち受けているサーバーを確認し、開発サーバーを iPhone で開き、公開リンクをしばらく共有し、届くリクエストを監視できます。">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/ja/docs/preview.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/preview.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/preview.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/preview.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/preview.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/preview.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/preview.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="コピー" data-copied-label="コピーしました">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">ドキュメント</a>
+				<a class="nav-link" href="../compare.html">比較</a>
+				<a class="nav-link" href="../support.html">サポート</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="メニュー" title="メニュー"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="メニュー">
+					<a role="menuitem" href="./">ドキュメント</a>
+					<a role="menuitem" href="../compare.html">比較</a>
+					<a role="menuitem" href="../support.html">サポート</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="言語" title="言語"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="言語">
+					<a role="menuitemradio" href="../../docs/preview.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../vi/docs/preview.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="preview.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="true">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../zh-hans/docs/preview.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../es/docs/preview.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="外観" title="外観"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="外観">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>システム<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>ライト<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>ダーク<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="ドキュメント">
+				<h4>ドキュメント</h4>
+				<ul>
+					<li><a href="./">はじめに</a></li>
+					<li><a href="setup.html">セットアップ</a></li>
+					<li><a href="commands.html">コマンド</a></li>
+					<li><a href="preview.html" aria-current="page">ポートとプレビュー</a></li>
+					<li><a href="agents.html">コーディングエージェント</a></li>
+					<li><a href="configuration.html">設定</a></li>
+				</ul>
+				<h4>このページの内容</h4>
+				<ul class="sub">
+					<li><a href="#ports">Ports タブ</a></li>
+					<li><a href="#preview">プレビュー</a></li>
+					<li><a href="#share">公開リンクを共有する</a></li>
+					<li><a href="#requests">リクエスト</a></li>
+					<li><a href="#how">仕組み</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>ポートとプレビュー</h1>
+				<p class="lede">コンピューターの開発サーバーを iPhone で開き、しばらく共有し、それに届くリクエストを確認できます。</p>
+				<p>これにはすべて、コンピューターに coderemote 0.2.0 以降が必要です。古いものだとアプリがそう表示します。<code>coderemote update</code>(または <code>npm install -g coderemote@latest</code>)を実行し、<code>coderemote up</code> を再起動してください。</p>
+
+				<h2 id="ports">Ports タブ</h2>
+				<p>ユーザーが待ち受けている TCP ポートを一覧表示し、数秒ごとに更新します:</p>
+				<ul>
+					<li><strong>Started in Code Remote</strong>: アプリのターミナルから起動したサーバー。そのターミナルへのショートカット付き。</li>
+					<li><strong>Other</strong>: プロジェクトのフォルダで動いているそれ以外すべて。たとえばコンピューター上で自分で起動したサーバーなど。</li>
+					<li><strong>Background</strong>: アプリとシステムサービス。求めるまで非表示です。</li>
+				</ul>
+				<p>ポートをスワイプすると、その裏のプロセスを停止します(<kbd>Ctrl</kbd>+<kbd>C</kbd> と同じ <code>SIGTERM</code> を受け取ります)。長押しすると <strong>Force Stop</strong>(<code>SIGKILL</code>)になります。停止できるのは、いま待ち受けているプロセスだけで、他のユーザーのものは停止できません。別の coderemote エージェントを停止するときは、それとペアリングしたすべてのデバイスがフォルダを失うため、先に確認します。</p>
+
+				<h2 id="preview">プレビュー</h2>
+				<p>ポートをタップしてアプリで開きます。初回は、コンピューターがトンネルで公開する間、数秒かかります。その後は、すでにあなたとしてサインインした状態で、通常のページのように読み込まれます。</p>
+				<ul>
+					<li><code>localhost</code>、<code>127.0.0.1</code>、<code>::1</code> のサーバーはどれも使えます。開発サーバーをすべてのインターフェースで待ち受けさせる必要はありません。</li>
+					<li>リクエストは <code>localhost:&lt;port&gt;</code> 宛てとしてサーバーに届くので、ホスト名を確認するサーバー(Vite など)もそのまま受け付けます。</li>
+					<li><strong>Copy Link</strong> と <strong>Open in Safari</strong> で、プレビューのアドレスが分かります。これはプライベートなので、Safari はまず同じアカウントでのサインインを求めます。</li>
+					<li><strong>Stop Preview</strong> はポートをトンネルから外します。サーバーは動き続けます。</li>
+					<li>サーバーが停止すると(Ports タブで停止した、ターミナルを閉じた、<kbd>Ctrl</kbd>+<kbd>C</kbd> を押した、クラッシュしたなど)、そのポートで 30 秒間何も待ち受けなくなった時点で、公開リンクも含めてプレビューは自動的に終了します。その間に再起動したサーバーはプレビューを維持します。Ports タブから停止したものは、すぐに終了します。coderemote 0.3.8 以降が必要です。</li>
+				</ul>
+				<p>プレビュー中のポートは、Ports タブに印が付きます。</p>
+
+				<h2 id="share">公開リンクを共有する</h2>
+				<p>アカウントのない人に作業を見せるには、プレビューのメニューを開いて <strong>Share Publicly</strong> を選びます。1 時間、8 時間、1 日から選べます。それまでの間、リンクを持つ人は誰でも、サインインなしでそのポートを開けます。</p>
+				<ul>
+					<li>共有されるのはそのポートだけです。エージェント、そのファイル、ターミナルは、別のトンネル上でプライベートのままです。</li>
+					<li>リンクがいつまで公開されるかがバナーに表示され、<strong>Make Private</strong> でいますぐ終了できます。Ports タブでは、そのポートに地球のアイコンが付きます。</li>
+					<li>プレビューまたはエージェントを停止すると、リンクも使えなくなります。</li>
+				</ul>
+				<p>これは開発サーバーであることを忘れないでください。画面を見せてもいい相手とだけ共有し、終わったらプライベートに戻してください。</p>
+
+				<h2 id="requests">リクエスト</h2>
+				<p>プレビュー内のリストアイコンは、そのポートに届いたリクエストを新しい順にライブで表示します: メソッド、パス、ステータス、時刻、サイズが、ステータスごとに色分けされます。タップすると、ヘッダーと本文が表示されます。JSON は整形され、圧縮された本文は展開されます。</p>
+				<ul>
+					<li>プレビューのリンクを通って来るものなら何でも対象です: ページ自体、その API 呼び出し、共有リンクに向けた webhook など。</li>
+					<li>ポートごとに直近 200 件のリクエストが、64 KB までの本文とともに保持されます。WebSocket(ホットリロード)はそのまま通過し、ハンドシェイクだけが一覧に載ります。</li>
+					<li>それらはコンピューター上のメモリにだけあります。<strong>Clear</strong> で消え、<code>coderemote up</code> を止めても消えます。</li>
+				</ul>
+				<p>リストの下のバーで絞り込めます。フィルターボタンで種類(<strong>All</strong>、<strong>Fetch/XHR</strong>、<strong>CSS</strong>、<strong>Image</strong>、<strong>JS</strong>。レスポンスの種類とファイル拡張子から判定)を選び、検索欄はメソッドとパスに一致します。</p>
+				<p>同じログは、コンピューターのターミナルで <a href="commands.html#requests"><code>coderemote requests</code></a> を使って読むこともでき、Claude Code のようなコーディングエージェントがデバッグに使えます。そこではトークンと Cookie は、求めない限りマスクされます。</p>
+
+				<h2 id="how">仕組み</h2>
+				<p>プレビューはエージェント自身のトンネルを通りません。ポートを初めてプレビューすると、エージェントは 2 つ目のプライベートトンネル(ラベルは <code>coderemote-preview</code>)を作り、そこにポートを転送します。ポートを追加または削除すると、そのトンネルの接続が再起動されるため、開いている他のプレビューは一瞬ちらつきますが、ターミナル、ファイル、git には影響しません。</p>
+				<p>プレビューされるポートはそれぞれ、エージェント内の小さなプロキシを通ります。リクエストを記録しているのはこのプロキシです。そのため、プレビューのアドレスにはサーバーのポートではなくプロキシのポート番号が入ります(5173 のサーバーなら <code>…-49213.usw2.devtunnels.ms</code>)。アプリには常にサーバー自身のポートが表示されます。</p>
+				<p>エージェントは停止するときにプレビュー用トンネルを削除します。削除できなかった場合(たとえばコンピューターがオフラインになった)は、次の <code>coderemote up</code> が削除します。共有リンクが、それを作ったエージェントより長く残ることはなく、古いプレビューがアカウントの 10 個のトンネルを消費することもありません。それでもアカウントがいっぱいの場合、新しいプレビューは、どのエージェントも使っていないプレビュー用トンネルを先に削除します。それでも足りなければアプリがお知らせし、コンピューターで <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> を実行すると削除すべきものが分かります。</p>
+
+				<nav class="pager" aria-label="その他のページ">
+					<a href="commands.html"><span>前へ</span>コマンド</a>
+					<a class="next" href="configuration.html"><span>次へ</span>設定</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Thanh Tran の他のアプリ</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">ホーム</a>
+				<a href="./">ドキュメント</a>
+				<a href="../../privacy.html">プライバシー</a>
+				<a href="../../terms.html">利用規約</a>
+				<a href="../compare.html">比較</a>
+				<a href="../support.html">サポート</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">プライバシーポリシーと利用規約は英語版のみで、英語版が正式なものです。</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

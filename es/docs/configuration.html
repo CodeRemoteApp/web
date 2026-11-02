@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>Configuración · Documentación de Code Remote</title>
+	<meta name="description" content="Dónde guarda coderemote sus ajustes, las variables de entorno que lee, los modos de acceso y soluciones a problemas habituales.">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/es/docs/configuration.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/configuration.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/configuration.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/configuration.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/configuration.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/configuration.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/configuration.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="Copiar" data-copied-label="Copiado">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">Documentación</a>
+				<a class="nav-link" href="../compare.html">Comparar</a>
+				<a class="nav-link" href="../support.html">Soporte</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="Menú" title="Menú"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="Menú">
+					<a role="menuitem" href="./">Documentación</a>
+					<a role="menuitem" href="../compare.html">Comparar</a>
+					<a role="menuitem" href="../support.html">Soporte</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="Idioma" title="Idioma"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="Idioma">
+					<a role="menuitemradio" href="../../docs/configuration.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../vi/docs/configuration.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../ja/docs/configuration.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../zh-hans/docs/configuration.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="configuration.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="true">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Apariencia" title="Apariencia"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Apariencia">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>Sistema<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Claro<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Oscuro<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="Documentación">
+				<h4>Documentación</h4>
+				<ul>
+					<li><a href="./">Introducción</a></li>
+					<li><a href="setup.html">Instalación</a></li>
+					<li><a href="commands.html">Comandos</a></li>
+					<li><a href="preview.html">Puertos y vista previa</a></li>
+					<li><a href="agents.html">Agentes de programación</a></li>
+					<li><a href="configuration.html" aria-current="page">Configuración</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>Configuración</h1>
+				<p class="lede">No hay nada que configurar para empezar. Esta página es para cuando quieres saber qué está pasando.</p>
+
+				<h2 id="access">Quién puede entrar</h2>
+				<p>Por defecto, una petición tiene que superar dos comprobaciones:</p>
+				<ol>
+					<li><strong>Tu cuenta.</strong> El túnel es privado: el relay de Dev Tunnels solo deja pasar a la cuenta de GitHub o Microsoft que ejecutó <code>coderemote up</code>.</li>
+					<li><strong>El token de emparejamiento.</strong> Después el agente comprueba el token aleatorio del código QR, guardado en el llavero del iPhone.</li>
+				</ol>
+				<p>Con <code>coderemote up --allow-anonymous</code> se omite la primera comprobación y el token por sí solo da acceso. En cualquier caso, los archivos y git se quedan dentro de la carpeta compartida; un terminal es un shell real con los permisos de tu usuario.</p>
+				<p>Un <a href="preview.html#share">enlace público</a> a una vista previa es la única excepción: hasta que termina, cualquiera que lo tenga puede abrir ese servidor de desarrollo, sin ninguna de las dos comprobaciones. Nunca llega al agente, a sus archivos ni a su terminal.</p>
+
+				<h2 id="files">Archivos en tu ordenador</h2>
+				<p>Todo vive en <code>~/.coderemote</code> (<code>%USERPROFILE%\.coderemote</code> en Windows), legible solo por ti:</p>
+				<table>
+					<tr><th>Ruta</th><th>Qué contiene</th></tr>
+					<tr><td><code>config.json</code></td><td>El token de acceso, el id del túnel de este ordenador y el de su túnel de vista previa. Conservarlo conserva todos los emparejamientos.</td></tr>
+					<tr><td><code>bin/</code></td><td>La CLI de Dev Tunnels descargada en la primera ejecución.</td></tr>
+					<tr><td><code>agents/</code></td><td>Una entrada por agente en ejecución, para que <code>status</code>, <code>kill</code> y <code>stop</code> puedan encontrarlo.</td></tr>
+					<tr><td><code>update.json</code></td><td>La última versión en npm y cuándo preguntó <code>up</code> por última vez, como mucho una vez al día.</td></tr>
+					<tr><td><code>runtime/</code></td><td>Solo después de que el <a href="setup.html#install">script de instalación</a> descargara Node.js: ese Node.js con coderemote instalado en él, y en <code>runtime/bin</code> los comandos <code>coderemote</code> y <code>node</code> que puso en tu <code>PATH</code>.</td></tr>
+				</table>
+				<p>Borrar la carpeta (conserva <code>runtime/</code> si la creó el script de instalación) restablece Code Remote: el siguiente <code>up</code> crea un token y un túnel nuevos, y todos los dispositivos tienen que volver a emparejarse.</p>
+
+				<h2 id="env">Variables de entorno</h2>
+				<table>
+					<tr><th>Variable</th><th>Qué hace</th></tr>
+					<tr><td><code>CODEREMOTE_DEVTUNNEL</code></td><td>Ruta a un binario de <code>devtunnel</code> que usar. Si no, se usa uno de tu <code>PATH</code> y después la copia descargada.</td></tr>
+					<tr><td><code>CODEREMOTE_CODE</code></td><td>Ruta al comando <code>code</code> de VS Code, para <code>up --web</code>. Si no, <code>code</code> en tu <code>PATH</code>.</td></tr>
+					<tr><td><code>CODEREMOTE_NO_UPDATE_CHECK</code></td><td>Ponlo en <code>1</code> y <code>up</code> deja de preguntar a npm si hay una versión más nueva.</td></tr>
+				</table>
+				<p>Los scripts de instalación leen algunas propias:</p>
+				<table>
+					<tr><th>Variable</th><th>Qué hace</th></tr>
+					<tr><td><code>CODEREMOTE_VERSION</code></td><td>La versión o dist-tag de npm que instalar, como <code>0.3.7</code> o <code>next</code>. Por defecto <code>latest</code>.</td></tr>
+					<tr><td><code>CODEREMOTE_PRIVATE_NODE</code></td><td>Ponlo en <code>1</code> para descargar Node.js para coderemote incluso cuando el tuyo sea lo bastante nuevo.</td></tr>
+					<tr><td><code>CODEREMOTE_NO_MODIFY_PATH</code></td><td>Ponlo en <code>1</code> para no tocar tu <code>PATH</code> ni tus archivos de inicio del shell; el script indica qué carpeta añadir.</td></tr>
+				</table>
+
+				<h2 id="tunnel">El túnel</h2>
+				<p>Cada ordenador tiene un túnel. Su URL se mantiene igual entre ejecuciones, y <code>up</code> lo renueva cada vez para que no caduque. Comparte una carpeta cada vez; para llegar a varios proyectos, comparte su carpeta superior y la pestaña Git encuentra todos los repositorios que contiene.</p>
+				<p>El túnel lleva la etiqueta <code>coderemote</code>, que es como la app encuentra tus otras máquinas. Las vistas previas usan un segundo túnel, con la etiqueta <code>coderemote-preview</code>, creado en la primera vista previa y eliminado cuando el agente se detiene (<a href="preview.html#how">cómo funciona</a>). <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> lista ambos, junto con los túneles de tus otros ordenadores.</p>
+				<p>Una cuenta de Dev Tunnels puede conservar 10 túneles. Los ordenadores que ya no usas conservan los suyos hasta que los eliminas con <code>coderemote tunnels delete</code>.</p>
+				<h3 id="in-the-app">En la app</h3>
+				<ul>
+					<li><strong>Machine Info</strong> (el menú de una máquina) muestra su túnel: la dirección, la cuenta, quién puede entrar, cuándo caduca (se retrasa cada vez que arranca <code>coderemote up</code>), los clientes conectados ahora, el tráfico hasta el momento y cuántos puertos se están previsualizando.</li>
+					<li><strong>Settings › Connections</strong> lista las cuentas a través de las que se conectan tus ordenadores emparejados. Cada una muestra todos los ordenadores que ejecutan coderemote en esa cuenta, estén en línea o no, si este iPhone está emparejado con él, y cuántos de los 10 túneles de la cuenta están en uso. Para añadir un ordenador, ejecuta allí <code>coderemote up</code> y escanea su código QR.</li>
+				</ul>
+				<p>La app solo los muestra: los túneles pertenecen al propietario de los ordenadores, así que los listas y eliminas en un ordenador con la sesión iniciada en la cuenta, con <a href="commands.html#tunnels"><code>coderemote tunnels</code></a>. Mantén pulsada una máquina en Connections para copiar su ID de túnel con ese fin. Quitar una máquina de la lista de la app solo hace que ese iPhone la olvide.</p>
+
+				<h2 id="troubleshooting">Solución de problemas</h2>
+				<h3>"Port 31580 is already in use"</h3>
+				<p>Otro agente o programa ocupa el puerto. <code>coderemote status</code> muestra los agentes; para cualquier otra cosa, mira qué lo ocupa:</p>
+				<pre class="cmd"><span class="p">$ </span>lsof -nP -iTCP:31580 -sTCP:LISTEN      <span class="c"># macOS, Linux</span>
+<span class="p">PS&gt; </span>netstat -ano | findstr :31580         <span class="c"># Windows</span></pre>
+				<p>Deténlo, ejecuta <code>coderemote stop --all</code>, o elige otro puerto con <code>--port</code>.</p>
+
+				<h3>El teléfono no puede conectarse</h3>
+				<p>Comprueba que <code>coderemote up</code> sigue en marcha y que el ordenador está encendido y con conexión. Asegúrate de que el teléfono inició sesión con la misma cuenta que usa el ordenador (se muestra en la línea <code>Access:</code>).</p>
+
+				<h3 id="tunnel-limit">"Your Dev Tunnels account already has 10 tunnels"</h3>
+				<p>La cuenta está llena y ninguno de sus túneles era un túnel de vista previa inactivo que pudiera eliminarse. El mensaje los lista: elimina los que ya nadie usa, como los de un ordenador antiguo, con <a href="commands.html#tunnels"><code>coderemote tunnels delete &lt;id&gt;</code></a> y vuelve a ejecutar <code>coderemote up</code>.</p>
+				<h3>El inicio de sesión caducó</h3>
+				<p><code>up</code> lo detecta y vuelve a abrir el navegador. Sin navegador, ejecuta <code>coderemote login --device-code</code>.</p>
+
+				<h3>La pestaña Ports dice "Update coderemote"</h3>
+				<p>El ordenador ejecuta un coderemote anterior a los puertos y las vistas previas. Ejecuta <code>coderemote update</code> y reinicia <code>coderemote up</code>.</p>
+
+				<h3>Una vista previa dice "nothing is listening on port …"</h3>
+				<p>El servidor de desarrollo que hay detrás se detuvo o se reinició en otro puerto. Vuelve a iniciarlo y recarga; la pestaña Ports muestra lo que escucha ahora.</p>
+
+				<h3 id="linux">Falla la instalación en Linux</h3>
+				<p>El soporte de terminal se compila al instalar y necesita <code>python3</code>, <code>make</code> y un compilador de C++ (<code>build-essential</code> en Debian y Ubuntu). El inicio de sesión necesita <code>libsecret-1-0</code>.</p>
+
+				<p>¿Sigues atascado? Consulta <a href="../support.html">Soporte</a>.</p>
+
+				<nav class="pager" aria-label="Página anterior">
+					<a href="preview.html"><span>Anterior</span>Puertos y vista previa</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Más de Thanh Tran</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">Inicio</a>
+				<a href="./">Documentación</a>
+				<a href="../../privacy.html">Privacidad</a>
+				<a href="../../terms.html">Términos</a>
+				<a href="../compare.html">Comparar</a>
+				<a href="../support.html">Soporte</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">La política de privacidad y los términos solo están en inglés; la versión en inglés es la vinculante.</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

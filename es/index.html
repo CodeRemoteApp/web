@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>Code Remote: tu ordenador, desde tu iPhone</title>
+	<meta name="description" content="Explora archivos, revisa y haz commits con git, y usa un terminal real en tu máquina de desarrollo desde tu iPhone, a través de un Microsoft Dev Tunnel seguro. Sin claves SSH, sin redirección de puertos, sin VPN.">
+	<link rel="icon" href="../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css?v=f54d7871">
+	<script>document.documentElement.classList.add("js")</script>
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/es/">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="Copiar" data-copied-label="Copiado">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="./"><img src="../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="#install">Instalar</a>
+				<a class="nav-link" href="#beta">Beta</a>
+				<a class="nav-link" href="compare.html">Comparar</a>
+				<a class="nav-link" href="docs/">Documentación</a>
+				<a class="nav-link" href="support.html">Soporte</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="Menú" title="Menú"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="Menú">
+					<a role="menuitem" href="#install">Instalar</a>
+					<a role="menuitem" href="#beta">Beta</a>
+					<a role="menuitem" href="compare.html">Comparar</a>
+					<a role="menuitem" href="docs/">Documentación</a>
+					<a role="menuitem" href="support.html">Soporte</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="Idioma" title="Idioma"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="Idioma">
+					<a role="menuitemradio" href="../" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../vi/" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../ja/" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../zh-hans/" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="./" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="true">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Apariencia" title="Apariencia"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Apariencia">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>Sistema<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Claro<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Oscuro<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="wrap">
+				<div class="hero-grid">
+					<div class="hero-copy">
+						<h1>Tu ordenador, en tu bolsillo.</h1>
+						<p class="lede">Explora archivos, revisa y haz commits con git, usa un terminal real y abre los servidores de desarrollo de tu máquina, todo desde tu iPhone. Un comando en el ordenador, un escaneo de QR en el teléfono: <code>npx coderemote up</code>. Sin claves SSH, sin redirección de puertos, sin VPN.</p>
+						<div class="actions">
+							<a class="button primary" href="#install">Empezar</a>
+							<a class="button ghost with-icon" href="#beta"><img src="../apple.png" alt="" width="18" height="18">Únete a la beta para iPhone</a>
+							<span class="note">Gratis en TestFlight. Lanzamiento en la App Store próximamente.</span>
+						</div>
+					</div>
+					<svg class="hero-art art" viewBox="0 0 480 420" role="img" aria-label="Un portátil y un teléfono unidos por un túnel, con datos viajando entre ellos">
+						<path class="blob" d="M78 96C150 22 334 14 414 86c70 62 62 214-14 270-92 68-250 62-322 2C14 304 10 166 78 96Z"/>
+						<g class="spark s1"><path d="M60 58l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/></g>
+						<g class="spark s2"><path d="M430 300l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
+						<g class="spark s3"><path d="M408 40l2.5 7 7 2.5-7 2.5-2.5 7-2.5-7-7-2.5 7-2.5z"/></g>
+
+						<path id="tunnel" class="tunnel" d="M226 214C252 130 240 70 284 60c44-10 22 92 50 112"/>
+						<path class="tunnel-flow" d="M226 214C252 130 240 70 284 60c44-10 22 92 50 112"/>
+						<circle class="relay-ring" cx="284" cy="60" r="16"/>
+						<circle class="relay" cx="284" cy="60" r="9"/>
+						<circle class="packet" r="5">
+							<animateMotion dur="3.2s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.55 1"><mpath href="#tunnel"/></animateMotion>
+						</circle>
+						<circle class="packet back" r="4">
+							<animateMotion dur="3.2s" begin="1.6s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.55 1"><mpath href="#tunnel"/></animateMotion>
+						</circle>
+
+						<g class="laptop">
+							<rect class="device" x="58" y="196" width="180" height="118" rx="10"/>
+							<path class="device" d="M34 314h228l-14 18H48z"/>
+							<path class="ink-thin" d="M80 226l10 8-10 8"/>
+							<path class="ink-thin" d="M100 242h56"/>
+							<path class="ink-faint" d="M80 262h96M80 280h64"/>
+							<rect class="cursor" x="150" y="273" width="9" height="14" rx="1.5"/>
+						</g>
+
+						<g class="phone">
+							<rect class="device" x="320" y="118" width="104" height="196" rx="20"/>
+							<path class="ink-thin" d="M356 132h32"/>
+							<rect class="row r1" x="336" y="156" width="72" height="22" rx="6"/>
+							<rect class="row r2" x="336" y="186" width="72" height="22" rx="6"/>
+							<rect class="row r3" x="336" y="216" width="72" height="22" rx="6"/>
+							<circle class="ink-dot" cx="347" cy="167" r="3.5"/>
+							<circle class="ink-dot" cx="347" cy="197" r="3.5"/>
+							<circle class="ink-dot" cx="347" cy="227" r="3.5"/>
+							<path class="ink-faint" d="M358 167h38M358 197h30M358 227h42"/>
+							<path class="ink-thin" d="M352 288h40"/>
+						</g>
+
+						<path class="squiggle" d="M96 372c14-10 26 10 40 0s26 10 40 0 26 10 40 0"/>
+					</svg>
+				</div>
+				<div class="story">
+				<div class="cmd term" id="demo" role="img" aria-label="Terminal: npx coderemote up inicia el agente, se conecta al relay e imprime un código QR para escanear con el iPhone">
+					<div class="ln"><span class="c"># on your computer</span></div>
+					<div class="ln" data-type><span class="p">$ </span><span class="t">cd ~/projects/my-app &amp;&amp; npx coderemote up</span></div>
+					<div class="ln" data-spin="150">  <span class="mark ok">✔</span> Starting agent <span class="c secs">0.0s</span></div>
+					<div class="ln" data-spin="700">  <span class="mark ok">✔</span> Checking dev tunnels sign-in <span class="c secs">0.7s</span></div>
+					<div class="ln" data-spin="2400">  <span class="mark ok">✔</span> Connecting to the relay <span class="c secs">5.0s</span></div>
+					<div class="ln"></div>
+					<div class="ln">  Sharing: /Users/you/projects/my-app</div>
+					<div class="ln">  Access:  sign-in required as you (GitHub)</div>
+					<div class="ln"></div>
+					<div class="ln">  Scan with the iPhone Camera:</div>
+					<div class="ln"></div>
+					<div class="qr">
+						<div class="ln">▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄</div>
+						<div class="ln">█ ▄▄▄▄▄ █▄▀ ▀  █▄▀█ ▄ █ ▄▄▄▄▄ █</div>
+						<div class="ln">█ █   █ █   █▀█▀▄█▀▄▀▄█ █   █ █</div>
+						<div class="ln">█ █▄▄▄█ █▄█▀ ▄▀▄▄▀██ ▄█ █▄▄▄█ █</div>
+						<div class="ln">█▄▄▄▄▄▄▄█▄█ █ █▄▀▄▀ █ █▄▄▄▄▄▄▄█</div>
+						<div class="ln">█ ▄▄▄█▀▄█ █ ▄  ▀█ ▄▄  ▄▀▀ ▄▄█ █</div>
+						<div class="ln">█▀▀ ▀▀ ▄▀   ▄▄▄██▄▄▄▀▄██▀██▄▄▀█</div>
+						<div class="ln">█▄▀ ▀▄▄▄   ▄▀ █  ▀▄█▀▄█▀██▄ ▀▀█</div>
+						<div class="ln">██ █▀  ▄▀ ▀▀ █▄▀█▀█▀▄▄▄▄▀▀█▄ ▄█</div>
+						<div class="ln">█▄▄▀█ █▄▄ ▄██▄█ ▀▄█ █ ▄█ ▄ ▀ ██</div>
+						<div class="ln">█▄██ ▀ ▄█ ▀ ▀█    ▀▀█▄▀▄▄▀█ ███</div>
+						<div class="ln">██▄▄█▄▄▄▄ ▀▄██▄▄▄▄▄ ▄ ▄▄▄   ▀▀█</div>
+						<div class="ln">█ ▄▄▄▄▄ ██▄ ▀▀▀ ▀▄██▄ █▄█  █▄▀█</div>
+						<div class="ln">█ █   █ █▀▄▄ █▀█▀▀▄▄█  ▄  ▀▄█▀█</div>
+						<div class="ln">█ █▄▄▄█ █ ▄ █ ▀▄▀█▄ ▀▀█▀ █▀▄▀▄█</div>
+						<div class="ln">█▄▄▄▄▄▄▄█▄█▄▄███▄██▄▄▄▄▄▄███▄██</div>
+					</div>
+					<div class="ln"></div>
+					<div class="ln"><span class="blink">▍</span></div>
+				</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="block" id="simple">
+			<div class="wrap">
+				<h2 class="reveal">Un comando. Esa es toda la configuración.</h2>
+				<p class="lede reveal">Otras herramientas te piden descargar una app de escritorio, configurar una VPN en ambos dispositivos o montar un servidor SSH y claves. Con Node.js ya en tu ordenador, Code Remote es una sola línea.</p>
+				<pre class="cmd one-liner reveal" data-copy>npx coderemote up</pre>
+				<div class="grid">
+					<div class="card reveal">
+						<h3>Sin app de escritorio</h3>
+						<p>Nada que descargar, instalar ni mantener actualizado en el ordenador. <code>npx</code> lo ejecuta y no deja nada atrás.</p>
+					</div>
+					<div class="card reveal">
+						<h3>Sin VPN</h3>
+						<p>El agente se conecta hacia fuera a través de un túnel privado. Nada que instalar en la red del teléfono, nada a lo que unirse.</p>
+					</div>
+					<div class="card reveal">
+						<h3>Sin SSH</h3>
+						<p>Sin servidor que activar, sin claves que copiar, sin puertos que redirigir, sin reglas de firewall que editar.</p>
+					</div>
+				</div>
+				<p class="then reveal"><a href="compare.html">Consulta la comparación completa</a>, incluido cuándo otra herramienta encaja mejor.</p>
+			</div>
+		</section>
+
+		<section class="block" id="install">
+			<div class="wrap install-home">
+				<h2 class="reveal">Instálalo en tu ordenador.</h2>
+				<div class="install reveal" data-tabs>
+					<div class="tabs" role="tablist" aria-label="Método de instalación">
+						<button type="button" role="tab" data-tab="unix" aria-selected="true">macOS/Linux</button>
+						<button type="button" role="tab" data-tab="windows" aria-selected="false" tabindex="-1">Windows</button>
+						<button type="button" role="tab" data-tab="npm" aria-selected="false" tabindex="-1">npm</button>
+						<button type="button" role="tab" data-tab="brew" aria-selected="false" tabindex="-1">Homebrew</button>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="unix" aria-label="macOS y Linux">
+						<p class="tab-label">macOS y Linux</p>
+						<p>Pégalo en el Terminal. ¿No tienes Node.js? Descarga uno solo para coderemote.</p>
+						<pre class="cmd" data-copy>curl -fsSL https://raw.githubusercontent.com/CodeRemoteApp/coderemote/main/install.sh | sh</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="windows" aria-label="Windows">
+						<p class="tab-label">Windows</p>
+						<p>Pégalo en PowerShell en Windows 10 u 11. ¿No tienes Node.js? Descarga uno solo para coderemote.</p>
+						<pre class="cmd" data-copy>irm https://raw.githubusercontent.com/CodeRemoteApp/coderemote/main/install.ps1 | iex</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="npm" aria-label="npm">
+						<p class="tab-label">npm</p>
+						<p>En cualquier sistema con Node.js 22 o posterior.</p>
+						<pre class="cmd" data-copy>npm install -g coderemote</pre>
+					</div>
+					<div class="panel" role="tabpanel" data-panel="brew" aria-label="Homebrew">
+						<p class="tab-label">Homebrew</p>
+						<p>En macOS y Linux.</p>
+						<pre class="cmd" data-copy>brew install coderemoteapp/tap/coderemote</pre>
+					</div>
+				</div>
+				<p class="then reveal">¿Prefieres una instalación permanente? Ejecuta <code>coderemote up</code> en la carpeta de un proyecto y escanea el código QR con tu iPhone (<a href="#beta">pide una invitación a la beta</a> para obtener la app en TestFlight). La actualización, la desinstalación y el resto están en la <a href="docs/setup.html#install">guía de instalación</a>.</p>
+			</div>
+		</section>
+
+		<section class="block" id="beta">
+			<div class="wrap beta-home">
+				<h2 class="reveal">Únete a la beta para iPhone.</h2>
+				<p class="lede reveal">La app para iPhone está en beta en TestFlight. Deja tu correo y te invitaremos en cuanto la primera compilación esté lista. La invitación llega desde TestFlight de Apple; ábrela en tu iPhone.</p>
+				<form class="beta-form reveal" action="https://formspree.io/f/xbggzywg" method="POST" data-beta data-sending="Enviando…" data-thanks="¡Gracias! Te enviaremos pronto tu invitación de TestFlight." data-failed="Algo salió mal." data-retry="Inténtalo de nuevo o escribe a trantienthanh2412@gmail.com.">
+					<input type="hidden" name="_subject" value="Code Remote beta request">
+					<p class="field">
+						<label for="beta-email">Correo</label>
+						<input id="beta-email" type="email" name="email" required autocomplete="email" placeholder="tu@icloud.com" aria-describedby="beta-email-hint">
+						<span class="hint" id="beta-email-hint">Usa el correo de tu cuenta de Apple (la que tiene la sesión iniciada en tu iPhone), para que la invitación llegue donde TestFlight la espera.</span>
+					</p>
+					<p class="field">
+						<label for="beta-message">Mensaje <span class="optional">(opcional)</span></label>
+						<textarea id="beta-message" name="message" rows="3" placeholder="Para qué te gustaría usar Code Remote"></textarea>
+					</p>
+					<p class="trap" aria-hidden="true" translate="no"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+					<div class="actions">
+						<button class="button primary" type="submit">Solicitar una invitación</button>
+						<span class="note" role="status" data-beta-status>Solo usamos tu correo para la invitación a la beta. Consulta la <a href="../privacy.html#beta">política de privacidad</a>.</span>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="block">
+			<div class="wrap">
+				<h2 class="reveal">Todo lo que necesitas para seguir trabajando.</h2>
+				<div class="grid">
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<path class="accent" d="M100 64a8 8 0 0 1 8-8h34l12 12h58a8 8 0 0 1 8 8v80H100z"/>
+							<g class="lift">
+								<rect class="device" x="116" y="42" width="84" height="66" rx="4" transform="rotate(-6 158 75)"/>
+								<path class="faint" d="M128 58h44M128 70h56M128 82h36" transform="rotate(-6 158 75)"/>
+							</g>
+							<g class="lift l2">
+								<rect class="device" x="132" y="38" width="84" height="66" rx="4" transform="rotate(5 174 71)"/>
+								<path class="ink" d="M146 54h30" transform="rotate(5 174 71)"/>
+								<path class="faint" d="M146 66h50M146 78h40" transform="rotate(5 174 71)"/>
+							</g>
+							<path class="device" d="M92 88h144l-9 64a8 8 0 0 1-8 7H109a8 8 0 0 1-8-7z"/>
+							<rect class="accent" x="110" y="128" width="46" height="18" rx="5"/>
+						</svg>
+						<div class="feature-body">
+							<h3>Archivos</h3>
+							<p>Explora, abre, edita, crea, renombra y elimina archivos de la carpeta que compartes.</p>
+						</div>
+					</div>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<path class="rail" d="M42 120h236"/>
+							<path class="rail hot-rail" d="M96 120c22 0 20-56 48-56h40c28 0 26 56 48 56"/>
+							<path class="flow" d="M96 120c22 0 20-56 48-56h40c28 0 26 56 48 56"/>
+							<circle class="node" cx="66" cy="120" r="9"/>
+							<circle class="node" cx="128" cy="120" r="9"/>
+							<circle class="node" cx="190" cy="120" r="9"/>
+							<circle class="node" cx="144" cy="64" r="9"/>
+							<circle class="ring" cx="186" cy="64" r="10"/>
+							<circle class="node hot" cx="186" cy="64" r="9"/>
+							<circle class="node" cx="254" cy="120" r="9"/>
+						</svg>
+						<div class="feature-body">
+							<h3>Git</h3>
+							<p>Consulta cambios y diffs, haz stage, commit, pull y push, y lee el historial, en cada repositorio de la carpeta.</p>
+						</div>
+					</div>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<rect class="screen" x="66" y="24" width="188" height="104" rx="10"/>
+							<circle class="dot" cx="82" cy="38" r="3"/><circle class="dot" cx="93" cy="38" r="3"/><circle class="dot" cx="104" cy="38" r="3"/>
+							<path class="prompt" d="M82 60l7 5-7 5"/>
+							<path class="cream-line" d="M96 70h70"/>
+							<path class="cream-faint" d="M82 88h120M82 104h84"/>
+							<path class="prompt" d="M82 112l7 5-7 5" transform="translate(0 -6)"/>
+							<rect class="cursor" x="96" y="108" width="8" height="12" rx="1.5"/>
+							<g class="keys">
+								<g class="key k1"><rect class="accent" x="62" y="140" width="44" height="26" rx="7"/><text class="mono cream" x="84" y="157">ctrl</text></g>
+								<g class="key k2"><rect class="device" x="112" y="140" width="44" height="26" rx="7"/><text class="mono" x="134" y="157">tab</text></g>
+								<g class="key k3"><rect class="device" x="162" y="140" width="44" height="26" rx="7"/><text class="mono" x="184" y="157">esc</text></g>
+								<g class="key k4"><rect class="device" x="212" y="140" width="44" height="26" rx="7"/><path class="ink" d="M228 156l6-6 6 6"/></g>
+							</g>
+						</svg>
+						<div class="feature-body">
+							<h3>Terminal</h3>
+							<p>Un shell real (PowerShell en Windows) con una barra de teclas para Ctrl, Tab, Esc y las flechas. Las sesiones siguen en marcha mientras tu teléfono duerme, así que las compilaciones largas y los agentes de programación sobreviven.</p>
+						</div>
+					</div>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<g>
+								<rect class="device" x="74" y="28" width="172" height="34" rx="9"/>
+								<circle class="ring" cx="94" cy="45" r="6"/><circle class="live" cx="94" cy="45" r="5"/>
+								<text class="mono" x="110" y="50">:5173</text>
+								<path class="faint" d="M176 45h48"/>
+							</g>
+							<g>
+								<rect class="device" x="74" y="72" width="172" height="34" rx="9"/>
+								<circle class="ring r2" cx="94" cy="89" r="6"/><circle class="live" cx="94" cy="89" r="5"/>
+								<text class="mono" x="110" y="94">:8080</text>
+								<path class="faint" d="M176 89h48"/>
+							</g>
+							<g class="stuck">
+								<rect class="device" x="74" y="116" width="172" height="34" rx="9"/>
+								<circle class="hot-dot" cx="94" cy="133" r="5"/>
+								<text class="mono" x="110" y="138">:3000</text>
+								<circle class="stop hot-stop" cx="222" cy="133" r="10"/>
+								<path class="ink" d="M218 129l8 8M226 129l-8 8"/>
+							</g>
+						</svg>
+						<div class="feature-body">
+							<h3>Puertos</h3>
+							<p>Mira qué servidores están escuchando, qué terminal los inició, y detén el que se quedó atascado en el puerto 3000.</p>
+						</div>
+					</div>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<path class="rail" d="M168 92c30 0 40-34 72-34"/>
+							<path class="flow" d="M168 92c30 0 40-34 72-34"/>
+							<g class="phone">
+								<rect class="device" x="98" y="18" width="84" height="150" rx="16"/>
+								<path class="ink" d="M126 30h28"/>
+								<rect class="row" x="108" y="42" width="64" height="12" rx="6"/>
+								<rect class="accent" x="108" y="62" width="64" height="44" rx="6"/>
+								<path class="play" d="M135 76l12 8-12 8z"/>
+								<path class="faint" d="M110 120h56M110 134h40M110 148h48"/>
+							</g>
+							<g class="chip">
+								<rect class="device" x="214" y="40" width="80" height="36" rx="18"/>
+								<circle class="ink" cx="236" cy="58" r="8"/><path class="ink" d="M236 53v5l3 3"/>
+								<text class="mono" x="252" y="63">1h</text>
+							</g>
+						</svg>
+						<div class="feature-body">
+							<h3>Vista previa y compartir</h3>
+							<p>Abre tu servidor de desarrollo en el teléfono con un toque, a través de su propio túnel privado. ¿Quieres otra opinión? Comparte un enlace público que caduca en una hora o en un día.</p>
+						</div>
+					</div>
+					<div class="card feature reveal">
+						<svg class="feature-art art" viewBox="0 0 320 180" aria-hidden="true">
+							<circle class="device" cx="72" cy="70" r="28"/>
+							<path class="faint" d="M44 70h56M72 42c-14 16-14 40 0 56M72 42c14 16 14 40 0 56"/>
+							<rect class="device" x="220" y="46" width="56" height="48" rx="8"/>
+							<path class="ink" d="M232 60h32M232 72h32M232 84h20"/>
+							<circle class="cream-dot hot" cx="264" cy="84" r="3"/>
+							<path id="req-path" class="rail" d="M100 70c40-26 80-26 120 0"/>
+							<circle class="packet" r="5">
+								<animateMotion dur="2.8s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines="0.45 0 0.55 1"><mpath href="#req-path"/></animateMotion>
+							</circle>
+							<circle class="packet back" r="4">
+								<animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite" calcMode="spline" keyPoints="1;0" keyTimes="0;1" keySplines="0.45 0 0.55 1"><mpath href="#req-path"/></animateMotion>
+							</circle>
+							<g class="log">
+								<rect class="device" x="62" y="118" width="196" height="40" rx="10"/>
+								<text class="mono" x="78" y="143"><tspan class="method-ink">POST</tspan> /webhook</text>
+								<rect class="accent" x="206" y="128" width="38" height="20" rx="10"/>
+								<text class="mono cream" x="225" y="142" text-anchor="middle">200</text>
+							</g>
+						</svg>
+						<div class="feature-body">
+							<h3>Peticiones</h3>
+							<p>Mira cada petición que llega a tu servidor de desarrollo, con sus cabeceras y cuerpos. Filtra por tipo o ruta, y deja que tu agente de programación las lea desde el terminal.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="block">
+			<div class="wrap">
+				<h2 class="reveal">Privado por diseño.</h2>
+				<div class="grid">
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="12" width="12" height="18" rx="3"/><rect x="24" y="10" width="10" height="20" rx="3"/><path class="dash" d="M18 21h6"/></svg>
+						<h3>Sin servidores nuestros</h3>
+						<p>Tu teléfono habla con tu ordenador. Code Remote no ejecuta ningún backend y no tiene cuentas.</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5l12 5v9c0 8-5 13-12 16C13 32 8 27 8 19v-9z"/><path class="fill" d="M15 20l4 4 7-8"/></svg>
+						<h3>No recopilamos nada</h3>
+						<p>Ni la app ni la CLI tienen analíticas, rastreo ni anuncios. Tus archivos y comandos nunca llegan a nosotros.</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M15 12l-8 8 8 8M25 12l8 8-8 8"/><path class="fill" d="M22 9l-4 22"/></svg>
+						<h3>Código abierto</h3>
+						<p>La parte del ordenador es software libre bajo la AGPL. Lee cada línea en GitHub.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Más de Thanh Tran</span>
+				<a href="https://commitplus.app/"><img src="../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran. Code Remote no está afiliado a Microsoft ni a GitHub.</span>
+			<nav>
+				<a href="../privacy.html">Privacidad</a>
+				<a href="../terms.html">Términos</a>
+				<a href="compare.html">Comparar</a>
+				<a href="docs/">Documentación</a>
+				<a href="support.html">Soporte</a>
+				<a href="https://github.com/CodeRemoteApp/coderemote">GitHub</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">La política de privacidad y los términos solo están en inglés; la versión en inglés es la vinculante.</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../motion.js?v=9bb63cfd" defer></script>
+	<script src="../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../tabs.js?v=6123b019" defer></script>
+	<script src="../beta.js?v=0ff7c96f" defer></script>
+</body>
+</html>

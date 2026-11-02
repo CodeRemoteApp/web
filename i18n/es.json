@@ -1,0 +1,1686 @@
+{
+	"28984826": {
+		"en": "A Dev Tunnels account may keep 10 tunnels. Computers you no longer use keep theirs until you delete them with <code>coderemote tunnels delete</code>.",
+		"text": "Una cuenta de Dev Tunnels puede conservar 10 túneles. Los ordenadores que ya no usas conservan los suyos hasta que los eliminas con <code>coderemote tunnels delete</code>."
+	},
+	"33966640": {
+		"en": "3. Pair your iPhone",
+		"text": "3. Empareja tu iPhone"
+	},
+	"47687371": {
+		"en": "The Ports tab",
+		"text": "La pestaña Ports"
+	},
+	"58197788": {
+		"en": "Git",
+		"text": "Git"
+	},
+	"75416485": {
+		"en": "Configuration",
+		"text": "Configuración"
+	},
+	"83925415": {
+		"en": "This installs the Code Remote plugin into Claude Code (the same as <code>/plugin install coderemote --marketplace CodeRemoteApp/coderemote</code> inside Claude Code). Claude Code sessions you start afterwards, in a folder shared with <code>coderemote up</code>, show up in the app. Sessions already running appear after you restart them. To undo it: <code>coderemote setup claude --remove</code>.",
+		"text": "Esto instala el plugin de Code Remote en Claude Code (igual que <code>/plugin install coderemote --marketplace CodeRemoteApp/coderemote</code> dentro de Claude Code). Las sesiones de Claude Code que inicies después, en una carpeta compartida con <code>coderemote up</code>, aparecen en la app. Las sesiones que ya estaban en marcha aparecen tras reiniciarlas. Para deshacerlo: <code>coderemote setup claude --remove</code>."
+	},
+	"99121239": {
+		"en": "Then restart <code>coderemote up</code> and scan the new QR code on the devices you still trust.",
+		"text": "Luego reinicia <code>coderemote up</code> y escanea el nuevo código QR en los dispositivos en los que sigues confiando."
+	},
+	"99251092": {
+		"en": "<code>up</code> notices and opens the browser again. Without a browser, run <code>coderemote login --device-code</code>.",
+		"text": "<code>up</code> lo detecta y vuelve a abrir el navegador. Sin navegador, ejecuta <code>coderemote login --device-code</code>."
+	},
+	"f32d5a3b": {
+		"en": "Support",
+		"text": "Soporte"
+	},
+	"68a41942": {
+		"en": "Docs",
+		"text": "Documentación"
+	},
+	"8d105cf4": {
+		"en": "Compare",
+		"text": "Comparar"
+	},
+	"a55a275a": {
+		"en": "Terms",
+		"text": "Términos"
+	},
+	"cf01481f": {
+		"en": "Privacy",
+		"text": "Privacidad"
+	},
+	"05c61c1d": {
+		"en": "© 2026 Thanh Tran. Code Remote is not affiliated with Microsoft or GitHub.",
+		"text": "© 2026 Thanh Tran. Code Remote no está afiliado a Microsoft ni a GitHub."
+	},
+	"59177a5d": {
+		"en": "More by Thanh Tran",
+		"text": "Más de Thanh Tran"
+	},
+	"1f8a8585": {
+		"en": "The computer side is free software under the AGPL. Read every line on GitHub.",
+		"text": "La parte del ordenador es software libre bajo la AGPL. Lee cada línea en GitHub."
+	},
+	"6cc3364a": {
+		"en": "Open source",
+		"text": "Código abierto"
+	},
+	"05dfd4d4": {
+		"en": "The app and the CLI have no analytics, no tracking, no ads. Your files and commands never reach us.",
+		"text": "Ni la app ni la CLI tienen analíticas, rastreo ni anuncios. Tus archivos y comandos nunca llegan a nosotros."
+	},
+	"15847cb9": {
+		"en": "Nothing collected",
+		"text": "No recopilamos nada"
+	},
+	"941b6b2f": {
+		"en": "Your phone talks to your computer. Code Remote runs no backend and has no accounts.",
+		"text": "Tu teléfono habla con tu ordenador. Code Remote no ejecuta ningún backend y no tiene cuentas."
+	},
+	"cecddb8e": {
+		"en": "No servers of ours",
+		"text": "Sin servidores nuestros"
+	},
+	"3ea04278": {
+		"en": "Private by design.",
+		"text": "Privado por diseño."
+	},
+	"4bbf108c": {
+		"en": "Watch every request that reaches your dev server, with headers and bodies. Filter by type or path, and let your coding agent read them from the terminal.",
+		"text": "Mira cada petición que llega a tu servidor de desarrollo, con sus cabeceras y cuerpos. Filtra por tipo o ruta, y deja que tu agente de programación las lea desde el terminal."
+	},
+	"f7194e6a": {
+		"en": "Requests",
+		"text": "Peticiones"
+	},
+	"277a2e46": {
+		"en": "Open your dev server on the phone with a tap, through its own private tunnel. Need a second opinion? Share a public link that ends after an hour or a day.",
+		"text": "Abre tu servidor de desarrollo en el teléfono con un toque, a través de su propio túnel privado. ¿Quieres otra opinión? Comparte un enlace público que caduca en una hora o en un día."
+	},
+	"be152e8a": {
+		"en": "Preview &amp; share",
+		"text": "Vista previa y compartir"
+	},
+	"fea71008": {
+		"en": "See which servers are listening, which terminal started them, and stop the one that's stuck on port 3000.",
+		"text": "Mira qué servidores están escuchando, qué terminal los inició, y detén el que se quedó atascado en el puerto 3000."
+	},
+	"16c2eb4d": {
+		"en": "Ports",
+		"text": "Puertos"
+	},
+	"f7999736": {
+		"en": "A real shell (PowerShell on Windows) with a key bar for Ctrl, Tab, Esc and arrows. Sessions keep running while your phone sleeps, so long builds and coding agents survive.",
+		"text": "Un shell real (PowerShell en Windows) con una barra de teclas para Ctrl, Tab, Esc y las flechas. Las sesiones siguen en marcha mientras tu teléfono duerme, así que las compilaciones largas y los agentes de programación sobreviven."
+	},
+	"a1f52cdc": {
+		"en": "Terminal",
+		"text": "Terminal"
+	},
+	"f22c0baa": {
+		"en": "See changes and diffs, stage, commit, pull, push and read history, across every repository in the folder.",
+		"text": "Consulta cambios y diffs, haz stage, commit, pull y push, y lee el historial, en cada repositorio de la carpeta."
+	},
+	"99ff7b07": {
+		"en": "Browse, open, edit, create, rename and delete files in the folder you share.",
+		"text": "Explora, abre, edita, crea, renombra y elimina archivos de la carpeta que compartes."
+	},
+	"6ce6c512": {
+		"en": "Files",
+		"text": "Archivos"
+	},
+	"e5c58e6b": {
+		"en": "Everything you need to keep working.",
+		"text": "Todo lo que necesitas para seguir trabajando."
+	},
+	"6db4c547": {
+		"en": "We only use your email for the beta invite. See the <a href=\"privacy.html#beta\">privacy policy</a>.",
+		"text": "Solo usamos tu correo para la invitación a la beta. Consulta la <a href=\"privacy.html#beta\">política de privacidad</a>."
+	},
+	"07c5e2a6": {
+		"en": "Request an invite",
+		"text": "Solicitar una invitación"
+	},
+	"1138c15a": {
+		"en": "What you'd like to use Code Remote for",
+		"text": "Para qué te gustaría usar Code Remote"
+	},
+	"8d8fdd66": {
+		"en": "Message <span class=\"optional\">(optional)</span>",
+		"text": "Mensaje <span class=\"optional\">(opcional)</span>"
+	},
+	"26b1964f": {
+		"en": "Use the email of your Apple Account (the one signed in on your iPhone), so the invite lands where TestFlight expects it.",
+		"text": "Usa el correo de tu cuenta de Apple (la que tiene la sesión iniciada en tu iPhone), para que la invitación llegue donde TestFlight la espera."
+	},
+	"29ad3e53": {
+		"en": "you@icloud.com",
+		"text": "tu@icloud.com"
+	},
+	"84add5b2": {
+		"en": "Email",
+		"text": "Correo"
+	},
+	"de0f265f": {
+		"en": "Please try again, or email trantienthanh2412@gmail.com.",
+		"text": "Inténtalo de nuevo o escribe a trantienthanh2412@gmail.com."
+	},
+	"bee54c9c": {
+		"en": "Something went wrong.",
+		"text": "Algo salió mal."
+	},
+	"3f718709": {
+		"en": "Thanks! We'll send your TestFlight invite soon.",
+		"text": "¡Gracias! Te enviaremos pronto tu invitación de TestFlight."
+	},
+	"cf765512": {
+		"en": "Sending…",
+		"text": "Enviando…"
+	},
+	"06041330": {
+		"en": "The iPhone app is in beta on TestFlight. Leave your email and we'll invite you as soon as the first build is ready. The invite comes from Apple's TestFlight; open it on your iPhone.",
+		"text": "La app para iPhone está en beta en TestFlight. Deja tu correo y te invitaremos en cuanto la primera compilación esté lista. La invitación llega desde TestFlight de Apple; ábrela en tu iPhone."
+	},
+	"fedb0338": {
+		"en": "Join the iPhone beta.",
+		"text": "Únete a la beta para iPhone."
+	},
+	"e8371f96": {
+		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (<a href=\"#beta\">ask for a beta invite</a> to get the app on TestFlight). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
+		"text": "¿Prefieres una instalación permanente? Ejecuta <code>coderemote up</code> en la carpeta de un proyecto y escanea el código QR con tu iPhone (<a href=\"#beta\">pide una invitación a la beta</a> para obtener la app en TestFlight). La actualización, la desinstalación y el resto están en la <a href=\"docs/setup.html#install\">guía de instalación</a>."
+	},
+	"12820efb": {
+		"en": "On macOS and Linux.",
+		"text": "En macOS y Linux."
+	},
+	"b3d404a3": {
+		"en": "On any system with Node.js 22 or newer.",
+		"text": "En cualquier sistema con Node.js 22 o posterior."
+	},
+	"835d7455": {
+		"en": "Paste it into PowerShell on Windows 10 or 11. No Node.js? It downloads one for coderemote alone.",
+		"text": "Pégalo en PowerShell en Windows 10 u 11. ¿No tienes Node.js? Descarga uno solo para coderemote."
+	},
+	"af90723f": {
+		"en": "Paste it into Terminal. No Node.js? It downloads one for coderemote alone.",
+		"text": "Pégalo en el Terminal. ¿No tienes Node.js? Descarga uno solo para coderemote."
+	},
+	"d5b89dd3": {
+		"en": "macOS and Linux",
+		"text": "macOS y Linux"
+	},
+	"39201eac": {
+		"en": "Install method",
+		"text": "Método de instalación"
+	},
+	"d3465c71": {
+		"en": "Install on your computer.",
+		"text": "Instálalo en tu ordenador."
+	},
+	"8a57f5ba": {
+		"en": "<a href=\"compare.html\">See the full comparison</a>, including when another tool is the better fit.",
+		"text": "<a href=\"compare.html\">Consulta la comparación completa</a>, incluido cuándo otra herramienta encaja mejor."
+	},
+	"1e965f99": {
+		"en": "No server to enable, no keys to copy, no ports to forward, no firewall rules to edit.",
+		"text": "Sin servidor que activar, sin claves que copiar, sin puertos que redirigir, sin reglas de firewall que editar."
+	},
+	"339ea050": {
+		"en": "No SSH",
+		"text": "Sin SSH"
+	},
+	"3245e5ca": {
+		"en": "The agent connects outward through a private tunnel. Nothing to install on the phone's network, nothing to join.",
+		"text": "El agente se conecta hacia fuera a través de un túnel privado. Nada que instalar en la red del teléfono, nada a lo que unirse."
+	},
+	"df62f1c4": {
+		"en": "No VPN",
+		"text": "Sin VPN"
+	},
+	"1c984cdc": {
+		"en": "Nothing to download, install or keep updated on the computer. <code>npx</code> runs it and leaves nothing behind.",
+		"text": "Nada que descargar, instalar ni mantener actualizado en el ordenador. <code>npx</code> lo ejecuta y no deja nada atrás."
+	},
+	"c547ad21": {
+		"en": "No desktop app",
+		"text": "Sin app de escritorio"
+	},
+	"c8983275": {
+		"en": "Other tools ask you to download a desktop app, set up a VPN on both devices, or configure an SSH server and keys. With Node.js already on your computer, Code Remote is a single line.",
+		"text": "Otras herramientas te piden descargar una app de escritorio, configurar una VPN en ambos dispositivos o montar un servidor SSH y claves. Con Node.js ya en tu ordenador, Code Remote es una sola línea."
+	},
+	"e0a95756": {
+		"en": "One command. That's the whole setup.",
+		"text": "Un comando. Esa es toda la configuración."
+	},
+	"7c89f87d": {
+		"en": "Terminal: npx coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone",
+		"text": "Terminal: npx coderemote up inicia el agente, se conecta al relay e imprime un código QR para escanear con el iPhone"
+	},
+	"8d792ea6": {
+		"en": "A laptop and a phone joined by a tunnel, with data travelling between them",
+		"text": "Un portátil y un teléfono unidos por un túnel, con datos viajando entre ellos"
+	},
+	"e1ebfbbc": {
+		"en": "Free on TestFlight. App Store release coming soon.",
+		"text": "Gratis en TestFlight. Lanzamiento en la App Store próximamente."
+	},
+	"b09a5e83": {
+		"en": "Join the iPhone beta",
+		"text": "Únete a la beta para iPhone"
+	},
+	"90e40d50": {
+		"en": "Get started",
+		"text": "Empezar"
+	},
+	"f11adb20": {
+		"en": "Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone: <code>npx coderemote up</code>. No SSH keys, no port forwarding, no VPN.",
+		"text": "Explora archivos, revisa y haz commits con git, usa un terminal real y abre los servidores de desarrollo de tu máquina, todo desde tu iPhone. Un comando en el ordenador, un escaneo de QR en el teléfono: <code>npx coderemote up</code>. Sin claves SSH, sin redirección de puertos, sin VPN."
+	},
+	"553c0fd3": {
+		"en": "Your computer, in your pocket.",
+		"text": "Tu ordenador, en tu bolsillo."
+	},
+	"ae1ef014": {
+		"en": "Dark",
+		"text": "Oscuro"
+	},
+	"a36ef8ab": {
+		"en": "Light",
+		"text": "Claro"
+	},
+	"bc0792d8": {
+		"en": "System",
+		"text": "Sistema"
+	},
+	"41def7a0": {
+		"en": "Appearance",
+		"text": "Apariencia"
+	},
+	"f03b60f7": {
+		"en": "Beta",
+		"text": "Beta"
+	},
+	"fd6c3ebf": {
+		"en": "Install",
+		"text": "Instalar"
+	},
+	"57f5f5ef": {
+		"en": "Menu",
+		"text": "Menú"
+	},
+	"8e3df45a": {
+		"en": "Copied",
+		"text": "Copiado"
+	},
+	"af74f7c5": {
+		"en": "Copy",
+		"text": "Copiar"
+	},
+	"adf27d77": {
+		"en": "Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.",
+		"text": "Explora archivos, revisa y haz commits con git, y usa un terminal real en tu máquina de desarrollo desde tu iPhone, a través de un Microsoft Dev Tunnel seguro. Sin claves SSH, sin redirección de puertos, sin VPN."
+	},
+	"b94af5fc": {
+		"en": "Code Remote: your computer, from your iPhone",
+		"text": "Code Remote: tu ordenador, desde tu iPhone"
+	},
+	"70f8bb9a": {
+		"en": "Home",
+		"text": "Inicio"
+	},
+	"578d25ef": {
+		"en": "© 2026 Thanh Tran",
+		"text": "© 2026 Thanh Tran"
+	},
+	"81ca323c": {
+		"en": "Please don't report vulnerabilities in public issues. Follow the <a href=\"https://github.com/CodeRemoteApp/coderemote/blob/main/SECURITY.md\">security policy</a> instead.",
+		"text": "Por favor, no informes de vulnerabilidades en issues públicos. Sigue en su lugar la <a href=\"https://github.com/CodeRemoteApp/coderemote/blob/main/SECURITY.md\">política de seguridad</a>."
+	},
+	"0b0a72a6": {
+		"en": "Security issues",
+		"text": "Problemas de seguridad"
+	},
+	"180e72ad": {
+		"en": "No. Code Remote has no servers. Traffic passes, encrypted, through Microsoft's Dev Tunnels relay between your phone and your computer. See the <a href=\"privacy.html\">Privacy Policy</a>.",
+		"text": "No. Code Remote no tiene servidores. El tráfico pasa, cifrado, por el relay de Dev Tunnels de Microsoft entre tu teléfono y tu ordenador. Consulta la <a href=\"privacy.html\">Política de privacidad</a>."
+	},
+	"ce2e6065": {
+		"en": "Does my code go through your servers?",
+		"text": "¿Mi código pasa por sus servidores?"
+	},
+	"bfb56c80": {
+		"en": "One at a time for now. Share a parent folder to reach several projects; the Git tab finds every repository inside it.",
+		"text": "De momento, de una en una. Comparte una carpeta superior para llegar a varios proyectos; la pestaña Git encuentra todos los repositorios que contiene."
+	},
+	"2c27f768": {
+		"en": "Can I share more than one folder?",
+		"text": "¿Puedo compartir más de una carpeta?"
+	},
+	"9d45fb70": {
+		"en": "That's the most an account may keep. Run <code>coderemote tunnels</code> to see them, and delete the ones nothing uses any more, such as an old computer's, with <code>coderemote tunnels delete &lt;id&gt;</code>. See <a href=\"docs/commands.html#tunnels\">tunnels</a>.",
+		"text": "Es el máximo que una cuenta puede conservar. Ejecuta <code>coderemote tunnels</code> para verlos y elimina los que ya nadie usa, como los de un ordenador antiguo, con <code>coderemote tunnels delete &lt;id&gt;</code>. Consulta <a href=\"docs/commands.html#tunnels\">tunnels</a>."
+	},
+	"2579a42b": {
+		"en": "coderemote says my Dev Tunnels account already has 10 tunnels.",
+		"text": "coderemote dice que mi cuenta de Dev Tunnels ya tiene 10 túneles."
+	},
+	"87d4679d": {
+		"en": "Yes. Sessions keep running on the computer with their recent output. Reopen the App and they reattach. End them with <code>coderemote kill</code>.",
+		"text": "Sí. Las sesiones siguen ejecutándose en el ordenador con su salida reciente. Vuelve a abrir la App y se reconectan. Termínalas con <code>coderemote kill</code>."
+	},
+	"ac3dc0e5": {
+		"en": "Do terminal sessions survive when my phone locks?",
+		"text": "¿Sobreviven las sesiones de terminal cuando mi teléfono se bloquea?"
+	},
+	"cc908e49": {
+		"en": "Run <code>coderemote rotate-token</code> on the computer. Every paired device loses access immediately; pair again by scanning the new QR code.",
+		"text": "Ejecuta <code>coderemote rotate-token</code> en el ordenador. Todos los dispositivos emparejados pierden el acceso de inmediato; vuelve a emparejar escaneando el nuevo código QR."
+	},
+	"19e0d122": {
+		"en": "I lost my phone, or a pairing link leaked.",
+		"text": "He perdido mi teléfono, o se filtró un enlace de emparejamiento."
+	},
+	"7ae1c27b": {
+		"en": "Check that <code>coderemote up</code> is still running on the computer and that the computer is awake and online. Run <code>coderemote status</code> to see running agents. If you signed in with a different account on the phone, sign in again with the same GitHub or Microsoft account the computer uses.",
+		"text": "Comprueba que <code>coderemote up</code> sigue en marcha en el ordenador y que este está encendido y con conexión. Ejecuta <code>coderemote status</code> para ver los agentes en ejecución. Si iniciaste sesión con otra cuenta en el teléfono, vuelve a iniciarla con la misma cuenta de GitHub o Microsoft que usa el ordenador."
+	},
+	"18a05b02": {
+		"en": "The App can't connect to my computer.",
+		"text": "La App no puede conectarse a mi ordenador."
+	},
+	"f07ac22a": {
+		"en": "Common questions",
+		"text": "Preguntas frecuentes"
+	},
+	"f5c3c034": {
+		"en": "Then scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).",
+		"text": "Después escanea el código QR con la cámara del iPhone, o con el botón <strong>+</strong> de la App. La primera ejecución descarga la CLI de Dev Tunnels de Microsoft y te pide iniciar sesión con GitHub (o ejecuta antes <code>coderemote login --microsoft</code> para usar una cuenta de Microsoft)."
+	},
+	"0b32e824": {
+		"en": "On your computer (macOS, Windows 10/11 or Linux), install coderemote with the install script, npm or Homebrew (<a href=\"docs/setup.html#install\">every way, for each system</a>), then share a folder:",
+		"text": "En tu ordenador (macOS, Windows 10/11 o Linux), instala coderemote con el script de instalación, npm o Homebrew (<a href=\"docs/setup.html#install\">todas las formas, para cada sistema</a>) y comparte una carpeta:"
+	},
+	"76e7a3a3": {
+		"en": "Getting started",
+		"text": "Primeros pasos"
+	},
+	"ab192c65": {
+		"en": "Email <a href=\"mailto:trantienthanh2412@gmail.com\">trantienthanh2412@gmail.com</a>, or open an issue on <a href=\"https://github.com/CodeRemoteApp/coderemote/issues\">GitHub</a>. Please include your iOS version, your computer's system, your coderemote version (<code>coderemote --version</code>) and what you were doing.",
+		"text": "Escribe a <a href=\"mailto:trantienthanh2412@gmail.com\">trantienthanh2412@gmail.com</a> o abre un issue en <a href=\"https://github.com/CodeRemoteApp/coderemote/issues\">GitHub</a>. Incluye tu versión de iOS, el sistema de tu ordenador, tu versión de coderemote (<code>coderemote --version</code>) y qué estabas haciendo."
+	},
+	"94b93034": {
+		"en": "We usually reply within a few days.",
+		"text": "Solemos responder en unos días."
+	},
+	"91a88285": {
+		"en": "Get help with Code Remote: setup, common questions and how to contact us.",
+		"text": "Obtén ayuda con Code Remote: configuración, preguntas frecuentes y cómo contactarnos."
+	},
+	"60fda17b": {
+		"en": "Support · Code Remote",
+		"text": "Soporte · Code Remote"
+	},
+	"2c738ac8": {
+		"en": "The agent listens on <code>127.0.0.1</code> only and publishes itself through a private Microsoft Dev Tunnel. Only your GitHub or Microsoft account gets through, and every request also needs the pairing token kept in the iPhone Keychain. <a href=\"docs/\">Read how it works</a>.",
+		"text": "El agente escucha solo en <code>127.0.0.1</code> y se publica a través de un Microsoft Dev Tunnel privado. Solo pasa tu cuenta de GitHub o de Microsoft, y cada petición necesita además el token de emparejamiento guardado en el llavero del iPhone. <a href=\"docs/\">Lee cómo funciona</a>."
+	},
+	"d8d86b60": {
+		"en": "What stays simple",
+		"text": "Lo que sigue siendo sencillo"
+	},
+	"14116a22": {
+		"en": "<strong>It is not an iPhone.</strong> The Code Remote app is for iPhone. Anything else has to use the tools above.",
+		"text": "<strong>No es un iPhone.</strong> La app de Code Remote es para iPhone. Cualquier otro dispositivo tiene que usar las herramientas de arriba."
+	},
+	"24c010fd": {
+		"en": "<strong>You already run a VPN and SSH everywhere.</strong> If that is set up and you like it, a terminal app over it works fine. Code Remote is for when you would rather not set it up at all.",
+		"text": "<strong>Ya usas VPN y SSH en todas partes.</strong> Si ya lo tienes montado y te gusta, una app de terminal sobre eso funciona bien. Code Remote es para cuando prefieres no configurar nada."
+	},
+	"c7cd2951": {
+		"en": "<strong>You need the full desktop.</strong> Code Remote is for developer work: files, git, terminal, dev servers. For a design app or a GUI installer, use a remote desktop app.",
+		"text": "<strong>Necesitas el escritorio completo.</strong> Code Remote es para el trabajo de desarrollo: archivos, git, terminal, servidores de desarrollo. Para una app de diseño o un instalador gráfico, usa una app de escritorio remoto."
+	},
+	"61e159dc": {
+		"en": "When another tool is the better fit",
+		"text": "Cuándo otra herramienta encaja mejor"
+	},
+	"7d218162": {
+		"en": "Tailscale and Termius are the right choice if you manage many machines or servers, and Code Remote does not replace them for that. Orca is where you run agents at your desk, and Code Remote is how you reach your machine when you are away from it, so the two can sit side by side.",
+		"text": "Tailscale y Termius son la elección correcta si administras muchas máquinas o servidores, y Code Remote no los sustituye para eso. Orca es donde ejecutas agentes en tu escritorio, y Code Remote es cómo llegas a tu máquina cuando estás lejos de ella, así que ambas pueden convivir."
+	},
+	"3ead3622": {
+		"en": "<strong>Private by design.</strong> The agent listens on <code>127.0.0.1</code> only, and no Code Remote server sits in between. <a href=\"docs/\">Read how it works</a>.",
+		"text": "<strong>Privado por diseño.</strong> El agente escucha solo en <code>127.0.0.1</code> y no hay ningún servidor de Code Remote en medio. <a href=\"docs/\">Lee cómo funciona</a>."
+	},
+	"475230f1": {
+		"en": "<strong>Made for the phone.</strong> A file browser, git review, key bar for the terminal and one-tap previews, instead of a terminal squeezed onto a small screen.",
+		"text": "<strong>Hecho para el teléfono.</strong> Un explorador de archivos, revisión de git, barra de teclas para el terminal y vistas previas de un toque, en lugar de un terminal apretado en una pantalla pequeña."
+	},
+	"7f3557b5": {
+		"en": "<strong>Nothing to maintain.</strong> No VPN to keep connected, no SSH server to harden, no keys to rotate, no desktop app to update.",
+		"text": "<strong>Nada que mantener.</strong> Sin VPN que mantener conectada, sin servidor SSH que proteger, sin claves que rotar, sin app de escritorio que actualizar."
+	},
+	"6a611848": {
+		"en": "<strong>The shortest path.</strong> One command and one scan. The others need two or three installs, an account on each side, and keys or network settings.",
+		"text": "<strong>El camino más corto.</strong> Un comando y un escaneo. Las demás necesitan dos o tres instalaciones, una cuenta en cada lado, y claves o ajustes de red."
+	},
+	"1fe7c1e2": {
+		"en": "Why Code Remote",
+		"text": "Por qué Code Remote"
+	},
+	"0627f889": {
+		"en": "Running several agents side by side at your desk",
+		"text": "Ejecutar varios agentes en paralelo en tu escritorio"
+	},
+	"f8ef330c": {
+		"en": "Managing many servers over SSH",
+		"text": "Administrar muchos servidores por SSH"
+	},
+	"002b7ce7": {
+		"en": "Linking many machines into one private network",
+		"text": "Unir muchas máquinas en una sola red privada"
+	},
+	"b4a6972e": {
+		"en": "Reaching your dev machine from your phone with the least setup",
+		"text": "Llegar a tu máquina de desarrollo desde el teléfono con la menor configuración"
+	},
+	"6d7ae87f": {
+		"en": "Best for",
+		"text": "Ideal para"
+	},
+	"787c32b5": {
+		"en": "Open source (MIT)",
+		"text": "Código abierto (MIT)"
+	},
+	"14f04ceb": {
+		"en": "Free Starter plan, paid Pro for sync and more",
+		"text": "Plan Starter gratuito, Pro de pago para sincronización y más"
+	},
+	"293ee410": {
+		"en": "Free for personal use within Tailscale's limits",
+		"text": "Gratis para uso personal dentro de los límites de Tailscale"
+	},
+	"db53609a": {
+		"en": "Free iPhone beta, free open-source CLI (AGPL)",
+		"text": "Beta de iPhone gratuita, CLI de código abierto gratuita (AGPL)"
+	},
+	"64ae43e8": {
+		"en": "Cost",
+		"text": "Coste"
+	},
+	"58b9d862": {
+		"en": "An open-source desktop IDE for running coding agents in parallel",
+		"text": "Un IDE de escritorio de código abierto para ejecutar agentes de programación en paralelo"
+	},
+	"1239427a": {
+		"en": "An SSH, Mosh and SFTP client",
+		"text": "Un cliente de SSH, Mosh y SFTP"
+	},
+	"8df61e91": {
+		"en": "A mesh VPN with an SSH app on top",
+		"text": "Una VPN en malla con una app de SSH encima"
+	},
+	"7a7f3e7a": {
+		"en": "An agent on your computer plus an iPhone app",
+		"text": "Un agente en tu ordenador más una app para iPhone"
+	},
+	"f8c94a3b": {
+		"en": "What it is",
+		"text": "Qué es"
+	},
+	"9dbf5683": {
+		"en": "Live agent status, usage and terminals",
+		"text": "Estado de los agentes en vivo, uso y terminales"
+	},
+	"38224a51": {
+		"en": "A terminal and SFTP file transfer",
+		"text": "Un terminal y transferencia de archivos por SFTP"
+	},
+	"ced560cc": {
+		"en": "A terminal, whatever the SSH app offers",
+		"text": "Un terminal, lo que ofrezca la app de SSH"
+	},
+	"5cd521d8": {
+		"en": "Files, git, terminal, ports, dev server previews and a request log, all built for touch",
+		"text": "Archivos, git, terminal, puertos, vistas previas del servidor de desarrollo y un registro de peticiones, todo pensado para el tacto"
+	},
+	"4d382b20": {
+		"en": "On the phone you get",
+		"text": "En el teléfono tienes"
+	},
+	"98cabc87": {
+		"en": "Your own coding-agent accounts",
+		"text": "Tus propias cuentas de agentes de programación"
+	},
+	"0fef8e5b": {
+		"en": "SSH keys or passwords per host. Cloud sync is paid.",
+		"text": "Claves SSH o contraseñas por host. La sincronización en la nube es de pago."
+	},
+	"bb89b21e": {
+		"en": "A Tailscale account, plus SSH keys or Tailscale SSH",
+		"text": "Una cuenta de Tailscale, más claves SSH o Tailscale SSH"
+	},
+	"7dc5ca4e": {
+		"en": "<strong>One sign-in</strong> (GitHub or Microsoft). No SSH keys to create or copy.",
+		"text": "<strong>Un solo inicio de sesión</strong> (GitHub o Microsoft). Sin claves SSH que crear o copiar."
+	},
+	"52d88281": {
+		"en": "Accounts and keys",
+		"text": "Cuentas y claves"
+	},
+	"1ba84138": {
+		"en": "Works from the computer it runs on. Remote machines go over SSH.",
+		"text": "Funciona desde el ordenador donde se ejecuta. Las máquinas remotas van por SSH."
+	},
+	"2c271644": {
+		"en": "You make the machine reachable: port forward, VPN or similar",
+		"text": "Tú haces que la máquina sea accesible: redirección de puertos, VPN o similar"
+	},
+	"d243dd29": {
+		"en": "Join both devices to the same tailnet",
+		"text": "Unir ambos dispositivos a la misma tailnet"
+	},
+	"a8c367df": {
+		"en": "<strong>None.</strong> It connects outward, so NAT, firewalls and hotel Wi-Fi are fine.",
+		"text": "<strong>Ninguna.</strong> Se conecta hacia fuera, así que NAT, firewalls y el wifi del hotel no son un problema."
+	},
+	"3889510d": {
+		"en": "Network setup",
+		"text": "Configuración de red"
+	},
+	"00c55295": {
+		"en": "Install the companion app and pair it",
+		"text": "Instalar la app complementaria y emparejarla"
+	},
+	"1c60c3f1": {
+		"en": "Install Termius, add the host and key",
+		"text": "Instalar Termius, añadir el host y la clave"
+	},
+	"72a47da6": {
+		"en": "Install Tailscale and an SSH app, sign in, import keys",
+		"text": "Instalar Tailscale y una app de SSH, iniciar sesión, importar claves"
+	},
+	"2c1b2b78": {
+		"en": "<strong>Scan a QR code.</strong> That is the whole pairing.",
+		"text": "<strong>Escanear un código QR.</strong> Ese es todo el emparejamiento."
+	},
+	"96f7dfe8": {
+		"en": "Setup on the phone",
+		"text": "Configuración en el teléfono"
+	},
+	"95fec4c1": {
+		"en": "Install the Orca desktop app",
+		"text": "Instalar la app de escritorio de Orca"
+	},
+	"6acb645b": {
+		"en": "An SSH server must already be running, with keys set up",
+		"text": "Debe haber ya un servidor SSH en marcha, con las claves configuradas"
+	},
+	"ec91b214": {
+		"en": "Install Tailscale, turn on an SSH server, sign in",
+		"text": "Instalar Tailscale, activar un servidor SSH, iniciar sesión"
+	},
+	"28fef9ed": {
+		"en": "<strong>One command:</strong> <code>npx coderemote up</code>. Nothing stays installed.",
+		"text": "<strong>Un comando:</strong> <code>npx coderemote up</code>. No queda nada instalado."
+	},
+	"17fac107": {
+		"en": "Setup on the computer",
+		"text": "Configuración en el ordenador"
+	},
+	"5683005e": {
+		"en": "Orca",
+		"text": "Orca"
+	},
+	"92d1a8fd": {
+		"en": "Termius",
+		"text": "Termius"
+	},
+	"552fb6b7": {
+		"en": "Tailscale + an SSH app",
+		"text": "Tailscale + una app de SSH"
+	},
+	"51ffc9ca": {
+		"en": "Based on each tool's public pages in November 2026. Plans and features change, so check theirs before deciding.",
+		"text": "Basado en las páginas públicas de cada herramienta en noviembre de 2026. Los planes y funciones cambian, así que consulta las suyas antes de decidir."
+	},
+	"a4a0326d": {
+		"en": "Code Remote vs. Tailscale, Termius and Orca",
+		"text": "Code Remote frente a Tailscale, Termius y Orca"
+	},
+	"24db9c7e": {
+		"en": "Needs Node.js 22 or newer. No Node? The <a href=\"docs/setup.html#install\">install script</a> fetches one for coderemote alone. The first run asks you to sign in once with GitHub or Microsoft.",
+		"text": "Necesita Node.js 22 o posterior. ¿Sin Node? El <a href=\"docs/setup.html#install\">script de instalación</a> obtiene uno solo para coderemote. La primera ejecución te pide iniciar sesión una vez con GitHub o Microsoft."
+	},
+	"1b8bd888": {
+		"en": "To reach your dev machine from a phone, most tools want you to download an app on the computer, set up a VPN, or configure SSH. Code Remote needs one command and one QR scan.",
+		"text": "Para llegar a tu máquina de desarrollo desde un teléfono, la mayoría de las herramientas quieren que descargues una app en el ordenador, configures una VPN o configures SSH. Code Remote necesita un comando y un escaneo de QR."
+	},
+	"2a45b4ef": {
+		"en": "Code Remote vs. the usual ways in.",
+		"text": "Code Remote frente a las formas habituales de entrar."
+	},
+	"b70582ad": {
+		"en": "How Code Remote compares with Tailscale, Termius, Orca, remote desktop apps and plain SSH: what each needs on your computer and network before you can connect from your phone.",
+		"text": "Cómo se compara Code Remote con Tailscale, Termius, Orca, las apps de escritorio remoto y SSH a secas: qué necesita cada una en tu ordenador y tu red antes de poder conectarte desde el teléfono."
+	},
+	"b8d7e9b6": {
+		"en": "Compare · Code Remote",
+		"text": "Comparar · Code Remote"
+	},
+	"b6050d8a": {
+		"en": "Notifications go from your computer through a relay that adds the app's Apple push key; their content is encrypted for your iPhone, so neither the relay nor Apple can read it, and the relay keeps nothing. See the <a href=\"../privacy.html#notifications\">privacy policy</a>.",
+		"text": "Las notificaciones salen de tu ordenador a través de un relay que añade la clave push de Apple de la app; su contenido está cifrado para tu iPhone, así que ni el relay ni Apple pueden leerlo, y el relay no guarda nada. Consulta la <a href=\"../privacy.html#notifications\">política de privacidad</a>."
+	},
+	"d42814f0": {
+		"en": "The plugin runs <code>coderemote hook</code> for each Claude Code event (a prompt, a tool call, a reply, a permission prompt). It hands the event to the <code>coderemote</code> sharing the session's folder, on the same computer, authenticated by a secret that never leaves it. A permission prompt waits there for an answer from the phone while Claude Code shows its own prompt as usual.",
+		"text": "El plugin ejecuta <code>coderemote hook</code> en cada evento de Claude Code (un prompt, una llamada a una herramienta, una respuesta, una solicitud de permiso). Entrega el evento al <code>coderemote</code> que comparte la carpeta de la sesión, en el mismo ordenador, autenticado con un secreto que nunca sale de él. Una solicitud de permiso espera allí una respuesta desde el teléfono mientras Claude Code muestra la suya como de costumbre."
+	},
+	"1dd6a17c": {
+		"en": "How it works",
+		"text": "Cómo funciona"
+	},
+	"abaa7e58": {
+		"en": "Long-press a permission notification to <strong>Allow</strong> or <strong>Deny</strong> without opening the app (after Face ID); a single question offers its answers the same way. Nothing is sent while you're using the computer (on a Mac) or have the machine open in the app.",
+		"text": "Mantén pulsada una notificación de permiso para <strong>Permitir</strong> o <strong>Denegar</strong> sin abrir la app (tras Face ID); una pregunta sencilla ofrece sus respuestas del mismo modo. No se envía nada mientras usas el ordenador (en un Mac) o tienes la máquina abierta en la app."
+	},
+	"eb8cec3f": {
+		"en": "Turn them on per computer in the machine's info (hold it in the machine list, or <strong>Machine Info</strong> in a tab's menu): <strong>Needs an answer</strong> and <strong>Finished a long task</strong> (one that took a minute or more), with a test button.",
+		"text": "Actívalas por ordenador en la información de la máquina (mantenla pulsada en la lista de máquinas, o <strong>Machine Info</strong> en el menú de una pestaña): <strong>Necesita una respuesta</strong> y <strong>Terminó una tarea larga</strong> (una que tardó un minuto o más), con un botón de prueba."
+	},
+	"753a22b2": {
+		"en": "Notifications",
+		"text": "Notificaciones"
+	},
+	"80b53e5e": {
+		"en": "A session you started in a terminal on the computer can be followed and answered here but not typed into, since it isn't the app's terminal; resume it here once it ends.",
+		"text": "Una sesión que iniciaste en un terminal del ordenador se puede seguir y responder aquí pero no escribir en ella, porque no es el terminal de la app; reanúdala aquí cuando termine."
+	},
+	"0bb32964": {
+		"en": "An ended session offers <strong>Resume Here</strong>, which continues the conversation in a new terminal.",
+		"text": "Una sesión terminada ofrece <strong>Resume Here</strong>, que continúa la conversación en un terminal nuevo."
+	},
+	"62a25c54": {
+		"en": "The <strong>⚡</strong> menu has <strong>Next Permission Mode</strong> (<kbd>Shift</kbd>+<kbd>Tab</kbd>), <code>/compact</code>, <code>/clear</code>, <code>/model</code> and <strong>Open in Terminal</strong> (Codex has no permission modes to cycle and no <code>/clear</code>). In the terminal, <strong>Chat</strong> in the <strong>…</strong> menu comes back.",
+		"text": "El menú <strong>⚡</strong> tiene <strong>Next Permission Mode</strong> (<kbd>Shift</kbd>+<kbd>Tab</kbd>), <code>/compact</code>, <code>/clear</code>, <code>/model</code> y <strong>Open in Terminal</strong> (Codex no tiene modos de permisos que alternar ni <code>/clear</code>). En el terminal, <strong>Chat</strong> en el menú <strong>…</strong> te devuelve."
+	},
+	"5547e4f8": {
+		"en": "<strong>+</strong> attaches photos, videos, files, a photo from the camera or a copied image. They go to <code>~/.coderemote/uploads/</code> on the computer (outside your project, deleted after a week), and Claude sees images as images; for other files it gets their path.",
+		"text": "<strong>+</strong> adjunta fotos, vídeos, archivos, una foto de la cámara o una imagen copiada. Van a <code>~/.coderemote/uploads/</code> en el ordenador (fuera de tu proyecto, se borran tras una semana), y Claude ve las imágenes como imágenes; de otros archivos recibe su ruta."
+	},
+	"53b2f695": {
+		"en": "Write a prompt and send it; while Claude works, what you send waits its turn, as it would at the computer. <strong>Stop</strong> interrupts it (like <kbd>Esc</kbd>).",
+		"text": "Escribe un prompt y envíalo; mientras Claude trabaja, lo que envías espera su turno, como en el ordenador. <strong>Stop</strong> lo interrumpe (como <kbd>Esc</kbd>)."
+	},
+	"71a6a8d2": {
+		"en": "The session runs in a terminal of the app, so you can type to it from the session's message box:",
+		"text": "La sesión se ejecuta en un terminal de la app, así que puedes escribirle desde el cuadro de mensaje de la sesión:"
+	},
+	"817cfa1e": {
+		"en": "For Codex, a model from the ones Codex itself offers (<strong>Default</strong> is the one in Codex's config), and whether it may <strong>Ask before running outside the sandbox</strong>. Turned off, Codex refuses what its sandbox doesn't allow, without asking.",
+		"text": "Para Codex, un modelo de los que ofrece el propio Codex (<strong>Default</strong> es el de la configuración de Codex), y si puede <strong>Ask before running outside the sandbox</strong>. Si está desactivado, Codex rechaza lo que su sandbox no permite, sin preguntar."
+	},
+	"e7fcc880": {
+		"en": "For Claude Code, a model and how it asks for permission (<strong>Ask First</strong>, <strong>Accept Edits</strong>, <strong>Plan Only</strong> or <strong>Auto</strong>).",
+		"text": "Para Claude Code, un modelo y cómo pide permiso (<strong>Ask First</strong>, <strong>Accept Edits</strong>, <strong>Plan Only</strong> o <strong>Auto</strong>)."
+	},
+	"82cd34f2": {
+		"en": "Tap <strong>+</strong> in the Agents tab to start a coding agent on the computer. Pick the <strong>Agent</strong> (Claude Code, or Codex once it's set up) and the <strong>Folder</strong>: it opens the shared folder, where you go into subfolders, filter them by name, and tap <strong>Use This Folder</strong>. Then:",
+		"text": "Toca <strong>+</strong> en la pestaña Agents para iniciar un agente de programación en el ordenador. Elige el <strong>Agent</strong> (Claude Code, o Codex una vez configurado) y la <strong>Folder</strong>: abre la carpeta compartida, donde entras en subcarpetas, las filtras por nombre y tocas <strong>Use This Folder</strong>. Luego:"
+	},
+	"3b4ca675": {
+		"en": "Start and drive sessions",
+		"text": "Inicia y dirige sesiones"
+	},
+	"7362cc02": {
+		"en": "The prompt stays open on the computer too. Whichever side answers first wins: answer at the computer and the card (and its notification) goes away on the phone. A prompt nobody answers from the phone within an hour is left to the computer.",
+		"text": "La solicitud también sigue abierta en el ordenador. Gana quien responda primero: si respondes en el ordenador, la tarjeta (y su notificación) desaparece en el teléfono. Una solicitud que nadie responde desde el teléfono en una hora se deja al ordenador."
+	},
+	"e7a6f3a5": {
+		"en": "For a question, tap an answer, or <strong>Other…</strong> to type one.",
+		"text": "Para una pregunta, toca una respuesta, o <strong>Other…</strong> para escribir una."
+	},
+	"0d4cf62f": {
+		"en": "<strong>Allow</strong> or <strong>Deny</strong>. The <strong>⋯</strong> menu has the same \"always allow\" choices Claude Code offers on the computer, and <strong>Deny with Message</strong> to tell Claude what to do instead.",
+		"text": "<strong>Allow</strong> o <strong>Deny</strong>. El menú <strong>⋯</strong> tiene las mismas opciones de \"permitir siempre\" que ofrece Claude Code en el ordenador, y <strong>Deny with Message</strong> para decirle a Claude qué hacer en su lugar."
+	},
+	"3e5dc5dd": {
+		"en": "When Claude asks for permission to run something, or asks you a question, a card appears at the bottom of the session:",
+		"text": "Cuando Claude pide permiso para ejecutar algo, o te hace una pregunta, aparece una tarjeta al final de la sesión:"
+	},
+	"98868f49": {
+		"en": "Answer from the phone",
+		"text": "Responder desde el teléfono"
+	},
+	"0920842b": {
+		"en": "Sessions live in coderemote's memory: stopping <code>coderemote up</code> clears the list, and ended sessions disappear after a day.",
+		"text": "Las sesiones viven en la memoria de coderemote: detener <code>coderemote up</code> borra la lista, y las sesiones terminadas desaparecen tras un día."
+	},
+	"b0e1f73e": {
+		"en": "A session started in a terminal in the app has <strong>Open in Terminal</strong>, to type into it directly. Sessions you started on the computer show the same timeline.",
+		"text": "Una sesión iniciada en un terminal de la app tiene <strong>Open in Terminal</strong>, para escribir en ella directamente. Las sesiones que iniciaste en el ordenador muestran la misma cronología."
+	},
+	"01aff6a5": {
+		"en": "Lists the sessions on the machine, grouped into <strong>Needs You</strong> (waiting for an answer), <strong>Working</strong>, <strong>Idle</strong> and <strong>Ended</strong>; the tab shows how many need you. Open one to see what it did: your prompts, Claude's replies, and each tool it ran. Commands show with their output, file edits as the lines they change (tap for the whole change or the file), and reads open the file.",
+		"text": "Lista las sesiones de la máquina, agrupadas en <strong>Needs You</strong> (esperando una respuesta), <strong>Working</strong>, <strong>Idle</strong> y <strong>Ended</strong>; la pestaña muestra cuántas te necesitan. Abre una para ver qué hizo: tus prompts, las respuestas de Claude y cada herramienta que ejecutó. Los comandos se muestran con su salida, las ediciones de archivos como las líneas que cambian (toca para ver el cambio completo o el archivo), y las lecturas abren el archivo."
+	},
+	"d8ad7669": {
+		"en": "The Agents tab",
+		"text": "La pestaña Agents"
+	},
+	"542238c3": {
+		"en": "One difference: Codex shows its own approval prompt only after the hook steps aside. So while you're using the computer (or have the machine open in the app), Codex asks in its terminal as usual and the app shows \"Answer on your computer\"; when you're away, the request waits for your phone, with a notification, for up to ten minutes before Codex asks in the terminal. Codex has no \"always allow\" from a hook.",
+		"text": "Una diferencia: Codex muestra su propia solicitud de aprobación solo después de que el hook se aparta. Así que mientras usas el ordenador (o tienes la máquina abierta en la app), Codex pregunta en su terminal como de costumbre y la app muestra \"Answer on your computer\"; cuando estás fuera, la solicitud espera a tu teléfono, con una notificación, hasta diez minutos antes de que Codex pregunte en el terminal. Codex no tiene \"permitir siempre\" desde un hook."
+	},
+	"842d9caf": {
+		"en": "Then open Codex once, type <code>/hooks</code> and trust the Code Remote hooks: Codex runs a plugin's hooks only after you have reviewed them. Codex sessions show in the Agents tab labelled Codex.",
+		"text": "Luego abre Codex una vez, escribe <code>/hooks</code> y confía en los hooks de Code Remote: Codex ejecuta los hooks de un plugin solo después de que los hayas revisado. Las sesiones de Codex aparecen en la pestaña Agents con la etiqueta Codex."
+	},
+	"468ee876": {
+		"en": "Codex 0.139 or later works too:",
+		"text": "Codex 0.139 o posterior también funciona:"
+	},
+	"2c5d5b88": {
+		"en": "Codex",
+		"text": "Codex"
+	},
+	"40de0b75": {
+		"en": "The plugin does nothing when no <code>coderemote</code> is running, or when the session's folder isn't shared: Claude Code then works exactly as without it.",
+		"text": "El plugin no hace nada cuando no hay ningún <code>coderemote</code> en ejecución, o cuando la carpeta de la sesión no está compartida: Claude Code funciona entonces exactamente igual que sin él."
+	},
+	"d3793496": {
+		"en": "Once per computer, with Claude Code installed:",
+		"text": "Una vez por ordenador, con Claude Code instalado:"
+	},
+	"a5041fda": {
+		"en": "Set up",
+		"text": "Configuración"
+	},
+	"1643bbf5": {
+		"en": "The Agents tab and notifications are part of Code Remote Pro, and need a recent coderemote on the computer: run <code>coderemote update</code> and start <code>coderemote up</code> again if the app says so.",
+		"text": "La pestaña Agents y las notificaciones forman parte de Code Remote Pro, y necesitan un coderemote reciente en el ordenador: ejecuta <code>coderemote update</code> y vuelve a iniciar <code>coderemote up</code> si la app lo indica."
+	},
+	"dc8e36b0": {
+		"en": "Follow every Claude Code session on your computer from your iPhone, answer its permission prompts and questions there, and get a notification when it needs you.",
+		"text": "Sigue desde tu iPhone cada sesión de Claude Code de tu ordenador, responde allí a sus solicitudes de permiso y preguntas, y recibe una notificación cuando te necesita."
+	},
+	"9504046e": {
+		"en": "Coding agents",
+		"text": "Agentes de programación"
+	},
+	"7e439c35": {
+		"en": "On this page",
+		"text": "En esta página"
+	},
+	"c464fca4": {
+		"en": "Ports &amp; preview",
+		"text": "Puertos y vista previa"
+	},
+	"45e5f3f7": {
+		"en": "Commands",
+		"text": "Comandos"
+	},
+	"cdd7bb28": {
+		"en": "Setup",
+		"text": "Instalación"
+	},
+	"2473e96b": {
+		"en": "Introduction",
+		"text": "Introducción"
+	},
+	"192ab978": {
+		"en": "Start, prompt and follow Claude Code and Codex sessions from your iPhone, answer their permission prompts and questions, and get notified when they need you.",
+		"text": "Inicia, da instrucciones y sigue sesiones de Claude Code y Codex desde tu iPhone, responde a sus solicitudes de permiso y preguntas, y recibe una notificación cuando te necesiten."
+	},
+	"f1a733d6": {
+		"en": "Coding agents · Code Remote Docs",
+		"text": "Agentes de programación · Documentación de Code Remote"
+	},
+	"45555ebf": {
+		"en": "<span>Next</span>Ports &amp; preview",
+		"text": "<span>Siguiente</span>Puertos y vista previa"
+	},
+	"b088482e": {
+		"en": "<span>Previous</span>Setup",
+		"text": "<span>Anterior</span>Instalación"
+	},
+	"1fd2b5b5": {
+		"en": "More pages",
+		"text": "Más páginas"
+	},
+	"1caafbb7": {
+		"en": "GitHub, in the browser",
+		"text": "GitHub, en el navegador"
+	},
+	"da7a6873": {
+		"en": "off",
+		"text": "desactivado"
+	},
+	"362f5f14": {
+		"en": "current folder",
+		"text": "carpeta actual"
+	},
+	"808d7dca": {
+		"en": "Default",
+		"text": "Predeterminado"
+	},
+	"e31d9722": {
+		"en": "Option",
+		"text": "Opción"
+	},
+	"6bf5da9c": {
+		"en": "Options",
+		"text": "Opciones"
+	},
+	"c8ca637c": {
+		"en": "Prints every command and option. <code>coderemote</code> on its own, or <code>--help</code> anywhere on the line, does the same, so a typo never starts sharing a folder by accident.",
+		"text": "Imprime todos los comandos y opciones. <code>coderemote</code> a solas, o <code>--help</code> en cualquier punto de la línea, hace lo mismo, así que un error de escritura nunca empieza a compartir una carpeta por accidente."
+	},
+	"a8ba4939": {
+		"en": "Agents already running keep the old version until you restart them: <code>coderemote stop --all</code>, then <code>coderemote up</code> again.",
+		"text": "Los agentes que ya están en marcha conservan la versión antigua hasta que los reinicies: <code>coderemote stop --all</code> y luego <code>coderemote up</code> de nuevo."
+	},
+	"fc9ef7d3": {
+		"en": "Installs the latest coderemote the way you installed it: with npm (or pnpm, yarn, bun), with Homebrew, or into the Node.js the <a href=\"setup.html#install\">install script</a> downloaded. When there's a newer version, <code>up</code> says so under the pairing links; it asks npm at most once a day and never slows startup. Set <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> to turn that off.",
+		"text": "Instala la última versión de coderemote del mismo modo que lo instalaste: con npm (o pnpm, yarn, bun), con Homebrew, o dentro del Node.js que descargó el <a href=\"setup.html#install\">script de instalación</a>. Cuando hay una versión más nueva, <code>up</code> lo dice bajo los enlaces de emparejamiento; consulta a npm como mucho una vez al día y nunca ralentiza el inicio. Define <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> para desactivarlo."
+	},
+	"7c7c3f39": {
+		"en": "The phone must sign in with the same account, unless you run <code>up --allow-anonymous</code>.",
+		"text": "El teléfono debe iniciar sesión con la misma cuenta, a menos que ejecutes <code>up --allow-anonymous</code>."
+	},
+	"25a0b635": {
+		"en": "Signs in to Microsoft Dev Tunnels. <code>up</code> does this by itself when needed, so you only run it to switch accounts or when there's no browser.",
+		"text": "Inicia sesión en Microsoft Dev Tunnels. <code>up</code> lo hace por sí mismo cuando hace falta, así que solo lo ejecutas para cambiar de cuenta o cuando no hay navegador."
+	},
+	"1e8e3e16": {
+		"en": "You rarely need it by hand: when the account is full, <code>up</code> and previews first delete preview tunnels no agent serves. Only when that doesn't free a slot does <code>up</code> stop, list the account's tunnels and ask you to delete some.",
+		"text": "Rara vez lo necesitas a mano: cuando la cuenta está llena, <code>up</code> y las vistas previas eliminan primero los túneles de vista previa que ningún agente sirve. Solo cuando eso no libera un hueco, <code>up</code> se detiene, lista los túneles de la cuenta y te pide eliminar algunos."
+	},
+	"baad8898": {
+		"en": "Delete it anyway. Its URL is gone, so the phones paired with it have to pair again; on this computer the next <code>up</code> makes a new one.",
+		"text": "Elimínalo igualmente. Su URL desaparece, así que los teléfonos emparejados con él tienen que volver a emparejarse; en este ordenador, el siguiente <code>up</code> crea uno nuevo."
+	},
+	"cc1ca9cf": {
+		"en": "Deletes those tunnels. One that is online, or that this computer uses, is kept unless you add <code>--force</code>.",
+		"text": "Elimina esos túneles. Uno que esté en línea, o que use este ordenador, se conserva a menos que añadas <code>--force</code>."
+	},
+	"86d3c166": {
+		"en": "One line per tunnel on the account you're signed in with.",
+		"text": "Una línea por túnel de la cuenta con la que iniciaste sesión."
+	},
+	"ca032b58": {
+		"en": "What it does",
+		"text": "Qué hace"
+	},
+	"c4898c72": {
+		"en": "Command or option",
+		"text": "Comando u opción"
+	},
+	"cbca8b6c": {
+		"en": "Each line shows the tunnel's id, <em>online</em> when an agent serves it right now, what this computer uses it for, and its description, which names the computer that made it. The region suffix (<code>.usw2</code>) is optional when you give an id.",
+		"text": "Cada línea muestra el id del túnel, <em>online</em> cuando un agente lo sirve ahora mismo, para qué lo usa este ordenador y su descripción, que nombra el ordenador que lo creó. El sufijo de región (<code>.usw2</code>) es opcional cuando das un id."
+	},
+	"13ac7293": {
+		"en": "Lists the tunnels on your Dev Tunnels account and deletes the ones nothing uses any more. An account may keep 10 tunnels. Each computer running coderemote uses one, plus one more for <a href=\"preview.html#how\">previews</a> while its agent runs, and old computers or reinstalls leave theirs behind. Needs coderemote 0.3.6 or later.",
+		"text": "Lista los túneles de tu cuenta de Dev Tunnels y elimina los que ya nadie usa. Una cuenta puede conservar 10 túneles. Cada ordenador que ejecuta coderemote usa uno, más otro para las <a href=\"preview.html#how\">vistas previas</a> mientras su agente se ejecuta, y los ordenadores antiguos o las reinstalaciones dejan los suyos. Necesita coderemote 0.3.6 o posterior."
+	},
+	"418f5cf8": {
+		"en": "Replaces the access token. Every paired phone and browser loses access at once. Use it if you lose your phone or a pairing link leaks.",
+		"text": "Sustituye el token de acceso. Todos los teléfonos y navegadores emparejados pierden el acceso de golpe. Úsalo si pierdes el teléfono o se filtra un enlace de emparejamiento."
+	},
+	"4e118103": {
+		"en": "Installs the Code Remote plugin into Claude Code or Codex, so its sessions show in the app's Agents tab and you can answer their prompts from the phone. Codex runs the plugin's hooks only after you trust them once: open Codex and type <code>/hooks</code>. <code>--remove</code> uninstalls it. See <a href=\"agents.html\">Coding agents</a>.",
+		"text": "Instala el plugin de Code Remote en Claude Code o Codex, para que sus sesiones aparezcan en la pestaña Agents de la app y puedas responder a sus solicitudes desde el teléfono. Codex ejecuta los hooks del plugin solo después de que confíes en ellos una vez: abre Codex y escribe <code>/hooks</code>. <code>--remove</code> lo desinstala. Consulta <a href=\"agents.html\">Agentes de programación</a>."
+	},
+	"d0386b6d": {
+		"en": "Nothing is written to disk: the command reads the log the agent keeps in memory, the latest 200 requests per port.",
+		"text": "No se escribe nada en disco: el comando lee el registro que el agente guarda en memoria, las últimas 200 peticiones por puerto."
+	},
+	"277ed582": {
+		"en": "Secrets are masked unless you ask for them: <code>Authorization</code> headers (the scheme, such as <code>Bearer</code>, stays), cookie values (their names stay), headers named like a token, key or session, and fields such as <code>password</code> or <code>access_token</code> in query strings, JSON and form bodies. The output says how many values it hid. Add <code>--show-secrets</code> when the agent needs one, for example to reuse a session token in a test.",
+		"text": "Los secretos se ocultan a menos que los pidas: las cabeceras <code>Authorization</code> (el esquema, como <code>Bearer</code>, se mantiene), los valores de las cookies (sus nombres se mantienen), las cabeceras con nombre de token, clave o sesión, y campos como <code>password</code> o <code>access_token</code> en cadenas de consulta, JSON y cuerpos de formulario. La salida indica cuántos valores ocultó. Añade <code>--show-secrets</code> cuando el agente necesite uno, por ejemplo para reutilizar un token de sesión en una prueba."
+	},
+	"df0d22ad": {
+		"en": "Print the values that are masked by default (see below).",
+		"text": "Imprime los valores que se ocultan por defecto (ver abajo)."
+	},
+	"9911552d": {
+		"en": "Machine-readable output, for scripts.",
+		"text": "Salida legible por máquinas, para scripts."
+	},
+	"7ba447eb": {
+		"en": "Show the latest <code>N</code> (default 50).",
+		"text": "Muestra las últimas <code>N</code> (por defecto 50)."
+	},
+	"b975a3f4": {
+		"en": "Only errors and <code>4xx</code>/<code>5xx</code> responses.",
+		"text": "Solo errores y respuestas <code>4xx</code>/<code>5xx</code>."
+	},
+	"36e3bb1e": {
+		"en": "Only requests whose method or path contains <code>TEXT</code>.",
+		"text": "Solo las peticiones cuyo método o ruta contienen <code>TEXT</code>."
+	},
+	"a5159883": {
+		"en": "Forgets the recorded requests, like <strong>Clear</strong> in the app.",
+		"text": "Olvida las peticiones registradas, como <strong>Clear</strong> en la app."
+	},
+	"5564a389": {
+		"en": "Headers and bodies of one request. JSON is indented; bodies over 64 KB aren't kept.",
+		"text": "Cabeceras y cuerpos de una petición. El JSON se muestra con sangría; los cuerpos de más de 64 KB no se conservan."
+	},
+	"c687ec31": {
+		"en": "One line per request, oldest first: id, status, method and path, duration, size and time.",
+		"text": "Una línea por petición, la más antigua primero: id, estado, método y ruta, duración, tamaño y hora."
+	},
+	"2c76fa74": {
+		"en": "Run it in the shared folder (or below it) so it finds that folder's agent; with a single agent running, anywhere works. Without a port it reads every port being previewed now. A preview you stopped keeps its log: name its port to read it.",
+		"text": "Ejecútalo en la carpeta compartida (o dentro de ella) para que encuentre el agente de esa carpeta; con un solo agente en marcha, sirve desde cualquier sitio. Sin un puerto, lee todos los puertos que se están previsualizando ahora. Una vista previa que detuviste conserva su registro: indica su puerto para leerlo."
+	},
+	"55dfac3d": {
+		"en": "Prints the requests that reached a port you <a href=\"preview.html#requests\">preview</a> from the app, the same log the app shows. It's made for a coding agent in a terminal, such as Claude Code or Codex: tell it to run <code>coderemote requests</code> and it can see what your page or a webhook actually sent, and what your server answered. Needs coderemote 0.3.0 or later.",
+		"text": "Imprime las peticiones que llegaron a un puerto que <a href=\"preview.html#requests\">previsualizas</a> desde la app, el mismo registro que muestra la app. Está hecho para un agente de programación en un terminal, como Claude Code o Codex: dile que ejecute <code>coderemote requests</code> y podrá ver lo que tu página o un webhook enviaron realmente, y lo que respondió tu servidor. Necesita coderemote 0.3.0 o posterior."
+	},
+	"85e6e7ae": {
+		"en": "Starts the agent on <code>127.0.0.1</code> only, with no tunnel and no sign-in, and prints the local URL and token. For local testing and development; your phone can't reach it.",
+		"text": "Inicia el agente solo en <code>127.0.0.1</code>, sin túnel y sin inicio de sesión, e imprime la URL local y el token. Para pruebas y desarrollo locales; tu teléfono no puede alcanzarlo."
+	},
+	"39cece6a": {
+		"en": "Stops the agent sharing the current folder, ending its tunnel and terminal sessions. Handy when <code>up</code> runs in a window you can't reach.",
+		"text": "Detiene el agente que comparte la carpeta actual, terminando su túnel y sus sesiones de terminal. Útil cuando <code>up</code> se ejecuta en una ventana a la que no puedes llegar."
+	},
+	"dbb9303f": {
+		"en": "The agent itself keeps running; use <code>stop</code> for that.",
+		"text": "El propio agente sigue funcionando; usa <code>stop</code> para eso."
+	},
+	"355cf36b": {
+		"en": "Ends terminal sessions. The first few characters of an id from <code>status</code> are enough.",
+		"text": "Termina sesiones de terminal. Bastan los primeros caracteres de un id de <code>status</code>."
+	},
+	"a06b3dc0": {
+		"en": "Each session shows its id, title, process id, age and whether a phone is attached right now. A <em>detached</em> session is still running; it waits for the app to reattach.",
+		"text": "Cada sesión muestra su id, título, id de proceso, antigüedad y si hay un teléfono conectado ahora mismo. Una sesión <em>detached</em> sigue ejecutándose; espera a que la app se reconecte."
+	},
+	"386ee888": {
+		"en": "Lists the agents running on this computer and the terminal sessions in each. Alias <code>ps</code>.",
+		"text": "Lista los agentes que se ejecutan en este ordenador y las sesiones de terminal de cada uno. Alias <code>ps</code>."
+	},
+	"07239d82": {
+		"en": "<code>--web</code> uses VS Code's own tunnel, not Code Remote's. It signs in with its own GitHub account and gives the browser the whole machine, not just the shared folder. It needs VS Code's <code>code</code> command on your <code>PATH</code>.",
+		"text": "<code>--web</code> usa el túnel propio de VS Code, no el de Code Remote. Inicia sesión con su propia cuenta de GitHub y da al navegador toda la máquina, no solo la carpeta compartida. Necesita el comando <code>code</code> de VS Code en tu <code>PATH</code>."
+	},
+	"ab58cc6f": {
+		"en": "Also run VS Code's <code>code tunnel</code> and print a vscode.dev link that opens the folder in the full editor in a browser.",
+		"text": "Ejecuta también el <code>code tunnel</code> de VS Code e imprime un enlace de vscode.dev que abre la carpeta en el editor completo dentro del navegador."
+	},
+	"1b3dbff4": {
+		"en": "Skip the account sign-in on the phone: the pairing token alone grants access. Alias <code>--no-auth</code>.",
+		"text": "Omite el inicio de sesión de la cuenta en el teléfono: el token de emparejamiento por sí solo da acceso. Alias <code>--no-auth</code>."
+	},
+	"692a452c": {
+		"en": "Listen on local port <code>N</code> (default <code>31580</code>). Change it when another program already holds that port.",
+		"text": "Escucha en el puerto local <code>N</code> (por defecto <code>31580</code>). Cámbialo cuando otro programa ya ocupe ese puerto."
+	},
+	"f05419d2": {
+		"en": "Share <code>DIR</code> instead of the current folder.",
+		"text": "Comparte <code>DIR</code> en lugar de la carpeta actual."
+	},
+	"7e6f4261": {
+		"en": "It starts a small agent on <code>127.0.0.1</code>, signs you in to Dev Tunnels if needed, connects out to the relay and prints three things: the folder being shared, who can get in, and the links to pair with. It keeps running until you press <kbd>Ctrl</kbd>+<kbd>C</kbd> or close the terminal.",
+		"text": "Inicia un pequeño agente en <code>127.0.0.1</code>, te hace iniciar sesión en Dev Tunnels si hace falta, se conecta hacia fuera al relay e imprime tres cosas: la carpeta que se comparte, quién puede entrar y los enlaces para emparejar. Sigue funcionando hasta que pulsas <kbd>Ctrl</kbd>+<kbd>C</kbd> o cierras el terminal."
+	},
+	"fc1e0140": {
+		"en": "Shares the current folder through a private Microsoft Dev Tunnel and prints the pairing QR code. This is the command you use day to day.",
+		"text": "Comparte la carpeta actual a través de un Microsoft Dev Tunnel privado e imprime el código QR de emparejamiento. Es el comando que usas día a día."
+	},
+	"e5c5398f": {
+		"en": "Everything <code>coderemote</code> can do, one command at a time.",
+		"text": "Todo lo que <code>coderemote</code> puede hacer, un comando cada vez."
+	},
+	"513f8de9": {
+		"en": "options",
+		"text": "options"
+	},
+	"92005ecf": {
+		"en": "help",
+		"text": "help"
+	},
+	"0a25ba59": {
+		"en": "update",
+		"text": "update"
+	},
+	"2736fab2": {
+		"en": "login",
+		"text": "login"
+	},
+	"033b628b": {
+		"en": "tunnels",
+		"text": "tunnels"
+	},
+	"56a6812c": {
+		"en": "rotate-token",
+		"text": "rotate-token"
+	},
+	"80437a44": {
+		"en": "setup",
+		"text": "setup"
+	},
+	"54faec36": {
+		"en": "requests",
+		"text": "requests"
+	},
+	"b88fb872": {
+		"en": "serve",
+		"text": "serve"
+	},
+	"1b480158": {
+		"en": "stop",
+		"text": "stop"
+	},
+	"c80f5bc1": {
+		"en": "kill",
+		"text": "kill"
+	},
+	"48a3661d": {
+		"en": "status",
+		"text": "status"
+	},
+	"7c0a25c0": {
+		"en": "up",
+		"text": "up"
+	},
+	"8601c949": {
+		"en": "Every coderemote command and option: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update and help.",
+		"text": "Todos los comandos y opciones de coderemote: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update y help."
+	},
+	"f9b9cfdb": {
+		"en": "Commands · Code Remote Docs",
+		"text": "Comandos · Documentación de Code Remote"
+	},
+	"7bde67fd": {
+		"en": "<span>Previous</span>Ports &amp; preview",
+		"text": "<span>Anterior</span>Puertos y vista previa"
+	},
+	"81f54719": {
+		"en": "Previous page",
+		"text": "Página anterior"
+	},
+	"e08ff3ea": {
+		"en": "Still stuck? See <a href=\"../support.html\">Support</a>.",
+		"text": "¿Sigues atascado? Consulta <a href=\"../support.html\">Soporte</a>."
+	},
+	"4371058b": {
+		"en": "The terminal support compiles on install and needs <code>python3</code>, <code>make</code> and a C++ compiler (<code>build-essential</code> on Debian and Ubuntu). Signing in needs <code>libsecret-1-0</code>.",
+		"text": "El soporte de terminal se compila al instalar y necesita <code>python3</code>, <code>make</code> y un compilador de C++ (<code>build-essential</code> en Debian y Ubuntu). El inicio de sesión necesita <code>libsecret-1-0</code>."
+	},
+	"f322be90": {
+		"en": "Installing on Linux fails",
+		"text": "Falla la instalación en Linux"
+	},
+	"4edca056": {
+		"en": "The dev server behind it stopped or restarted on another port. Start it again and reload; the Ports tab shows what's listening now.",
+		"text": "El servidor de desarrollo que hay detrás se detuvo o se reinició en otro puerto. Vuelve a iniciarlo y recarga; la pestaña Ports muestra lo que escucha ahora."
+	},
+	"cea98361": {
+		"en": "A preview says \"nothing is listening on port …\"",
+		"text": "Una vista previa dice \"nothing is listening on port …\""
+	},
+	"cf5f896c": {
+		"en": "The computer runs a coderemote from before ports and previews. Run <code>coderemote update</code>, then restart <code>coderemote up</code>.",
+		"text": "El ordenador ejecuta un coderemote anterior a los puertos y las vistas previas. Ejecuta <code>coderemote update</code> y reinicia <code>coderemote up</code>."
+	},
+	"7c96651e": {
+		"en": "The Ports tab says \"Update coderemote\"",
+		"text": "La pestaña Ports dice \"Update coderemote\""
+	},
+	"2575bf97": {
+		"en": "The sign-in expired",
+		"text": "El inicio de sesión caducó"
+	},
+	"662b64e7": {
+		"en": "The account is full and none of its tunnels was an idle preview tunnel that could go. The message lists them: delete the ones nothing uses any more, such as an old computer's, with <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete &lt;id&gt;</code></a>, then run <code>coderemote up</code> again.",
+		"text": "La cuenta está llena y ninguno de sus túneles era un túnel de vista previa inactivo que pudiera eliminarse. El mensaje los lista: elimina los que ya nadie usa, como los de un ordenador antiguo, con <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete &lt;id&gt;</code></a> y vuelve a ejecutar <code>coderemote up</code>."
+	},
+	"cec63cac": {
+		"en": "\"Your Dev Tunnels account already has 10 tunnels\"",
+		"text": "\"Your Dev Tunnels account already has 10 tunnels\""
+	},
+	"d131a0d9": {
+		"en": "Check that <code>coderemote up</code> is still running and the computer is awake and online. Make sure the phone signed in with the same account the computer uses (shown on the <code>Access:</code> line).",
+		"text": "Comprueba que <code>coderemote up</code> sigue en marcha y que el ordenador está encendido y con conexión. Asegúrate de que el teléfono inició sesión con la misma cuenta que usa el ordenador (se muestra en la línea <code>Access:</code>)."
+	},
+	"1172f0dd": {
+		"en": "The phone can't connect",
+		"text": "El teléfono no puede conectarse"
+	},
+	"0f2c92e8": {
+		"en": "Stop it, run <code>coderemote stop --all</code>, or pick another port with <code>--port</code>.",
+		"text": "Deténlo, ejecuta <code>coderemote stop --all</code>, o elige otro puerto con <code>--port</code>."
+	},
+	"82815f9c": {
+		"en": "Another agent or program holds the port. <code>coderemote status</code> shows agents; for anything else, see what holds it:",
+		"text": "Otro agente o programa ocupa el puerto. <code>coderemote status</code> muestra los agentes; para cualquier otra cosa, mira qué lo ocupa:"
+	},
+	"a7c0fcea": {
+		"en": "\"Port 31580 is already in use\"",
+		"text": "\"Port 31580 is already in use\""
+	},
+	"285ec850": {
+		"en": "Troubleshooting",
+		"text": "Solución de problemas"
+	},
+	"554c7d33": {
+		"en": "The app only shows them: tunnels belong to the computers' owner, so you list and delete them on a computer signed in to the account, with <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a>. Touch and hold a machine in Connections to copy its tunnel ID for that. Removing a machine from the app's list only forgets it on that iPhone.",
+		"text": "La app solo los muestra: los túneles pertenecen al propietario de los ordenadores, así que los listas y eliminas en un ordenador con la sesión iniciada en la cuenta, con <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a>. Mantén pulsada una máquina en Connections para copiar su ID de túnel con ese fin. Quitar una máquina de la lista de la app solo hace que ese iPhone la olvide."
+	},
+	"9a830b19": {
+		"en": "<strong>Settings › Connections</strong> lists the accounts your paired computers connect through. Each shows every computer running coderemote on that account, online or not, whether this iPhone is paired with it, and how many of the account's 10 tunnels are in use. To add a computer, run <code>coderemote up</code> there and scan its QR code.",
+		"text": "<strong>Settings › Connections</strong> lista las cuentas a través de las que se conectan tus ordenadores emparejados. Cada una muestra todos los ordenadores que ejecutan coderemote en esa cuenta, estén en línea o no, si este iPhone está emparejado con él, y cuántos de los 10 túneles de la cuenta están en uso. Para añadir un ordenador, ejecuta allí <code>coderemote up</code> y escanea su código QR."
+	},
+	"714c8f02": {
+		"en": "<strong>Machine Info</strong> (a machine's menu) shows its tunnel: the address, the account, who can get in, when it expires (pushed back every time <code>coderemote up</code> starts), the clients connected now, traffic so far, and how many ports are being previewed.",
+		"text": "<strong>Machine Info</strong> (el menú de una máquina) muestra su túnel: la dirección, la cuenta, quién puede entrar, cuándo caduca (se retrasa cada vez que arranca <code>coderemote up</code>), los clientes conectados ahora, el tráfico hasta el momento y cuántos puertos se están previsualizando."
+	},
+	"31aa22ec": {
+		"en": "In the app",
+		"text": "En la app"
+	},
+	"b226cdcd": {
+		"en": "The tunnel carries the label <code>coderemote</code>, which is how the app finds your other machines. Previews use a second tunnel, labelled <code>coderemote-preview</code>, created on the first preview and deleted when the agent stops (<a href=\"preview.html#how\">how it works</a>). <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> lists both, with your other computers' tunnels.",
+		"text": "El túnel lleva la etiqueta <code>coderemote</code>, que es como la app encuentra tus otras máquinas. Las vistas previas usan un segundo túnel, con la etiqueta <code>coderemote-preview</code>, creado en la primera vista previa y eliminado cuando el agente se detiene (<a href=\"preview.html#how\">cómo funciona</a>). <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> lista ambos, junto con los túneles de tus otros ordenadores."
+	},
+	"00e7e3da": {
+		"en": "Each computer has one tunnel. Its URL stays the same between runs, and <code>up</code> renews it each time so it doesn't expire. Share one folder at a time; to reach several projects, share their parent folder and the Git tab finds every repository inside it.",
+		"text": "Cada ordenador tiene un túnel. Su URL se mantiene igual entre ejecuciones, y <code>up</code> lo renueva cada vez para que no caduque. Comparte una carpeta cada vez; para llegar a varios proyectos, comparte su carpeta superior y la pestaña Git encuentra todos los repositorios que contiene."
+	},
+	"193a377c": {
+		"en": "The tunnel",
+		"text": "El túnel"
+	},
+	"8c3bcb36": {
+		"en": "Set to <code>1</code> to leave your <code>PATH</code> and shell startup files alone; the script says which folder to add.",
+		"text": "Ponlo en <code>1</code> para no tocar tu <code>PATH</code> ni tus archivos de inicio del shell; el script indica qué carpeta añadir."
+	},
+	"f0b95a76": {
+		"en": "Set to <code>1</code> to download Node.js for coderemote even when yours is new enough.",
+		"text": "Ponlo en <code>1</code> para descargar Node.js para coderemote incluso cuando el tuyo sea lo bastante nuevo."
+	},
+	"57d518ef": {
+		"en": "The version or npm dist-tag to install, such as <code>0.3.7</code> or <code>next</code>. Default <code>latest</code>.",
+		"text": "La versión o dist-tag de npm que instalar, como <code>0.3.7</code> o <code>next</code>. Por defecto <code>latest</code>."
+	},
+	"19de69cb": {
+		"en": "Variable",
+		"text": "Variable"
+	},
+	"8b35efcc": {
+		"en": "The install scripts read a few of their own:",
+		"text": "Los scripts de instalación leen algunas propias:"
+	},
+	"bc499540": {
+		"en": "Set to <code>1</code> and <code>up</code> no longer asks npm whether there's a newer version.",
+		"text": "Ponlo en <code>1</code> y <code>up</code> deja de preguntar a npm si hay una versión más nueva."
+	},
+	"d1846b72": {
+		"en": "Path to VS Code's <code>code</code> command, for <code>up --web</code>. Otherwise <code>code</code> on your <code>PATH</code>.",
+		"text": "Ruta al comando <code>code</code> de VS Code, para <code>up --web</code>. Si no, <code>code</code> en tu <code>PATH</code>."
+	},
+	"09ba0782": {
+		"en": "Path to a <code>devtunnel</code> binary to use. Otherwise one on your <code>PATH</code> is used, then the downloaded copy.",
+		"text": "Ruta a un binario de <code>devtunnel</code> que usar. Si no, se usa uno de tu <code>PATH</code> y después la copia descargada."
+	},
+	"1173b2e1": {
+		"en": "Environment variables",
+		"text": "Variables de entorno"
+	},
+	"79483f46": {
+		"en": "Deleting the folder (keep <code>runtime/</code> if the install script made it) resets Code Remote: the next <code>up</code> creates a new token and tunnel, and every device has to pair again.",
+		"text": "Borrar la carpeta (conserva <code>runtime/</code> si la creó el script de instalación) restablece Code Remote: el siguiente <code>up</code> crea un token y un túnel nuevos, y todos los dispositivos tienen que volver a emparejarse."
+	},
+	"4cb2af2f": {
+		"en": "Only after the <a href=\"setup.html#install\">install script</a> downloaded Node.js: that Node.js with coderemote installed into it, and in <code>runtime/bin</code> the <code>coderemote</code> and <code>node</code> commands it put on your <code>PATH</code>.",
+		"text": "Solo después de que el <a href=\"setup.html#install\">script de instalación</a> descargara Node.js: ese Node.js con coderemote instalado en él, y en <code>runtime/bin</code> los comandos <code>coderemote</code> y <code>node</code> que puso en tu <code>PATH</code>."
+	},
+	"cf812344": {
+		"en": "The latest version on npm and when <code>up</code> last asked, at most once a day.",
+		"text": "La última versión en npm y cuándo preguntó <code>up</code> por última vez, como mucho una vez al día."
+	},
+	"fd9d09bc": {
+		"en": "One entry per running agent, so <code>status</code>, <code>kill</code> and <code>stop</code> can find it.",
+		"text": "Una entrada por agente en ejecución, para que <code>status</code>, <code>kill</code> y <code>stop</code> puedan encontrarlo."
+	},
+	"955d165d": {
+		"en": "The Dev Tunnels CLI downloaded on first run.",
+		"text": "La CLI de Dev Tunnels descargada en la primera ejecución."
+	},
+	"220a84b2": {
+		"en": "The access token, the id of this computer's tunnel and of its preview tunnel. Keeping it keeps every pairing.",
+		"text": "El token de acceso, el id del túnel de este ordenador y el de su túnel de vista previa. Conservarlo conserva todos los emparejamientos."
+	},
+	"00ba094e": {
+		"en": "What it holds",
+		"text": "Qué contiene"
+	},
+	"519e3913": {
+		"en": "Path",
+		"text": "Ruta"
+	},
+	"1882bd88": {
+		"en": "Everything lives in <code>~/.coderemote</code> (<code>%USERPROFILE%\\.coderemote</code> on Windows), readable only by you:",
+		"text": "Todo vive en <code>~/.coderemote</code> (<code>%USERPROFILE%\\.coderemote</code> en Windows), legible solo por ti:"
+	},
+	"3bf3ee51": {
+		"en": "Files on your computer",
+		"text": "Archivos en tu ordenador"
+	},
+	"78ed9e8d": {
+		"en": "A <a href=\"preview.html#share\">public link</a> to a preview is the one exception: until it ends, anyone with it can open that one dev server, with neither check. It never reaches the agent, its files or its terminal.",
+		"text": "Un <a href=\"preview.html#share\">enlace público</a> a una vista previa es la única excepción: hasta que termina, cualquiera que lo tenga puede abrir ese servidor de desarrollo, sin ninguna de las dos comprobaciones. Nunca llega al agente, a sus archivos ni a su terminal."
+	},
+	"79a66531": {
+		"en": "With <code>coderemote up --allow-anonymous</code> the first check is skipped and the token alone grants access. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.",
+		"text": "Con <code>coderemote up --allow-anonymous</code> se omite la primera comprobación y el token por sí solo da acceso. En cualquier caso, los archivos y git se quedan dentro de la carpeta compartida; un terminal es un shell real con los permisos de tu usuario."
+	},
+	"5d52ec6e": {
+		"en": "<strong>The pairing token.</strong> The agent then checks the random token from the QR code, kept in the iPhone Keychain.",
+		"text": "<strong>El token de emparejamiento.</strong> Después el agente comprueba el token aleatorio del código QR, guardado en el llavero del iPhone."
+	},
+	"f29e0373": {
+		"en": "<strong>Your account.</strong> The tunnel is private: the Dev Tunnels relay lets through only the GitHub or Microsoft account that ran <code>coderemote up</code>.",
+		"text": "<strong>Tu cuenta.</strong> El túnel es privado: el relay de Dev Tunnels solo deja pasar a la cuenta de GitHub o Microsoft que ejecutó <code>coderemote up</code>."
+	},
+	"cbeac719": {
+		"en": "By default a request has to pass two checks:",
+		"text": "Por defecto, una petición tiene que superar dos comprobaciones:"
+	},
+	"bb3169ff": {
+		"en": "Who can get in",
+		"text": "Quién puede entrar"
+	},
+	"efa66a8a": {
+		"en": "There's nothing to configure to get started. This page is for when you want to know what's going on.",
+		"text": "No hay nada que configurar para empezar. Esta página es para cuando quieres saber qué está pasando."
+	},
+	"c4378892": {
+		"en": "Where coderemote keeps its settings, the environment variables it reads, access modes and fixes for common problems.",
+		"text": "Dónde guarda coderemote sus ajustes, las variables de entorno que lee, los modos de acceso y soluciones a problemas habituales."
+	},
+	"9a5d15f2": {
+		"en": "Configuration · Code Remote Docs",
+		"text": "Configuración · Documentación de Code Remote"
+	},
+	"ceb62440": {
+		"en": "<span>Next</span>Setup",
+		"text": "<span>Siguiente</span>Instalación"
+	},
+	"4bfc194b": {
+		"en": "Next page",
+		"text": "Página siguiente"
+	},
+	"e7b8c752": {
+		"en": "<strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, and every request also needs the pairing token, kept in the iPhone Keychain.",
+		"text": "<strong>Empareja tu teléfono.</strong> Escanea el código QR. Solo tu cuenta de GitHub o Microsoft pasa por el relay, y cada petición necesita además el token de emparejamiento, guardado en el llavero del iPhone."
+	},
+	"1a20a44e": {
+		"en": "<strong>It connects outward.</strong> The agent publishes itself through a private Microsoft Dev Tunnel. Nothing on your network has to be opened, and it works behind NAT, firewalls and hotel Wi-Fi.",
+		"text": "<strong>Se conecta hacia fuera.</strong> El agente se publica a través de un Microsoft Dev Tunnel privado. No hay que abrir nada en tu red, y funciona detrás de NAT, firewalls y el wifi del hotel."
+	},
+	"d21dd2b4": {
+		"en": "<strong>Start the agent.</strong> Run <code>coderemote up</code> in a project folder (or <code>npx coderemote up</code> without installing). A small agent starts on your computer, listening on 127.0.0.1 only.",
+		"text": "<strong>Inicia el agente.</strong> Ejecuta <code>coderemote up</code> en la carpeta de un proyecto (o <code>npx coderemote up</code> sin instalar). Un pequeño agente arranca en tu ordenador, escuchando solo en 127.0.0.1."
+	},
+	"306f117f": {
+		"en": "Code Remote has two parts: the <code>coderemote</code> command-line tool on your computer, and the iPhone app. You don't need SSH, open ports, a VPN or a desktop app. Not sure it fits? <a href=\"../compare.html\">See how it compares</a> with Tailscale, Termius and Orca.",
+		"text": "Code Remote tiene dos partes: la herramienta de línea de comandos <code>coderemote</code> en tu ordenador y la app para iPhone. No necesitas SSH, puertos abiertos, VPN ni app de escritorio. ¿No estás seguro de que encaje? <a href=\"../compare.html\">Mira cómo se compara</a> con Tailscale, Termius y Orca."
+	},
+	"77a17bf3": {
+		"en": "Your computer, from your iPhone: files, git, a real terminal and your dev servers. One command on the computer, one scan on the phone.",
+		"text": "Tu ordenador, desde tu iPhone: archivos, git, un terminal real y tus servidores de desarrollo. Un comando en el ordenador, un escaneo en el teléfono."
+	},
+	"33c5be6b": {
+		"en": "What Code Remote is and how it works: a small agent on your computer, a private tunnel, and an iPhone app paired by QR code.",
+		"text": "Qué es Code Remote y cómo funciona: un pequeño agente en tu ordenador, un túnel privado y una app para iPhone emparejada con un código QR."
+	},
+	"b9179809": {
+		"en": "Introduction · Code Remote Docs",
+		"text": "Introducción · Documentación de Code Remote"
+	},
+	"eb8e2839": {
+		"en": "<span>Next</span>Configuration",
+		"text": "<span>Siguiente</span>Configuración"
+	},
+	"4c899564": {
+		"en": "<span>Previous</span>Commands",
+		"text": "<span>Anterior</span>Comandos"
+	},
+	"c46776ea": {
+		"en": "The agent deletes the preview tunnel when it stops; if it can't (the computer went offline, say), the next <code>coderemote up</code> does. Shared links never outlive the agent that made them, and old previews don't use up your account's 10 tunnels. When the account is full anyway, a new preview first deletes preview tunnels no agent serves; if that isn't enough, the app says so, and <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> on the computer shows what to delete.",
+		"text": "El agente elimina el túnel de vista previa cuando se detiene; si no puede (porque el ordenador se quedó sin conexión, por ejemplo), lo hace el siguiente <code>coderemote up</code>. Los enlaces compartidos nunca sobreviven al agente que los creó, y las vistas previas antiguas no consumen los 10 túneles de tu cuenta. Cuando la cuenta está llena de todos modos, una vista previa nueva elimina primero los túneles de vista previa que ningún agente sirve; si no basta, la app lo dice, y <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> en el ordenador muestra qué eliminar."
+	},
+	"2a7f005a": {
+		"en": "Each previewed port goes through a small proxy in the agent, which is what records the requests. That's why a preview's address carries the proxy's port number rather than your server's (<code>…-49213.usw2.devtunnels.ms</code> for a server on 5173): the app always shows your server's own port.",
+		"text": "Cada puerto previsualizado pasa por un pequeño proxy del agente, que es lo que registra las peticiones. Por eso la dirección de una vista previa lleva el número de puerto del proxy y no el de tu servidor (<code>…-49213.usw2.devtunnels.ms</code> para un servidor en el 5173): la app siempre muestra el puerto propio de tu servidor."
+	},
+	"67904a7e": {
+		"en": "Previews don't go through the agent's own tunnel. The first time you preview a port, the agent creates a second private tunnel, labelled <code>coderemote-preview</code>, and forwards your ports there. Adding or removing a port restarts that tunnel's connection, so other open previews blink for a moment, while your terminals, files and git never notice.",
+		"text": "Las vistas previas no pasan por el túnel del propio agente. La primera vez que previsualizas un puerto, el agente crea un segundo túnel privado, con la etiqueta <code>coderemote-preview</code>, y reenvía tus puertos allí. Añadir o quitar un puerto reinicia la conexión de ese túnel, así que otras vistas previas abiertas parpadean un momento, mientras tus terminales, archivos y git ni se enteran."
+	},
+	"36b337c8": {
+		"en": "The same log can be read in a terminal on the computer with <a href=\"commands.html#requests\"><code>coderemote requests</code></a>, so a coding agent like Claude Code can debug with it. Tokens and cookies are masked there unless it asks for them.",
+		"text": "El mismo registro se puede leer en un terminal del ordenador con <a href=\"commands.html#requests\"><code>coderemote requests</code></a>, de modo que un agente de programación como Claude Code puede depurar con él. Allí los tokens y las cookies se ocultan a menos que los pida."
+	},
+	"e9b69b36": {
+		"en": "The bar under the list narrows it down. The filter button picks a kind (<strong>All</strong>, <strong>Fetch/XHR</strong>, <strong>CSS</strong>, <strong>Image</strong> or <strong>JS</strong>, judged from the response type and the file extension), and the search field matches the method and path.",
+		"text": "La barra bajo la lista permite acotarla. El botón de filtro elige un tipo (<strong>All</strong>, <strong>Fetch/XHR</strong>, <strong>CSS</strong>, <strong>Image</strong> o <strong>JS</strong>, según el tipo de respuesta y la extensión del archivo), y el campo de búsqueda coincide con el método y la ruta."
+	},
+	"f7e2d83e": {
+		"en": "They stay on your computer, in memory: <strong>Clear</strong> forgets them, and so does stopping <code>coderemote up</code>.",
+		"text": "Permanecen en tu ordenador, en memoria: <strong>Clear</strong> las olvida, y detener <code>coderemote up</code> también."
+	},
+	"ca281033": {
+		"en": "The latest 200 requests per port are kept, with bodies up to 64 KB. WebSockets (hot reload) pass through untouched; only their handshake is listed.",
+		"text": "Se conservan las últimas 200 peticiones por puerto, con cuerpos de hasta 64 KB. Los WebSockets (hot reload) pasan sin tocarse; solo se lista su handshake."
+	},
+	"705932c3": {
+		"en": "It works for anything that comes through the preview link: the page itself, its API calls, a webhook you pointed at a shared link.",
+		"text": "Funciona con todo lo que llega por el enlace de vista previa: la propia página, sus llamadas a la API, un webhook que apuntaste a un enlace compartido."
+	},
+	"3746b592": {
+		"en": "The list icon in a preview shows the requests that reached that port, newest first and live: method, path, status, time and size, colored by status. Tap one for its headers and bodies; JSON is indented and compressed bodies are unpacked.",
+		"text": "El icono de lista en una vista previa muestra las peticiones que llegaron a ese puerto, las más recientes primero y en vivo: método, ruta, estado, hora y tamaño, coloreados según el estado. Toca una para ver sus cabeceras y cuerpos; el JSON se muestra con sangría y los cuerpos comprimidos se descomprimen."
+	},
+	"a15edcb8": {
+		"en": "Remember that it's a development server: share it with people you'd show your screen to, and make it private when you're done.",
+		"text": "Recuerda que es un servidor de desarrollo: compártelo con personas a las que enseñarías tu pantalla, y vuelve a hacerlo privado cuando termines."
+	},
+	"f2cbdfc1": {
+		"en": "The link also stops working when you stop the preview or the agent.",
+		"text": "El enlace también deja de funcionar cuando detienes la vista previa o el agente."
+	},
+	"043502c9": {
+		"en": "A banner shows until when the link is public, with <strong>Make Private</strong> to end it now. The Ports tab marks the port with a globe.",
+		"text": "Un banner muestra hasta cuándo es público el enlace, con <strong>Make Private</strong> para terminarlo ya. La pestaña Ports marca el puerto con un globo terráqueo."
+	},
+	"059dd52b": {
+		"en": "Only that port is shared. The agent, its files and its terminal stay private, on a tunnel of their own.",
+		"text": "Solo se comparte ese puerto. El agente, sus archivos y su terminal siguen siendo privados, en un túnel propio."
+	},
+	"5b3a9734": {
+		"en": "To show your work to someone without an account, open the preview's menu and choose <strong>Share Publicly</strong>, for one hour, eight hours or a day. Until then, anyone with the link can open that port without signing in.",
+		"text": "Para enseñar tu trabajo a alguien sin cuenta, abre el menú de la vista previa y elige <strong>Share Publicly</strong>, durante una hora, ocho horas o un día. Hasta entonces, cualquiera con el enlace puede abrir ese puerto sin iniciar sesión."
+	},
+	"97dcf1c2": {
+		"en": "Share a public link",
+		"text": "Comparte un enlace público"
+	},
+	"ebc565f3": {
+		"en": "Previewed ports are marked in the Ports tab.",
+		"text": "Los puertos previsualizados se marcan en la pestaña Ports."
+	},
+	"5cda8d0f": {
+		"en": "When your server stops (you stop it in the Ports tab, close its terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd>, or it crashes), its preview ends by itself once nothing has listened on the port for 30 seconds, public link included. A server that restarts within that time keeps its preview. One you stop from the Ports tab loses it right away. Needs coderemote 0.3.8 or later.",
+		"text": "Cuando tu servidor se detiene (lo paras en la pestaña Ports, cierras su terminal, pulsas <kbd>Ctrl</kbd>+<kbd>C</kbd> o falla), su vista previa termina sola cuando nada ha escuchado en el puerto durante 30 segundos, enlace público incluido. Un servidor que se reinicia en ese tiempo conserva su vista previa. Uno que detienes desde la pestaña Ports la pierde al instante. Necesita coderemote 0.3.8 o posterior."
+	},
+	"daec3406": {
+		"en": "<strong>Stop Preview</strong> takes the port off the tunnel. Your server keeps running.",
+		"text": "<strong>Stop Preview</strong> quita el puerto del túnel. Tu servidor sigue funcionando."
+	},
+	"d7c007e8": {
+		"en": "<strong>Copy Link</strong> and <strong>Open in Safari</strong> give you the preview's address. It's private: Safari asks you to sign in with the same account first.",
+		"text": "<strong>Copy Link</strong> y <strong>Open in Safari</strong> te dan la dirección de la vista previa. Es privada: Safari te pide primero iniciar sesión con la misma cuenta."
+	},
+	"ad01d090": {
+		"en": "Requests reach your server addressed to <code>localhost:&lt;port&gt;</code>, so servers that check the host name (Vite, for one) accept them as they are.",
+		"text": "Las peticiones llegan a tu servidor dirigidas a <code>localhost:&lt;port&gt;</code>, así que los servidores que comprueban el nombre de host (Vite, por ejemplo) las aceptan tal cual."
+	},
+	"31b6d23c": {
+		"en": "Servers on <code>localhost</code>, <code>127.0.0.1</code> or <code>::1</code> all work: there's no need to make your dev server listen on every interface.",
+		"text": "Funcionan los servidores en <code>localhost</code>, <code>127.0.0.1</code> o <code>::1</code>: no hace falta que tu servidor de desarrollo escuche en todas las interfaces."
+	},
+	"3b40a78e": {
+		"en": "Tap a port to open it in the app. The first time takes a few seconds while the computer opens it on the tunnel; after that it loads like any page, already signed in as you.",
+		"text": "Toca un puerto para abrirlo en la app. La primera vez tarda unos segundos mientras el ordenador lo abre en el túnel; después carga como cualquier página, ya con tu sesión iniciada."
+	},
+	"f1fbb2b4": {
+		"en": "Preview",
+		"text": "Vista previa"
+	},
+	"66c666a1": {
+		"en": "Swipe a port to stop the process behind it (it gets <code>SIGTERM</code>, like <kbd>Ctrl</kbd>+<kbd>C</kbd>); hold it for <strong>Force Stop</strong> (<code>SIGKILL</code>). Only a process that is listening right now can be stopped, and never another user's. Stopping another coderemote agent asks first, since every device paired with it loses its folder.",
+		"text": "Desliza un puerto para detener el proceso que hay detrás (recibe <code>SIGTERM</code>, como <kbd>Ctrl</kbd>+<kbd>C</kbd>); mantenlo pulsado para <strong>Force Stop</strong> (<code>SIGKILL</code>). Solo se puede detener un proceso que esté escuchando ahora mismo, y nunca el de otro usuario. Detener otro agente de coderemote pregunta primero, ya que todos los dispositivos emparejados con él pierden su carpeta."
+	},
+	"0d5e9533": {
+		"en": "<strong>Background</strong>: apps and system services, hidden until you ask for them.",
+		"text": "<strong>Background</strong>: apps y servicios del sistema, ocultos hasta que los pidas."
+	},
+	"715ecf5f": {
+		"en": "<strong>Other</strong>: everything else running in a project folder, such as a server you started on the computer itself.",
+		"text": "<strong>Other</strong>: todo lo demás que se ejecuta en una carpeta de proyecto, como un servidor que iniciaste en el propio ordenador."
+	},
+	"e989cf0d": {
+		"en": "<strong>Started in Code Remote</strong>: servers you started from a terminal in the app, with a shortcut back to that terminal.",
+		"text": "<strong>Started in Code Remote</strong>: servidores que iniciaste desde un terminal de la app, con un acceso directo de vuelta a ese terminal."
+	},
+	"e3638b4b": {
+		"en": "Lists the TCP ports your user is listening on, refreshed every few seconds:",
+		"text": "Lista los puertos TCP en los que escucha tu usuario, actualizado cada pocos segundos:"
+	},
+	"f86c367e": {
+		"en": "All of this needs coderemote 0.2.0 or later on the computer. With an older one the app says so: run <code>coderemote update</code> (or <code>npm install -g coderemote@latest</code>) and start <code>coderemote up</code> again.",
+		"text": "Todo esto necesita coderemote 0.2.0 o posterior en el ordenador. Con uno más antiguo la app lo dice: ejecuta <code>coderemote update</code> (o <code>npm install -g coderemote@latest</code>) y vuelve a iniciar <code>coderemote up</code>."
+	},
+	"db68940d": {
+		"en": "Open the dev servers on your computer from your iPhone, share one for a while, and see the requests that reach it.",
+		"text": "Abre desde tu iPhone los servidores de desarrollo de tu ordenador, comparte uno por un tiempo y mira las peticiones que le llegan."
+	},
+	"99f1ef1f": {
+		"en": "See the servers listening on your computer, open a dev server on your iPhone, share a public link for a while, and watch the requests that reach it.",
+		"text": "Mira los servidores que escuchan en tu ordenador, abre un servidor de desarrollo en tu iPhone, comparte un enlace público por un tiempo y observa las peticiones que le llegan."
+	},
+	"8a9e1f8a": {
+		"en": "Ports &amp; preview · Code Remote Docs",
+		"text": "Puertos y vista previa · Documentación de Code Remote"
+	},
+	"07d55706": {
+		"en": "<span>Next</span>Commands",
+		"text": "<span>Siguiente</span>Comandos"
+	},
+	"ee02e3ef": {
+		"en": "<span>Previous</span>Introduction",
+		"text": "<span>Anterior</span>Introducción"
+	},
+	"399ef607": {
+		"en": "Deleting <code>~/.coderemote</code> leaves this computer's tunnels on your Dev Tunnels account. To delete them too, list them with <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> and delete this computer's with <code>coderemote tunnels delete &lt;id&gt;... --force</code> before you remove coderemote.",
+		"text": "Borrar <code>~/.coderemote</code> deja los túneles de este ordenador en tu cuenta de Dev Tunnels. Para eliminarlos también, lístalos con <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> y elimina los de este ordenador con <code>coderemote tunnels delete &lt;id&gt;... --force</code> antes de quitar coderemote."
+	},
+	"b137de35": {
+		"en": "Then remove <code>%USERPROFILE%\\.coderemote\\runtime\\bin</code> from your user <code>Path</code> in <strong>Edit environment variables for your account</strong>. If the script used your own Node.js, it installed with npm: also run <code>npm uninstall -g coderemote</code>.",
+		"text": "Después quita <code>%USERPROFILE%\\.coderemote\\runtime\\bin</code> del <code>Path</code> de tu usuario en <strong>Edit environment variables for your account</strong>. Si el script usó tu propio Node.js, se instaló con npm: ejecuta también <code>npm uninstall -g coderemote</code>."
+	},
+	"4dce5a36": {
+		"en": "Windows, installed with the script",
+		"text": "Windows, instalado con el script"
+	},
+	"22eeda74": {
+		"en": "Then delete the <code># coderemote</code> lines the script added to your shell's startup file (<code>~/.zshrc</code>, <code>~/.bashrc</code> or <code>~/.profile</code>). If the script used your own Node.js, it installed with npm: also run <code>npm uninstall -g coderemote</code>.",
+		"text": "Después borra las líneas <code># coderemote</code> que el script añadió al archivo de inicio de tu shell (<code>~/.zshrc</code>, <code>~/.bashrc</code> o <code>~/.profile</code>). Si el script usó tu propio Node.js, se instaló con npm: ejecuta también <code>npm uninstall -g coderemote</code>."
+	},
+	"7c82d6a5": {
+		"en": "macOS and Linux, installed with the script",
+		"text": "macOS y Linux, instalado con el script"
+	},
+	"bfd5be9a": {
+		"en": "To uninstall, stop the agents first, then remove coderemote and its folder, which holds the token and tunnel settings:",
+		"text": "Para desinstalar, detén primero los agentes y luego quita coderemote y su carpeta, que guarda el token y los ajustes del túnel:"
+	},
+	"2f7f0f95": {
+		"en": "<code>coderemote up</code> tells you when there's a newer version, under the pairing links. <code>coderemote update</code> installs it the way you installed coderemote: with npm (or pnpm, yarn, bun), Homebrew, or into the install script's own Node.js. Running the install script again does the same.",
+		"text": "<code>coderemote up</code> te avisa cuando hay una versión más nueva, bajo los enlaces de emparejamiento. <code>coderemote update</code> la instala del mismo modo que instalaste coderemote: con npm (o pnpm, yarn, bun), Homebrew, o dentro del Node.js propio del script de instalación. Volver a ejecutar el script de instalación hace lo mismo."
+	},
+	"75232cdd": {
+		"en": "Update or uninstall",
+		"text": "Actualizar o desinstalar"
+	},
+	"f5195278": {
+		"en": "The tunnel URL and token stay the same between runs, so a paired phone reconnects on its own the next time you run <code>coderemote up</code>. You only scan again after <code>rotate-token</code>.",
+		"text": "La URL del túnel y el token se mantienen entre ejecuciones, así que un teléfono emparejado se reconecta solo la próxima vez que ejecutes <code>coderemote up</code>. Solo tienes que escanear de nuevo tras <code>rotate-token</code>."
+	},
+	"a6c81cc7": {
+		"en": "Pairing survives restarts",
+		"text": "El emparejamiento sobrevive a los reinicios"
+	},
+	"ed8646f1": {
+		"en": "Terminals you open from the phone run PowerShell: <code>pwsh</code> when PowerShell 7 is installed, Windows PowerShell otherwise.",
+		"text": "Los terminales que abres desde el teléfono ejecutan PowerShell: <code>pwsh</code> cuando PowerShell 7 está instalado, Windows PowerShell en caso contrario."
+	},
+	"8b46a816": {
+		"en": "Terminals on Windows",
+		"text": "Terminales en Windows"
+	},
+	"554a27a6": {
+		"en": "On Windows, set <strong>Settings › System › Power</strong> so the PC doesn't sleep while it's plugged in.",
+		"text": "En Windows, configura <strong>Settings › System › Power</strong> para que el PC no se suspenda mientras está enchufado."
+	},
+	"63d7d4ba": {
+		"en": "A sleeping computer can't answer the phone. On a Mac laptop, start the agent under <code>caffeinate</code> so the Mac stays awake while it runs:",
+		"text": "Un ordenador dormido no puede responder al teléfono. En un portátil Mac, inicia el agente bajo <code>caffeinate</code> para que el Mac siga despierto mientras se ejecuta:"
+	},
+	"ae367826": {
+		"en": "Keep the computer awake",
+		"text": "Mantén el ordenador despierto"
+	},
+	"c5dd11a5": {
+		"en": "<code>coderemote up</code> runs in the foreground. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> or close the window to stop sharing; terminal sessions end with it.",
+		"text": "<code>coderemote up</code> se ejecuta en primer plano. Pulsa <kbd>Ctrl</kbd>+<kbd>C</kbd> o cierra la ventana para dejar de compartir; las sesiones de terminal terminan con él."
+	},
+	"2cd6a15d": {
+		"en": "Keep the terminal open",
+		"text": "Mantén el terminal abierto"
+	},
+	"db3b0230": {
+		"en": "Everyday use",
+		"text": "Uso diario"
+	},
+	"d7edb615": {
+		"en": "The QR code and the links contain your access token. Don't post them anywhere. If one leaks, run <code>coderemote rotate-token</code>.",
+		"text": "El código QR y los enlaces contienen tu token de acceso. No los publiques en ningún sitio. Si uno se filtra, ejecuta <code>coderemote rotate-token</code>."
+	},
+	"42f5e751": {
+		"en": "The app walks you through the same steps under Quick setup.",
+		"text": "La app te guía por los mismos pasos en Quick setup."
+	},
+	"d345b5b6": {
+		"en": "Quick setup step 4: Scan the QR code",
+		"text": "Quick setup paso 4: Escanea el código QR"
+	},
+	"c5661e11": {
+		"en": "Quick setup step 3: Start the agent with coderemote up",
+		"text": "Quick setup paso 3: Inicia el agente con coderemote up"
+	},
+	"3496c4d4": {
+		"en": "Quick setup step 2: Go to your project with cd ~/projects/my-app",
+		"text": "Quick setup paso 2: Ve a tu proyecto con cd ~/projects/my-app"
+	},
+	"1d4066e4": {
+		"en": "Quick setup step 1: Install the CLI with npm install -g coderemote",
+		"text": "Quick setup paso 1: Instala la CLI con npm install -g coderemote"
+	},
+	"06d84395": {
+		"en": "That's it. Files, Git and Terminal for the shared folder are now on your phone.",
+		"text": "Eso es todo. Archivos, Git y Terminal de la carpeta compartida ya están en tu teléfono."
+	},
+	"76b9eb51": {
+		"en": "Scan the QR code with the iPhone Camera, or tap <strong>+</strong> in the app and scan it there. The app then asks you to sign in through the system browser with the <em>same</em> GitHub or Microsoft account the computer uses. Passkeys and \"Sign in with Google\" work.",
+		"text": "Escanea el código QR con la cámara del iPhone, o toca <strong>+</strong> en la app y escanéalo allí. Después la app te pide iniciar sesión en el navegador del sistema con la <em>misma</em> cuenta de GitHub o Microsoft que usa el ordenador. Las passkeys y \"Sign in with Google\" funcionan."
+	},
+	"270bfb3f": {
+		"en": "It creates a private tunnel for this computer and prints a QR code.",
+		"text": "Crea un túnel privado para este ordenador e imprime un código QR."
+	},
+	"8d4f4b73": {
+		"en": "It opens your browser to sign in with GitHub. To use a Microsoft account instead, run <code>coderemote login --microsoft</code> before <code>up</code>.",
+		"text": "Abre tu navegador para iniciar sesión con GitHub. Para usar una cuenta de Microsoft en su lugar, ejecuta <code>coderemote login --microsoft</code> antes de <code>up</code>."
+	},
+	"f6bdd0e4": {
+		"en": "It downloads Microsoft's Dev Tunnels CLI into <code>~/.coderemote/bin</code> (once, signature checked).",
+		"text": "Descarga la CLI de Dev Tunnels de Microsoft en <code>~/.coderemote/bin</code> (una vez, con la firma comprobada)."
+	},
+	"f847a74c": {
+		"en": "The first run sets itself up:",
+		"text": "La primera ejecución se configura sola:"
+	},
+	"58f84664": {
+		"en": "Go to the folder you want to reach from your phone and start the agent:",
+		"text": "Ve a la carpeta a la que quieres llegar desde el teléfono e inicia el agente:"
+	},
+	"d02a8d22": {
+		"en": "2. Share a folder",
+		"text": "2. Comparte una carpeta"
+	},
+	"381ebce3": {
+		"en": "Check it worked with <code>coderemote --version</code>. On Linux, the terminal support compiles on install: see <a href=\"configuration.html#linux\">Installing on Linux fails</a> if it doesn't.",
+		"text": "Comprueba que funcionó con <code>coderemote --version</code>. En Linux, el soporte de terminal se compila al instalar: consulta <a href=\"configuration.html#linux\">Falla la instalación en Linux</a> si no lo hace."
+	},
+	"fb91e24f": {
+		"en": "Update",
+		"text": "Actualizar"
+	},
+	"e7022e4b": {
+		"en": "On macOS and Linux, from the Code Remote tap. Homebrew installs Node.js with it.",
+		"text": "En macOS y Linux, desde el tap de Code Remote. Homebrew instala Node.js con él."
+	},
+	"e173800d": {
+		"en": "On any system with Node.js 22 or newer and npm. pnpm, yarn and bun work too.",
+		"text": "En cualquier sistema con Node.js 22 o posterior y npm. pnpm, yarn y bun también sirven."
+	},
+	"3f4e64b7": {
+		"en": "The install script, in PowerShell on Windows 10 or 11. It uses your Node.js when it's 22 or newer; otherwise it downloads Node.js into <code>%USERPROFILE%\\.coderemote\\runtime</code>, for coderemote alone, and adds it to your <code>PATH</code>. Open a new terminal afterwards.",
+		"text": "El script de instalación, en PowerShell en Windows 10 u 11. Usa tu Node.js cuando es 22 o posterior; si no, descarga Node.js en <code>%USERPROFILE%\\.coderemote\\runtime</code>, solo para coderemote, y lo añade a tu <code>PATH</code>. Abre un terminal nuevo después."
+	},
+	"4bc5e66f": {
+		"en": "The install script, in Terminal. It uses your Node.js when it's 22 or newer; otherwise it downloads Node.js into <code>~/.coderemote/runtime</code>, for coderemote alone, and adds it to your <code>PATH</code>.",
+		"text": "El script de instalación, en el Terminal. Usa tu Node.js cuando es 22 o posterior; si no, descarga Node.js en <code>~/.coderemote/runtime</code>, solo para coderemote, y lo añade a tu <code>PATH</code>."
+	},
+	"370d7056": {
+		"en": "1. Install the CLI",
+		"text": "1. Instala la CLI"
+	},
+	"78271dfe": {
+		"en": "You don't need SSH, open ports, a VPN or VS Code.",
+		"text": "No necesitas SSH, puertos abiertos, VPN ni VS Code."
+	},
+	"9e9854bf": {
+		"en": "The <strong>Code Remote</strong> app on your iPhone, in beta on TestFlight (<a href=\"../#beta\">ask for an invite</a>).",
+		"text": "La app <strong>Code Remote</strong> en tu iPhone, en beta en TestFlight (<a href=\"../#beta\">pide una invitación</a>)."
+	},
+	"304c2a55": {
+		"en": "A <strong>GitHub</strong> or <strong>Microsoft</strong> account, used to sign in to Microsoft Dev Tunnels.",
+		"text": "Una cuenta de <strong>GitHub</strong> o <strong>Microsoft</strong>, usada para iniciar sesión en Microsoft Dev Tunnels."
+	},
+	"ea809aa0": {
+		"en": "<strong>Node.js 22</strong> or newer, only if you install with npm. The install scripts use yours when it's new enough and otherwise download one for coderemote alone; Homebrew brings its own.",
+		"text": "<strong>Node.js 22</strong> o posterior, solo si instalas con npm. Los scripts de instalación usan el tuyo cuando es lo bastante nuevo y, si no, descargan uno solo para coderemote; Homebrew trae el suyo."
+	},
+	"921c5c34": {
+		"en": "A <strong>Mac</strong> or a <strong>Windows 10/11</strong> PC. Linux is expected to work but isn't tested yet.",
+		"text": "Un <strong>Mac</strong> o un PC con <strong>Windows 10/11</strong>. Se espera que Linux funcione, pero aún no se ha probado."
+	},
+	"09a428f9": {
+		"en": "Requirements",
+		"text": "Requisitos"
+	},
+	"5d85602a": {
+		"en": "One command on the computer, one scan on the phone.",
+		"text": "Un comando en el ordenador, un escaneo en el teléfono."
+	},
+	"06ecb166": {
+		"en": "Install coderemote on macOS, Windows or Linux (install script, npm or Homebrew), share a folder and pair your iPhone in a couple of minutes.",
+		"text": "Instala coderemote en macOS, Windows o Linux (script de instalación, npm o Homebrew), comparte una carpeta y empareja tu iPhone en un par de minutos."
+	},
+	"d6dbaccd": {
+		"en": "Setup · Code Remote Docs",
+		"text": "Instalación · Documentación de Code Remote"
+	}
+}

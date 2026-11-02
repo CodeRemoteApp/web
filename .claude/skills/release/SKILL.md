@@ -20,18 +20,23 @@ All of these must hold; otherwise stop and report what to fix:
 - `main` isn't behind the remote: `git fetch origin main` then
   `git merge-base --is-ancestor origin/main HEAD`.
 
-## 2. Restamp asset hashes
+## 2. Restamp asset hashes and check translations
 
 ```sh
 scripts/version-assets.sh
+node scripts/build-i18n.mjs
+node scripts/check-i18n.mjs --built
 ```
 
-If `git status --porcelain` now shows changed pages, the stamps were stale: commit them on
-`main` (only those pages):
+If `git status --porcelain` now shows changed pages, the stamps or generated language pages were
+stale: commit them on `main` (only those files):
 
 ```sh
-git commit -am "chore: Restamp asset hashes"
+git commit -am "chore: Restamp asset hashes and rebuild languages"
 ```
+
+`check-i18n` also lists untranslated or outdated segments. Those don't block a release (they show in
+English), but mention how many are left in the report.
 
 ## 3. Push
 

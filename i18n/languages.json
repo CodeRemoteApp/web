@@ -1,0 +1,26 @@
+{
+	"base": "https://coderemoteapp.github.io/web/",
+	"languages": [
+		{ "code": "en", "folder": "", "name": "English", "lang": "en", "label": "Language" },
+		{
+			"code": "vi", "folder": "vi", "name": "Tiếng Việt", "lang": "vi", "label": "Ngôn ngữ",
+			"suggest": "Xem trang này bằng tiếng Việt?",
+			"note": "Chính sách quyền riêng tư và Điều khoản chỉ có bản tiếng Anh; bản tiếng Anh là bản có hiệu lực."
+		},
+		{
+			"code": "ja", "folder": "ja", "name": "日本語", "lang": "ja", "label": "言語",
+			"suggest": "このページを日本語で表示しますか?",
+			"note": "プライバシーポリシーと利用規約は英語版のみで、英語版が正式なものです。"
+		},
+		{
+			"code": "zh-hans", "folder": "zh-hans", "name": "简体中文", "lang": "zh-Hans", "label": "语言",
+			"suggest": "要查看此页面的简体中文版吗?",
+			"note": "隐私政策和服务条款仅提供英文版,以英文版为准。"
+		},
+		{
+			"code": "es", "folder": "es", "name": "Español", "lang": "es", "label": "Idioma",
+			"suggest": "¿Ver esta página en español?",
+			"note": "La política de privacidad y los términos solo están en inglés; la versión en inglés es la vinculante."
+		}
+	]
+}

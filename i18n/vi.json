@@ -1,0 +1,1686 @@
+{
+	"28984826": {
+		"en": "A Dev Tunnels account may keep 10 tunnels. Computers you no longer use keep theirs until you delete them with <code>coderemote tunnels delete</code>.",
+		"text": "Một tài khoản Dev Tunnels được giữ 10 tunnel. Các máy tính bạn không còn dùng vẫn giữ tunnel của chúng cho đến khi bạn xóa bằng <code>coderemote tunnels delete</code>."
+	},
+	"33966640": {
+		"en": "3. Pair your iPhone",
+		"text": "3. Ghép đôi iPhone"
+	},
+	"47687371": {
+		"en": "The Ports tab",
+		"text": "Tab Cổng"
+	},
+	"58197788": {
+		"en": "Git",
+		"text": "Git"
+	},
+	"75416485": {
+		"en": "Configuration",
+		"text": "Cấu hình"
+	},
+	"83925415": {
+		"en": "This installs the Code Remote plugin into Claude Code (the same as <code>/plugin install coderemote --marketplace CodeRemoteApp/coderemote</code> inside Claude Code). Claude Code sessions you start afterwards, in a folder shared with <code>coderemote up</code>, show up in the app. Sessions already running appear after you restart them. To undo it: <code>coderemote setup claude --remove</code>.",
+		"text": "Lệnh này cài plugin Code Remote vào Claude Code (giống <code>/plugin install coderemote --marketplace CodeRemoteApp/coderemote</code> bên trong Claude Code). Các phiên Claude Code bạn bắt đầu sau đó, trong thư mục được chia sẻ bằng <code>coderemote up</code>, sẽ hiện trong app. Các phiên đang chạy sẽ hiện sau khi bạn khởi động lại chúng. Để hoàn tác: <code>coderemote setup claude --remove</code>."
+	},
+	"99121239": {
+		"en": "Then restart <code>coderemote up</code> and scan the new QR code on the devices you still trust.",
+		"text": "Sau đó khởi động lại <code>coderemote up</code> và quét mã QR mới trên các thiết bị bạn vẫn tin tưởng."
+	},
+	"99251092": {
+		"en": "<code>up</code> notices and opens the browser again. Without a browser, run <code>coderemote login --device-code</code>.",
+		"text": "<code>up</code> nhận ra và mở lại trình duyệt. Nếu không có trình duyệt, chạy <code>coderemote login --device-code</code>."
+	},
+	"f32d5a3b": {
+		"en": "Support",
+		"text": "Hỗ trợ"
+	},
+	"68a41942": {
+		"en": "Docs",
+		"text": "Tài liệu"
+	},
+	"8d105cf4": {
+		"en": "Compare",
+		"text": "So sánh"
+	},
+	"a55a275a": {
+		"en": "Terms",
+		"text": "Điều khoản"
+	},
+	"cf01481f": {
+		"en": "Privacy",
+		"text": "Quyền riêng tư"
+	},
+	"05c61c1d": {
+		"en": "© 2026 Thanh Tran. Code Remote is not affiliated with Microsoft or GitHub.",
+		"text": "© 2026 Thanh Tran. Code Remote không liên kết với Microsoft hay GitHub."
+	},
+	"59177a5d": {
+		"en": "More by Thanh Tran",
+		"text": "Thêm từ Thanh Tran"
+	},
+	"1f8a8585": {
+		"en": "The computer side is free software under the AGPL. Read every line on GitHub.",
+		"text": "Phần chạy trên máy tính là phần mềm tự do theo giấy phép AGPL. Đọc từng dòng code trên GitHub."
+	},
+	"6cc3364a": {
+		"en": "Open source",
+		"text": "Mã nguồn mở"
+	},
+	"05dfd4d4": {
+		"en": "The app and the CLI have no analytics, no tracking, no ads. Your files and commands never reach us.",
+		"text": "App và CLI không có analytics, không theo dõi, không quảng cáo. Tệp và lệnh của bạn không bao giờ đến chỗ chúng tôi."
+	},
+	"15847cb9": {
+		"en": "Nothing collected",
+		"text": "Không thu thập gì"
+	},
+	"941b6b2f": {
+		"en": "Your phone talks to your computer. Code Remote runs no backend and has no accounts.",
+		"text": "Điện thoại nói chuyện thẳng với máy tính của bạn. Code Remote không chạy backend nào và không có tài khoản."
+	},
+	"cecddb8e": {
+		"en": "No servers of ours",
+		"text": "Không có máy chủ của chúng tôi"
+	},
+	"3ea04278": {
+		"en": "Private by design.",
+		"text": "Riêng tư ngay từ thiết kế."
+	},
+	"4bbf108c": {
+		"en": "Watch every request that reaches your dev server, with headers and bodies. Filter by type or path, and let your coding agent read them from the terminal.",
+		"text": "Xem mọi request đến dev server của bạn, kèm header và body. Lọc theo loại hoặc đường dẫn, và để coding agent của bạn đọc chúng ngay từ terminal."
+	},
+	"f7194e6a": {
+		"en": "Requests",
+		"text": "Requests"
+	},
+	"277a2e46": {
+		"en": "Open your dev server on the phone with a tap, through its own private tunnel. Need a second opinion? Share a public link that ends after an hour or a day.",
+		"text": "Mở dev server trên điện thoại chỉ với một chạm, qua một đường hầm riêng. Cần người khác góp ý? Chia sẻ một liên kết công khai tự hết hạn sau một giờ hoặc một ngày."
+	},
+	"be152e8a": {
+		"en": "Preview &amp; share",
+		"text": "Xem trước &amp; chia sẻ"
+	},
+	"fea71008": {
+		"en": "See which servers are listening, which terminal started them, and stop the one that's stuck on port 3000.",
+		"text": "Xem những server nào đang lắng nghe, terminal nào đã khởi chạy chúng, và tắt cái đang kẹt ở cổng 3000."
+	},
+	"16c2eb4d": {
+		"en": "Ports",
+		"text": "Cổng"
+	},
+	"f7999736": {
+		"en": "A real shell (PowerShell on Windows) with a key bar for Ctrl, Tab, Esc and arrows. Sessions keep running while your phone sleeps, so long builds and coding agents survive.",
+		"text": "Một shell thật (PowerShell trên Windows) với thanh phím cho Ctrl, Tab, Esc và các phím mũi tên. Phiên vẫn chạy khi điện thoại ngủ, nên các bản build dài và coding agent không bị gián đoạn."
+	},
+	"a1f52cdc": {
+		"en": "Terminal",
+		"text": "Terminal"
+	},
+	"f22c0baa": {
+		"en": "See changes and diffs, stage, commit, pull, push and read history, across every repository in the folder.",
+		"text": "Xem thay đổi và diff, stage, commit, pull, push và đọc lịch sử, trên mọi repository trong thư mục."
+	},
+	"99ff7b07": {
+		"en": "Browse, open, edit, create, rename and delete files in the folder you share.",
+		"text": "Duyệt, mở, sửa, tạo, đổi tên và xóa tệp trong thư mục bạn chia sẻ."
+	},
+	"6ce6c512": {
+		"en": "Files",
+		"text": "Tệp"
+	},
+	"e5c58e6b": {
+		"en": "Everything you need to keep working.",
+		"text": "Mọi thứ bạn cần để tiếp tục làm việc."
+	},
+	"6db4c547": {
+		"en": "We only use your email for the beta invite. See the <a href=\"privacy.html#beta\">privacy policy</a>.",
+		"text": "Chúng tôi chỉ dùng email của bạn để gửi lời mời beta. Xem <a href=\"privacy.html#beta\">chính sách quyền riêng tư</a>."
+	},
+	"07c5e2a6": {
+		"en": "Request an invite",
+		"text": "Xin lời mời"
+	},
+	"1138c15a": {
+		"en": "What you'd like to use Code Remote for",
+		"text": "Bạn muốn dùng Code Remote để làm gì"
+	},
+	"8d8fdd66": {
+		"en": "Message <span class=\"optional\">(optional)</span>",
+		"text": "Lời nhắn <span class=\"optional\">(không bắt buộc)</span>"
+	},
+	"26b1964f": {
+		"en": "Use the email of your Apple Account (the one signed in on your iPhone), so the invite lands where TestFlight expects it.",
+		"text": "Hãy dùng email của Apple Account (tài khoản đang đăng nhập trên iPhone), để lời mời đến đúng nơi TestFlight mong đợi."
+	},
+	"29ad3e53": {
+		"en": "you@icloud.com",
+		"text": "ban@icloud.com"
+	},
+	"84add5b2": {
+		"en": "Email",
+		"text": "Email"
+	},
+	"de0f265f": {
+		"en": "Please try again, or email trantienthanh2412@gmail.com.",
+		"text": "Vui lòng thử lại, hoặc gửi email đến trantienthanh2412@gmail.com."
+	},
+	"bee54c9c": {
+		"en": "Something went wrong.",
+		"text": "Đã xảy ra lỗi."
+	},
+	"3f718709": {
+		"en": "Thanks! We'll send your TestFlight invite soon.",
+		"text": "Cảm ơn bạn! Chúng tôi sẽ sớm gửi lời mời TestFlight."
+	},
+	"cf765512": {
+		"en": "Sending…",
+		"text": "Đang gửi…"
+	},
+	"06041330": {
+		"en": "The iPhone app is in beta on TestFlight. Leave your email and we'll invite you as soon as the first build is ready. The invite comes from Apple's TestFlight; open it on your iPhone.",
+		"text": "App iPhone đang ở giai đoạn beta trên TestFlight. Để lại email, chúng tôi sẽ mời bạn ngay khi bản build đầu tiên sẵn sàng. Lời mời đến từ TestFlight của Apple; hãy mở nó trên iPhone."
+	},
+	"fedb0338": {
+		"en": "Join the iPhone beta.",
+		"text": "Tham gia beta trên iPhone."
+	},
+	"e8371f96": {
+		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (<a href=\"#beta\">ask for a beta invite</a> to get the app on TestFlight). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
+		"text": "Muốn cài đặt lâu dài? Hãy chạy <code>coderemote up</code> trong thư mục dự án rồi quét mã QR bằng iPhone (<a href=\"#beta\">xin lời mời beta</a> để có app trên TestFlight). Cách cập nhật, gỡ cài đặt và những phần còn lại có trong <a href=\"docs/setup.html#install\">hướng dẫn cài đặt</a>."
+	},
+	"12820efb": {
+		"en": "On macOS and Linux.",
+		"text": "Trên macOS và Linux."
+	},
+	"b3d404a3": {
+		"en": "On any system with Node.js 22 or newer.",
+		"text": "Trên mọi hệ thống có Node.js 22 trở lên."
+	},
+	"835d7455": {
+		"en": "Paste it into PowerShell on Windows 10 or 11. No Node.js? It downloads one for coderemote alone.",
+		"text": "Dán vào PowerShell trên Windows 10 hoặc 11. Chưa có Node.js? Script sẽ tải một bản chỉ dành riêng cho coderemote."
+	},
+	"af90723f": {
+		"en": "Paste it into Terminal. No Node.js? It downloads one for coderemote alone.",
+		"text": "Dán vào Terminal. Chưa có Node.js? Script sẽ tải một bản chỉ dành riêng cho coderemote."
+	},
+	"d5b89dd3": {
+		"en": "macOS and Linux",
+		"text": "macOS và Linux"
+	},
+	"39201eac": {
+		"en": "Install method",
+		"text": "Cách cài đặt"
+	},
+	"d3465c71": {
+		"en": "Install on your computer.",
+		"text": "Cài đặt trên máy tính của bạn."
+	},
+	"8a57f5ba": {
+		"en": "<a href=\"compare.html\">See the full comparison</a>, including when another tool is the better fit.",
+		"text": "<a href=\"compare.html\">Xem so sánh đầy đủ</a>, kể cả khi nào một công cụ khác phù hợp hơn."
+	},
+	"1e965f99": {
+		"en": "No server to enable, no keys to copy, no ports to forward, no firewall rules to edit.",
+		"text": "Không phải bật server, không phải sao chép khóa, không phải chuyển tiếp cổng, không phải sửa quy tắc tường lửa."
+	},
+	"339ea050": {
+		"en": "No SSH",
+		"text": "Không cần SSH"
+	},
+	"3245e5ca": {
+		"en": "The agent connects outward through a private tunnel. Nothing to install on the phone's network, nothing to join.",
+		"text": "Agent kết nối ra ngoài qua một đường hầm riêng. Không phải cài gì trên mạng của điện thoại, không phải tham gia mạng nào."
+	},
+	"df62f1c4": {
+		"en": "No VPN",
+		"text": "Không cần VPN"
+	},
+	"1c984cdc": {
+		"en": "Nothing to download, install or keep updated on the computer. <code>npx</code> runs it and leaves nothing behind.",
+		"text": "Không có gì phải tải về, cài đặt hay cập nhật trên máy tính. <code>npx</code> chạy xong là không để lại gì."
+	},
+	"c547ad21": {
+		"en": "No desktop app",
+		"text": "Không cần app desktop"
+	},
+	"c8983275": {
+		"en": "Other tools ask you to download a desktop app, set up a VPN on both devices, or configure an SSH server and keys. With Node.js already on your computer, Code Remote is a single line.",
+		"text": "Các công cụ khác yêu cầu bạn tải app desktop, thiết lập VPN trên cả hai thiết bị, hoặc cấu hình SSH server và khóa. Nếu máy tính đã có Node.js, Code Remote chỉ là một dòng lệnh."
+	},
+	"e0a95756": {
+		"en": "One command. That's the whole setup.",
+		"text": "Một lệnh. Thiết lập chỉ có vậy."
+	},
+	"7c89f87d": {
+		"en": "Terminal: npx coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone",
+		"text": "Terminal: npx coderemote up khởi động agent, kết nối với relay và in ra mã QR để quét bằng iPhone"
+	},
+	"8d792ea6": {
+		"en": "A laptop and a phone joined by a tunnel, with data travelling between them",
+		"text": "Một laptop và một điện thoại nối với nhau bằng đường hầm, dữ liệu chạy qua lại giữa hai bên"
+	},
+	"e1ebfbbc": {
+		"en": "Free on TestFlight. App Store release coming soon.",
+		"text": "Miễn phí trên TestFlight. Bản App Store sắp ra mắt."
+	},
+	"b09a5e83": {
+		"en": "Join the iPhone beta",
+		"text": "Tham gia beta trên iPhone"
+	},
+	"90e40d50": {
+		"en": "Get started",
+		"text": "Bắt đầu"
+	},
+	"f11adb20": {
+		"en": "Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone: <code>npx coderemote up</code>. No SSH keys, no port forwarding, no VPN.",
+		"text": "Duyệt tệp, xem lại và commit bằng git, chạy terminal thật, và mở các dev server trên máy của bạn, tất cả từ iPhone. Một lệnh trên máy tính, một lần quét QR trên điện thoại: <code>npx coderemote up</code>. Không cần khóa SSH, không chuyển tiếp cổng, không VPN."
+	},
+	"553c0fd3": {
+		"en": "Your computer, in your pocket.",
+		"text": "Máy tính của bạn, trong túi áo."
+	},
+	"ae1ef014": {
+		"en": "Dark",
+		"text": "Tối"
+	},
+	"a36ef8ab": {
+		"en": "Light",
+		"text": "Sáng"
+	},
+	"bc0792d8": {
+		"en": "System",
+		"text": "Hệ thống"
+	},
+	"41def7a0": {
+		"en": "Appearance",
+		"text": "Giao diện"
+	},
+	"f03b60f7": {
+		"en": "Beta",
+		"text": "Beta"
+	},
+	"fd6c3ebf": {
+		"en": "Install",
+		"text": "Cài đặt"
+	},
+	"57f5f5ef": {
+		"en": "Menu",
+		"text": "Menu"
+	},
+	"8e3df45a": {
+		"en": "Copied",
+		"text": "Đã sao chép"
+	},
+	"af74f7c5": {
+		"en": "Copy",
+		"text": "Sao chép"
+	},
+	"adf27d77": {
+		"en": "Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.",
+		"text": "Duyệt tệp, xem lại và commit bằng git, chạy terminal thật trên máy dev của bạn từ iPhone, qua Microsoft Dev Tunnel an toàn. Không cần khóa SSH, không chuyển tiếp cổng, không VPN."
+	},
+	"b94af5fc": {
+		"en": "Code Remote: your computer, from your iPhone",
+		"text": "Code Remote: máy tính của bạn, từ iPhone"
+	},
+	"70f8bb9a": {
+		"en": "Home",
+		"text": "Trang chủ"
+	},
+	"578d25ef": {
+		"en": "© 2026 Thanh Tran",
+		"text": "© 2026 Thanh Tran"
+	},
+	"81ca323c": {
+		"en": "Please don't report vulnerabilities in public issues. Follow the <a href=\"https://github.com/CodeRemoteApp/coderemote/blob/main/SECURITY.md\">security policy</a> instead.",
+		"text": "Vui lòng đừng báo cáo lỗ hổng bảo mật trong issue công khai. Hãy làm theo <a href=\"https://github.com/CodeRemoteApp/coderemote/blob/main/SECURITY.md\">chính sách bảo mật</a>."
+	},
+	"0b0a72a6": {
+		"en": "Security issues",
+		"text": "Vấn đề bảo mật"
+	},
+	"180e72ad": {
+		"en": "No. Code Remote has no servers. Traffic passes, encrypted, through Microsoft's Dev Tunnels relay between your phone and your computer. See the <a href=\"privacy.html\">Privacy Policy</a>.",
+		"text": "Không. Code Remote không có máy chủ. Lưu lượng đi qua relay Dev Tunnels của Microsoft, được mã hóa, giữa điện thoại và máy tính của bạn. Xem <a href=\"privacy.html\">Chính sách quyền riêng tư</a>."
+	},
+	"ce2e6065": {
+		"en": "Does my code go through your servers?",
+		"text": "Code của tôi có đi qua máy chủ của các bạn không?"
+	},
+	"bfb56c80": {
+		"en": "One at a time for now. Share a parent folder to reach several projects; the Git tab finds every repository inside it.",
+		"text": "Hiện tại là mỗi lần một thư mục. Hãy chia sẻ thư mục cha để truy cập nhiều dự án; tab Git sẽ tìm mọi repository bên trong."
+	},
+	"2c27f768": {
+		"en": "Can I share more than one folder?",
+		"text": "Tôi có thể chia sẻ nhiều hơn một thư mục không?"
+	},
+	"9d45fb70": {
+		"en": "That's the most an account may keep. Run <code>coderemote tunnels</code> to see them, and delete the ones nothing uses any more, such as an old computer's, with <code>coderemote tunnels delete &lt;id&gt;</code>. See <a href=\"docs/commands.html#tunnels\">tunnels</a>.",
+		"text": "Đó là mức tối đa một tài khoản được giữ. Chạy <code>coderemote tunnels</code> để xem, rồi xóa những cái không còn dùng, chẳng hạn của một máy tính cũ, bằng <code>coderemote tunnels delete &lt;id&gt;</code>. Xem <a href=\"docs/commands.html#tunnels\">tunnels</a>."
+	},
+	"2579a42b": {
+		"en": "coderemote says my Dev Tunnels account already has 10 tunnels.",
+		"text": "coderemote báo tài khoản Dev Tunnels của tôi đã có 10 tunnel."
+	},
+	"87d4679d": {
+		"en": "Yes. Sessions keep running on the computer with their recent output. Reopen the App and they reattach. End them with <code>coderemote kill</code>.",
+		"text": "Có. Các phiên vẫn chạy trên máy tính cùng với output gần nhất. Mở lại App là chúng được nối lại. Kết thúc chúng bằng <code>coderemote kill</code>."
+	},
+	"ac3dc0e5": {
+		"en": "Do terminal sessions survive when my phone locks?",
+		"text": "Phiên terminal có còn khi điện thoại khóa màn hình không?"
+	},
+	"cc908e49": {
+		"en": "Run <code>coderemote rotate-token</code> on the computer. Every paired device loses access immediately; pair again by scanning the new QR code.",
+		"text": "Chạy <code>coderemote rotate-token</code> trên máy tính. Mọi thiết bị đã ghép đôi mất quyền truy cập ngay lập tức; hãy ghép đôi lại bằng cách quét mã QR mới."
+	},
+	"19e0d122": {
+		"en": "I lost my phone, or a pairing link leaked.",
+		"text": "Tôi làm mất điện thoại, hoặc liên kết ghép đôi bị lộ."
+	},
+	"7ae1c27b": {
+		"en": "Check that <code>coderemote up</code> is still running on the computer and that the computer is awake and online. Run <code>coderemote status</code> to see running agents. If you signed in with a different account on the phone, sign in again with the same GitHub or Microsoft account the computer uses.",
+		"text": "Kiểm tra <code>coderemote up</code> vẫn đang chạy trên máy tính, và máy tính đang bật, có mạng. Chạy <code>coderemote status</code> để xem các agent đang chạy. Nếu trên điện thoại bạn đã đăng nhập bằng tài khoản khác, hãy đăng nhập lại bằng đúng tài khoản GitHub hoặc Microsoft mà máy tính đang dùng."
+	},
+	"18a05b02": {
+		"en": "The App can't connect to my computer.",
+		"text": "App không kết nối được với máy tính của tôi."
+	},
+	"f07ac22a": {
+		"en": "Common questions",
+		"text": "Câu hỏi thường gặp"
+	},
+	"f5c3c034": {
+		"en": "Then scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).",
+		"text": "Sau đó quét mã QR bằng Camera của iPhone, hoặc bằng nút <strong>+</strong> trong App. Lần chạy đầu tiên sẽ tải Dev Tunnels CLI của Microsoft và yêu cầu bạn đăng nhập bằng GitHub (hoặc chạy <code>coderemote login --microsoft</code> trước để dùng tài khoản Microsoft)."
+	},
+	"0b32e824": {
+		"en": "On your computer (macOS, Windows 10/11 or Linux), install coderemote with the install script, npm or Homebrew (<a href=\"docs/setup.html#install\">every way, for each system</a>), then share a folder:",
+		"text": "Trên máy tính (macOS, Windows 10/11 hoặc Linux), cài coderemote bằng script cài đặt, npm hoặc Homebrew (<a href=\"docs/setup.html#install\">mọi cách, cho từng hệ thống</a>), rồi chia sẻ một thư mục:"
+	},
+	"76e7a3a3": {
+		"en": "Getting started",
+		"text": "Bắt đầu"
+	},
+	"ab192c65": {
+		"en": "Email <a href=\"mailto:trantienthanh2412@gmail.com\">trantienthanh2412@gmail.com</a>, or open an issue on <a href=\"https://github.com/CodeRemoteApp/coderemote/issues\">GitHub</a>. Please include your iOS version, your computer's system, your coderemote version (<code>coderemote --version</code>) and what you were doing.",
+		"text": "Gửi email đến <a href=\"mailto:trantienthanh2412@gmail.com\">trantienthanh2412@gmail.com</a>, hoặc mở issue trên <a href=\"https://github.com/CodeRemoteApp/coderemote/issues\">GitHub</a>. Vui lòng cho biết phiên bản iOS, hệ điều hành máy tính, phiên bản coderemote (<code>coderemote --version</code>) và bạn đang làm gì."
+	},
+	"94b93034": {
+		"en": "We usually reply within a few days.",
+		"text": "Chúng tôi thường trả lời trong vài ngày."
+	},
+	"91a88285": {
+		"en": "Get help with Code Remote: setup, common questions and how to contact us.",
+		"text": "Nhận trợ giúp về Code Remote: cài đặt, câu hỏi thường gặp và cách liên hệ."
+	},
+	"60fda17b": {
+		"en": "Support · Code Remote",
+		"text": "Hỗ trợ · Code Remote"
+	},
+	"2c738ac8": {
+		"en": "The agent listens on <code>127.0.0.1</code> only and publishes itself through a private Microsoft Dev Tunnel. Only your GitHub or Microsoft account gets through, and every request also needs the pairing token kept in the iPhone Keychain. <a href=\"docs/\">Read how it works</a>.",
+		"text": "Agent chỉ lắng nghe trên <code>127.0.0.1</code> và tự công bố qua một Microsoft Dev Tunnel riêng. Chỉ tài khoản GitHub hoặc Microsoft của bạn mới vào được, và mỗi request còn cần pairing token lưu trong Keychain của iPhone. <a href=\"docs/\">Xem cách hoạt động</a>."
+	},
+	"d8d86b60": {
+		"en": "What stays simple",
+		"text": "Điều gì vẫn đơn giản"
+	},
+	"14116a22": {
+		"en": "<strong>It is not an iPhone.</strong> The Code Remote app is for iPhone. Anything else has to use the tools above.",
+		"text": "<strong>Bạn không dùng iPhone.</strong> App Code Remote chỉ dành cho iPhone. Mọi thiết bị khác phải dùng các công cụ ở trên."
+	},
+	"24c010fd": {
+		"en": "<strong>You already run a VPN and SSH everywhere.</strong> If that is set up and you like it, a terminal app over it works fine. Code Remote is for when you would rather not set it up at all.",
+		"text": "<strong>Bạn đã chạy VPN và SSH khắp nơi.</strong> Nếu đã thiết lập sẵn và thấy ổn, một app terminal chạy qua đó vẫn dùng tốt. Code Remote dành cho lúc bạn không muốn thiết lập gì cả."
+	},
+	"c7cd2951": {
+		"en": "<strong>You need the full desktop.</strong> Code Remote is for developer work: files, git, terminal, dev servers. For a design app or a GUI installer, use a remote desktop app.",
+		"text": "<strong>Bạn cần toàn bộ desktop.</strong> Code Remote dành cho công việc của lập trình viên: tệp, git, terminal, dev server. Với app thiết kế hay trình cài đặt có giao diện, hãy dùng app điều khiển máy tính từ xa."
+	},
+	"61e159dc": {
+		"en": "When another tool is the better fit",
+		"text": "Khi nào một công cụ khác phù hợp hơn"
+	},
+	"7d218162": {
+		"en": "Tailscale and Termius are the right choice if you manage many machines or servers, and Code Remote does not replace them for that. Orca is where you run agents at your desk, and Code Remote is how you reach your machine when you are away from it, so the two can sit side by side.",
+		"text": "Tailscale và Termius là lựa chọn đúng nếu bạn quản lý nhiều máy hoặc server, và Code Remote không thay thế chúng cho việc đó. Orca là nơi bạn chạy agent khi ngồi ở bàn, còn Code Remote là cách bạn với tới máy khi không ở gần nó, nên hai thứ có thể dùng song song."
+	},
+	"3ead3622": {
+		"en": "<strong>Private by design.</strong> The agent listens on <code>127.0.0.1</code> only, and no Code Remote server sits in between. <a href=\"docs/\">Read how it works</a>.",
+		"text": "<strong>Riêng tư từ thiết kế.</strong> Agent chỉ lắng nghe trên <code>127.0.0.1</code>, và không có máy chủ Code Remote nào ở giữa. <a href=\"docs/\">Xem cách hoạt động</a>."
+	},
+	"475230f1": {
+		"en": "<strong>Made for the phone.</strong> A file browser, git review, key bar for the terminal and one-tap previews, instead of a terminal squeezed onto a small screen.",
+		"text": "<strong>Làm cho điện thoại.</strong> Trình duyệt tệp, xem git, thanh phím cho terminal và xem trước bằng một chạm, thay vì một terminal bị nhồi vào màn hình nhỏ."
+	},
+	"7f3557b5": {
+		"en": "<strong>Nothing to maintain.</strong> No VPN to keep connected, no SSH server to harden, no keys to rotate, no desktop app to update.",
+		"text": "<strong>Không có gì phải bảo trì.</strong> Không VPN phải giữ kết nối, không SSH server phải gia cố, không khóa phải xoay vòng, không app desktop phải cập nhật."
+	},
+	"6a611848": {
+		"en": "<strong>The shortest path.</strong> One command and one scan. The others need two or three installs, an account on each side, and keys or network settings.",
+		"text": "<strong>Đường ngắn nhất.</strong> Một lệnh và một lần quét. Các công cụ khác cần hai hoặc ba bước cài đặt, tài khoản ở cả hai phía, cùng khóa hoặc thiết lập mạng."
+	},
+	"1fe7c1e2": {
+		"en": "Why Code Remote",
+		"text": "Vì sao chọn Code Remote"
+	},
+	"0627f889": {
+		"en": "Running several agents side by side at your desk",
+		"text": "Chạy nhiều agent song song tại bàn làm việc"
+	},
+	"f8ef330c": {
+		"en": "Managing many servers over SSH",
+		"text": "Quản lý nhiều server qua SSH"
+	},
+	"002b7ce7": {
+		"en": "Linking many machines into one private network",
+		"text": "Nối nhiều máy vào một mạng riêng"
+	},
+	"b4a6972e": {
+		"en": "Reaching your dev machine from your phone with the least setup",
+		"text": "Truy cập máy dev từ điện thoại với ít thiết lập nhất"
+	},
+	"6d7ae87f": {
+		"en": "Best for",
+		"text": "Phù hợp nhất cho"
+	},
+	"787c32b5": {
+		"en": "Open source (MIT)",
+		"text": "Mã nguồn mở (MIT)"
+	},
+	"14f04ceb": {
+		"en": "Free Starter plan, paid Pro for sync and more",
+		"text": "Gói Starter miễn phí, gói Pro trả phí cho đồng bộ và hơn thế"
+	},
+	"293ee410": {
+		"en": "Free for personal use within Tailscale's limits",
+		"text": "Miễn phí cho cá nhân trong giới hạn của Tailscale"
+	},
+	"db53609a": {
+		"en": "Free iPhone beta, free open-source CLI (AGPL)",
+		"text": "Beta iPhone miễn phí, CLI mã nguồn mở miễn phí (AGPL)"
+	},
+	"64ae43e8": {
+		"en": "Cost",
+		"text": "Chi phí"
+	},
+	"58b9d862": {
+		"en": "An open-source desktop IDE for running coding agents in parallel",
+		"text": "Một IDE desktop mã nguồn mở để chạy coding agent song song"
+	},
+	"1239427a": {
+		"en": "An SSH, Mosh and SFTP client",
+		"text": "Một client SSH, Mosh và SFTP"
+	},
+	"8df61e91": {
+		"en": "A mesh VPN with an SSH app on top",
+		"text": "Một mạng VPN dạng mesh kèm app SSH"
+	},
+	"7a7f3e7a": {
+		"en": "An agent on your computer plus an iPhone app",
+		"text": "Một agent trên máy tính cộng với app iPhone"
+	},
+	"f8c94a3b": {
+		"en": "What it is",
+		"text": "Đây là gì"
+	},
+	"9dbf5683": {
+		"en": "Live agent status, usage and terminals",
+		"text": "Trạng thái agent trực tiếp, mức sử dụng và terminal"
+	},
+	"38224a51": {
+		"en": "A terminal and SFTP file transfer",
+		"text": "Terminal và truyền tệp SFTP"
+	},
+	"ced560cc": {
+		"en": "A terminal, whatever the SSH app offers",
+		"text": "Một terminal, tùy theo app SSH cung cấp"
+	},
+	"5cd521d8": {
+		"en": "Files, git, terminal, ports, dev server previews and a request log, all built for touch",
+		"text": "Tệp, git, terminal, cổng, xem trước dev server và nhật ký request, tất cả được làm cho cảm ứng"
+	},
+	"4d382b20": {
+		"en": "On the phone you get",
+		"text": "Trên điện thoại bạn có"
+	},
+	"98cabc87": {
+		"en": "Your own coding-agent accounts",
+		"text": "Tài khoản coding agent của riêng bạn"
+	},
+	"0fef8e5b": {
+		"en": "SSH keys or passwords per host. Cloud sync is paid.",
+		"text": "Khóa SSH hoặc mật khẩu cho từng host. Đồng bộ đám mây là trả phí."
+	},
+	"bb89b21e": {
+		"en": "A Tailscale account, plus SSH keys or Tailscale SSH",
+		"text": "Một tài khoản Tailscale, cộng với khóa SSH hoặc Tailscale SSH"
+	},
+	"7dc5ca4e": {
+		"en": "<strong>One sign-in</strong> (GitHub or Microsoft). No SSH keys to create or copy.",
+		"text": "<strong>Một lần đăng nhập</strong> (GitHub hoặc Microsoft). Không phải tạo hay sao chép khóa SSH."
+	},
+	"52d88281": {
+		"en": "Accounts and keys",
+		"text": "Tài khoản và khóa"
+	},
+	"1ba84138": {
+		"en": "Works from the computer it runs on. Remote machines go over SSH.",
+		"text": "Dùng được từ chính máy tính nó chạy. Máy ở xa đi qua SSH."
+	},
+	"2c271644": {
+		"en": "You make the machine reachable: port forward, VPN or similar",
+		"text": "Bạn tự làm cho máy truy cập được: chuyển tiếp cổng, VPN hoặc tương tự"
+	},
+	"d243dd29": {
+		"en": "Join both devices to the same tailnet",
+		"text": "Đưa cả hai thiết bị vào cùng một tailnet"
+	},
+	"a8c367df": {
+		"en": "<strong>None.</strong> It connects outward, so NAT, firewalls and hotel Wi-Fi are fine.",
+		"text": "<strong>Không cần gì.</strong> Nó kết nối ra ngoài, nên NAT, tường lửa và Wi-Fi khách sạn đều ổn."
+	},
+	"3889510d": {
+		"en": "Network setup",
+		"text": "Thiết lập mạng"
+	},
+	"00c55295": {
+		"en": "Install the companion app and pair it",
+		"text": "Cài app đi kèm và ghép đôi"
+	},
+	"1c60c3f1": {
+		"en": "Install Termius, add the host and key",
+		"text": "Cài Termius, thêm host và khóa"
+	},
+	"72a47da6": {
+		"en": "Install Tailscale and an SSH app, sign in, import keys",
+		"text": "Cài Tailscale và một app SSH, đăng nhập, nhập khóa"
+	},
+	"2c1b2b78": {
+		"en": "<strong>Scan a QR code.</strong> That is the whole pairing.",
+		"text": "<strong>Quét mã QR.</strong> Ghép đôi chỉ có vậy."
+	},
+	"96f7dfe8": {
+		"en": "Setup on the phone",
+		"text": "Thiết lập trên điện thoại"
+	},
+	"95fec4c1": {
+		"en": "Install the Orca desktop app",
+		"text": "Cài app desktop Orca"
+	},
+	"6acb645b": {
+		"en": "An SSH server must already be running, with keys set up",
+		"text": "Phải có sẵn một SSH server đang chạy, với khóa đã thiết lập"
+	},
+	"ec91b214": {
+		"en": "Install Tailscale, turn on an SSH server, sign in",
+		"text": "Cài Tailscale, bật SSH server, đăng nhập"
+	},
+	"28fef9ed": {
+		"en": "<strong>One command:</strong> <code>npx coderemote up</code>. Nothing stays installed.",
+		"text": "<strong>Một lệnh:</strong> <code>npx coderemote up</code>. Không có gì ở lại trên máy."
+	},
+	"17fac107": {
+		"en": "Setup on the computer",
+		"text": "Thiết lập trên máy tính"
+	},
+	"5683005e": {
+		"en": "Orca",
+		"text": "Orca"
+	},
+	"92d1a8fd": {
+		"en": "Termius",
+		"text": "Termius"
+	},
+	"552fb6b7": {
+		"en": "Tailscale + an SSH app",
+		"text": "Tailscale + một app SSH"
+	},
+	"51ffc9ca": {
+		"en": "Based on each tool's public pages in November 2026. Plans and features change, so check theirs before deciding.",
+		"text": "Dựa trên các trang công khai của từng công cụ vào tháng 11 năm 2026. Gói và tính năng có thể thay đổi, hãy kiểm tra trang của họ trước khi quyết định."
+	},
+	"a4a0326d": {
+		"en": "Code Remote vs. Tailscale, Termius and Orca",
+		"text": "Code Remote so với Tailscale, Termius và Orca"
+	},
+	"24db9c7e": {
+		"en": "Needs Node.js 22 or newer. No Node? The <a href=\"docs/setup.html#install\">install script</a> fetches one for coderemote alone. The first run asks you to sign in once with GitHub or Microsoft.",
+		"text": "Cần Node.js 22 trở lên. Chưa có Node? <a href=\"docs/setup.html#install\">Script cài đặt</a> sẽ tải một bản chỉ dành riêng cho coderemote. Lần chạy đầu tiên yêu cầu bạn đăng nhập một lần bằng GitHub hoặc Microsoft."
+	},
+	"1b8bd888": {
+		"en": "To reach your dev machine from a phone, most tools want you to download an app on the computer, set up a VPN, or configure SSH. Code Remote needs one command and one QR scan.",
+		"text": "Để truy cập máy dev từ điện thoại, hầu hết công cụ yêu cầu bạn tải một app về máy tính, thiết lập VPN, hoặc cấu hình SSH. Code Remote chỉ cần một lệnh và một lần quét QR."
+	},
+	"2a45b4ef": {
+		"en": "Code Remote vs. the usual ways in.",
+		"text": "Code Remote so với các cách thông thường."
+	},
+	"b70582ad": {
+		"en": "How Code Remote compares with Tailscale, Termius, Orca, remote desktop apps and plain SSH: what each needs on your computer and network before you can connect from your phone.",
+		"text": "Code Remote so với Tailscale, Termius, Orca, app điều khiển máy tính từ xa và SSH thuần: mỗi cái cần gì trên máy tính và mạng của bạn trước khi bạn có thể kết nối từ điện thoại."
+	},
+	"b8d7e9b6": {
+		"en": "Compare · Code Remote",
+		"text": "So sánh · Code Remote"
+	},
+	"b6050d8a": {
+		"en": "Notifications go from your computer through a relay that adds the app's Apple push key; their content is encrypted for your iPhone, so neither the relay nor Apple can read it, and the relay keeps nothing. See the <a href=\"../privacy.html#notifications\">privacy policy</a>.",
+		"text": "Thông báo đi từ máy tính của bạn qua một relay gắn thêm khóa push của Apple cho app; nội dung được mã hóa cho iPhone của bạn, nên cả relay lẫn Apple đều không đọc được, và relay không lưu gì. Xem <a href=\"../privacy.html#notifications\">chính sách quyền riêng tư</a>."
+	},
+	"d42814f0": {
+		"en": "The plugin runs <code>coderemote hook</code> for each Claude Code event (a prompt, a tool call, a reply, a permission prompt). It hands the event to the <code>coderemote</code> sharing the session's folder, on the same computer, authenticated by a secret that never leaves it. A permission prompt waits there for an answer from the phone while Claude Code shows its own prompt as usual.",
+		"text": "Plugin chạy <code>coderemote hook</code> cho từng sự kiện của Claude Code (một prompt, một lần gọi công cụ, một câu trả lời, một yêu cầu cấp quyền). Nó chuyển sự kiện cho <code>coderemote</code> đang chia sẻ thư mục của phiên, trên cùng máy tính, được xác thực bằng một bí mật không bao giờ rời khỏi máy. Yêu cầu cấp quyền sẽ chờ ở đó câu trả lời từ điện thoại, trong khi Claude Code vẫn hiện hộp thoại của riêng nó như thường."
+	},
+	"1dd6a17c": {
+		"en": "How it works",
+		"text": "Cách hoạt động"
+	},
+	"abaa7e58": {
+		"en": "Long-press a permission notification to <strong>Allow</strong> or <strong>Deny</strong> without opening the app (after Face ID); a single question offers its answers the same way. Nothing is sent while you're using the computer (on a Mac) or have the machine open in the app.",
+		"text": "Nhấn giữ một thông báo cấp quyền để <strong>Cho phép</strong> hoặc <strong>Từ chối</strong> mà không cần mở app (sau Face ID); một câu hỏi đơn cũng cho trả lời theo cách tương tự. Sẽ không gửi gì khi bạn đang dùng máy tính (trên Mac) hoặc đang mở máy đó trong app."
+	},
+	"eb8cec3f": {
+		"en": "Turn them on per computer in the machine's info (hold it in the machine list, or <strong>Machine Info</strong> in a tab's menu): <strong>Needs an answer</strong> and <strong>Finished a long task</strong> (one that took a minute or more), with a test button.",
+		"text": "Bật cho từng máy trong thông tin của máy (nhấn giữ nó trong danh sách máy, hoặc <strong>Machine Info</strong> trong menu của một tab): <strong>Cần câu trả lời</strong> và <strong>Hoàn thành tác vụ dài</strong> (tác vụ chạy từ một phút trở lên), có nút thử."
+	},
+	"753a22b2": {
+		"en": "Notifications",
+		"text": "Thông báo"
+	},
+	"80b53e5e": {
+		"en": "A session you started in a terminal on the computer can be followed and answered here but not typed into, since it isn't the app's terminal; resume it here once it ends.",
+		"text": "Một phiên bạn bắt đầu trong terminal trên máy tính có thể được theo dõi và trả lời ở đây nhưng không gõ vào được, vì nó không phải terminal của app; hãy tiếp tục nó ở đây sau khi kết thúc."
+	},
+	"0bb32964": {
+		"en": "An ended session offers <strong>Resume Here</strong>, which continues the conversation in a new terminal.",
+		"text": "Một phiên đã kết thúc có nút <strong>Resume Here</strong>, tiếp tục cuộc trò chuyện trong một terminal mới."
+	},
+	"62a25c54": {
+		"en": "The <strong>⚡</strong> menu has <strong>Next Permission Mode</strong> (<kbd>Shift</kbd>+<kbd>Tab</kbd>), <code>/compact</code>, <code>/clear</code>, <code>/model</code> and <strong>Open in Terminal</strong> (Codex has no permission modes to cycle and no <code>/clear</code>). In the terminal, <strong>Chat</strong> in the <strong>…</strong> menu comes back.",
+		"text": "Menu <strong>⚡</strong> có <strong>Next Permission Mode</strong> (<kbd>Shift</kbd>+<kbd>Tab</kbd>), <code>/compact</code>, <code>/clear</code>, <code>/model</code> và <strong>Open in Terminal</strong> (Codex không có chế độ cấp quyền để chuyển và không có <code>/clear</code>). Trong terminal, <strong>Chat</strong> trong menu <strong>…</strong> đưa bạn quay lại."
+	},
+	"5547e4f8": {
+		"en": "<strong>+</strong> attaches photos, videos, files, a photo from the camera or a copied image. They go to <code>~/.coderemote/uploads/</code> on the computer (outside your project, deleted after a week), and Claude sees images as images; for other files it gets their path.",
+		"text": "<strong>+</strong> đính kèm ảnh, video, tệp, ảnh chụp từ camera hoặc ảnh đã sao chép. Chúng được gửi đến <code>~/.coderemote/uploads/</code> trên máy tính (ngoài dự án của bạn, tự xóa sau một tuần), và Claude thấy ảnh như ảnh; với các tệp khác nó nhận đường dẫn."
+	},
+	"53b2f695": {
+		"en": "Write a prompt and send it; while Claude works, what you send waits its turn, as it would at the computer. <strong>Stop</strong> interrupts it (like <kbd>Esc</kbd>).",
+		"text": "Viết một prompt rồi gửi; khi Claude đang làm việc, những gì bạn gửi sẽ chờ đến lượt, giống như khi ngồi ở máy tính. <strong>Stop</strong> ngắt nó (như <kbd>Esc</kbd>)."
+	},
+	"71a6a8d2": {
+		"en": "The session runs in a terminal of the app, so you can type to it from the session's message box:",
+		"text": "Phiên chạy trong một terminal của app, nên bạn có thể gõ vào nó từ hộp tin nhắn của phiên:"
+	},
+	"817cfa1e": {
+		"en": "For Codex, a model from the ones Codex itself offers (<strong>Default</strong> is the one in Codex's config), and whether it may <strong>Ask before running outside the sandbox</strong>. Turned off, Codex refuses what its sandbox doesn't allow, without asking.",
+		"text": "Với Codex, chọn một model trong số Codex cung cấp (<strong>Default</strong> là model trong cấu hình của Codex), và có cho phép <strong>Ask before running outside the sandbox</strong> hay không. Khi tắt, Codex từ chối những gì sandbox không cho phép mà không hỏi."
+	},
+	"e7fcc880": {
+		"en": "For Claude Code, a model and how it asks for permission (<strong>Ask First</strong>, <strong>Accept Edits</strong>, <strong>Plan Only</strong> or <strong>Auto</strong>).",
+		"text": "Với Claude Code, chọn một model và cách nó xin quyền (<strong>Ask First</strong>, <strong>Accept Edits</strong>, <strong>Plan Only</strong> hoặc <strong>Auto</strong>)."
+	},
+	"82cd34f2": {
+		"en": "Tap <strong>+</strong> in the Agents tab to start a coding agent on the computer. Pick the <strong>Agent</strong> (Claude Code, or Codex once it's set up) and the <strong>Folder</strong>: it opens the shared folder, where you go into subfolders, filter them by name, and tap <strong>Use This Folder</strong>. Then:",
+		"text": "Nhấn <strong>+</strong> trong tab Agents để khởi chạy một coding agent trên máy tính. Chọn <strong>Agent</strong> (Claude Code, hoặc Codex sau khi đã thiết lập) và <strong>Folder</strong>: nó mở thư mục được chia sẻ, nơi bạn đi vào các thư mục con, lọc theo tên, và nhấn <strong>Use This Folder</strong>. Sau đó:"
+	},
+	"3b4ca675": {
+		"en": "Start and drive sessions",
+		"text": "Bắt đầu và điều khiển phiên"
+	},
+	"7362cc02": {
+		"en": "The prompt stays open on the computer too. Whichever side answers first wins: answer at the computer and the card (and its notification) goes away on the phone. A prompt nobody answers from the phone within an hour is left to the computer.",
+		"text": "Yêu cầu vẫn mở trên máy tính. Bên nào trả lời trước sẽ được chọn: trả lời trên máy tính thì thẻ (và thông báo của nó) trên điện thoại biến mất. Một yêu cầu không ai trả lời từ điện thoại trong vòng một giờ sẽ được để lại cho máy tính."
+	},
+	"e7a6f3a5": {
+		"en": "For a question, tap an answer, or <strong>Other…</strong> to type one.",
+		"text": "Với một câu hỏi, nhấn một câu trả lời, hoặc <strong>Other…</strong> để tự gõ."
+	},
+	"0d4cf62f": {
+		"en": "<strong>Allow</strong> or <strong>Deny</strong>. The <strong>⋯</strong> menu has the same \"always allow\" choices Claude Code offers on the computer, and <strong>Deny with Message</strong> to tell Claude what to do instead.",
+		"text": "<strong>Allow</strong> hoặc <strong>Deny</strong>. Menu <strong>⋯</strong> có các lựa chọn \"luôn cho phép\" giống như Claude Code cung cấp trên máy tính, và <strong>Deny with Message</strong> để nói cho Claude biết nên làm gì thay thế."
+	},
+	"3e5dc5dd": {
+		"en": "When Claude asks for permission to run something, or asks you a question, a card appears at the bottom of the session:",
+		"text": "Khi Claude xin quyền chạy thứ gì đó, hoặc hỏi bạn một câu, một thẻ sẽ hiện ở cuối phiên:"
+	},
+	"98868f49": {
+		"en": "Answer from the phone",
+		"text": "Trả lời từ điện thoại"
+	},
+	"0920842b": {
+		"en": "Sessions live in coderemote's memory: stopping <code>coderemote up</code> clears the list, and ended sessions disappear after a day.",
+		"text": "Các phiên nằm trong bộ nhớ của coderemote: dừng <code>coderemote up</code> sẽ xóa danh sách, và các phiên đã kết thúc biến mất sau một ngày."
+	},
+	"b0e1f73e": {
+		"en": "A session started in a terminal in the app has <strong>Open in Terminal</strong>, to type into it directly. Sessions you started on the computer show the same timeline.",
+		"text": "Một phiên bắt đầu trong terminal của app có <strong>Open in Terminal</strong>, để gõ trực tiếp vào đó. Các phiên bạn bắt đầu trên máy tính hiện cùng dòng thời gian."
+	},
+	"01aff6a5": {
+		"en": "Lists the sessions on the machine, grouped into <strong>Needs You</strong> (waiting for an answer), <strong>Working</strong>, <strong>Idle</strong> and <strong>Ended</strong>; the tab shows how many need you. Open one to see what it did: your prompts, Claude's replies, and each tool it ran. Commands show with their output, file edits as the lines they change (tap for the whole change or the file), and reads open the file.",
+		"text": "Liệt kê các phiên trên máy, nhóm thành <strong>Needs You</strong> (đang chờ câu trả lời), <strong>Working</strong>, <strong>Idle</strong> và <strong>Ended</strong>; tab cho biết có bao nhiêu phiên cần bạn. Mở một phiên để xem nó đã làm gì: các prompt của bạn, câu trả lời của Claude, và từng công cụ nó đã chạy. Lệnh hiện kèm output, chỉnh sửa tệp hiện dưới dạng các dòng thay đổi (nhấn để xem toàn bộ thay đổi hoặc tệp), và các lần đọc mở tệp."
+	},
+	"d8ad7669": {
+		"en": "The Agents tab",
+		"text": "Tab Agents"
+	},
+	"542238c3": {
+		"en": "One difference: Codex shows its own approval prompt only after the hook steps aside. So while you're using the computer (or have the machine open in the app), Codex asks in its terminal as usual and the app shows \"Answer on your computer\"; when you're away, the request waits for your phone, with a notification, for up to ten minutes before Codex asks in the terminal. Codex has no \"always allow\" from a hook.",
+		"text": "Một điểm khác: Codex chỉ hiện hộp thoại phê duyệt của chính nó sau khi hook nhường chỗ. Vì vậy khi bạn đang dùng máy tính (hoặc đang mở máy đó trong app), Codex hỏi trong terminal như thường và app hiện \"Answer on your computer\"; khi bạn đi vắng, yêu cầu chờ điện thoại của bạn, kèm thông báo, tối đa mười phút trước khi Codex hỏi trong terminal. Codex không có \"luôn cho phép\" từ hook."
+	},
+	"842d9caf": {
+		"en": "Then open Codex once, type <code>/hooks</code> and trust the Code Remote hooks: Codex runs a plugin's hooks only after you have reviewed them. Codex sessions show in the Agents tab labelled Codex.",
+		"text": "Sau đó mở Codex một lần, gõ <code>/hooks</code> và tin cậy các hook của Code Remote: Codex chỉ chạy hook của plugin sau khi bạn đã xem qua chúng. Các phiên Codex hiện trong tab Agents với nhãn Codex."
+	},
+	"468ee876": {
+		"en": "Codex 0.139 or later works too:",
+		"text": "Codex 0.139 trở lên cũng dùng được:"
+	},
+	"2c5d5b88": {
+		"en": "Codex",
+		"text": "Codex"
+	},
+	"40de0b75": {
+		"en": "The plugin does nothing when no <code>coderemote</code> is running, or when the session's folder isn't shared: Claude Code then works exactly as without it.",
+		"text": "Plugin không làm gì khi không có <code>coderemote</code> nào đang chạy, hoặc khi thư mục của phiên không được chia sẻ: lúc đó Claude Code hoạt động y như khi không có nó."
+	},
+	"d3793496": {
+		"en": "Once per computer, with Claude Code installed:",
+		"text": "Một lần cho mỗi máy tính, khi đã cài Claude Code:"
+	},
+	"a5041fda": {
+		"en": "Set up",
+		"text": "Thiết lập"
+	},
+	"1643bbf5": {
+		"en": "The Agents tab and notifications are part of Code Remote Pro, and need a recent coderemote on the computer: run <code>coderemote update</code> and start <code>coderemote up</code> again if the app says so.",
+		"text": "Tab Agents và thông báo là một phần của Code Remote Pro, và cần coderemote bản gần đây trên máy tính: chạy <code>coderemote update</code> và khởi động lại <code>coderemote up</code> nếu app yêu cầu."
+	},
+	"dc8e36b0": {
+		"en": "Follow every Claude Code session on your computer from your iPhone, answer its permission prompts and questions there, and get a notification when it needs you.",
+		"text": "Theo dõi mọi phiên Claude Code trên máy tính từ iPhone, trả lời các yêu cầu cấp quyền và câu hỏi ngay tại đó, và nhận thông báo khi nó cần bạn."
+	},
+	"9504046e": {
+		"en": "Coding agents",
+		"text": "Coding agents"
+	},
+	"7e439c35": {
+		"en": "On this page",
+		"text": "Trong trang này"
+	},
+	"c464fca4": {
+		"en": "Ports &amp; preview",
+		"text": "Cổng &amp; xem trước"
+	},
+	"45e5f3f7": {
+		"en": "Commands",
+		"text": "Lệnh"
+	},
+	"cdd7bb28": {
+		"en": "Setup",
+		"text": "Cài đặt"
+	},
+	"2473e96b": {
+		"en": "Introduction",
+		"text": "Giới thiệu"
+	},
+	"192ab978": {
+		"en": "Start, prompt and follow Claude Code and Codex sessions from your iPhone, answer their permission prompts and questions, and get notified when they need you.",
+		"text": "Khởi chạy, ra lệnh và theo dõi các phiên Claude Code và Codex từ iPhone, trả lời yêu cầu cấp quyền và câu hỏi của chúng, và được thông báo khi chúng cần bạn."
+	},
+	"f1a733d6": {
+		"en": "Coding agents · Code Remote Docs",
+		"text": "Coding agents · Tài liệu Code Remote"
+	},
+	"45555ebf": {
+		"en": "<span>Next</span>Ports &amp; preview",
+		"text": "<span>Tiếp</span>Cổng &amp; xem trước"
+	},
+	"b088482e": {
+		"en": "<span>Previous</span>Setup",
+		"text": "<span>Trước</span>Cài đặt"
+	},
+	"1fd2b5b5": {
+		"en": "More pages",
+		"text": "Các trang khác"
+	},
+	"1caafbb7": {
+		"en": "GitHub, in the browser",
+		"text": "GitHub, trong trình duyệt"
+	},
+	"da7a6873": {
+		"en": "off",
+		"text": "tắt"
+	},
+	"362f5f14": {
+		"en": "current folder",
+		"text": "thư mục hiện tại"
+	},
+	"808d7dca": {
+		"en": "Default",
+		"text": "Mặc định"
+	},
+	"e31d9722": {
+		"en": "Option",
+		"text": "Tùy chọn"
+	},
+	"6bf5da9c": {
+		"en": "Options",
+		"text": "Tùy chọn"
+	},
+	"c8ca637c": {
+		"en": "Prints every command and option. <code>coderemote</code> on its own, or <code>--help</code> anywhere on the line, does the same, so a typo never starts sharing a folder by accident.",
+		"text": "In ra mọi lệnh và tùy chọn. <code>coderemote</code> đứng một mình, hoặc <code>--help</code> ở bất kỳ đâu trong dòng lệnh, cũng làm vậy, nên gõ nhầm sẽ không bao giờ vô tình bắt đầu chia sẻ một thư mục."
+	},
+	"a8ba4939": {
+		"en": "Agents already running keep the old version until you restart them: <code>coderemote stop --all</code>, then <code>coderemote up</code> again.",
+		"text": "Các agent đang chạy vẫn giữ phiên bản cũ cho đến khi bạn khởi động lại chúng: <code>coderemote stop --all</code>, rồi <code>coderemote up</code> lần nữa."
+	},
+	"fc9ef7d3": {
+		"en": "Installs the latest coderemote the way you installed it: with npm (or pnpm, yarn, bun), with Homebrew, or into the Node.js the <a href=\"setup.html#install\">install script</a> downloaded. When there's a newer version, <code>up</code> says so under the pairing links; it asks npm at most once a day and never slows startup. Set <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> to turn that off.",
+		"text": "Cài coderemote bản mới nhất theo cách bạn đã cài: bằng npm (hoặc pnpm, yarn, bun), bằng Homebrew, hoặc vào Node.js mà <a href=\"setup.html#install\">script cài đặt</a> đã tải. Khi có bản mới hơn, <code>up</code> sẽ báo ngay dưới các liên kết ghép đôi; nó hỏi npm tối đa một lần mỗi ngày và không bao giờ làm chậm lúc khởi động. Đặt <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> để tắt."
+	},
+	"7c7c3f39": {
+		"en": "The phone must sign in with the same account, unless you run <code>up --allow-anonymous</code>.",
+		"text": "Điện thoại phải đăng nhập bằng cùng tài khoản, trừ khi bạn chạy <code>up --allow-anonymous</code>."
+	},
+	"25a0b635": {
+		"en": "Signs in to Microsoft Dev Tunnels. <code>up</code> does this by itself when needed, so you only run it to switch accounts or when there's no browser.",
+		"text": "Đăng nhập vào Microsoft Dev Tunnels. <code>up</code> tự làm việc này khi cần, nên bạn chỉ chạy nó để đổi tài khoản hoặc khi không có trình duyệt."
+	},
+	"1e8e3e16": {
+		"en": "You rarely need it by hand: when the account is full, <code>up</code> and previews first delete preview tunnels no agent serves. Only when that doesn't free a slot does <code>up</code> stop, list the account's tunnels and ask you to delete some.",
+		"text": "Bạn hiếm khi cần chạy tay: khi tài khoản đã đầy, <code>up</code> và phần xem trước sẽ xóa trước các preview tunnel không agent nào phục vụ. Chỉ khi điều đó không giải phóng được chỗ thì <code>up</code> mới dừng, liệt kê các tunnel của tài khoản và nhờ bạn xóa bớt."
+	},
+	"baad8898": {
+		"en": "Delete it anyway. Its URL is gone, so the phones paired with it have to pair again; on this computer the next <code>up</code> makes a new one.",
+		"text": "Cứ xóa. URL của nó sẽ mất, nên các điện thoại đã ghép đôi với nó phải ghép đôi lại; trên máy tính này, lần <code>up</code> tiếp theo sẽ tạo cái mới."
+	},
+	"cc1ca9cf": {
+		"en": "Deletes those tunnels. One that is online, or that this computer uses, is kept unless you add <code>--force</code>.",
+		"text": "Xóa các tunnel đó. Tunnel đang online, hoặc đang được máy tính này dùng, sẽ được giữ lại trừ khi bạn thêm <code>--force</code>."
+	},
+	"86d3c166": {
+		"en": "One line per tunnel on the account you're signed in with.",
+		"text": "Một dòng cho mỗi tunnel của tài khoản bạn đang đăng nhập."
+	},
+	"ca032b58": {
+		"en": "What it does",
+		"text": "Nó làm gì"
+	},
+	"c4898c72": {
+		"en": "Command or option",
+		"text": "Lệnh hoặc tùy chọn"
+	},
+	"cbca8b6c": {
+		"en": "Each line shows the tunnel's id, <em>online</em> when an agent serves it right now, what this computer uses it for, and its description, which names the computer that made it. The region suffix (<code>.usw2</code>) is optional when you give an id.",
+		"text": "Mỗi dòng hiện id của tunnel, <em>online</em> khi một agent đang phục vụ nó, máy tính này dùng nó để làm gì, và mô tả của nó, vốn nêu tên máy tính đã tạo ra nó. Hậu tố vùng (<code>.usw2</code>) là tùy chọn khi bạn đưa vào một id."
+	},
+	"13ac7293": {
+		"en": "Lists the tunnels on your Dev Tunnels account and deletes the ones nothing uses any more. An account may keep 10 tunnels. Each computer running coderemote uses one, plus one more for <a href=\"preview.html#how\">previews</a> while its agent runs, and old computers or reinstalls leave theirs behind. Needs coderemote 0.3.6 or later.",
+		"text": "Liệt kê các tunnel trên tài khoản Dev Tunnels của bạn và xóa những cái không còn ai dùng. Một tài khoản được giữ 10 tunnel. Mỗi máy tính chạy coderemote dùng một cái, cộng thêm một cái cho <a href=\"preview.html#how\">xem trước</a> trong lúc agent của nó chạy, và các máy cũ hay các lần cài lại để lại tunnel của chúng. Cần coderemote 0.3.6 trở lên."
+	},
+	"418f5cf8": {
+		"en": "Replaces the access token. Every paired phone and browser loses access at once. Use it if you lose your phone or a pairing link leaks.",
+		"text": "Thay access token. Mọi điện thoại và trình duyệt đã ghép đôi mất quyền truy cập cùng lúc. Dùng khi bạn mất điện thoại hoặc liên kết ghép đôi bị lộ."
+	},
+	"4e118103": {
+		"en": "Installs the Code Remote plugin into Claude Code or Codex, so its sessions show in the app's Agents tab and you can answer their prompts from the phone. Codex runs the plugin's hooks only after you trust them once: open Codex and type <code>/hooks</code>. <code>--remove</code> uninstalls it. See <a href=\"agents.html\">Coding agents</a>.",
+		"text": "Cài plugin Code Remote vào Claude Code hoặc Codex, để các phiên của chúng hiện trong tab Agents của app và bạn trả lời được yêu cầu của chúng từ điện thoại. Codex chỉ chạy hook của plugin sau khi bạn tin cậy chúng một lần: mở Codex và gõ <code>/hooks</code>. <code>--remove</code> gỡ nó. Xem <a href=\"agents.html\">Coding agents</a>."
+	},
+	"d0386b6d": {
+		"en": "Nothing is written to disk: the command reads the log the agent keeps in memory, the latest 200 requests per port.",
+		"text": "Không có gì được ghi xuống đĩa: lệnh đọc nhật ký mà agent giữ trong bộ nhớ, 200 request gần nhất cho mỗi cổng."
+	},
+	"277ed582": {
+		"en": "Secrets are masked unless you ask for them: <code>Authorization</code> headers (the scheme, such as <code>Bearer</code>, stays), cookie values (their names stay), headers named like a token, key or session, and fields such as <code>password</code> or <code>access_token</code> in query strings, JSON and form bodies. The output says how many values it hid. Add <code>--show-secrets</code> when the agent needs one, for example to reuse a session token in a test.",
+		"text": "Bí mật được che trừ khi bạn yêu cầu: header <code>Authorization</code> (giữ lại scheme, như <code>Bearer</code>), giá trị cookie (giữ lại tên), header có tên giống token, key hoặc session, và các trường như <code>password</code> hay <code>access_token</code> trong query string, JSON và form body. Output cho biết đã ẩn bao nhiêu giá trị. Thêm <code>--show-secrets</code> khi agent cần một giá trị, ví dụ để dùng lại session token trong một bài test."
+	},
+	"df0d22ad": {
+		"en": "Print the values that are masked by default (see below).",
+		"text": "In ra các giá trị bị che theo mặc định (xem bên dưới)."
+	},
+	"9911552d": {
+		"en": "Machine-readable output, for scripts.",
+		"text": "Output đọc được bằng máy, cho script."
+	},
+	"7ba447eb": {
+		"en": "Show the latest <code>N</code> (default 50).",
+		"text": "Hiện <code>N</code> request gần nhất (mặc định 50)."
+	},
+	"b975a3f4": {
+		"en": "Only errors and <code>4xx</code>/<code>5xx</code> responses.",
+		"text": "Chỉ lỗi và các phản hồi <code>4xx</code>/<code>5xx</code>."
+	},
+	"36e3bb1e": {
+		"en": "Only requests whose method or path contains <code>TEXT</code>.",
+		"text": "Chỉ những request có method hoặc đường dẫn chứa <code>TEXT</code>."
+	},
+	"a5159883": {
+		"en": "Forgets the recorded requests, like <strong>Clear</strong> in the app.",
+		"text": "Xóa các request đã ghi, giống <strong>Clear</strong> trong app."
+	},
+	"5564a389": {
+		"en": "Headers and bodies of one request. JSON is indented; bodies over 64 KB aren't kept.",
+		"text": "Header và body của một request. JSON được thụt lề; body trên 64 KB không được giữ."
+	},
+	"c687ec31": {
+		"en": "One line per request, oldest first: id, status, method and path, duration, size and time.",
+		"text": "Một dòng cho mỗi request, cũ nhất trước: id, status, method và đường dẫn, thời lượng, kích thước và thời gian."
+	},
+	"2c76fa74": {
+		"en": "Run it in the shared folder (or below it) so it finds that folder's agent; with a single agent running, anywhere works. Without a port it reads every port being previewed now. A preview you stopped keeps its log: name its port to read it.",
+		"text": "Chạy trong thư mục được chia sẻ (hoặc bên dưới nó) để tìm đúng agent của thư mục đó; nếu chỉ có một agent đang chạy thì chạy ở đâu cũng được. Không có cổng thì nó đọc mọi cổng đang được xem trước. Một bản xem trước bạn đã dừng vẫn giữ nhật ký: nêu cổng của nó để đọc."
+	},
+	"55dfac3d": {
+		"en": "Prints the requests that reached a port you <a href=\"preview.html#requests\">preview</a> from the app, the same log the app shows. It's made for a coding agent in a terminal, such as Claude Code or Codex: tell it to run <code>coderemote requests</code> and it can see what your page or a webhook actually sent, and what your server answered. Needs coderemote 0.3.0 or later.",
+		"text": "In ra các request đã đến một cổng bạn <a href=\"preview.html#requests\">xem trước</a> từ app, cùng nhật ký mà app hiển thị. Nó được làm cho coding agent trong terminal, như Claude Code hay Codex: bảo nó chạy <code>coderemote requests</code> và nó thấy được trang của bạn hoặc một webhook thực sự đã gửi gì, và server của bạn đã trả lời gì. Cần coderemote 0.3.0 trở lên."
+	},
+	"85e6e7ae": {
+		"en": "Starts the agent on <code>127.0.0.1</code> only, with no tunnel and no sign-in, and prints the local URL and token. For local testing and development; your phone can't reach it.",
+		"text": "Khởi động agent chỉ trên <code>127.0.0.1</code>, không tunnel, không đăng nhập, và in ra URL cục bộ cùng token. Dành cho kiểm thử và phát triển cục bộ; điện thoại của bạn không truy cập được."
+	},
+	"39cece6a": {
+		"en": "Stops the agent sharing the current folder, ending its tunnel and terminal sessions. Handy when <code>up</code> runs in a window you can't reach.",
+		"text": "Dừng agent đang chia sẻ thư mục hiện tại, kết thúc tunnel và các phiên terminal của nó. Tiện khi <code>up</code> chạy trong một cửa sổ bạn không với tới được."
+	},
+	"dbb9303f": {
+		"en": "The agent itself keeps running; use <code>stop</code> for that.",
+		"text": "Bản thân agent vẫn chạy; dùng <code>stop</code> cho việc đó."
+	},
+	"355cf36b": {
+		"en": "Ends terminal sessions. The first few characters of an id from <code>status</code> are enough.",
+		"text": "Kết thúc các phiên terminal. Vài ký tự đầu của một id từ <code>status</code> là đủ."
+	},
+	"a06b3dc0": {
+		"en": "Each session shows its id, title, process id, age and whether a phone is attached right now. A <em>detached</em> session is still running; it waits for the app to reattach.",
+		"text": "Mỗi phiên hiện id, tiêu đề, process id, tuổi và việc có điện thoại nào đang kết nối vào lúc này hay không. Một phiên <em>detached</em> vẫn đang chạy; nó chờ app kết nối lại."
+	},
+	"386ee888": {
+		"en": "Lists the agents running on this computer and the terminal sessions in each. Alias <code>ps</code>.",
+		"text": "Liệt kê các agent đang chạy trên máy tính này và các phiên terminal trong mỗi agent. Bí danh <code>ps</code>."
+	},
+	"07239d82": {
+		"en": "<code>--web</code> uses VS Code's own tunnel, not Code Remote's. It signs in with its own GitHub account and gives the browser the whole machine, not just the shared folder. It needs VS Code's <code>code</code> command on your <code>PATH</code>.",
+		"text": "<code>--web</code> dùng tunnel riêng của VS Code, không phải của Code Remote. Nó đăng nhập bằng tài khoản GitHub riêng và cho trình duyệt truy cập toàn bộ máy, không chỉ thư mục được chia sẻ. Nó cần lệnh <code>code</code> của VS Code trong <code>PATH</code> của bạn."
+	},
+	"ab58cc6f": {
+		"en": "Also run VS Code's <code>code tunnel</code> and print a vscode.dev link that opens the folder in the full editor in a browser.",
+		"text": "Đồng thời chạy <code>code tunnel</code> của VS Code và in ra liên kết vscode.dev mở thư mục trong trình soạn thảo đầy đủ trên trình duyệt."
+	},
+	"1b3dbff4": {
+		"en": "Skip the account sign-in on the phone: the pairing token alone grants access. Alias <code>--no-auth</code>.",
+		"text": "Bỏ qua bước đăng nhập tài khoản trên điện thoại: chỉ riêng pairing token là đủ để truy cập. Bí danh <code>--no-auth</code>."
+	},
+	"692a452c": {
+		"en": "Listen on local port <code>N</code> (default <code>31580</code>). Change it when another program already holds that port.",
+		"text": "Lắng nghe trên cổng cục bộ <code>N</code> (mặc định <code>31580</code>). Đổi khi một chương trình khác đang giữ cổng đó."
+	},
+	"f05419d2": {
+		"en": "Share <code>DIR</code> instead of the current folder.",
+		"text": "Chia sẻ <code>DIR</code> thay vì thư mục hiện tại."
+	},
+	"7e6f4261": {
+		"en": "It starts a small agent on <code>127.0.0.1</code>, signs you in to Dev Tunnels if needed, connects out to the relay and prints three things: the folder being shared, who can get in, and the links to pair with. It keeps running until you press <kbd>Ctrl</kbd>+<kbd>C</kbd> or close the terminal.",
+		"text": "Nó khởi động một agent nhỏ trên <code>127.0.0.1</code>, đăng nhập Dev Tunnels nếu cần, kết nối ra relay và in ra ba thứ: thư mục đang chia sẻ, ai vào được, và các liên kết để ghép đôi. Nó chạy cho đến khi bạn nhấn <kbd>Ctrl</kbd>+<kbd>C</kbd> hoặc đóng terminal."
+	},
+	"fc1e0140": {
+		"en": "Shares the current folder through a private Microsoft Dev Tunnel and prints the pairing QR code. This is the command you use day to day.",
+		"text": "Chia sẻ thư mục hiện tại qua một Microsoft Dev Tunnel riêng và in ra mã QR ghép đôi. Đây là lệnh bạn dùng hằng ngày."
+	},
+	"e5c5398f": {
+		"en": "Everything <code>coderemote</code> can do, one command at a time.",
+		"text": "Mọi thứ <code>coderemote</code> làm được, từng lệnh một."
+	},
+	"513f8de9": {
+		"en": "options",
+		"text": "options"
+	},
+	"92005ecf": {
+		"en": "help",
+		"text": "help"
+	},
+	"0a25ba59": {
+		"en": "update",
+		"text": "update"
+	},
+	"2736fab2": {
+		"en": "login",
+		"text": "login"
+	},
+	"033b628b": {
+		"en": "tunnels",
+		"text": "tunnels"
+	},
+	"56a6812c": {
+		"en": "rotate-token",
+		"text": "rotate-token"
+	},
+	"80437a44": {
+		"en": "setup",
+		"text": "setup"
+	},
+	"54faec36": {
+		"en": "requests",
+		"text": "requests"
+	},
+	"b88fb872": {
+		"en": "serve",
+		"text": "serve"
+	},
+	"1b480158": {
+		"en": "stop",
+		"text": "stop"
+	},
+	"c80f5bc1": {
+		"en": "kill",
+		"text": "kill"
+	},
+	"48a3661d": {
+		"en": "status",
+		"text": "status"
+	},
+	"7c0a25c0": {
+		"en": "up",
+		"text": "up"
+	},
+	"8601c949": {
+		"en": "Every coderemote command and option: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update and help.",
+		"text": "Mọi lệnh và tùy chọn của coderemote: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update và help."
+	},
+	"f9b9cfdb": {
+		"en": "Commands · Code Remote Docs",
+		"text": "Lệnh · Tài liệu Code Remote"
+	},
+	"7bde67fd": {
+		"en": "<span>Previous</span>Ports &amp; preview",
+		"text": "<span>Trước</span>Cổng &amp; xem trước"
+	},
+	"81f54719": {
+		"en": "Previous page",
+		"text": "Trang trước"
+	},
+	"e08ff3ea": {
+		"en": "Still stuck? See <a href=\"../support.html\">Support</a>.",
+		"text": "Vẫn bị kẹt? Xem <a href=\"../support.html\">Hỗ trợ</a>."
+	},
+	"4371058b": {
+		"en": "The terminal support compiles on install and needs <code>python3</code>, <code>make</code> and a C++ compiler (<code>build-essential</code> on Debian and Ubuntu). Signing in needs <code>libsecret-1-0</code>.",
+		"text": "Hỗ trợ terminal được biên dịch khi cài và cần <code>python3</code>, <code>make</code> và một trình biên dịch C++ (<code>build-essential</code> trên Debian và Ubuntu). Đăng nhập cần <code>libsecret-1-0</code>."
+	},
+	"f322be90": {
+		"en": "Installing on Linux fails",
+		"text": "Cài đặt trên Linux bị lỗi"
+	},
+	"4edca056": {
+		"en": "The dev server behind it stopped or restarted on another port. Start it again and reload; the Ports tab shows what's listening now.",
+		"text": "Dev server phía sau đã dừng hoặc khởi động lại ở cổng khác. Hãy khởi động lại và tải lại; tab Cổng cho biết hiện đang có gì lắng nghe."
+	},
+	"cea98361": {
+		"en": "A preview says \"nothing is listening on port …\"",
+		"text": "Bản xem trước báo \"nothing is listening on port …\""
+	},
+	"cf5f896c": {
+		"en": "The computer runs a coderemote from before ports and previews. Run <code>coderemote update</code>, then restart <code>coderemote up</code>.",
+		"text": "Máy tính đang chạy một bản coderemote cũ hơn tính năng cổng và xem trước. Chạy <code>coderemote update</code>, rồi khởi động lại <code>coderemote up</code>."
+	},
+	"7c96651e": {
+		"en": "The Ports tab says \"Update coderemote\"",
+		"text": "Tab Cổng báo \"Update coderemote\""
+	},
+	"2575bf97": {
+		"en": "The sign-in expired",
+		"text": "Phiên đăng nhập đã hết hạn"
+	},
+	"662b64e7": {
+		"en": "The account is full and none of its tunnels was an idle preview tunnel that could go. The message lists them: delete the ones nothing uses any more, such as an old computer's, with <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete &lt;id&gt;</code></a>, then run <code>coderemote up</code> again.",
+		"text": "Tài khoản đã đầy và không có tunnel nào là preview tunnel nhàn rỗi có thể xóa. Thông báo liệt kê chúng: hãy xóa những cái không còn dùng, chẳng hạn của một máy tính cũ, bằng <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete &lt;id&gt;</code></a>, rồi chạy <code>coderemote up</code> lần nữa."
+	},
+	"cec63cac": {
+		"en": "\"Your Dev Tunnels account already has 10 tunnels\"",
+		"text": "\"Your Dev Tunnels account already has 10 tunnels\""
+	},
+	"d131a0d9": {
+		"en": "Check that <code>coderemote up</code> is still running and the computer is awake and online. Make sure the phone signed in with the same account the computer uses (shown on the <code>Access:</code> line).",
+		"text": "Kiểm tra <code>coderemote up</code> vẫn đang chạy, và máy tính đang bật, có mạng. Đảm bảo điện thoại đã đăng nhập bằng cùng tài khoản máy tính đang dùng (hiện ở dòng <code>Access:</code>)."
+	},
+	"1172f0dd": {
+		"en": "The phone can't connect",
+		"text": "Điện thoại không kết nối được"
+	},
+	"0f2c92e8": {
+		"en": "Stop it, run <code>coderemote stop --all</code>, or pick another port with <code>--port</code>.",
+		"text": "Hãy dừng nó, chạy <code>coderemote stop --all</code>, hoặc chọn cổng khác bằng <code>--port</code>."
+	},
+	"82815f9c": {
+		"en": "Another agent or program holds the port. <code>coderemote status</code> shows agents; for anything else, see what holds it:",
+		"text": "Một agent hoặc chương trình khác đang giữ cổng. <code>coderemote status</code> cho thấy các agent; với thứ khác, hãy xem cái gì đang giữ nó:"
+	},
+	"a7c0fcea": {
+		"en": "\"Port 31580 is already in use\"",
+		"text": "\"Port 31580 is already in use\""
+	},
+	"285ec850": {
+		"en": "Troubleshooting",
+		"text": "Khắc phục sự cố"
+	},
+	"554c7d33": {
+		"en": "The app only shows them: tunnels belong to the computers' owner, so you list and delete them on a computer signed in to the account, with <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a>. Touch and hold a machine in Connections to copy its tunnel ID for that. Removing a machine from the app's list only forgets it on that iPhone.",
+		"text": "App chỉ hiển thị chúng: tunnel thuộc về chủ sở hữu các máy tính, nên bạn liệt kê và xóa chúng trên một máy tính đã đăng nhập vào tài khoản, bằng <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a>. Chạm và giữ một máy trong Connections để sao chép tunnel ID của nó cho việc này. Xóa một máy khỏi danh sách trong app chỉ làm iPhone đó quên nó."
+	},
+	"9a830b19": {
+		"en": "<strong>Settings › Connections</strong> lists the accounts your paired computers connect through. Each shows every computer running coderemote on that account, online or not, whether this iPhone is paired with it, and how many of the account's 10 tunnels are in use. To add a computer, run <code>coderemote up</code> there and scan its QR code.",
+		"text": "<strong>Settings › Connections</strong> liệt kê các tài khoản mà các máy tính đã ghép đôi của bạn kết nối qua. Mỗi tài khoản hiện mọi máy tính chạy coderemote trên tài khoản đó, online hay không, iPhone này đã ghép đôi với nó chưa, và đã dùng bao nhiêu trong 10 tunnel của tài khoản. Để thêm một máy tính, chạy <code>coderemote up</code> ở đó và quét mã QR của nó."
+	},
+	"714c8f02": {
+		"en": "<strong>Machine Info</strong> (a machine's menu) shows its tunnel: the address, the account, who can get in, when it expires (pushed back every time <code>coderemote up</code> starts), the clients connected now, traffic so far, and how many ports are being previewed.",
+		"text": "<strong>Machine Info</strong> (menu của một máy) hiện tunnel của nó: địa chỉ, tài khoản, ai vào được, khi nào hết hạn (được lùi lại mỗi lần <code>coderemote up</code> khởi động), các client đang kết nối, lưu lượng đến giờ, và bao nhiêu cổng đang được xem trước."
+	},
+	"31aa22ec": {
+		"en": "In the app",
+		"text": "Trong app"
+	},
+	"b226cdcd": {
+		"en": "The tunnel carries the label <code>coderemote</code>, which is how the app finds your other machines. Previews use a second tunnel, labelled <code>coderemote-preview</code>, created on the first preview and deleted when the agent stops (<a href=\"preview.html#how\">how it works</a>). <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> lists both, with your other computers' tunnels.",
+		"text": "Tunnel mang nhãn <code>coderemote</code>, nhờ đó app tìm thấy các máy khác của bạn. Phần xem trước dùng tunnel thứ hai, nhãn <code>coderemote-preview</code>, được tạo ở lần xem trước đầu tiên và xóa khi agent dừng (<a href=\"preview.html#how\">cách hoạt động</a>). <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> liệt kê cả hai, cùng tunnel của các máy tính khác của bạn."
+	},
+	"00e7e3da": {
+		"en": "Each computer has one tunnel. Its URL stays the same between runs, and <code>up</code> renews it each time so it doesn't expire. Share one folder at a time; to reach several projects, share their parent folder and the Git tab finds every repository inside it.",
+		"text": "Mỗi máy tính có một tunnel. URL của nó giữ nguyên giữa các lần chạy, và <code>up</code> gia hạn nó mỗi lần để nó không hết hạn. Chia sẻ một thư mục mỗi lần; để truy cập nhiều dự án, hãy chia sẻ thư mục cha và tab Git sẽ tìm mọi repository bên trong."
+	},
+	"193a377c": {
+		"en": "The tunnel",
+		"text": "Tunnel"
+	},
+	"8c3bcb36": {
+		"en": "Set to <code>1</code> to leave your <code>PATH</code> and shell startup files alone; the script says which folder to add.",
+		"text": "Đặt thành <code>1</code> để không động đến <code>PATH</code> và các tệp khởi động shell của bạn; script cho biết cần thêm thư mục nào."
+	},
+	"f0b95a76": {
+		"en": "Set to <code>1</code> to download Node.js for coderemote even when yours is new enough.",
+		"text": "Đặt thành <code>1</code> để tải Node.js cho coderemote ngay cả khi bản của bạn đã đủ mới."
+	},
+	"57d518ef": {
+		"en": "The version or npm dist-tag to install, such as <code>0.3.7</code> or <code>next</code>. Default <code>latest</code>.",
+		"text": "Phiên bản hoặc npm dist-tag cần cài, như <code>0.3.7</code> hoặc <code>next</code>. Mặc định <code>latest</code>."
+	},
+	"19de69cb": {
+		"en": "Variable",
+		"text": "Biến"
+	},
+	"8b35efcc": {
+		"en": "The install scripts read a few of their own:",
+		"text": "Các script cài đặt đọc thêm một vài biến riêng:"
+	},
+	"bc499540": {
+		"en": "Set to <code>1</code> and <code>up</code> no longer asks npm whether there's a newer version.",
+		"text": "Đặt thành <code>1</code> và <code>up</code> sẽ không hỏi npm xem có bản mới hơn không nữa."
+	},
+	"d1846b72": {
+		"en": "Path to VS Code's <code>code</code> command, for <code>up --web</code>. Otherwise <code>code</code> on your <code>PATH</code>.",
+		"text": "Đường dẫn đến lệnh <code>code</code> của VS Code, cho <code>up --web</code>. Nếu không, dùng <code>code</code> trong <code>PATH</code> của bạn."
+	},
+	"09ba0782": {
+		"en": "Path to a <code>devtunnel</code> binary to use. Otherwise one on your <code>PATH</code> is used, then the downloaded copy.",
+		"text": "Đường dẫn đến một tệp nhị phân <code>devtunnel</code> để dùng. Nếu không, dùng cái có trong <code>PATH</code>, rồi đến bản đã tải về."
+	},
+	"1173b2e1": {
+		"en": "Environment variables",
+		"text": "Biến môi trường"
+	},
+	"79483f46": {
+		"en": "Deleting the folder (keep <code>runtime/</code> if the install script made it) resets Code Remote: the next <code>up</code> creates a new token and tunnel, and every device has to pair again.",
+		"text": "Xóa thư mục này (giữ lại <code>runtime/</code> nếu script cài đặt đã tạo nó) sẽ đặt lại Code Remote: lần <code>up</code> tiếp theo tạo token và tunnel mới, và mọi thiết bị phải ghép đôi lại."
+	},
+	"4cb2af2f": {
+		"en": "Only after the <a href=\"setup.html#install\">install script</a> downloaded Node.js: that Node.js with coderemote installed into it, and in <code>runtime/bin</code> the <code>coderemote</code> and <code>node</code> commands it put on your <code>PATH</code>.",
+		"text": "Chỉ sau khi <a href=\"setup.html#install\">script cài đặt</a> đã tải Node.js: Node.js đó cùng coderemote được cài vào trong nó, và trong <code>runtime/bin</code> là các lệnh <code>coderemote</code> và <code>node</code> mà nó đã đưa vào <code>PATH</code> của bạn."
+	},
+	"cf812344": {
+		"en": "The latest version on npm and when <code>up</code> last asked, at most once a day.",
+		"text": "Phiên bản mới nhất trên npm và lần gần nhất <code>up</code> đã hỏi, tối đa một lần mỗi ngày."
+	},
+	"fd9d09bc": {
+		"en": "One entry per running agent, so <code>status</code>, <code>kill</code> and <code>stop</code> can find it.",
+		"text": "Một mục cho mỗi agent đang chạy, để <code>status</code>, <code>kill</code> và <code>stop</code> tìm được nó."
+	},
+	"955d165d": {
+		"en": "The Dev Tunnels CLI downloaded on first run.",
+		"text": "Dev Tunnels CLI được tải ở lần chạy đầu tiên."
+	},
+	"220a84b2": {
+		"en": "The access token, the id of this computer's tunnel and of its preview tunnel. Keeping it keeps every pairing.",
+		"text": "Access token, id tunnel của máy tính này và của preview tunnel của nó. Giữ nó là giữ mọi ghép đôi."
+	},
+	"00ba094e": {
+		"en": "What it holds",
+		"text": "Nó chứa gì"
+	},
+	"519e3913": {
+		"en": "Path",
+		"text": "Đường dẫn"
+	},
+	"1882bd88": {
+		"en": "Everything lives in <code>~/.coderemote</code> (<code>%USERPROFILE%\\.coderemote</code> on Windows), readable only by you:",
+		"text": "Mọi thứ nằm trong <code>~/.coderemote</code> (<code>%USERPROFILE%\\.coderemote</code> trên Windows), chỉ mình bạn đọc được:"
+	},
+	"3bf3ee51": {
+		"en": "Files on your computer",
+		"text": "Tệp trên máy tính của bạn"
+	},
+	"78ed9e8d": {
+		"en": "A <a href=\"preview.html#share\">public link</a> to a preview is the one exception: until it ends, anyone with it can open that one dev server, with neither check. It never reaches the agent, its files or its terminal.",
+		"text": "<a href=\"preview.html#share\">Liên kết công khai</a> tới một bản xem trước là ngoại lệ duy nhất: cho đến khi nó hết hạn, ai có nó cũng mở được dev server đó, không qua kiểm tra nào. Nó không bao giờ chạm tới agent, tệp hay terminal của bạn."
+	},
+	"79a66531": {
+		"en": "With <code>coderemote up --allow-anonymous</code> the first check is skipped and the token alone grants access. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.",
+		"text": "Với <code>coderemote up --allow-anonymous</code>, bước kiểm tra đầu tiên bị bỏ qua và chỉ token là đủ để truy cập. Dù thế nào, tệp và git vẫn nằm trong thư mục được chia sẻ; terminal là một shell thật với quyền của người dùng bạn."
+	},
+	"5d52ec6e": {
+		"en": "<strong>The pairing token.</strong> The agent then checks the random token from the QR code, kept in the iPhone Keychain.",
+		"text": "<strong>Pairing token.</strong> Sau đó agent kiểm tra token ngẫu nhiên từ mã QR, được lưu trong Keychain của iPhone."
+	},
+	"f29e0373": {
+		"en": "<strong>Your account.</strong> The tunnel is private: the Dev Tunnels relay lets through only the GitHub or Microsoft account that ran <code>coderemote up</code>.",
+		"text": "<strong>Tài khoản của bạn.</strong> Tunnel là riêng tư: relay Dev Tunnels chỉ cho qua tài khoản GitHub hoặc Microsoft đã chạy <code>coderemote up</code>."
+	},
+	"cbeac719": {
+		"en": "By default a request has to pass two checks:",
+		"text": "Theo mặc định một request phải qua hai bước kiểm tra:"
+	},
+	"bb3169ff": {
+		"en": "Who can get in",
+		"text": "Ai vào được"
+	},
+	"efa66a8a": {
+		"en": "There's nothing to configure to get started. This page is for when you want to know what's going on.",
+		"text": "Không có gì phải cấu hình để bắt đầu. Trang này dành cho lúc bạn muốn biết chuyện gì đang diễn ra."
+	},
+	"c4378892": {
+		"en": "Where coderemote keeps its settings, the environment variables it reads, access modes and fixes for common problems.",
+		"text": "Nơi coderemote lưu cài đặt, các biến môi trường nó đọc, các chế độ truy cập và cách khắc phục sự cố thường gặp."
+	},
+	"9a5d15f2": {
+		"en": "Configuration · Code Remote Docs",
+		"text": "Cấu hình · Tài liệu Code Remote"
+	},
+	"ceb62440": {
+		"en": "<span>Next</span>Setup",
+		"text": "<span>Tiếp</span>Cài đặt"
+	},
+	"4bfc194b": {
+		"en": "Next page",
+		"text": "Trang tiếp"
+	},
+	"e7b8c752": {
+		"en": "<strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, and every request also needs the pairing token, kept in the iPhone Keychain.",
+		"text": "<strong>Ghép đôi điện thoại.</strong> Quét mã QR. Chỉ tài khoản GitHub hoặc Microsoft của bạn đi qua được relay, và mỗi request còn cần pairing token, lưu trong Keychain của iPhone."
+	},
+	"1a20a44e": {
+		"en": "<strong>It connects outward.</strong> The agent publishes itself through a private Microsoft Dev Tunnel. Nothing on your network has to be opened, and it works behind NAT, firewalls and hotel Wi-Fi.",
+		"text": "<strong>Nó kết nối ra ngoài.</strong> Agent tự công bố qua một Microsoft Dev Tunnel riêng. Không phải mở gì trên mạng của bạn, và nó chạy được sau NAT, tường lửa và Wi-Fi khách sạn."
+	},
+	"d21dd2b4": {
+		"en": "<strong>Start the agent.</strong> Run <code>coderemote up</code> in a project folder (or <code>npx coderemote up</code> without installing). A small agent starts on your computer, listening on 127.0.0.1 only.",
+		"text": "<strong>Khởi động agent.</strong> Chạy <code>coderemote up</code> trong thư mục dự án (hoặc <code>npx coderemote up</code> nếu không cài). Một agent nhỏ khởi động trên máy tính, chỉ lắng nghe trên 127.0.0.1."
+	},
+	"306f117f": {
+		"en": "Code Remote has two parts: the <code>coderemote</code> command-line tool on your computer, and the iPhone app. You don't need SSH, open ports, a VPN or a desktop app. Not sure it fits? <a href=\"../compare.html\">See how it compares</a> with Tailscale, Termius and Orca.",
+		"text": "Code Remote có hai phần: công cụ dòng lệnh <code>coderemote</code> trên máy tính và app iPhone. Bạn không cần SSH, cổng mở, VPN hay app desktop. Chưa chắc có hợp không? <a href=\"../compare.html\">Xem so sánh</a> với Tailscale, Termius và Orca."
+	},
+	"77a17bf3": {
+		"en": "Your computer, from your iPhone: files, git, a real terminal and your dev servers. One command on the computer, one scan on the phone.",
+		"text": "Máy tính của bạn, từ iPhone: tệp, git, terminal thật và các dev server. Một lệnh trên máy tính, một lần quét trên điện thoại."
+	},
+	"33c5be6b": {
+		"en": "What Code Remote is and how it works: a small agent on your computer, a private tunnel, and an iPhone app paired by QR code.",
+		"text": "Code Remote là gì và hoạt động ra sao: một agent nhỏ trên máy tính, một đường hầm riêng, và app iPhone ghép đôi bằng mã QR."
+	},
+	"b9179809": {
+		"en": "Introduction · Code Remote Docs",
+		"text": "Giới thiệu · Tài liệu Code Remote"
+	},
+	"eb8e2839": {
+		"en": "<span>Next</span>Configuration",
+		"text": "<span>Tiếp</span>Cấu hình"
+	},
+	"4c899564": {
+		"en": "<span>Previous</span>Commands",
+		"text": "<span>Trước</span>Lệnh"
+	},
+	"c46776ea": {
+		"en": "The agent deletes the preview tunnel when it stops; if it can't (the computer went offline, say), the next <code>coderemote up</code> does. Shared links never outlive the agent that made them, and old previews don't use up your account's 10 tunnels. When the account is full anyway, a new preview first deletes preview tunnels no agent serves; if that isn't enough, the app says so, and <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> on the computer shows what to delete.",
+		"text": "Agent xóa preview tunnel khi nó dừng; nếu không làm được (chẳng hạn máy tính mất mạng), lần <code>coderemote up</code> tiếp theo sẽ xóa. Liên kết chia sẻ không bao giờ sống lâu hơn agent đã tạo ra chúng, và các bản xem trước cũ không chiếm 10 tunnel của tài khoản. Khi tài khoản vẫn đầy, một bản xem trước mới sẽ xóa trước các preview tunnel không agent nào phục vụ; nếu chưa đủ, app sẽ báo, và <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> trên máy tính cho thấy cần xóa gì."
+	},
+	"2a7f005a": {
+		"en": "Each previewed port goes through a small proxy in the agent, which is what records the requests. That's why a preview's address carries the proxy's port number rather than your server's (<code>…-49213.usw2.devtunnels.ms</code> for a server on 5173): the app always shows your server's own port.",
+		"text": "Mỗi cổng được xem trước đi qua một proxy nhỏ trong agent, chính là thứ ghi lại các request. Đó là lý do địa chỉ xem trước mang số cổng của proxy chứ không phải của server bạn (<code>…-49213.usw2.devtunnels.ms</code> cho server ở 5173): app luôn hiện cổng của chính server bạn."
+	},
+	"67904a7e": {
+		"en": "Previews don't go through the agent's own tunnel. The first time you preview a port, the agent creates a second private tunnel, labelled <code>coderemote-preview</code>, and forwards your ports there. Adding or removing a port restarts that tunnel's connection, so other open previews blink for a moment, while your terminals, files and git never notice.",
+		"text": "Phần xem trước không đi qua tunnel của chính agent. Lần đầu bạn xem trước một cổng, agent tạo một tunnel riêng thứ hai, nhãn <code>coderemote-preview</code>, và chuyển tiếp các cổng của bạn vào đó. Thêm hay bớt một cổng sẽ khởi động lại kết nối của tunnel đó, nên các bản xem trước đang mở khác nháy một lúc, trong khi terminal, tệp và git của bạn không hề hay biết."
+	},
+	"36b337c8": {
+		"en": "The same log can be read in a terminal on the computer with <a href=\"commands.html#requests\"><code>coderemote requests</code></a>, so a coding agent like Claude Code can debug with it. Tokens and cookies are masked there unless it asks for them.",
+		"text": "Cùng nhật ký này có thể đọc trong terminal trên máy tính bằng <a href=\"commands.html#requests\"><code>coderemote requests</code></a>, để một coding agent như Claude Code có thể dùng nó khi gỡ lỗi. Token và cookie được che ở đó trừ khi nó yêu cầu."
+	},
+	"e9b69b36": {
+		"en": "The bar under the list narrows it down. The filter button picks a kind (<strong>All</strong>, <strong>Fetch/XHR</strong>, <strong>CSS</strong>, <strong>Image</strong> or <strong>JS</strong>, judged from the response type and the file extension), and the search field matches the method and path.",
+		"text": "Thanh dưới danh sách giúp thu hẹp. Nút lọc chọn một loại (<strong>All</strong>, <strong>Fetch/XHR</strong>, <strong>CSS</strong>, <strong>Image</strong> hoặc <strong>JS</strong>, xác định từ kiểu phản hồi và phần mở rộng tệp), và ô tìm kiếm khớp với method và đường dẫn."
+	},
+	"f7e2d83e": {
+		"en": "They stay on your computer, in memory: <strong>Clear</strong> forgets them, and so does stopping <code>coderemote up</code>.",
+		"text": "Chúng nằm trên máy tính của bạn, trong bộ nhớ: <strong>Clear</strong> xóa chúng, và dừng <code>coderemote up</code> cũng vậy."
+	},
+	"ca281033": {
+		"en": "The latest 200 requests per port are kept, with bodies up to 64 KB. WebSockets (hot reload) pass through untouched; only their handshake is listed.",
+		"text": "200 request gần nhất cho mỗi cổng được giữ, với body tới 64 KB. WebSocket (hot reload) đi qua nguyên vẹn; chỉ phần handshake được liệt kê."
+	},
+	"705932c3": {
+		"en": "It works for anything that comes through the preview link: the page itself, its API calls, a webhook you pointed at a shared link.",
+		"text": "Nó hoạt động với mọi thứ đi qua liên kết xem trước: chính trang đó, các lệnh gọi API của nó, một webhook bạn trỏ vào liên kết được chia sẻ."
+	},
+	"3746b592": {
+		"en": "The list icon in a preview shows the requests that reached that port, newest first and live: method, path, status, time and size, colored by status. Tap one for its headers and bodies; JSON is indented and compressed bodies are unpacked.",
+		"text": "Biểu tượng danh sách trong một bản xem trước hiện các request đã đến cổng đó, mới nhất trước và trực tiếp: method, đường dẫn, status, thời gian và kích thước, tô màu theo status. Nhấn một request để xem header và body; JSON được thụt lề và body nén được giải nén."
+	},
+	"a15edcb8": {
+		"en": "Remember that it's a development server: share it with people you'd show your screen to, and make it private when you're done.",
+		"text": "Hãy nhớ đây là một development server: chỉ chia sẻ với những người bạn sẵn lòng cho xem màn hình, và chuyển về riêng tư khi xong việc."
+	},
+	"f2cbdfc1": {
+		"en": "The link also stops working when you stop the preview or the agent.",
+		"text": "Liên kết cũng ngừng hoạt động khi bạn dừng bản xem trước hoặc agent."
+	},
+	"043502c9": {
+		"en": "A banner shows until when the link is public, with <strong>Make Private</strong> to end it now. The Ports tab marks the port with a globe.",
+		"text": "Một banner hiện đến khi nào liên kết còn công khai, với <strong>Make Private</strong> để kết thúc ngay. Tab Cổng đánh dấu cổng bằng biểu tượng quả địa cầu."
+	},
+	"059dd52b": {
+		"en": "Only that port is shared. The agent, its files and its terminal stay private, on a tunnel of their own.",
+		"text": "Chỉ cổng đó được chia sẻ. Agent, tệp và terminal của nó vẫn riêng tư, trên một tunnel riêng."
+	},
+	"5b3a9734": {
+		"en": "To show your work to someone without an account, open the preview's menu and choose <strong>Share Publicly</strong>, for one hour, eight hours or a day. Until then, anyone with the link can open that port without signing in.",
+		"text": "Để cho ai đó chưa có tài khoản xem công việc của bạn, mở menu của bản xem trước và chọn <strong>Share Publicly</strong>, trong một giờ, tám giờ hoặc một ngày. Trong thời gian đó, ai có liên kết cũng mở được cổng này mà không cần đăng nhập."
+	},
+	"97dcf1c2": {
+		"en": "Share a public link",
+		"text": "Chia sẻ liên kết công khai"
+	},
+	"ebc565f3": {
+		"en": "Previewed ports are marked in the Ports tab.",
+		"text": "Các cổng đang xem trước được đánh dấu trong tab Cổng."
+	},
+	"5cda8d0f": {
+		"en": "When your server stops (you stop it in the Ports tab, close its terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd>, or it crashes), its preview ends by itself once nothing has listened on the port for 30 seconds, public link included. A server that restarts within that time keeps its preview. One you stop from the Ports tab loses it right away. Needs coderemote 0.3.8 or later.",
+		"text": "Khi server của bạn dừng (bạn dừng nó trong tab Cổng, đóng terminal của nó, nhấn <kbd>Ctrl</kbd>+<kbd>C</kbd>, hoặc nó bị crash), bản xem trước tự kết thúc sau khi không có gì lắng nghe trên cổng đó trong 30 giây, kể cả liên kết công khai. Server khởi động lại trong khoảng đó vẫn giữ bản xem trước. Cái bạn dừng từ tab Cổng thì mất ngay. Cần coderemote 0.3.8 trở lên."
+	},
+	"daec3406": {
+		"en": "<strong>Stop Preview</strong> takes the port off the tunnel. Your server keeps running.",
+		"text": "<strong>Stop Preview</strong> gỡ cổng khỏi tunnel. Server của bạn vẫn chạy."
+	},
+	"d7c007e8": {
+		"en": "<strong>Copy Link</strong> and <strong>Open in Safari</strong> give you the preview's address. It's private: Safari asks you to sign in with the same account first.",
+		"text": "<strong>Copy Link</strong> và <strong>Open in Safari</strong> cho bạn địa chỉ của bản xem trước. Nó là riêng tư: trước tiên Safari yêu cầu bạn đăng nhập bằng cùng tài khoản."
+	},
+	"ad01d090": {
+		"en": "Requests reach your server addressed to <code>localhost:&lt;port&gt;</code>, so servers that check the host name (Vite, for one) accept them as they are.",
+		"text": "Các request đến server của bạn với địa chỉ <code>localhost:&lt;port&gt;</code>, nên các server kiểm tra tên host (như Vite) chấp nhận chúng nguyên trạng."
+	},
+	"31b6d23c": {
+		"en": "Servers on <code>localhost</code>, <code>127.0.0.1</code> or <code>::1</code> all work: there's no need to make your dev server listen on every interface.",
+		"text": "Server trên <code>localhost</code>, <code>127.0.0.1</code> hay <code>::1</code> đều dùng được: không cần cho dev server lắng nghe trên mọi giao diện."
+	},
+	"3b40a78e": {
+		"en": "Tap a port to open it in the app. The first time takes a few seconds while the computer opens it on the tunnel; after that it loads like any page, already signed in as you.",
+		"text": "Nhấn một cổng để mở trong app. Lần đầu mất vài giây trong khi máy tính mở nó trên tunnel; sau đó nó tải như trang bất kỳ, đã đăng nhập sẵn là bạn."
+	},
+	"f1fbb2b4": {
+		"en": "Preview",
+		"text": "Xem trước"
+	},
+	"66c666a1": {
+		"en": "Swipe a port to stop the process behind it (it gets <code>SIGTERM</code>, like <kbd>Ctrl</kbd>+<kbd>C</kbd>); hold it for <strong>Force Stop</strong> (<code>SIGKILL</code>). Only a process that is listening right now can be stopped, and never another user's. Stopping another coderemote agent asks first, since every device paired with it loses its folder.",
+		"text": "Vuốt một cổng để dừng tiến trình phía sau nó (nó nhận <code>SIGTERM</code>, như <kbd>Ctrl</kbd>+<kbd>C</kbd>); giữ để chọn <strong>Force Stop</strong> (<code>SIGKILL</code>). Chỉ dừng được tiến trình đang lắng nghe ngay lúc này, và không bao giờ của người dùng khác. Dừng một coderemote agent khác sẽ hỏi trước, vì mọi thiết bị đã ghép đôi với nó sẽ mất thư mục."
+	},
+	"0d5e9533": {
+		"en": "<strong>Background</strong>: apps and system services, hidden until you ask for them.",
+		"text": "<strong>Background</strong>: app và dịch vụ hệ thống, ẩn cho đến khi bạn yêu cầu."
+	},
+	"715ecf5f": {
+		"en": "<strong>Other</strong>: everything else running in a project folder, such as a server you started on the computer itself.",
+		"text": "<strong>Other</strong>: mọi thứ còn lại chạy trong một thư mục dự án, như một server bạn đã bật ngay trên máy tính."
+	},
+	"e989cf0d": {
+		"en": "<strong>Started in Code Remote</strong>: servers you started from a terminal in the app, with a shortcut back to that terminal.",
+		"text": "<strong>Started in Code Remote</strong>: các server bạn khởi chạy từ terminal trong app, kèm lối tắt quay lại terminal đó."
+	},
+	"e3638b4b": {
+		"en": "Lists the TCP ports your user is listening on, refreshed every few seconds:",
+		"text": "Liệt kê các cổng TCP mà người dùng của bạn đang lắng nghe, làm mới mỗi vài giây:"
+	},
+	"f86c367e": {
+		"en": "All of this needs coderemote 0.2.0 or later on the computer. With an older one the app says so: run <code>coderemote update</code> (or <code>npm install -g coderemote@latest</code>) and start <code>coderemote up</code> again.",
+		"text": "Tất cả điều này cần coderemote 0.2.0 trở lên trên máy tính. Với bản cũ hơn, app sẽ báo: chạy <code>coderemote update</code> (hoặc <code>npm install -g coderemote@latest</code>) và khởi động lại <code>coderemote up</code>."
+	},
+	"db68940d": {
+		"en": "Open the dev servers on your computer from your iPhone, share one for a while, and see the requests that reach it.",
+		"text": "Mở các dev server trên máy tính từ iPhone, chia sẻ một cái trong một lúc, và xem các request đến nó."
+	},
+	"99f1ef1f": {
+		"en": "See the servers listening on your computer, open a dev server on your iPhone, share a public link for a while, and watch the requests that reach it.",
+		"text": "Xem các server đang lắng nghe trên máy tính, mở dev server trên iPhone, chia sẻ liên kết công khai trong một lúc, và theo dõi các request đến nó."
+	},
+	"8a9e1f8a": {
+		"en": "Ports &amp; preview · Code Remote Docs",
+		"text": "Cổng &amp; xem trước · Tài liệu Code Remote"
+	},
+	"07d55706": {
+		"en": "<span>Next</span>Commands",
+		"text": "<span>Tiếp</span>Lệnh"
+	},
+	"ee02e3ef": {
+		"en": "<span>Previous</span>Introduction",
+		"text": "<span>Trước</span>Giới thiệu"
+	},
+	"399ef607": {
+		"en": "Deleting <code>~/.coderemote</code> leaves this computer's tunnels on your Dev Tunnels account. To delete them too, list them with <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> and delete this computer's with <code>coderemote tunnels delete &lt;id&gt;... --force</code> before you remove coderemote.",
+		"text": "Xóa <code>~/.coderemote</code> để lại các tunnel của máy tính này trên tài khoản Dev Tunnels. Để xóa cả chúng, hãy liệt kê bằng <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> và xóa các tunnel của máy này bằng <code>coderemote tunnels delete &lt;id&gt;... --force</code> trước khi gỡ coderemote."
+	},
+	"b137de35": {
+		"en": "Then remove <code>%USERPROFILE%\\.coderemote\\runtime\\bin</code> from your user <code>Path</code> in <strong>Edit environment variables for your account</strong>. If the script used your own Node.js, it installed with npm: also run <code>npm uninstall -g coderemote</code>.",
+		"text": "Sau đó xóa <code>%USERPROFILE%\\.coderemote\\runtime\\bin</code> khỏi <code>Path</code> của người dùng trong <strong>Edit environment variables for your account</strong>. Nếu script đã dùng Node.js của bạn, nó cài bằng npm: hãy chạy thêm <code>npm uninstall -g coderemote</code>."
+	},
+	"4dce5a36": {
+		"en": "Windows, installed with the script",
+		"text": "Windows, cài bằng script"
+	},
+	"22eeda74": {
+		"en": "Then delete the <code># coderemote</code> lines the script added to your shell's startup file (<code>~/.zshrc</code>, <code>~/.bashrc</code> or <code>~/.profile</code>). If the script used your own Node.js, it installed with npm: also run <code>npm uninstall -g coderemote</code>.",
+		"text": "Sau đó xóa các dòng <code># coderemote</code> mà script đã thêm vào tệp khởi động shell của bạn (<code>~/.zshrc</code>, <code>~/.bashrc</code> hoặc <code>~/.profile</code>). Nếu script đã dùng Node.js của bạn, nó cài bằng npm: hãy chạy thêm <code>npm uninstall -g coderemote</code>."
+	},
+	"7c82d6a5": {
+		"en": "macOS and Linux, installed with the script",
+		"text": "macOS và Linux, cài bằng script"
+	},
+	"bfd5be9a": {
+		"en": "To uninstall, stop the agents first, then remove coderemote and its folder, which holds the token and tunnel settings:",
+		"text": "Để gỡ cài đặt, dừng các agent trước, rồi gỡ coderemote và thư mục của nó, nơi chứa token và cài đặt tunnel:"
+	},
+	"2f7f0f95": {
+		"en": "<code>coderemote up</code> tells you when there's a newer version, under the pairing links. <code>coderemote update</code> installs it the way you installed coderemote: with npm (or pnpm, yarn, bun), Homebrew, or into the install script's own Node.js. Running the install script again does the same.",
+		"text": "<code>coderemote up</code> cho bạn biết khi có phiên bản mới hơn, dưới các liên kết ghép đôi. <code>coderemote update</code> cài nó theo cách bạn đã cài coderemote: bằng npm (hoặc pnpm, yarn, bun), Homebrew, hoặc vào Node.js riêng của script cài đặt. Chạy lại script cài đặt cũng làm đúng như vậy."
+	},
+	"75232cdd": {
+		"en": "Update or uninstall",
+		"text": "Cập nhật hoặc gỡ cài đặt"
+	},
+	"f5195278": {
+		"en": "The tunnel URL and token stay the same between runs, so a paired phone reconnects on its own the next time you run <code>coderemote up</code>. You only scan again after <code>rotate-token</code>.",
+		"text": "URL tunnel và token giữ nguyên giữa các lần chạy, nên điện thoại đã ghép đôi tự kết nối lại ở lần chạy <code>coderemote up</code> tiếp theo. Bạn chỉ phải quét lại sau <code>rotate-token</code>."
+	},
+	"a6c81cc7": {
+		"en": "Pairing survives restarts",
+		"text": "Ghép đôi vẫn còn sau khi khởi động lại"
+	},
+	"ed8646f1": {
+		"en": "Terminals you open from the phone run PowerShell: <code>pwsh</code> when PowerShell 7 is installed, Windows PowerShell otherwise.",
+		"text": "Terminal bạn mở từ điện thoại chạy PowerShell: <code>pwsh</code> khi đã cài PowerShell 7, nếu không là Windows PowerShell."
+	},
+	"8b46a816": {
+		"en": "Terminals on Windows",
+		"text": "Terminal trên Windows"
+	},
+	"554a27a6": {
+		"en": "On Windows, set <strong>Settings › System › Power</strong> so the PC doesn't sleep while it's plugged in.",
+		"text": "Trên Windows, đặt <strong>Settings › System › Power</strong> để máy không ngủ khi đang cắm điện."
+	},
+	"63d7d4ba": {
+		"en": "A sleeping computer can't answer the phone. On a Mac laptop, start the agent under <code>caffeinate</code> so the Mac stays awake while it runs:",
+		"text": "Một máy đang ngủ không trả lời được điện thoại. Trên laptop Mac, hãy chạy agent dưới <code>caffeinate</code> để Mac thức trong khi nó chạy:"
+	},
+	"ae367826": {
+		"en": "Keep the computer awake",
+		"text": "Giữ máy tính luôn thức"
+	},
+	"c5dd11a5": {
+		"en": "<code>coderemote up</code> runs in the foreground. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> or close the window to stop sharing; terminal sessions end with it.",
+		"text": "<code>coderemote up</code> chạy ở foreground. Nhấn <kbd>Ctrl</kbd>+<kbd>C</kbd> hoặc đóng cửa sổ để ngừng chia sẻ; các phiên terminal kết thúc cùng nó."
+	},
+	"2cd6a15d": {
+		"en": "Keep the terminal open",
+		"text": "Giữ terminal mở"
+	},
+	"db3b0230": {
+		"en": "Everyday use",
+		"text": "Dùng hằng ngày"
+	},
+	"d7edb615": {
+		"en": "The QR code and the links contain your access token. Don't post them anywhere. If one leaks, run <code>coderemote rotate-token</code>.",
+		"text": "Mã QR và các liên kết chứa access token của bạn. Đừng đăng chúng ở đâu cả. Nếu một cái bị lộ, hãy chạy <code>coderemote rotate-token</code>."
+	},
+	"42f5e751": {
+		"en": "The app walks you through the same steps under Quick setup.",
+		"text": "App hướng dẫn bạn qua đúng các bước này trong Quick setup."
+	},
+	"d345b5b6": {
+		"en": "Quick setup step 4: Scan the QR code",
+		"text": "Quick setup bước 4: Quét mã QR"
+	},
+	"c5661e11": {
+		"en": "Quick setup step 3: Start the agent with coderemote up",
+		"text": "Quick setup bước 3: Khởi động agent bằng coderemote up"
+	},
+	"3496c4d4": {
+		"en": "Quick setup step 2: Go to your project with cd ~/projects/my-app",
+		"text": "Quick setup bước 2: Vào dự án của bạn bằng cd ~/projects/my-app"
+	},
+	"1d4066e4": {
+		"en": "Quick setup step 1: Install the CLI with npm install -g coderemote",
+		"text": "Quick setup bước 1: Cài CLI bằng npm install -g coderemote"
+	},
+	"06d84395": {
+		"en": "That's it. Files, Git and Terminal for the shared folder are now on your phone.",
+		"text": "Xong rồi. Tệp, Git và Terminal của thư mục được chia sẻ giờ đã có trên điện thoại."
+	},
+	"76b9eb51": {
+		"en": "Scan the QR code with the iPhone Camera, or tap <strong>+</strong> in the app and scan it there. The app then asks you to sign in through the system browser with the <em>same</em> GitHub or Microsoft account the computer uses. Passkeys and \"Sign in with Google\" work.",
+		"text": "Quét mã QR bằng Camera của iPhone, hoặc nhấn <strong>+</strong> trong app và quét ở đó. Sau đó app yêu cầu bạn đăng nhập qua trình duyệt hệ thống bằng <em>cùng</em> tài khoản GitHub hoặc Microsoft mà máy tính dùng. Passkey và \"Sign in with Google\" đều dùng được."
+	},
+	"270bfb3f": {
+		"en": "It creates a private tunnel for this computer and prints a QR code.",
+		"text": "Nó tạo một đường hầm riêng cho máy tính này và in ra mã QR."
+	},
+	"8d4f4b73": {
+		"en": "It opens your browser to sign in with GitHub. To use a Microsoft account instead, run <code>coderemote login --microsoft</code> before <code>up</code>.",
+		"text": "Nó mở trình duyệt để đăng nhập bằng GitHub. Để dùng tài khoản Microsoft, hãy chạy <code>coderemote login --microsoft</code> trước <code>up</code>."
+	},
+	"f6bdd0e4": {
+		"en": "It downloads Microsoft's Dev Tunnels CLI into <code>~/.coderemote/bin</code> (once, signature checked).",
+		"text": "Nó tải Dev Tunnels CLI của Microsoft vào <code>~/.coderemote/bin</code> (một lần, có kiểm tra chữ ký)."
+	},
+	"f847a74c": {
+		"en": "The first run sets itself up:",
+		"text": "Lần chạy đầu tiên tự thiết lập:"
+	},
+	"58f84664": {
+		"en": "Go to the folder you want to reach from your phone and start the agent:",
+		"text": "Vào thư mục bạn muốn truy cập từ điện thoại và khởi động agent:"
+	},
+	"d02a8d22": {
+		"en": "2. Share a folder",
+		"text": "2. Chia sẻ một thư mục"
+	},
+	"381ebce3": {
+		"en": "Check it worked with <code>coderemote --version</code>. On Linux, the terminal support compiles on install: see <a href=\"configuration.html#linux\">Installing on Linux fails</a> if it doesn't.",
+		"text": "Kiểm tra bằng <code>coderemote --version</code>. Trên Linux, hỗ trợ terminal được biên dịch khi cài: xem <a href=\"configuration.html#linux\">Cài đặt trên Linux bị lỗi</a> nếu nó không được."
+	},
+	"fb91e24f": {
+		"en": "Update",
+		"text": "Cập nhật"
+	},
+	"e7022e4b": {
+		"en": "On macOS and Linux, from the Code Remote tap. Homebrew installs Node.js with it.",
+		"text": "Trên macOS và Linux, từ tap của Code Remote. Homebrew cài kèm Node.js."
+	},
+	"e173800d": {
+		"en": "On any system with Node.js 22 or newer and npm. pnpm, yarn and bun work too.",
+		"text": "Trên mọi hệ thống có Node.js 22 trở lên và npm. pnpm, yarn và bun cũng dùng được."
+	},
+	"3f4e64b7": {
+		"en": "The install script, in PowerShell on Windows 10 or 11. It uses your Node.js when it's 22 or newer; otherwise it downloads Node.js into <code>%USERPROFILE%\\.coderemote\\runtime</code>, for coderemote alone, and adds it to your <code>PATH</code>. Open a new terminal afterwards.",
+		"text": "Script cài đặt, trong PowerShell trên Windows 10 hoặc 11. Nó dùng Node.js của bạn khi đó là bản 22 trở lên; nếu không nó tải Node.js vào <code>%USERPROFILE%\\.coderemote\\runtime</code>, chỉ dành riêng cho coderemote, và thêm vào <code>PATH</code> của bạn. Sau đó hãy mở terminal mới."
+	},
+	"4bc5e66f": {
+		"en": "The install script, in Terminal. It uses your Node.js when it's 22 or newer; otherwise it downloads Node.js into <code>~/.coderemote/runtime</code>, for coderemote alone, and adds it to your <code>PATH</code>.",
+		"text": "Script cài đặt, trong Terminal. Nó dùng Node.js của bạn khi đó là bản 22 trở lên; nếu không nó tải Node.js vào <code>~/.coderemote/runtime</code>, chỉ dành riêng cho coderemote, và thêm vào <code>PATH</code> của bạn."
+	},
+	"370d7056": {
+		"en": "1. Install the CLI",
+		"text": "1. Cài CLI"
+	},
+	"78271dfe": {
+		"en": "You don't need SSH, open ports, a VPN or VS Code.",
+		"text": "Bạn không cần SSH, cổng mở, VPN hay VS Code."
+	},
+	"9e9854bf": {
+		"en": "The <strong>Code Remote</strong> app on your iPhone, in beta on TestFlight (<a href=\"../#beta\">ask for an invite</a>).",
+		"text": "App <strong>Code Remote</strong> trên iPhone, đang beta trên TestFlight (<a href=\"../#beta\">xin lời mời</a>)."
+	},
+	"304c2a55": {
+		"en": "A <strong>GitHub</strong> or <strong>Microsoft</strong> account, used to sign in to Microsoft Dev Tunnels.",
+		"text": "Một tài khoản <strong>GitHub</strong> hoặc <strong>Microsoft</strong>, dùng để đăng nhập Microsoft Dev Tunnels."
+	},
+	"ea809aa0": {
+		"en": "<strong>Node.js 22</strong> or newer, only if you install with npm. The install scripts use yours when it's new enough and otherwise download one for coderemote alone; Homebrew brings its own.",
+		"text": "<strong>Node.js 22</strong> trở lên, chỉ khi bạn cài bằng npm. Các script cài đặt dùng bản của bạn khi đủ mới và nếu không thì tải một bản chỉ dành riêng cho coderemote; Homebrew mang theo bản riêng."
+	},
+	"921c5c34": {
+		"en": "A <strong>Mac</strong> or a <strong>Windows 10/11</strong> PC. Linux is expected to work but isn't tested yet.",
+		"text": "Một máy <strong>Mac</strong> hoặc PC <strong>Windows 10/11</strong>. Linux dự kiến chạy được nhưng chưa được kiểm thử."
+	},
+	"09a428f9": {
+		"en": "Requirements",
+		"text": "Yêu cầu"
+	},
+	"5d85602a": {
+		"en": "One command on the computer, one scan on the phone.",
+		"text": "Một lệnh trên máy tính, một lần quét trên điện thoại."
+	},
+	"06ecb166": {
+		"en": "Install coderemote on macOS, Windows or Linux (install script, npm or Homebrew), share a folder and pair your iPhone in a couple of minutes.",
+		"text": "Cài coderemote trên macOS, Windows hoặc Linux (script cài đặt, npm hoặc Homebrew), chia sẻ một thư mục và ghép đôi iPhone trong vài phút."
+	},
+	"d6dbaccd": {
+		"en": "Setup · Code Remote Docs",
+		"text": "Cài đặt · Tài liệu Code Remote"
+	}
+}

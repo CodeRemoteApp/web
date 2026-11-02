@@ -1,0 +1,9 @@
+Code Remote
+GitHub
+TestFlight
+Windows
+npm
+Homebrew
+macOS/Linux
+CommitPlus
+Loopie

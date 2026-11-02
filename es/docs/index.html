@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>Introducción · Documentación de Code Remote</title>
+	<meta name="description" content="Qué es Code Remote y cómo funciona: un pequeño agente en tu ordenador, un túnel privado y una app para iPhone emparejada con un código QR.">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/es/docs/">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="Copiar" data-copied-label="Copiado">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">Documentación</a>
+				<a class="nav-link" href="../compare.html">Comparar</a>
+				<a class="nav-link" href="../support.html">Soporte</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="Menú" title="Menú"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="Menú">
+					<a role="menuitem" href="./">Documentación</a>
+					<a role="menuitem" href="../compare.html">Comparar</a>
+					<a role="menuitem" href="../support.html">Soporte</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="Idioma" title="Idioma"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="Idioma">
+					<a role="menuitemradio" href="../../docs/" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../vi/docs/" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../ja/docs/" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../zh-hans/docs/" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="false">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="./" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="true">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Apariencia" title="Apariencia"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Apariencia">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>Sistema<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Claro<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Oscuro<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="Documentación">
+				<h4>Documentación</h4>
+				<ul>
+					<li><a href="./" aria-current="page">Introducción</a></li>
+					<li><a href="setup.html">Instalación</a></li>
+					<li><a href="commands.html">Comandos</a></li>
+					<li><a href="preview.html">Puertos y vista previa</a></li>
+					<li><a href="agents.html">Agentes de programación</a></li>
+					<li><a href="configuration.html">Configuración</a></li>
+				</ul>
+				<h4>En esta página</h4>
+				<ul class="sub">
+					<li><a href="#what">Qué es</a></li>
+					<li><a href="#how">Cómo funciona</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>Introducción</h1>
+				<p class="lede">Tu ordenador, desde tu iPhone: archivos, git, un terminal real y tus servidores de desarrollo. Un comando en el ordenador, un escaneo en el teléfono.</p>
+
+				<h2 id="what">Qué es</h2>
+				<p>Code Remote tiene dos partes: la herramienta de línea de comandos <code>coderemote</code> en tu ordenador y la app para iPhone. No necesitas SSH, puertos abiertos, VPN ni app de escritorio. ¿No estás seguro de que encaje? <a href="../compare.html">Mira cómo se compara</a> con Tailscale, Termius y Orca.</p>
+
+				<h2 id="how">Cómo funciona</h2>
+				<ol>
+					<li><strong>Inicia el agente.</strong> Ejecuta <code>coderemote up</code> en la carpeta de un proyecto (o <code>npx coderemote up</code> sin instalar). Un pequeño agente arranca en tu ordenador, escuchando solo en 127.0.0.1.</li>
+					<li><strong>Se conecta hacia fuera.</strong> El agente se publica a través de un Microsoft Dev Tunnel privado. No hay que abrir nada en tu red, y funciona detrás de NAT, firewalls y el wifi del hotel.</li>
+					<li><strong>Empareja tu teléfono.</strong> Escanea el código QR. Solo tu cuenta de GitHub o Microsoft pasa por el relay, y cada petición necesita además el token de emparejamiento, guardado en el llavero del iPhone.</li>
+				</ol>
+
+				<nav class="pager" aria-label="Página siguiente">
+					<a class="next" href="setup.html"><span>Siguiente</span>Instalación</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Más de Thanh Tran</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">Inicio</a>
+				<a href="./">Documentación</a>
+				<a href="../../privacy.html">Privacidad</a>
+				<a href="../../terms.html">Términos</a>
+				<a href="../compare.html">Comparar</a>
+				<a href="../support.html">Soporte</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">La política de privacidad y los términos solo están en inglés; la versión en inglés es la vinculante.</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+name: i18n
+
+# Fails when an English page has text without a translation in every language, when a translation
+# is left over from text that changed, or when the generated pages (vi/, ja/, zh-hans/, es/,
+# sitemap.xml) or asset stamps weren't rebuilt. Fix locally: see README, "Languages".
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Translations complete and generated pages up to date
+        run: node scripts/check-i18n.mjs --built
+      - name: Asset stamps up to date
+        run: |
+          sh scripts/version-assets.sh
+          git diff --exit-code --stat || { echo "Run scripts/version-assets.sh and commit."; exit 1; }

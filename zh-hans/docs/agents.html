@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>编程智能体 · Code Remote 文档</title>
+	<meta name="description" content="在 iPhone 上启动、提示和跟踪 Claude Code 与 Codex 会话,回答它们的权限请求和问题,并在它们需要你时收到通知。">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/zh-hans/docs/agents.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/agents.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/agents.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/agents.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/agents.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/agents.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/agents.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="复制" data-copied-label="已复制">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">文档</a>
+				<a class="nav-link" href="../compare.html">对比</a>
+				<a class="nav-link" href="../support.html">支持</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="菜单" title="菜单"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="菜单">
+					<a role="menuitem" href="./">文档</a>
+					<a role="menuitem" href="../compare.html">对比</a>
+					<a role="menuitem" href="../support.html">支持</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="语言" title="语言"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="语言">
+					<a role="menuitemradio" href="../../docs/agents.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../vi/docs/agents.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../ja/docs/agents.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="agents.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="true">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../es/docs/agents.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="外观" title="外观"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="外观">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>跟随系统<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>浅色<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>深色<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="文档">
+				<h4>文档</h4>
+				<ul>
+					<li><a href="./">简介</a></li>
+					<li><a href="setup.html">安装</a></li>
+					<li><a href="commands.html">命令</a></li>
+					<li><a href="preview.html">端口与预览</a></li>
+					<li><a href="agents.html" aria-current="page">编程智能体</a></li>
+					<li><a href="configuration.html">配置</a></li>
+				</ul>
+				<h4>本页内容</h4>
+				<ul class="sub">
+					<li><a href="#setup">设置</a></li>
+					<li><a href="#codex">Codex</a></li>
+					<li><a href="#sessions">Agents 标签页</a></li>
+					<li><a href="#answer">在手机上回答</a></li>
+					<li><a href="#drive">启动并操控会话</a></li>
+					<li><a href="#notifications">通知</a></li>
+					<li><a href="#how">工作原理</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>编程智能体</h1>
+				<p class="lede">在 iPhone 上跟踪电脑上的每个 Claude Code 会话,在那里回答它的权限请求和问题,并在它需要你时收到通知。</p>
+				<p>Agents 标签页和通知属于 Code Remote Pro,并且需要电脑上有较新的 coderemote:如果应用提示,请运行 <code>coderemote update</code> 并重新启动 <code>coderemote up</code>。</p>
+
+				<h2 id="setup">设置</h2>
+				<p>每台电脑只需一次,前提是已安装 Claude Code:</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup claude</pre>
+				<p>这会把 Code Remote 插件安装到 Claude Code 中(等同于在 Claude Code 内运行 <code>/plugin install coderemote --marketplace CodeRemoteApp/coderemote</code>)。之后你在用 <code>coderemote up</code> 共享的文件夹中启动的 Claude Code 会话,会显示在应用里。已在运行的会话需要重启后才会出现。要撤销:<code>coderemote setup claude --remove</code>。</p>
+				<p>当没有 <code>coderemote</code> 在运行,或会话所在的文件夹未被共享时,插件什么都不做:此时 Claude Code 的工作方式与没有它时完全一样。</p>
+				<h3 id="codex">Codex</h3>
+				<p>Codex 0.139 或更高版本也可以:</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote setup codex</pre>
+				<p>然后打开一次 Codex,输入 <code>/hooks</code> 并信任 Code Remote 的 hook:Codex 只会在你审阅过之后才运行插件的 hook。Codex 会话会在 Agents 标签页中显示,并标有 Codex。</p>
+				<p>有一点不同:Codex 只有在 hook 让开之后才会显示它自己的批准提示。因此,当你正在使用电脑(或已在应用中打开该机器)时,Codex 会照常在终端中询问,应用会显示"Answer on your computer";当你不在时,请求会连同通知一起在手机上等待最多十分钟,然后 Codex 才会在终端中询问。Codex 无法通过 hook 提供"始终允许"。</p>
+
+				<h2 id="sessions">Agents 标签页</h2>
+				<p>列出机器上的会话,分为 <strong>Needs You</strong>(等待回答)、<strong>Working</strong>、<strong>Idle</strong> 和 <strong>Ended</strong>;标签页会显示有多少个需要你处理。打开一个会话可以看到它做了什么:你的提示、Claude 的回复,以及它运行的每个工具。命令连同输出一起显示,文件编辑显示为被修改的行(点按可查看完整改动或文件),读取操作则会打开文件。</p>
+				<p>在应用终端中启动的会话有 <strong>Open in Terminal</strong>,可直接向其输入。你在电脑上启动的会话显示相同的时间线。</p>
+				<p>会话保存在 coderemote 的内存中:停止 <code>coderemote up</code> 会清空列表,已结束的会话一天后消失。</p>
+
+				<h2 id="answer">在手机上回答</h2>
+				<p>当 Claude 请求运行某些内容的权限,或向你提问时,会话底部会出现一张卡片:</p>
+				<ul>
+					<li><strong>Allow</strong> 或 <strong>Deny</strong>。<strong>⋯</strong> 菜单提供与电脑上的 Claude Code 相同的"始终允许"选项,还有 <strong>Deny with Message</strong>,可告诉 Claude 改为怎么做。</li>
+					<li>对于问题,点按一个答案,或用 <strong>Other…</strong> 自己输入。</li>
+				</ul>
+				<p>提示在电脑上也保持打开。谁先回答就以谁为准:在电脑上回答后,手机上的卡片(及其通知)就会消失。一小时内没有人在手机上回答的提示,将留给电脑处理。</p>
+
+				<h2 id="drive">启动并操控会话</h2>
+				<p>在 Agents 标签页中点按 <strong>+</strong>,即可在电脑上启动一个编程智能体。选择 <strong>Agent</strong>(Claude Code,或设置好之后的 Codex)和 <strong>Folder</strong>:它会打开共享文件夹,你可以进入子文件夹、按名称筛选,然后点按 <strong>Use This Folder</strong>。接着:</p>
+				<ul>
+					<li>对于 Claude Code,可选择模型和请求权限的方式(<strong>Ask First</strong>、<strong>Accept Edits</strong>、<strong>Plan Only</strong> 或 <strong>Auto</strong>)。</li>
+					<li>对于 Codex,可选择 Codex 自己提供的模型(<strong>Default</strong> 是 Codex 配置中的那个),以及是否允许它 <strong>Ask before running outside the sandbox</strong>。关闭后,Codex 会直接拒绝其沙盒不允许的操作,不再询问。</li>
+				</ul>
+				<p>会话运行在应用的终端中,因此你可以从会话的消息框里向它输入:</p>
+				<ul>
+					<li>写好提示后发送;Claude 工作期间,你发送的内容会像在电脑前一样排队等待。<strong>Stop</strong> 会中断它(类似 <kbd>Esc</kbd>)。</li>
+					<li><strong>+</strong> 可附加照片、视频、文件、相机拍摄的照片或复制的图片。它们会发送到电脑上的 <code>~/.coderemote/uploads/</code>(在你的项目之外,一周后删除),Claude 会把图片当作图片来看;其他文件则获得它们的路径。</li>
+					<li><strong>⚡</strong> 菜单中有 <strong>Next Permission Mode</strong>(<kbd>Shift</kbd>+<kbd>Tab</kbd>)、<code>/compact</code>、<code>/clear</code>、<code>/model</code> 和 <strong>Open in Terminal</strong>(Codex 没有可循环切换的权限模式,也没有 <code>/clear</code>)。在终端中,可通过 <strong>…</strong> 菜单里的 <strong>Chat</strong> 回来。</li>
+					<li>已结束的会话提供 <strong>Resume Here</strong>,可在新的终端中继续对话。</li>
+				</ul>
+				<p>你在电脑终端中启动的会话,可以在这里跟踪和回答,但不能输入,因为它不是应用的终端;结束后可以在这里恢复它。</p>
+
+				<h2 id="notifications">通知</h2>
+				<p>在机器的信息中为每台电脑单独开启(在机器列表中长按它,或在标签页菜单中选择 <strong>Machine Info</strong>):<strong>需要回答</strong>和<strong>完成了耗时较长的任务</strong>(耗时一分钟或更久),并带有测试按钮。</p>
+				<p>长按权限通知即可<strong>允许</strong>或<strong>拒绝</strong>,无需打开应用(需通过 Face ID);单个问题也可以用同样的方式回答。当你正在使用电脑(Mac 上)或已在应用中打开该机器时,不会发送任何通知。</p>
+
+				<h2 id="how">工作原理</h2>
+				<p>插件会针对 Claude Code 的每个事件(提示、工具调用、回复、权限请求)运行 <code>coderemote hook</code>。它把事件交给同一台电脑上共享该会话文件夹的 <code>coderemote</code>,并用一个永不离开本机的密钥进行认证。权限请求会在那里等待来自手机的回答,而 Claude Code 仍照常显示它自己的提示。</p>
+				<p>通知从你的电脑出发,经过一个会附加应用 Apple 推送密钥的中继;内容为 iPhone 加密,因此中继和 Apple 都无法读取,中继也不保存任何内容。请参阅<a href="../../privacy.html#notifications">隐私政策</a>。</p>
+			</article>
+		</div>
+	</main>
+
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Thanh Tran 的更多作品</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">首页</a>
+				<a href="./">文档</a>
+				<a href="../../privacy.html">隐私</a>
+				<a href="../../terms.html">条款</a>
+				<a href="../compare.html">对比</a>
+				<a href="../support.html">支持</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">隐私政策和服务条款仅提供英文版,以英文版为准。</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>

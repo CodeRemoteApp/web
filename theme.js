@@ -1,3 +1,14 @@
+// Header behaviour shared by the menus below and lang.js. Popover menus sit in the top layer, placed
+// against the page so they scroll away with the header; once the header is pinned (see the end of this
+// file) they are placed against the window instead.
+window.placePopover = (menu, button) => {
+	const r = button.getBoundingClientRect();
+	const pinned = document.documentElement.classList.contains('header-pinned');
+	menu.style.position = pinned ? 'fixed' : '';
+	menu.style.top = `${r.bottom + (pinned ? 0 : window.scrollY) + 8}px`;
+	menu.style.right = `${document.documentElement.clientWidth - r.right}px`;
+};
+
 // Appearance picker in the header: System follows the device, Light and Dark stick (in this
 // browser). A one-line script in each page's <head> applies the choice before the first paint.
 // The header's Menu button (narrow screens) opens the page links in the same kind of popover.
@@ -10,9 +21,7 @@
 	});
 	menu.addEventListener('beforetoggle', (e) => {
 		if (e.newState !== 'open') return;
-		const r = button.getBoundingClientRect();
-		menu.style.top = `${r.bottom + window.scrollY + 8}px`;
-		menu.style.right = `${document.documentElement.clientWidth - r.right}px`;
+		placePopover(menu, button);
 	});
 })();
 
@@ -61,10 +70,43 @@
 	// page rather than the window, so it scrolls away with the header like the rest of it.
 	menu.addEventListener('beforetoggle', (e) => {
 		if (e.newState !== 'open') return;
-		const r = button.getBoundingClientRect();
-		menu.style.top = `${r.bottom + window.scrollY + 8}px`;
-		menu.style.right = `${root.clientWidth - r.right}px`;
+		placePopover(menu, button);
 	});
 
 	mark();
+})();
+
+// Pins the header to the top of the window once you have scrolled past its own height, sliding it in,
+// so the menu is always within reach. Open menus close when it switches, since they were placed for
+// the other state.
+(() => {
+	const header = document.querySelector('header.site');
+	if (!header) return;
+	const root = document.documentElement;
+	let height = header.offsetHeight;
+	let pinned = false;
+	const set = (value) => {
+		if (value === pinned) return;
+		pinned = value;
+		for (const m of document.querySelectorAll('.theme-menu')) {
+			try {
+				if (m.matches(':popover-open')) m.hidePopover();
+			} catch {}
+		}
+		if (value) {
+			height = header.offsetHeight;
+			root.style.setProperty('--header-h', `${height}px`);
+		}
+		root.classList.toggle('header-pinned', value);
+	};
+	const update = () => {
+		const y = window.scrollY;
+		if (y > height) set(true);
+		else if (y <= 0) set(false);
+	};
+	addEventListener('scroll', update, { passive: true });
+	addEventListener('resize', () => {
+		if (!pinned) height = header.offsetHeight;
+	});
+	update();
 })();

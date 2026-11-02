@@ -112,11 +112,13 @@ const ICON = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="5.5" 
 const DONE = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>';
 
 if (navigator.clipboard) {
+	const COPY = document.body.dataset.copyLabel ?? 'Copy';
+	const COPIED = document.body.dataset.copiedLabel ?? 'Copied';
 	for (const pre of document.querySelectorAll('pre.cmd')) {
 		if (!pre.hasAttribute('data-copy') && !pre.querySelector('.p')) continue;
 		const button = Object.assign(document.createElement('button'), { type: 'button', className: 'copy', innerHTML: ICON });
-		button.setAttribute('aria-label', 'Copy');
-		button.title = 'Copy';
+		button.setAttribute('aria-label', COPY);
+		button.title = COPY;
 		button.addEventListener('click', async () => {
 			try {
 				await navigator.clipboard.writeText(commands(pre));
@@ -124,10 +126,10 @@ if (navigator.clipboard) {
 				return;
 			}
 			button.innerHTML = DONE;
-			button.setAttribute('aria-label', 'Copied');
+			button.setAttribute('aria-label', COPIED);
 			setTimeout(() => {
 				button.innerHTML = ICON;
-				button.setAttribute('aria-label', 'Copy');
+				button.setAttribute('aria-label', COPY);
 			}, 1500);
 		});
 		// The button sits on a box around the block, so it stays put when a long line scrolls.

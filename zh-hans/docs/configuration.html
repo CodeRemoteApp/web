@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>配置 · Code Remote 文档</title>
+	<meta name="description" content="coderemote 把设置存放在哪里、它读取哪些环境变量、访问模式,以及常见问题的解决办法。">
+	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../style.css?v=f54d7871">
+	<!-- i18n:start head -->
+	<link rel="canonical" href="https://coderemoteapp.github.io/web/zh-hans/docs/configuration.html">
+	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/configuration.html">
+	<link rel="alternate" hreflang="vi" href="https://coderemoteapp.github.io/web/vi/docs/configuration.html">
+	<link rel="alternate" hreflang="ja" href="https://coderemoteapp.github.io/web/ja/docs/configuration.html">
+	<link rel="alternate" hreflang="zh-Hans" href="https://coderemoteapp.github.io/web/zh-hans/docs/configuration.html">
+	<link rel="alternate" hreflang="es" href="https://coderemoteapp.github.io/web/es/docs/configuration.html">
+	<link rel="alternate" hreflang="x-default" href="https://coderemoteapp.github.io/web/docs/configuration.html">
+	<!-- i18n:end head -->
+</head>
+<body data-copy-label="复制" data-copied-label="已复制">
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="../"><img src="../../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a class="nav-link" href="./">文档</a>
+				<a class="nav-link" href="../compare.html">对比</a>
+				<a class="nav-link" href="../support.html">支持</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="菜单" title="菜单"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="菜单">
+					<a role="menuitem" href="./">文档</a>
+					<a role="menuitem" href="../compare.html">对比</a>
+					<a role="menuitem" href="../support.html">支持</a>
+				</div>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<!-- i18n:start picker -->
+				<button class="lang" type="button" popovertarget="lang-menu" aria-label="语言" title="语言"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-3 3-3 11 0 14M10 3c3 3 3 11 0 14"/></svg></button>
+				<div class="theme-menu lang-menu" id="lang-menu" popover role="menu" aria-label="语言">
+					<a role="menuitemradio" href="../../docs/configuration.html" lang="en" hreflang="en" data-lang="en" aria-checked="false">English<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../vi/docs/configuration.html" lang="vi" hreflang="vi" data-lang="vi" data-suggest="Xem trang này bằng tiếng Việt?" aria-checked="false">Tiếng Việt<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../ja/docs/configuration.html" lang="ja" hreflang="ja" data-lang="ja" data-suggest="このページを日本語で表示しますか?" aria-checked="false">日本語<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="configuration.html" lang="zh-Hans" hreflang="zh-Hans" data-lang="zh-hans" data-suggest="要查看此页面的简体中文版吗?" aria-checked="true">简体中文<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+					<a role="menuitemradio" href="../../es/docs/configuration.html" lang="es" hreflang="es" data-lang="es" data-suggest="¿Ver esta página en español?" aria-checked="false">Español<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></a>
+				</div>
+				<!-- i18n:end picker -->
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="外观" title="外观"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="外观">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>跟随系统<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>浅色<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>深色<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="docs">
+		<div class="wrap">
+			<nav class="docs-nav" aria-label="文档">
+				<h4>文档</h4>
+				<ul>
+					<li><a href="./">简介</a></li>
+					<li><a href="setup.html">安装</a></li>
+					<li><a href="commands.html">命令</a></li>
+					<li><a href="preview.html">端口与预览</a></li>
+					<li><a href="agents.html">编程智能体</a></li>
+					<li><a href="configuration.html" aria-current="page">配置</a></li>
+				</ul>
+			</nav>
+
+			<article class="prose">
+				<h1>配置</h1>
+				<p class="lede">开始使用无需任何配置。当你想了解背后发生了什么时,可以看这一页。</p>
+
+				<h2 id="access">谁可以访问</h2>
+				<p>默认情况下,请求需要通过两项检查:</p>
+				<ol>
+					<li><strong>你的账号。</strong>隧道是私有的:Dev Tunnels 中继只放行运行 <code>coderemote up</code> 的那个 GitHub 或 Microsoft 账号。</li>
+					<li><strong>配对令牌。</strong>然后智能体会检查二维码中的随机令牌,它保存在 iPhone 的钥匙串中。</li>
+				</ol>
+				<p>使用 <code>coderemote up --allow-anonymous</code> 时会跳过第一项检查,仅凭令牌即可访问。无论哪种方式,文件和 git 都限制在共享文件夹内;终端则是拥有你用户权限的真正 shell。</p>
+				<p>预览的<a href="preview.html#share">公开链接</a>是唯一的例外:在它结束之前,任何拿到链接的人都能打开那一个开发服务器,不需要经过这两项检查。它永远不会触及智能体、它的文件或它的终端。</p>
+
+				<h2 id="files">你电脑上的文件</h2>
+				<p>所有内容都在 <code>~/.coderemote</code>(Windows 上是 <code>%USERPROFILE%\.coderemote</code>)中,仅你自己可读:</p>
+				<table>
+					<tr><th>路径</th><th>内容</th></tr>
+					<tr><td><code>config.json</code></td><td>访问令牌、这台电脑的隧道 id 以及它的预览隧道 id。保留它就保留了所有配对。</td></tr>
+					<tr><td><code>bin/</code></td><td>首次运行时下载的 Dev Tunnels CLI。</td></tr>
+					<tr><td><code>agents/</code></td><td>每个运行中的智能体一条记录,让 <code>status</code>、<code>kill</code> 和 <code>stop</code> 能找到它。</td></tr>
+					<tr><td><code>update.json</code></td><td>npm 上的最新版本,以及 <code>up</code> 上次询问的时间,每天最多一次。</td></tr>
+					<tr><td><code>runtime/</code></td><td>仅在<a href="setup.html#install">安装脚本</a>下载了 Node.js 之后才有:那份 Node.js 以及安装在其中的 coderemote,还有 <code>runtime/bin</code> 里它加入你 <code>PATH</code> 的 <code>coderemote</code> 和 <code>node</code> 命令。</td></tr>
+				</table>
+				<p>删除该文件夹(如果它是安装脚本创建的,请保留 <code>runtime/</code>)会重置 Code Remote:下一次 <code>up</code> 会创建新的令牌和隧道,所有设备都必须重新配对。</p>
+
+				<h2 id="env">环境变量</h2>
+				<table>
+					<tr><th>变量</th><th>作用</th></tr>
+					<tr><td><code>CODEREMOTE_DEVTUNNEL</code></td><td>要使用的 <code>devtunnel</code> 二进制文件的路径。否则使用 <code>PATH</code> 中的那个,然后是下载的副本。</td></tr>
+					<tr><td><code>CODEREMOTE_CODE</code></td><td>VS Code 的 <code>code</code> 命令的路径,用于 <code>up --web</code>。否则使用 <code>PATH</code> 中的 <code>code</code>。</td></tr>
+					<tr><td><code>CODEREMOTE_NO_UPDATE_CHECK</code></td><td>设为 <code>1</code> 后,<code>up</code> 不再向 npm 询问是否有更新的版本。</td></tr>
+				</table>
+				<p>安装脚本还会读取一些它们自己的变量:</p>
+				<table>
+					<tr><th>变量</th><th>作用</th></tr>
+					<tr><td><code>CODEREMOTE_VERSION</code></td><td>要安装的版本或 npm dist-tag,例如 <code>0.3.7</code> 或 <code>next</code>。默认为 <code>latest</code>。</td></tr>
+					<tr><td><code>CODEREMOTE_PRIVATE_NODE</code></td><td>设为 <code>1</code> 可让脚本即使在你的 Node.js 已足够新时,也为 coderemote 下载 Node.js。</td></tr>
+					<tr><td><code>CODEREMOTE_NO_MODIFY_PATH</code></td><td>设为 <code>1</code> 可不改动你的 <code>PATH</code> 和 shell 启动文件;脚本会告诉你需要添加哪个文件夹。</td></tr>
+				</table>
+
+				<h2 id="tunnel">隧道</h2>
+				<p>每台电脑有一个隧道。它的 URL 在多次运行之间保持不变,<code>up</code> 每次都会续期,使它不会过期。一次共享一个文件夹;要访问多个项目,请共享它们的上级文件夹,Git 标签页会找到其中的每个仓库。</p>
+				<p>该隧道带有标签 <code>coderemote</code>,应用就是靠它找到你的其他机器。预览使用第二个隧道,标签为 <code>coderemote-preview</code>,在第一次预览时创建,并在智能体停止时删除(<a href="preview.html#how">工作原理</a>)。<a href="commands.html#tunnels"><code>coderemote tunnels</code></a> 会同时列出两者,以及你其他电脑的隧道。</p>
+				<p>一个 Dev Tunnels 账号最多保留 10 个隧道。你不再使用的电脑会一直保留它们的隧道,直到你用 <code>coderemote tunnels delete</code> 删除。</p>
+				<h3 id="in-the-app">在应用中</h3>
+				<ul>
+					<li><strong>Machine Info</strong>(机器的菜单)显示它的隧道:地址、账号、谁可以访问、何时过期(每次 <code>coderemote up</code> 启动都会顺延)、当前已连接的客户端、迄今的流量,以及正在预览的端口数。</li>
+					<li><strong>Settings › Connections</strong> 列出你已配对的电脑所连接的账号。每个账号会显示该账号下运行 coderemote 的每台电脑、是否在线、这部 iPhone 是否已与之配对,以及该账号的 10 个隧道中已用了多少个。要添加电脑,请在那台电脑上运行 <code>coderemote up</code> 并扫描它的二维码。</li>
+				</ul>
+				<p>应用只负责显示它们:隧道属于电脑的所有者,所以你要在已登录该账号的电脑上,用 <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> 列出和删除它们。为此,在 Connections 中按住某台机器即可复制它的隧道 ID。从应用列表中移除某台机器,只会让那部 iPhone 忘记它。</p>
+
+				<h2 id="troubleshooting">故障排查</h2>
+				<h3>"Port 31580 is already in use"</h3>
+				<p>另一个智能体或程序占用了该端口。<code>coderemote status</code> 会显示智能体;其他情况请查看是什么占用了它:</p>
+				<pre class="cmd"><span class="p">$ </span>lsof -nP -iTCP:31580 -sTCP:LISTEN      <span class="c"># macOS, Linux</span>
+<span class="p">PS&gt; </span>netstat -ano | findstr :31580         <span class="c"># Windows</span></pre>
+				<p>停止它,运行 <code>coderemote stop --all</code>,或用 <code>--port</code> 选择另一个端口。</p>
+
+				<h3>手机无法连接</h3>
+				<p>确认 <code>coderemote up</code> 仍在运行,并且电脑处于唤醒和联网状态。确保手机登录的是电脑所使用的同一个账号(显示在 <code>Access:</code> 那一行)。</p>
+
+				<h3 id="tunnel-limit">"Your Dev Tunnels account already has 10 tunnels"</h3>
+				<p>账号已满,而且其中没有可以清理的闲置预览隧道。提示信息会列出它们:用 <a href="commands.html#tunnels"><code>coderemote tunnels delete &lt;id&gt;</code></a> 删除不再使用的,例如旧电脑留下的,然后再次运行 <code>coderemote up</code>。</p>
+				<h3>登录已过期</h3>
+				<p><code>up</code> 会发现这一点并重新打开浏览器。如果没有浏览器,请运行 <code>coderemote login --device-code</code>。</p>
+
+				<h3>Ports 标签页提示"Update coderemote"</h3>
+				<p>电脑上运行的 coderemote 早于端口与预览功能。运行 <code>coderemote update</code>,然后重启 <code>coderemote up</code>。</p>
+
+				<h3>预览提示"nothing is listening on port …"</h3>
+				<p>背后的开发服务器已停止,或已在另一个端口上重启。请重新启动并刷新;Ports 标签页会显示当前正在监听的内容。</p>
+
+				<h3 id="linux">在 Linux 上安装失败</h3>
+				<p>终端支持会在安装时编译,需要 <code>python3</code>、<code>make</code> 和 C++ 编译器(Debian 和 Ubuntu 上是 <code>build-essential</code>)。登录需要 <code>libsecret-1-0</code>。</p>
+
+				<p>还是没解决?请查看<a href="../support.html">支持</a>。</p>
+
+				<nav class="pager" aria-label="上一页">
+					<a href="preview.html"><span>上一页</span>端口与预览</a>
+				</nav>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>Thanh Tran 的更多作品</span>
+				<a href="https://commitplus.app/"><img src="../../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="../">首页</a>
+				<a href="./">文档</a>
+				<a href="../../privacy.html">隐私</a>
+				<a href="../../terms.html">条款</a>
+				<a href="../compare.html">对比</a>
+				<a href="../support.html">支持</a>
+			</nav>
+			<!-- i18n:start note -->
+			<span class="i18n-note">隐私政策和服务条款仅提供英文版,以英文版为准。</span>
+			<!-- i18n:end note -->
+		</div>
+	</footer>
+	<script src="../../theme.js?v=f9c7ded9" defer></script>
+	<!-- i18n:start script -->
+	<script src="../../lang.js?v=d6fe75c9" defer></script>
+	<!-- i18n:end script -->
+	<script src="../../tabs.js?v=6123b019" defer></script>
+</body>
+</html>
