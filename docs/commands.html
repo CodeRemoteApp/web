@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=56bb26df">
+	<link rel="stylesheet" href="../style.css?v=56eb60dd">
 </head>
 <body>
 	<header class="site">
@@ -28,6 +28,7 @@
 			<a class="brand" href="../"><img src="../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
 			<nav class="links">
 				<a href="./">Docs</a>
+				<a href="../compare.html">Compare</a>
 				<a href="../support.html">Support</a>
 				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
 				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Appearance" title="Appearance"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
@@ -45,7 +46,8 @@
 			<nav class="docs-nav" aria-label="Docs">
 				<h4>Docs</h4>
 				<ul>
-					<li><a href="./">Setup</a></li>
+					<li><a href="./">Introduction</a></li>
+					<li><a href="setup.html">Setup</a></li>
 					<li><a href="commands.html" aria-current="page">Commands</a></li>
 					<li><a href="preview.html">Ports &amp; preview</a></li>
 					<li><a href="agents.html">Coding agents</a></li>
@@ -199,7 +201,7 @@ deleted quiet-fox-3hd8w2c.usw2</pre>
 				<p>The phone must sign in with the same account, unless you run <code>up --allow-anonymous</code>.</p>
 
 				<h2 id="update"><code>update</code></h2>
-				<p>Installs the latest coderemote the way you installed it: with npm (or pnpm, yarn, bun), with Homebrew, or into the Node.js the <a href="./#install">install script</a> downloaded. When there's a newer version, <code>up</code> says so under the pairing links; it asks npm at most once a day and never slows startup. Set <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> to turn that off.</p>
+				<p>Installs the latest coderemote the way you installed it: with npm (or pnpm, yarn, bun), with Homebrew, or into the Node.js the <a href="setup.html#install">install script</a> downloaded. When there's a newer version, <code>up</code> says so under the pairing links; it asks npm at most once a day and never slows startup. Set <code>CODEREMOTE_NO_UPDATE_CHECK=1</code> to turn that off.</p>
 				<pre class="cmd"><span class="p">$ </span>coderemote update
 <span class="p">$ </span>coderemote --version             <span class="c"># the version you're running</span></pre>
 				<p>Agents already running keep the old version until you restart them: <code>coderemote stop --all</code>, then <code>coderemote up</code> again.</p>
@@ -220,7 +222,7 @@ deleted quiet-fox-3hd8w2c.usw2</pre>
 				</table>
 
 				<nav class="pager" aria-label="More pages">
-					<a href="./"><span>Previous</span>Setup</a>
+					<a href="setup.html"><span>Previous</span>Setup</a>
 					<a class="next" href="preview.html"><span>Next</span>Ports &amp; preview</a>
 				</nav>
 			</article>
@@ -229,12 +231,18 @@ deleted quiet-fox-3hd8w2c.usw2</pre>
 
 	<footer class="site">
 		<div class="wrap">
+			<div class="more">
+				<span>More by Thanh Tran</span>
+				<a href="https://commitplus.app/"><img src="../more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="../more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
 			<span>© 2026 Thanh Tran</span>
 			<nav>
 				<a href="../">Home</a>
 				<a href="./">Docs</a>
 				<a href="../privacy.html">Privacy</a>
 				<a href="../terms.html">Terms</a>
+				<a href="../compare.html">Compare</a>
 				<a href="../support.html">Support</a>
 			</nav>
 		</div>

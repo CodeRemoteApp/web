@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css?v=56bb26df">
+	<link rel="stylesheet" href="style.css?v=56eb60dd">
 	<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -28,9 +28,10 @@
 		<div class="wrap">
 			<a class="brand" href="./"><img src="icon.png?v=1d6f5ee2" alt="">Code Remote</a>
 			<nav class="links">
+				
 				<a class="hide-sm" href="#install">Install</a>
 				<a class="hide-sm" href="#beta">Beta</a>
-				<a class="hide-sm" href="#how">How it works</a>
+				<a href="compare.html">Compare</a>
 				<a href="docs/">Docs</a>
 				<a href="support.html">Support</a>
 				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
@@ -50,7 +51,7 @@
 				<div class="hero-grid">
 					<div class="hero-copy">
 						<h1>Your computer, in your pocket.</h1>
-						<p class="lede">Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone. No SSH keys, no port forwarding, no VPN.</p>
+						<p class="lede">Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone: <code>npx coderemote up</code>. No SSH keys, no port forwarding, no VPN.</p>
 						<div class="actions">
 							<a class="button primary" href="#install">Get started</a>
 							<a class="button ghost with-icon" href="#beta"><img src="apple.png" alt="" width="18" height="18">Join the iPhone beta</a>
@@ -100,12 +101,9 @@
 					</svg>
 				</div>
 				<div class="story">
-				<div class="cmd term" id="demo" role="img" aria-label="Terminal: npm install -g coderemote, then coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone">
+				<div class="cmd term" id="demo" role="img" aria-label="Terminal: npx coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone">
 					<div class="ln"><span class="c"># on your computer</span></div>
-					<div class="ln" data-type><span class="p">$ </span><span class="t">npm install -g coderemote</span></div>
-					<div class="ln"></div>
-					<div class="ln">added 5 packages in 4s</div>
-					<div class="ln" data-type><span class="p">$ </span><span class="t">cd ~/projects/my-app &amp;&amp; coderemote up</span></div>
+					<div class="ln" data-type><span class="p">$ </span><span class="t">cd ~/projects/my-app &amp;&amp; npx coderemote up</span></div>
 					<div class="ln" data-spin="150">  <span class="mark ok">✔</span> Starting agent <span class="c secs">0.0s</span></div>
 					<div class="ln" data-spin="700">  <span class="mark ok">✔</span> Checking dev tunnels sign-in <span class="c secs">0.7s</span></div>
 					<div class="ln" data-spin="2400">  <span class="mark ok">✔</span> Connecting to the relay <span class="c secs">5.0s</span></div>
@@ -140,6 +138,29 @@
 			</div>
 		</section>
 
+		<section class="block" id="simple">
+			<div class="wrap">
+				<h2 class="reveal">One command. That's the whole setup.</h2>
+				<p class="lede reveal">Other tools ask you to download a desktop app, set up a VPN on both devices, or configure an SSH server and keys. With Node.js already on your computer, Code Remote is a single line.</p>
+				<pre class="cmd one-liner reveal" data-copy>npx coderemote up</pre>
+				<div class="grid">
+					<div class="card reveal">
+						<h3>No desktop app</h3>
+						<p>Nothing to download, install or keep updated on the computer. <code>npx</code> runs it and leaves nothing behind.</p>
+					</div>
+					<div class="card reveal">
+						<h3>No VPN</h3>
+						<p>The agent connects outward through a private tunnel. Nothing to install on the phone's network, nothing to join.</p>
+					</div>
+					<div class="card reveal">
+						<h3>No SSH</h3>
+						<p>No server to enable, no keys to copy, no ports to forward, no firewall rules to edit.</p>
+					</div>
+				</div>
+				<p class="then reveal"><a href="compare.html">See the full comparison</a>, including when another tool is the better fit.</p>
+			</div>
+		</section>
+
 		<section class="block" id="install">
 			<div class="wrap install-home">
 				<h2 class="reveal">Install on your computer.</h2>
@@ -171,7 +192,7 @@
 						<pre class="cmd" data-copy>brew install coderemoteapp/tap/coderemote</pre>
 					</div>
 				</div>
-				<p class="then reveal">Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (<a href="#beta">ask for a beta invite</a> to get the app on TestFlight). Updating, uninstalling and the rest are in the <a href="docs/#install">setup guide</a>.</p>
+				<p class="then reveal">Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (<a href="#beta">ask for a beta invite</a> to get the app on TestFlight). Updating, uninstalling and the rest are in the <a href="docs/setup.html#install">setup guide</a>.</p>
 			</div>
 		</section>
 
@@ -342,17 +363,6 @@
 			</div>
 		</section>
 
-		<section class="block" id="how">
-			<div class="wrap narrow">
-				<h2 class="reveal">How it works</h2>
-				<ol class="steps">
-					<li class="reveal"><div><h3>Start the agent</h3><p>Run <code>coderemote up</code> in a project folder. A small agent starts on your computer, listening on 127.0.0.1 only.</p></div></li>
-					<li class="reveal"><div><h3>It connects outward</h3><p>The agent publishes itself through a private Microsoft Dev Tunnel. Nothing on your network has to be opened, and it works behind NAT, firewalls and hotel Wi-Fi.</p></div></li>
-					<li class="reveal"><div><h3>Pair your phone</h3><p>Scan the QR code. Only your GitHub or Microsoft account gets through the relay, and every request also needs the pairing token, kept in the iPhone Keychain.</p></div></li>
-				</ol>
-			</div>
-		</section>
-
 		<section class="block">
 			<div class="wrap">
 				<h2 class="reveal">Private by design.</h2>
@@ -379,10 +389,16 @@
 
 	<footer class="site">
 		<div class="wrap">
+			<div class="more">
+				<span>More by Thanh Tran</span>
+				<a href="https://commitplus.app/"><img src="more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
 			<span>© 2026 Thanh Tran. Code Remote is not affiliated with Microsoft or GitHub.</span>
 			<nav>
 				<a href="privacy.html">Privacy</a>
 				<a href="terms.html">Terms</a>
+				<a href="compare.html">Compare</a>
 				<a href="docs/">Docs</a>
 				<a href="support.html">Support</a>
 				<a href="https://github.com/CodeRemoteApp/coderemote">GitHub</a>

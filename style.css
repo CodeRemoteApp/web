@@ -541,3 +541,31 @@ pre.cmd.has-copy { padding-right: 60px; }
 .beta-form button:disabled { opacity: 0.6; cursor: progress; }
 .beta-form .note.error { color: var(--accent); }
 .beta-form .trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* Landing: "one command" section and the compare page */
+pre.cmd.one-liner { font-size: clamp(20px, 4vw, 28px); padding: 22px 28px; margin: 8px 0 32px; text-align: center; }
+pre.cmd.one-liner.has-copy { padding-right: 60px; }
+#simple h2 { margin-bottom: 16px; }
+#simple .lede { color: var(--muted); margin: 0 0 24px; max-width: 760px; }
+#simple .then { margin: 28px 0 0; color: var(--muted); }
+.compare { max-width: 1040px; }
+.compare .lede { font-size: 19px; color: var(--muted); margin: 0 0 24px; max-width: 720px; }
+.compare .meta { margin: -8px 0 40px; }
+.compare h2 { margin-top: 48px; }
+.compare .actions { margin-top: 40px; }
+.table-scroll { overflow-x: auto; margin: 16px -16px 24px; padding: 0 16px; }
+.compare-table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 15px; }
+.compare-table th, .compare-table td { text-align: left; vertical-align: top; padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); }
+.compare-table thead th { font-weight: 600; font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.compare-table tbody th { font-weight: 600; width: 16%; }
+.compare-table .us { background: var(--surface); padding-left: 14px; }
+.compare-table thead .us { color: var(--accent); }
+.compare-table td.us { font-weight: 500; }
+.compare-table tr.setup .us strong { color: var(--accent); }
+.compare-table tr.setup th { color: var(--text); }
+
+/* Footer: other products, one row */
+footer.site .more { flex-basis: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+footer.site .more span { font-weight: 500; color: var(--text); }
+footer.site .more a { display: inline-flex; align-items: center; gap: 8px; }
+footer.site .more img { border-radius: 5px; }

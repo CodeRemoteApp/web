@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FK9Z9QHRN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3FK9Z9QHRN');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+	<title>Compare · Code Remote</title>
+	<meta name="description" content="How Code Remote compares with Tailscale, Termius, Orca, remote desktop apps and plain SSH: what each needs on your computer and network before you can connect from your phone.">
+	<link rel="icon" href="icon.png?v=1d6f5ee2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css?v=56eb60dd">
+</head>
+<body>
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="./"><img src="icon.png?v=1d6f5ee2" alt="">Code Remote</a>
+			<nav class="links">
+				<a href="compare.html">Compare</a>
+				<a href="docs/">Docs</a>
+				<a href="support.html">Support</a>
+				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
+				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Appearance" title="Appearance"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
+				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Appearance">
+					<button type="button" role="menuitemradio" data-theme-choice="system"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg>System<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="light"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/></svg>Light<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+					<button type="button" role="menuitemradio" data-theme-choice="dark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg>Dark<svg class="check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="prose">
+		<div class="wrap compare">
+			<h1>Code Remote vs. the usual ways in.</h1>
+			<p class="lede">To reach your dev machine from a phone, most tools want you to download an app on the computer, set up a VPN, or configure SSH. Code Remote needs one command and one QR scan.</p>
+
+			<pre class="cmd one-liner" data-copy>npx coderemote up</pre>
+			<p class="meta">Needs Node.js 22 or newer. No Node? The <a href="docs/setup.html#install">install script</a> fetches one for coderemote alone. The first run asks you to sign in once with GitHub or Microsoft.</p>
+
+			<h2>Code Remote vs. Tailscale, Termius and Orca</h2>
+			<p class="meta">Based on each tool's public pages in November 2026. Plans and features change, so check theirs before deciding.</p>
+			<div class="table-scroll">
+			<table class="compare-table">
+				<thead>
+					<tr><th></th><th class="us">Code Remote</th><th>Tailscale + an SSH app</th><th>Termius</th><th>Orca</th></tr>
+				</thead>
+				<tbody>
+					<tr class="setup"><th scope="row">Setup on the computer</th><td class="us"><strong>One command:</strong> <code>npx coderemote up</code>. Nothing stays installed.</td><td>Install Tailscale, turn on an SSH server, sign in</td><td>An SSH server must already be running, with keys set up</td><td>Install the Orca desktop app</td></tr>
+					<tr class="setup"><th scope="row">Setup on the phone</th><td class="us"><strong>Scan a QR code.</strong> That is the whole pairing.</td><td>Install Tailscale and an SSH app, sign in, import keys</td><td>Install Termius, add the host and key</td><td>Install the companion app and pair it</td></tr>
+					<tr class="setup"><th scope="row">Network setup</th><td class="us"><strong>None.</strong> It connects outward, so NAT, firewalls and hotel Wi-Fi are fine.</td><td>Join both devices to the same tailnet</td><td>You make the machine reachable: port forward, VPN or similar</td><td>Works from the computer it runs on. Remote machines go over SSH.</td></tr>
+					<tr class="setup"><th scope="row">Accounts and keys</th><td class="us"><strong>One sign-in</strong> (GitHub or Microsoft). No SSH keys to create or copy.</td><td>A Tailscale account, plus SSH keys or Tailscale SSH</td><td>SSH keys or passwords per host. Cloud sync is paid.</td><td>Your own coding-agent accounts</td></tr>
+					<tr><th scope="row">On the phone you get</th><td class="us">Files, git, terminal, ports, dev server previews and a request log, all built for touch</td><td>A terminal, whatever the SSH app offers</td><td>A terminal and SFTP file transfer</td><td>Live agent status, usage and terminals</td></tr>
+					<tr><th scope="row">What it is</th><td class="us">An agent on your computer plus an iPhone app</td><td>A mesh VPN with an SSH app on top</td><td>An SSH, Mosh and SFTP client</td><td>An open-source desktop IDE for running coding agents in parallel</td></tr>
+					<tr><th scope="row">Cost</th><td class="us">Free iPhone beta, free open-source CLI (AGPL)</td><td>Free for personal use within Tailscale's limits</td><td>Free Starter plan, paid Pro for sync and more</td><td>Open source (MIT)</td></tr>
+					<tr><th scope="row">Best for</th><td class="us"><strong>Reaching your dev machine from your phone with the least setup</strong></td><td>Linking many machines into one private network</td><td>Managing many servers over SSH</td><td>Running several agents side by side at your desk</td></tr>
+				</tbody>
+			</table>
+			</div>
+
+			<h2>Why Code Remote</h2>
+			<ul>
+				<li><strong>The shortest path.</strong> One command and one scan. The others need two or three installs, an account on each side, and keys or network settings.</li>
+				<li><strong>Nothing to maintain.</strong> No VPN to keep connected, no SSH server to harden, no keys to rotate, no desktop app to update.</li>
+				<li><strong>Made for the phone.</strong> A file browser, git review, key bar for the terminal and one-tap previews, instead of a terminal squeezed onto a small screen.</li>
+				<li><strong>Private by design.</strong> The agent listens on <code>127.0.0.1</code> only, and no Code Remote server sits in between. <a href="docs/">Read how it works</a>.</li>
+			</ul>
+			<p>Tailscale and Termius are the right choice if you manage many machines or servers, and Code Remote does not replace them for that. Orca is where you run agents at your desk, and Code Remote is how you reach your machine when you are away from it, so the two can sit side by side.</p>
+
+			<h2>When another tool is the better fit</h2>
+			<ul>
+				<li><strong>You need the full desktop.</strong> Code Remote is for developer work: files, git, terminal, dev servers. For a design app or a GUI installer, use a remote desktop app.</li>
+				<li><strong>You already run a VPN and SSH everywhere.</strong> If that is set up and you like it, a terminal app over it works fine. Code Remote is for when you would rather not set it up at all.</li>
+				<li><strong>It is not an iPhone.</strong> The Code Remote app is for iPhone. Anything else has to use the tools above.</li>
+			</ul>
+
+			<h2>What stays simple</h2>
+			<p>The agent listens on <code>127.0.0.1</code> only and publishes itself through a private Microsoft Dev Tunnel. Only your GitHub or Microsoft account gets through, and every request also needs the pairing token kept in the iPhone Keychain. <a href="docs/">Read how it works</a>.</p>
+
+			<div class="actions">
+				<a class="button primary" href="./#install">Get started</a>
+				<a class="button ghost" href="./#beta">Join the iPhone beta</a>
+			</div>
+		</div>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<div class="more">
+				<span>More by Thanh Tran</span>
+				<a href="https://commitplus.app/"><img src="more-commitplus.png" alt="" width="20" height="20">CommitPlus</a>
+				<a href="https://www.loopiecamera.com"><img src="more-loopie.png" alt="" width="20" height="20">Loopie</a>
+			</div>
+			<span>© 2026 Thanh Tran</span>
+			<nav>
+				<a href="./">Home</a>
+				<a href="privacy.html">Privacy</a>
+				<a href="terms.html">Terms</a>
+				<a href="compare.html">Compare</a>
+				<a href="docs/">Docs</a>
+				<a href="support.html">Support</a>
+			</nav>
+		</div>
+	</footer>
+	<script src="theme.js?v=be525c74" defer></script>
+	<script src="tabs.js?v=8e4ab86b" defer></script>
+</body>
+</html>
