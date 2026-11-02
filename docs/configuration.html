@@ -20,16 +20,22 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=56eb60dd">
+	<link rel="stylesheet" href="../style.css?v=f404c4c5">
 </head>
 <body>
 	<header class="site">
 		<div class="wrap">
 			<a class="brand" href="../"><img src="../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
 			<nav class="links">
-				<a href="./">Docs</a>
-				<a href="../compare.html">Compare</a>
-				<a href="../support.html">Support</a>
+				<a class="nav-link" href="./">Docs</a>
+				<a class="nav-link" href="../compare.html">Compare</a>
+				<a class="nav-link" href="../support.html">Support</a>
+				<button class="menu" type="button" popovertarget="nav-menu" aria-label="Menu" title="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="Menu">
+					<a role="menuitem" href="./">Docs</a>
+					<a role="menuitem" href="../compare.html">Compare</a>
+					<a role="menuitem" href="../support.html">Support</a>
+				</div>
 				<a class="gh" href="https://github.com/CodeRemoteApp/coderemote" aria-label="GitHub"><img src="../github.png" alt="" width="18" height="18"><span class="hide-sm">GitHub</span></a>
 				<button class="theme" type="button" popovertarget="theme-menu" aria-label="Appearance" title="Appearance"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path class="half" d="M10 3a7 7 0 0 1 0 14z"/></svg></button>
 				<div class="theme-menu" id="theme-menu" popover role="menu" aria-label="Appearance">
@@ -157,7 +163,7 @@
 			</nav>
 		</div>
 	</footer>
-	<script src="../theme.js?v=be525c74" defer></script>
+	<script src="../theme.js?v=49ae9c01" defer></script>
 	<script src="../tabs.js?v=8e4ab86b" defer></script>
 </body>
 </html>

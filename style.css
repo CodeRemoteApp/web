@@ -100,12 +100,14 @@ nav.links a.gh:hover img { opacity: 1; }
 nav.links { align-items: center; }
 
 /* Appearance picker (theme.js) */
-button.theme {
+button.theme, button.menu {
 	display: inline-flex; align-items: center; justify-content: center;
 	width: 32px; height: 32px; margin: -6px -6px -6px 0; padding: 0;
 	border: 0; border-radius: 8px; background: none; color: var(--muted); cursor: pointer;
 }
-button.theme:hover, button.theme:focus-visible { color: var(--text); background: var(--surface); }
+button.theme:hover, button.theme:focus-visible, button.menu:hover, button.menu:focus-visible { color: var(--text); background: var(--surface); }
+button.menu { display: none; margin: 0; }
+button.menu svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
 button.theme svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; }
 button.theme svg .half { fill: currentColor; stroke: none; }
 .theme-menu {
@@ -122,6 +124,11 @@ button.theme svg .half { fill: currentColor; stroke: none; }
 	width: 16px; height: 16px; flex: none; color: var(--muted);
 	fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
 }
+.theme-menu a {
+	display: flex; align-items: center; padding: 9px 10px; border-radius: 8px;
+	color: inherit; text-decoration: none;
+}
+.theme-menu a:hover, .theme-menu a:focus-visible { background: var(--surface); outline: none; }
 .theme-menu .check { margin-left: auto; color: var(--accent); visibility: hidden; }
 .theme-menu [aria-checked="true"] .check { visibility: visible; }
 
@@ -474,8 +481,10 @@ footer.site a:hover { color: var(--text); }
 
 @media (max-width: 600px) {
 	.wrap { padding: 0 16px; }
-	nav.links { gap: 16px; font-size: 14px; }
-	nav.links .hide-sm { display: none; }
+	nav.links { gap: 8px; font-size: 14px; }
+	nav.links .hide-sm, nav.links .nav-link { display: none; }
+	button.menu { display: inline-flex; }
+	button.theme { margin: 0; }
 	.hero { padding: 64px 0 48px; }
 	section.block { padding: 56px 0; }
 }
@@ -569,3 +578,12 @@ footer.site .more { flex-basis: 100%; display: flex; flex-wrap: wrap; align-item
 footer.site .more span { font-weight: 500; color: var(--text); }
 footer.site .more a { display: inline-flex; align-items: center; gap: 8px; }
 footer.site .more img { border-radius: 5px; }
+
+/* Footer on phones: heading above the apps, links tightly wrapped */
+@media (max-width: 600px) {
+	footer.site { padding: 32px 0 40px; }
+	footer.site .wrap { flex-direction: column; gap: 20px; }
+	footer.site .more { gap: 10px 20px; }
+	footer.site .more span { flex-basis: 100%; }
+	footer.site nav { gap: 10px 20px; }
+}

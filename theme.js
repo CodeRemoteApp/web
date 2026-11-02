@@ -1,5 +1,21 @@
 // Appearance picker in the header: System follows the device, Light and Dark stick (in this
 // browser). A one-line script in each page's <head> applies the choice before the first paint.
+// The header's Menu button (narrow screens) opens the page links in the same kind of popover.
+(() => {
+	const button = document.querySelector('button.menu');
+	const menu = document.getElementById('nav-menu');
+	if (!button || !menu || !('popover' in HTMLElement.prototype)) return;
+	menu.addEventListener('click', (e) => {
+		if (e.target.closest('a')) menu.hidePopover();
+	});
+	menu.addEventListener('beforetoggle', (e) => {
+		if (e.newState !== 'open') return;
+		const r = button.getBoundingClientRect();
+		menu.style.top = `${r.bottom + window.scrollY + 8}px`;
+		menu.style.right = `${document.documentElement.clientWidth - r.right}px`;
+	});
+})();
+
 (() => {
 	const root = document.documentElement;
 	const button = document.querySelector('button.theme');
