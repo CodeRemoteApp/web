@@ -97,7 +97,7 @@
 				<ol>
 					<li><strong>Start the agent.</strong> Run <code>coderemote up</code> in a project folder (or <code>npx coderemote up</code> without installing). A small agent starts on your computer, listening on 127.0.0.1 only.</li>
 					<li><strong>It connects outward.</strong> The agent publishes itself through a private Microsoft Dev Tunnel. Nothing on your network has to be opened, and it works behind NAT, firewalls and hotel Wi-Fi.</li>
-					<li><strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, and every request also needs the pairing token, kept in the iPhone Keychain.</li>
+					<li><strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, every request also needs the pairing token, kept in the iPhone Keychain, and the QR code carries your computer's key so the app encrypts everything end to end: the relay only forwards ciphertext.</li>
 				</ol>
 
 				<nav class="pager" aria-label="Next page">

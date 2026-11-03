@@ -343,10 +343,6 @@
 		"en": "Security issues",
 		"text": "Vấn đề bảo mật"
 	},
-	"180e72ad": {
-		"en": "No. Code Remote has no servers. Traffic passes, encrypted, through Microsoft's Dev Tunnels relay between your phone and your computer. See the <a href=\"privacy.html\">Privacy Policy</a>.",
-		"text": "Không. Code Remote không có máy chủ. Lưu lượng đi qua relay Dev Tunnels của Microsoft, được mã hóa, giữa điện thoại và máy tính của bạn. Xem <a href=\"privacy.html\">Chính sách quyền riêng tư</a>."
-	},
 	"ce2e6065": {
 		"en": "Does my code go through your servers?",
 		"text": "Code của tôi có đi qua máy chủ của các bạn không?"
@@ -1319,10 +1315,6 @@
 		"en": "Next page",
 		"text": "Trang tiếp"
 	},
-	"e7b8c752": {
-		"en": "<strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, and every request also needs the pairing token, kept in the iPhone Keychain.",
-		"text": "<strong>Ghép đôi điện thoại.</strong> Quét mã QR. Chỉ tài khoản GitHub hoặc Microsoft của bạn đi qua được relay, và mỗi request còn cần pairing token, lưu trong Keychain của iPhone."
-	},
 	"1a20a44e": {
 		"en": "<strong>It connects outward.</strong> The agent publishes itself through a private Microsoft Dev Tunnel. Nothing on your network has to be opened, and it works behind NAT, firewalls and hotel Wi-Fi.",
 		"text": "<strong>Nó kết nối ra ngoài.</strong> Agent tự công bố qua một Microsoft Dev Tunnel riêng. Không phải mở gì trên mạng của bạn, và nó chạy được sau NAT, tường lửa và Wi-Fi khách sạn."
@@ -1682,5 +1674,13 @@
 	"d6dbaccd": {
 		"en": "Setup · Code Remote Docs",
 		"text": "Cài đặt · Tài liệu Code Remote"
+	},
+	"56fe61be": {
+		"en": "No. Code Remote has no servers. Traffic passes through Microsoft's Dev Tunnels relay between your phone and your computer, encrypted end to end so the relay only forwards ciphertext (media playback and file uploads are the exception). See the <a href=\"privacy.html\">Privacy Policy</a>.",
+		"text": "Không. Code Remote không có máy chủ. Lưu lượng đi qua relay Microsoft Dev Tunnels giữa điện thoại và máy tính của bạn, được mã hoá đầu cuối nên relay chỉ chuyển tiếp dữ liệu đã mã hoá (phát media và tải tệp lên là ngoại lệ). Xem <a href=\"privacy.html\">Chính sách quyền riêng tư</a>."
+	},
+	"75a6f4a4": {
+		"en": "<strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, every request also needs the pairing token, kept in the iPhone Keychain, and the QR code carries your computer's key so the app encrypts everything end to end: the relay only forwards ciphertext.",
+		"text": "<strong>Ghép đôi điện thoại.</strong> Quét mã QR. Chỉ tài khoản GitHub hoặc Microsoft của bạn đi qua được relay, mọi yêu cầu còn cần token ghép đôi lưu trong Keychain của iPhone, và mã QR mang theo khoá của máy tính để ứng dụng mã hoá mọi thứ đầu cuối: relay chỉ chuyển tiếp dữ liệu đã mã hoá."
 	}
 }

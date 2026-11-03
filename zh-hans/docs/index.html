@@ -96,7 +96,7 @@
 				<ol>
 					<li><strong>启动智能体。</strong>在项目文件夹中运行 <code>coderemote up</code>(不安装的话运行 <code>npx coderemote up</code>)。一个小型智能体会在你的电脑上启动,只监听 127.0.0.1。</li>
 					<li><strong>它向外连接。</strong>智能体通过私有的 Microsoft Dev Tunnel 发布自己。你的网络无需开放任何东西,在 NAT、防火墙和酒店 Wi-Fi 后面也能工作。</li>
-					<li><strong>配对手机。</strong>扫描二维码。只有你的 GitHub 或 Microsoft 账号能通过中继,而且每个请求还需要保存在 iPhone 钥匙串中的配对令牌。</li>
+					<li><strong>配对手机。</strong>扫描二维码。只有你的 GitHub 或 Microsoft 账号才能通过中继，每个请求还需要保存在 iPhone 钥匙串中的配对令牌，二维码还带有电脑的密钥，因此应用会对一切进行端到端加密：中继只转发密文。</li>
 				</ol>
 
 				<nav class="pager" aria-label="下一页">

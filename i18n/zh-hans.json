@@ -343,10 +343,6 @@
 		"en": "Security issues",
 		"text": "安全问题"
 	},
-	"180e72ad": {
-		"en": "No. Code Remote has no servers. Traffic passes, encrypted, through Microsoft's Dev Tunnels relay between your phone and your computer. See the <a href=\"privacy.html\">Privacy Policy</a>.",
-		"text": "不会。Code Remote 没有服务器。流量经过 Microsoft 的 Dev Tunnels 中继,在手机和电脑之间加密传输。请参阅<a href=\"privacy.html\">隐私政策</a>。"
-	},
 	"ce2e6065": {
 		"en": "Does my code go through your servers?",
 		"text": "我的代码会经过你们的服务器吗?"
@@ -1319,10 +1315,6 @@
 		"en": "Next page",
 		"text": "下一页"
 	},
-	"e7b8c752": {
-		"en": "<strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, and every request also needs the pairing token, kept in the iPhone Keychain.",
-		"text": "<strong>配对手机。</strong>扫描二维码。只有你的 GitHub 或 Microsoft 账号能通过中继,而且每个请求还需要保存在 iPhone 钥匙串中的配对令牌。"
-	},
 	"1a20a44e": {
 		"en": "<strong>It connects outward.</strong> The agent publishes itself through a private Microsoft Dev Tunnel. Nothing on your network has to be opened, and it works behind NAT, firewalls and hotel Wi-Fi.",
 		"text": "<strong>它向外连接。</strong>智能体通过私有的 Microsoft Dev Tunnel 发布自己。你的网络无需开放任何东西,在 NAT、防火墙和酒店 Wi-Fi 后面也能工作。"
@@ -1682,5 +1674,13 @@
 	"d6dbaccd": {
 		"en": "Setup · Code Remote Docs",
 		"text": "安装 · Code Remote 文档"
+	},
+	"56fe61be": {
+		"en": "No. Code Remote has no servers. Traffic passes through Microsoft's Dev Tunnels relay between your phone and your computer, encrypted end to end so the relay only forwards ciphertext (media playback and file uploads are the exception). See the <a href=\"privacy.html\">Privacy Policy</a>.",
+		"text": "不会。Code Remote 没有服务器。流量经由 Microsoft 的 Dev Tunnels 中继在手机和电脑之间传输，并且是端到端加密的，中继只转发密文（媒体播放和文件上传除外）。请参阅<a href=\"privacy.html\">隐私政策</a>。"
+	},
+	"75a6f4a4": {
+		"en": "<strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, every request also needs the pairing token, kept in the iPhone Keychain, and the QR code carries your computer's key so the app encrypts everything end to end: the relay only forwards ciphertext.",
+		"text": "<strong>配对手机。</strong>扫描二维码。只有你的 GitHub 或 Microsoft 账号才能通过中继，每个请求还需要保存在 iPhone 钥匙串中的配对令牌，二维码还带有电脑的密钥，因此应用会对一切进行端到端加密：中继只转发密文。"
 	}
 }
