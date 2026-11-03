@@ -231,10 +231,6 @@
 		"en": "No SSH",
 		"text": "Không cần SSH"
 	},
-	"3245e5ca": {
-		"en": "The agent connects outward through a private tunnel. Nothing to install on the phone's network, nothing to join.",
-		"text": "Agent kết nối ra ngoài qua một đường hầm riêng. Không phải cài gì trên mạng của điện thoại, không phải tham gia mạng nào."
-	},
 	"df62f1c4": {
 		"en": "No VPN",
 		"text": "Không cần VPN"
@@ -259,10 +255,6 @@
 		"en": "Terminal: npx coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone",
 		"text": "Terminal: npx coderemote up khởi động agent, kết nối với relay và in ra mã QR để quét bằng iPhone"
 	},
-	"8d792ea6": {
-		"en": "A laptop and a phone joined by a tunnel, with data travelling between them",
-		"text": "Một laptop và một điện thoại nối với nhau bằng đường hầm, dữ liệu chạy qua lại giữa hai bên"
-	},
 	"e1ebfbbc": {
 		"en": "Free on TestFlight. App Store release coming soon.",
 		"text": "Miễn phí trên TestFlight. Bản App Store sắp ra mắt."
@@ -274,10 +266,6 @@
 	"90e40d50": {
 		"en": "Get started",
 		"text": "Bắt đầu"
-	},
-	"f11adb20": {
-		"en": "Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone: <code>npx coderemote up</code>. No SSH keys, no port forwarding, no VPN.",
-		"text": "Duyệt tệp, xem lại và commit bằng git, chạy terminal thật, và mở các dev server trên máy của bạn, tất cả từ iPhone. Một lệnh trên máy tính, một lần quét QR trên điện thoại: <code>npx coderemote up</code>. Không cần khóa SSH, không chuyển tiếp cổng, không VPN."
 	},
 	"553c0fd3": {
 		"en": "Your computer, in your pocket.",
@@ -318,10 +306,6 @@
 	"af74f7c5": {
 		"en": "Copy",
 		"text": "Sao chép"
-	},
-	"adf27d77": {
-		"en": "Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.",
-		"text": "Duyệt tệp, xem lại và commit bằng git, chạy terminal thật trên máy dev của bạn từ iPhone, qua Microsoft Dev Tunnel an toàn. Không cần khóa SSH, không chuyển tiếp cổng, không VPN."
 	},
 	"b94af5fc": {
 		"en": "Code Remote: your computer, from your iPhone",
@@ -418,10 +402,6 @@
 	"60fda17b": {
 		"en": "Support · Code Remote",
 		"text": "Hỗ trợ · Code Remote"
-	},
-	"2c738ac8": {
-		"en": "The agent listens on <code>127.0.0.1</code> only and publishes itself through a private Microsoft Dev Tunnel. Only your GitHub or Microsoft account gets through, and every request also needs the pairing token kept in the iPhone Keychain. <a href=\"docs/\">Read how it works</a>.",
-		"text": "Agent chỉ lắng nghe trên <code>127.0.0.1</code> và tự công bố qua một Microsoft Dev Tunnel riêng. Chỉ tài khoản GitHub hoặc Microsoft của bạn mới vào được, và mỗi request còn cần pairing token lưu trong Keychain của iPhone. <a href=\"docs/\">Xem cách hoạt động</a>."
 	},
 	"d8d86b60": {
 		"en": "What stays simple",
@@ -923,10 +903,6 @@
 		"en": "Lists the tunnels on your Dev Tunnels account and deletes the ones nothing uses any more. An account may keep 10 tunnels. Each computer running coderemote uses one, plus one more for <a href=\"preview.html#how\">previews</a> while its agent runs, and old computers or reinstalls leave theirs behind. Needs coderemote 0.3.6 or later.",
 		"text": "Liệt kê các tunnel trên tài khoản Dev Tunnels của bạn và xóa những cái không còn ai dùng. Một tài khoản được giữ 10 tunnel. Mỗi máy tính chạy coderemote dùng một cái, cộng thêm một cái cho <a href=\"preview.html#how\">xem trước</a> trong lúc agent của nó chạy, và các máy cũ hay các lần cài lại để lại tunnel của chúng. Cần coderemote 0.3.6 trở lên."
 	},
-	"418f5cf8": {
-		"en": "Replaces the access token. Every paired phone and browser loses access at once. Use it if you lose your phone or a pairing link leaks.",
-		"text": "Thay access token. Mọi điện thoại và trình duyệt đã ghép đôi mất quyền truy cập cùng lúc. Dùng khi bạn mất điện thoại hoặc liên kết ghép đôi bị lộ."
-	},
 	"4e118103": {
 		"en": "Installs the Code Remote plugin into Claude Code or Codex, so its sessions show in the app's Agents tab and you can answer their prompts from the phone. Codex runs the plugin's hooks only after you trust them once: open Codex and type <code>/hooks</code>. <code>--remove</code> uninstalls it. See <a href=\"agents.html\">Coding agents</a>.",
 		"text": "Cài plugin Code Remote vào Claude Code hoặc Codex, để các phiên của chúng hiện trong tab Agents của app và bạn trả lời được yêu cầu của chúng từ điện thoại. Codex chỉ chạy hook của plugin sau khi bạn tin cậy chúng một lần: mở Codex và gõ <code>/hooks</code>. <code>--remove</code> gỡ nó. Xem <a href=\"agents.html\">Coding agents</a>."
@@ -1086,10 +1062,6 @@
 	"7c0a25c0": {
 		"en": "up",
 		"text": "up"
-	},
-	"8601c949": {
-		"en": "Every coderemote command and option: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update and help.",
-		"text": "Mọi lệnh và tùy chọn của coderemote: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update và help."
 	},
 	"f9b9cfdb": {
 		"en": "Commands · Code Remote Docs",
@@ -1274,14 +1246,6 @@
 	"78ed9e8d": {
 		"en": "A <a href=\"preview.html#share\">public link</a> to a preview is the one exception: until it ends, anyone with it can open that one dev server, with neither check. It never reaches the agent, its files or its terminal.",
 		"text": "<a href=\"preview.html#share\">Liên kết công khai</a> tới một bản xem trước là ngoại lệ duy nhất: cho đến khi nó hết hạn, ai có nó cũng mở được dev server đó, không qua kiểm tra nào. Nó không bao giờ chạm tới agent, tệp hay terminal của bạn."
-	},
-	"79a66531": {
-		"en": "With <code>coderemote up --allow-anonymous</code> the first check is skipped and the token alone grants access. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.",
-		"text": "Với <code>coderemote up --allow-anonymous</code>, bước kiểm tra đầu tiên bị bỏ qua và chỉ token là đủ để truy cập. Dù thế nào, tệp và git vẫn nằm trong thư mục được chia sẻ; terminal là một shell thật với quyền của người dùng bạn."
-	},
-	"5d52ec6e": {
-		"en": "<strong>The pairing token.</strong> The agent then checks the random token from the QR code, kept in the iPhone Keychain.",
-		"text": "<strong>Pairing token.</strong> Sau đó agent kiểm tra token ngẫu nhiên từ mã QR, được lưu trong Keychain của iPhone."
 	},
 	"f29e0373": {
 		"en": "<strong>Your account.</strong> The tunnel is private: the Dev Tunnels relay lets through only the GitHub or Microsoft account that ran <code>coderemote up</code>.",
@@ -1682,5 +1646,89 @@
 	"75a6f4a4": {
 		"en": "<strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, every request also needs the pairing token, kept in the iPhone Keychain, and the QR code carries your computer's key so the app encrypts everything end to end: the relay only forwards ciphertext.",
 		"text": "<strong>Ghép đôi điện thoại.</strong> Quét mã QR. Chỉ tài khoản GitHub hoặc Microsoft của bạn đi qua được relay, mọi yêu cầu còn cần token ghép đôi lưu trong Keychain của iPhone, và mã QR mang theo khoá của máy tính để ứng dụng mã hoá mọi thứ đầu cuối: relay chỉ chuyển tiếp dữ liệu đã mã hoá."
+	},
+	"9ebfd1ca": {
+		"en": "Opening a terminal or starting a coding agent asks for Face ID first. You choose how strict, and for how long one check lasts, per computer.",
+		"text": "Mở terminal hay khởi động một coding agent sẽ hỏi Face ID trước. Bạn chọn mức chặt chẽ và một lần xác thực kéo dài bao lâu, cho từng máy tính."
+	},
+	"981e9e97": {
+		"en": "Face ID for commands",
+		"text": "Face ID cho các lệnh"
+	},
+	"7f7efeac": {
+		"en": "Each iPhone keeps its own key in its Secure Enclave. Remove one from the computer with a single command, and the others carry on.",
+		"text": "Mỗi iPhone giữ khoá riêng trong Secure Enclave của nó. Gỡ một máy khỏi máy tính chỉ bằng một lệnh, các máy khác vẫn dùng bình thường."
+	},
+	"193e4877": {
+		"en": "A key per phone",
+		"text": "Mỗi điện thoại một khoá"
+	},
+	"51f76ebe": {
+		"en": "The QR code carries your computer's key. Phone and computer encrypt everything between them, so the tunnel's relay only ever forwards ciphertext.",
+		"text": "Mã QR mang theo khoá của máy tính. Điện thoại và máy tính mã hoá mọi thứ giữa chúng, nên relay của đường hầm (tunnel) chỉ chuyển tiếp dữ liệu đã mã hoá."
+	},
+	"7f5a6512": {
+		"en": "End-to-end encrypted",
+		"text": "Mã hoá đầu cuối"
+	},
+	"78e9a9f0": {
+		"en": "The agent connects outward through a private tunnel, end-to-end encrypted. Nothing to install on the phone's network, nothing to join.",
+		"text": "Agent kết nối ra ngoài qua một đường hầm (tunnel) riêng tư, được mã hoá đầu cuối. Không cần cài gì vào mạng của điện thoại, không cần tham gia mạng nào."
+	},
+	"f6623f83": {
+		"en": "A laptop and a phone joined by a tunnel, with data travelling between them locked end to end",
+		"text": "Một laptop và một điện thoại nối với nhau bằng đường hầm, dữ liệu đi qua được khoá đầu cuối"
+	},
+	"b6b3afd8": {
+		"en": "Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, end-to-end encrypted through a Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.",
+		"text": "Duyệt file, review và commit bằng git, và chạy terminal thật trên máy dev của bạn từ iPhone, mã hoá đầu cuối qua Microsoft Dev Tunnel. Không cần khoá SSH, không cần mở port, không cần VPN."
+	},
+	"8dd369c5": {
+		"en": "The agent listens on <code>127.0.0.1</code> only and publishes itself through a private Microsoft Dev Tunnel. Only your GitHub or Microsoft account gets through, everything between phone and computer is end-to-end encrypted with the key in the QR code, and each phone signs in with its own key from its Secure Enclave. <a href=\"docs/\">Read how it works</a>.",
+		"text": "Agent chỉ lắng nghe trên <code>127.0.0.1</code> và tự công bố qua một Microsoft Dev Tunnel riêng tư. Chỉ tài khoản GitHub hoặc Microsoft của bạn đi qua được, mọi thứ giữa điện thoại và máy tính được mã hoá đầu cuối bằng khoá trong mã QR, và mỗi điện thoại đăng nhập bằng khoá riêng từ Secure Enclave của nó. <a href=\"docs/\">Xem cách hoạt động</a>."
+	},
+	"a539eb4f": {
+		"en": "Replaces the access token and this computer's keys, and forgets every enrolled phone. Every paired phone loses access at once. Use it if you lose your only phone or a pairing link leaks.",
+		"text": "Thay token truy cập và các khoá của máy tính này, và quên mọi điện thoại đã đăng ký. Mọi điện thoại đã ghép đôi mất quyền truy cập ngay lập tức. Dùng khi bạn mất chiếc điện thoại duy nhất hoặc link ghép đôi bị lộ."
+	},
+	"2614dad9": {
+		"en": "<code>revoke</code> removes one phone at once: its sessions and open terminals end, and it can't come back without being paired again. <code>policy</code> sets which actions ask for Face ID: <code>none</code>, <code>terminal</code> (the default: terminals, coding agents and builds) or <code>terminal+writes</code> (also file and git changes), and with <code>--window</code> how long one check lasts: <code>5m</code> (the default), <code>30m</code> or <code>1h</code>. The app can make it stricter; making it looser from the app asks for Face ID.",
+		"text": "<code>revoke</code> gỡ một điện thoại ngay lập tức: các phiên và terminal đang mở của nó kết thúc, và nó không quay lại được nếu không ghép đôi lại. <code>policy</code> đặt những thao tác nào hỏi Face ID: <code>none</code>, <code>terminal</code> (mặc định: terminal, coding agent và build) hoặc <code>terminal+writes</code> (thêm thay đổi file và git), và với <code>--window</code> một lần xác thực kéo dài bao lâu: <code>5m</code> (mặc định), <code>30m</code> hoặc <code>1h</code>. Ứng dụng có thể làm nó chặt hơn; nới lỏng từ ứng dụng thì cần Face ID."
+	},
+	"6a38572b": {
+		"en": "Lists the phones enrolled with the folder's running agent, when each enrolled and was last seen, and its Face ID setting. A phone enrolls by itself the first time it connects after scanning the QR code.",
+		"text": "Liệt kê các điện thoại đã đăng ký với agent đang chạy của thư mục, mỗi chiếc đăng ký và được thấy lần cuối khi nào, cùng thiết lập Face ID. Điện thoại tự đăng ký ở lần kết nối đầu tiên sau khi quét mã QR."
+	},
+	"728190e7": {
+		"en": "devices",
+		"text": "devices"
+	},
+	"63ee6e48": {
+		"en": "Every coderemote command and option: up, status, kill, stop, serve, requests, setup, devices, rotate-token, tunnels, login, update and help.",
+		"text": "Mọi lệnh và tuỳ chọn của coderemote: up, status, kill, stop, serve, requests, setup, devices, rotate-token, tunnels, login, update và help."
+	},
+	"0d8a94a8": {
+		"en": "The phones enrolled with each shared folder, and its Face ID setting. Emptied by <code>rotate-token</code>.",
+		"text": "Các điện thoại đã đăng ký với từng thư mục chia sẻ, và thiết lập Face ID của nó. Bị xoá bởi <code>rotate-token</code>."
+	},
+	"3b8a0afe": {
+		"en": "This computer's end-to-end key and the certificate phones on your network check. Replaced by <code>rotate-token</code>.",
+		"text": "Khoá mã hoá đầu cuối của máy tính này và chứng chỉ mà điện thoại trong mạng của bạn kiểm tra. Được thay bởi <code>rotate-token</code>."
+	},
+	"95dc45ad": {
+		"en": "With <code>coderemote up --allow-anonymous</code> the first check is skipped. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.",
+		"text": "Với <code>coderemote up --allow-anonymous</code> bước kiểm tra đầu tiên bị bỏ qua. Dù thế nào, file và git vẫn ở trong thư mục chia sẻ; terminal là shell thật với quyền của người dùng của bạn."
+	},
+	"e7aadb51": {
+		"en": "Everything between the phone and the agent is end-to-end encrypted with the computer's key, which the QR code carries: the relay in between only forwards ciphertext. Opening a terminal, typing into or starting a coding agent and starting a build also ask for Face ID. <code>coderemote devices policy</code> sets how strict that is (never, commands, or commands and changes) and how long one check lasts (5 minutes, 30 minutes or an hour).",
+		"text": "Mọi thứ giữa điện thoại và agent được mã hoá đầu cuối bằng khoá của máy tính, mà mã QR mang theo: relay ở giữa chỉ chuyển tiếp dữ liệu đã mã hoá. Mở terminal, gõ vào hoặc khởi động một coding agent và khởi động build cũng hỏi Face ID. <code>coderemote devices policy</code> đặt mức chặt chẽ (không bao giờ, các lệnh, hoặc các lệnh và thay đổi) và một lần xác thực kéo dài bao lâu (5 phút, 30 phút hoặc một giờ)."
+	},
+	"c25aa6cf": {
+		"en": "<strong>Your phone.</strong> The token in the QR code lets a phone enroll. From then on it signs in with its own key, made in its Secure Enclave and never leaving it, and the token alone opens nothing else. <code>coderemote devices</code> lists the phones; <code>coderemote devices revoke</code> removes one.",
+		"text": "<strong>Điện thoại của bạn.</strong> Token trong mã QR cho phép một điện thoại đăng ký. Từ đó nó đăng nhập bằng khoá riêng, tạo trong Secure Enclave và không bao giờ rời khỏi đó, còn token một mình không mở được gì khác. <code>coderemote devices</code> liệt kê các điện thoại; <code>coderemote devices revoke</code> gỡ một chiếc."
+	},
+	"2856cf98": {
+		"en": "Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.",
+		"text": "Duyệt file, dùng git, chạy terminal và mở các dev server từ iPhone, chỉ với một lệnh: <code>npx coderemote up</code>. Mã hoá đầu cuối. Không cần khoá SSH, không cần mở port, không cần VPN."
 	}
 }

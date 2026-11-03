@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Code Remote: your computer, from your iPhone</title>
-	<meta name="description" content="Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.">
+	<meta name="description" content="Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, end-to-end encrypted through a Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.">
 	<link rel="icon" href="icon.png?v=1d6f5ee2">
 	<link rel="apple-touch-icon" href="icon.png?v=1d6f5ee2">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,14 +78,14 @@
 				<div class="hero-grid">
 					<div class="hero-copy">
 						<h1>Your computer, in your pocket.</h1>
-						<p class="lede">Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone: <code>npx coderemote up</code>. No SSH keys, no port forwarding, no VPN.</p>
+						<p class="lede">Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.</p>
 						<div class="actions">
 							<a class="button primary" href="#install">Get started</a>
 							<a class="button ghost with-icon" href="#beta"><img src="apple.png" alt="" width="18" height="18">Join the iPhone beta</a>
 							<span class="note">Free on TestFlight. App Store release coming soon.</span>
 						</div>
 					</div>
-					<svg class="hero-art art" viewBox="0 0 480 420" role="img" aria-label="A laptop and a phone joined by a tunnel, with data travelling between them">
+					<svg class="hero-art art" viewBox="0 0 480 420" role="img" aria-label="A laptop and a phone joined by a tunnel, with data travelling between them locked end to end">
 						<path class="blob" d="M78 96C150 22 334 14 414 86c70 62 62 214-14 270-92 68-250 62-322 2C14 304 10 166 78 96Z"/>
 						<g class="spark s1"><path d="M60 58l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/></g>
 						<g class="spark s2"><path d="M430 300l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
@@ -94,7 +94,11 @@
 						<path id="tunnel" class="tunnel" d="M226 214C252 130 240 70 284 60c44-10 22 92 50 112"/>
 						<path class="tunnel-flow" d="M226 214C252 130 240 70 284 60c44-10 22 92 50 112"/>
 						<circle class="relay-ring" cx="284" cy="60" r="16"/>
-						<circle class="relay" cx="284" cy="60" r="9"/>
+						<g class="lock">
+							<path class="lock-shackle" d="M277.5 58v-5a6.5 6.5 0 0 1 13 0v5"/>
+							<rect class="relay" x="273" y="57" width="22" height="16" rx="3.5"/>
+							<circle class="lock-hole" cx="284" cy="64.5" r="2"/>
+						</g>
 						<circle class="packet" r="5">
 							<animateMotion dur="3.2s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.55 1"><mpath href="#tunnel"/></animateMotion>
 						</circle>
@@ -177,7 +181,7 @@
 					</div>
 					<div class="card reveal">
 						<h3>No VPN</h3>
-						<p>The agent connects outward through a private tunnel. Nothing to install on the phone's network, nothing to join.</p>
+						<p>The agent connects outward through a private tunnel, end-to-end encrypted. Nothing to install on the phone's network, nothing to join.</p>
 					</div>
 					<div class="card reveal">
 						<h3>No SSH</h3>
@@ -408,6 +412,21 @@
 						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M15 12l-8 8 8 8M25 12l8 8-8 8"/><path class="fill" d="M22 9l-4 22"/></svg>
 						<h3>Open source</h3>
 						<p>The computer side is free software under the AGPL. Read every line on GitHub.</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="18" width="20" height="15" rx="3"/><path d="M14 18v-4a6 6 0 0 1 12 0v4"/><path class="fill" d="M20 23.5v4"/></svg>
+						<h3>End-to-end encrypted</h3>
+						<p>The QR code carries your computer's key. Phone and computer encrypt everything between them, so the tunnel's relay only ever forwards ciphertext.</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="12" y="5" width="16" height="30" rx="4"/><circle class="fill" cx="20" cy="16" r="3"/><path class="fill" d="M20 19v8M20 24h3"/></svg>
+						<h3>A key per phone</h3>
+						<p>Each iPhone keeps its own key in its Secure Enclave. Remove one from the computer with a single command, and the others carry on.</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 14v-4a2 2 0 0 1 2-2h4M26 8h4a2 2 0 0 1 2 2v4M32 26v4a2 2 0 0 1-2 2h-4M14 32h-4a2 2 0 0 1-2-2v-4"/><path class="fill" d="M15 16v2M25 16v2M20 16v6h-1.5M15.5 26c2.5 2 6.5 2 9 0"/></svg>
+						<h3>Face ID for commands</h3>
+						<p>Opening a terminal or starting a coding agent asks for Face ID first. You choose how strict, and for how long one check lasts, per computer.</p>
 					</div>
 				</div>
 			</div>

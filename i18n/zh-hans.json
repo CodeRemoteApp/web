@@ -231,10 +231,6 @@
 		"en": "No SSH",
 		"text": "无需 SSH"
 	},
-	"3245e5ca": {
-		"en": "The agent connects outward through a private tunnel. Nothing to install on the phone's network, nothing to join.",
-		"text": "智能体通过私有隧道向外连接。无需在手机所在的网络上安装任何东西,也无需加入任何网络。"
-	},
 	"df62f1c4": {
 		"en": "No VPN",
 		"text": "无需 VPN"
@@ -259,10 +255,6 @@
 		"en": "Terminal: npx coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone",
 		"text": "终端:npx coderemote up 启动智能体、连接中继,并打印出供 iPhone 扫描的二维码"
 	},
-	"8d792ea6": {
-		"en": "A laptop and a phone joined by a tunnel, with data travelling between them",
-		"text": "一台笔记本电脑和一部手机由隧道相连,数据在两者之间传输"
-	},
 	"e1ebfbbc": {
 		"en": "Free on TestFlight. App Store release coming soon.",
 		"text": "TestFlight 上免费。App Store 版本即将推出。"
@@ -274,10 +266,6 @@
 	"90e40d50": {
 		"en": "Get started",
 		"text": "开始使用"
-	},
-	"f11adb20": {
-		"en": "Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone: <code>npx coderemote up</code>. No SSH keys, no port forwarding, no VPN.",
-		"text": "浏览文件,用 git 审阅和提交,运行真正的终端,并打开你机器上的开发服务器,全部在 iPhone 上完成。电脑上一条命令,手机上扫一下二维码:<code>npx coderemote up</code>。无需 SSH 密钥,无需端口转发,无需 VPN。"
 	},
 	"553c0fd3": {
 		"en": "Your computer, in your pocket.",
@@ -318,10 +306,6 @@
 	"af74f7c5": {
 		"en": "Copy",
 		"text": "复制"
-	},
-	"adf27d77": {
-		"en": "Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.",
-		"text": "用 iPhone 浏览文件、用 git 审阅和提交,并在开发机上运行真正的终端,通过安全的 Microsoft Dev Tunnel 连接。无需 SSH 密钥,无需端口转发,无需 VPN。"
 	},
 	"b94af5fc": {
 		"en": "Code Remote: your computer, from your iPhone",
@@ -418,10 +402,6 @@
 	"60fda17b": {
 		"en": "Support · Code Remote",
 		"text": "支持 · Code Remote"
-	},
-	"2c738ac8": {
-		"en": "The agent listens on <code>127.0.0.1</code> only and publishes itself through a private Microsoft Dev Tunnel. Only your GitHub or Microsoft account gets through, and every request also needs the pairing token kept in the iPhone Keychain. <a href=\"docs/\">Read how it works</a>.",
-		"text": "智能体只监听 <code>127.0.0.1</code>,并通过私有的 Microsoft Dev Tunnel 发布自己。只有你的 GitHub 或 Microsoft 账号才能通过,而且每个请求还需要保存在 iPhone 钥匙串中的配对令牌。<a href=\"docs/\">了解其工作原理</a>。"
 	},
 	"d8d86b60": {
 		"en": "What stays simple",
@@ -923,10 +903,6 @@
 		"en": "Lists the tunnels on your Dev Tunnels account and deletes the ones nothing uses any more. An account may keep 10 tunnels. Each computer running coderemote uses one, plus one more for <a href=\"preview.html#how\">previews</a> while its agent runs, and old computers or reinstalls leave theirs behind. Needs coderemote 0.3.6 or later.",
 		"text": "列出你的 Dev Tunnels 账号下的隧道,并删除不再使用的。一个账号最多保留 10 个隧道。每台运行 coderemote 的电脑占用一个,智能体运行期间还会为<a href=\"preview.html#how\">预览</a>多占用一个,而旧电脑或重新安装会留下它们的隧道。需要 coderemote 0.3.6 或更高版本。"
 	},
-	"418f5cf8": {
-		"en": "Replaces the access token. Every paired phone and browser loses access at once. Use it if you lose your phone or a pairing link leaks.",
-		"text": "替换访问令牌。所有已配对的手机和浏览器会立刻失去访问权限。丢了手机或配对链接泄露时使用。"
-	},
 	"4e118103": {
 		"en": "Installs the Code Remote plugin into Claude Code or Codex, so its sessions show in the app's Agents tab and you can answer their prompts from the phone. Codex runs the plugin's hooks only after you trust them once: open Codex and type <code>/hooks</code>. <code>--remove</code> uninstalls it. See <a href=\"agents.html\">Coding agents</a>.",
 		"text": "把 Code Remote 插件安装到 Claude Code 或 Codex 中,让它们的会话显示在应用的 Agents 标签页,并让你在手机上回答它们的提示。Codex 只有在你信任一次之后才会运行插件的 hook:打开 Codex 并输入 <code>/hooks</code>。<code>--remove</code> 会卸载它。请参阅<a href=\"agents.html\">编程智能体</a>。"
@@ -1086,10 +1062,6 @@
 	"7c0a25c0": {
 		"en": "up",
 		"text": "up"
-	},
-	"8601c949": {
-		"en": "Every coderemote command and option: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update and help.",
-		"text": "coderemote 的所有命令和选项:up、status、kill、stop、serve、requests、setup、rotate-token、tunnels、login、update 和 help。"
 	},
 	"f9b9cfdb": {
 		"en": "Commands · Code Remote Docs",
@@ -1274,14 +1246,6 @@
 	"78ed9e8d": {
 		"en": "A <a href=\"preview.html#share\">public link</a> to a preview is the one exception: until it ends, anyone with it can open that one dev server, with neither check. It never reaches the agent, its files or its terminal.",
 		"text": "预览的<a href=\"preview.html#share\">公开链接</a>是唯一的例外:在它结束之前,任何拿到链接的人都能打开那一个开发服务器,不需要经过这两项检查。它永远不会触及智能体、它的文件或它的终端。"
-	},
-	"79a66531": {
-		"en": "With <code>coderemote up --allow-anonymous</code> the first check is skipped and the token alone grants access. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.",
-		"text": "使用 <code>coderemote up --allow-anonymous</code> 时会跳过第一项检查,仅凭令牌即可访问。无论哪种方式,文件和 git 都限制在共享文件夹内;终端则是拥有你用户权限的真正 shell。"
-	},
-	"5d52ec6e": {
-		"en": "<strong>The pairing token.</strong> The agent then checks the random token from the QR code, kept in the iPhone Keychain.",
-		"text": "<strong>配对令牌。</strong>然后智能体会检查二维码中的随机令牌,它保存在 iPhone 的钥匙串中。"
 	},
 	"f29e0373": {
 		"en": "<strong>Your account.</strong> The tunnel is private: the Dev Tunnels relay lets through only the GitHub or Microsoft account that ran <code>coderemote up</code>.",
@@ -1682,5 +1646,89 @@
 	"75a6f4a4": {
 		"en": "<strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, every request also needs the pairing token, kept in the iPhone Keychain, and the QR code carries your computer's key so the app encrypts everything end to end: the relay only forwards ciphertext.",
 		"text": "<strong>配对手机。</strong>扫描二维码。只有你的 GitHub 或 Microsoft 账号才能通过中继，每个请求还需要保存在 iPhone 钥匙串中的配对令牌，二维码还带有电脑的密钥，因此应用会对一切进行端到端加密：中继只转发密文。"
+	},
+	"9ebfd1ca": {
+		"en": "Opening a terminal or starting a coding agent asks for Face ID first. You choose how strict, and for how long one check lasts, per computer.",
+		"text": "打开终端或启动编程代理前会先要求 Face ID。严格程度以及一次验证的有效时长，可以按每台电脑选择。"
+	},
+	"981e9e97": {
+		"en": "Face ID for commands",
+		"text": "命令需要 Face ID"
+	},
+	"7f7efeac": {
+		"en": "Each iPhone keeps its own key in its Secure Enclave. Remove one from the computer with a single command, and the others carry on.",
+		"text": "每部 iPhone 在自己的 Secure Enclave 中保存自己的密钥。在电脑上用一条命令移除其中一部，其他设备照常使用。"
+	},
+	"193e4877": {
+		"en": "A key per phone",
+		"text": "每部手机一个密钥"
+	},
+	"51f76ebe": {
+		"en": "The QR code carries your computer's key. Phone and computer encrypt everything between them, so the tunnel's relay only ever forwards ciphertext.",
+		"text": "二维码中带有你电脑的密钥。手机和电脑之间的一切都会加密，隧道的中继只能转发密文。"
+	},
+	"7f5a6512": {
+		"en": "End-to-end encrypted",
+		"text": "端到端加密"
+	},
+	"78e9a9f0": {
+		"en": "The agent connects outward through a private tunnel, end-to-end encrypted. Nothing to install on the phone's network, nothing to join.",
+		"text": "代理 (agent) 通过私有隧道向外连接，并经过端到端加密。无需在手机的网络中安装任何东西，也无需加入任何网络。"
+	},
+	"f6623f83": {
+		"en": "A laptop and a phone joined by a tunnel, with data travelling between them locked end to end",
+		"text": "一台笔记本和一部手机由隧道相连，往来的数据经过端到端加锁"
+	},
+	"b6b3afd8": {
+		"en": "Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, end-to-end encrypted through a Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.",
+		"text": "在 iPhone 上浏览文件、用 git 审阅和提交，并在开发机上运行真正的终端，通过 Microsoft Dev Tunnel 端到端加密。无需 SSH 密钥、无需端口转发、无需 VPN。"
+	},
+	"8dd369c5": {
+		"en": "The agent listens on <code>127.0.0.1</code> only and publishes itself through a private Microsoft Dev Tunnel. Only your GitHub or Microsoft account gets through, everything between phone and computer is end-to-end encrypted with the key in the QR code, and each phone signs in with its own key from its Secure Enclave. <a href=\"docs/\">Read how it works</a>.",
+		"text": "代理只监听 <code>127.0.0.1</code>，并通过私有的 Microsoft Dev Tunnel 对外发布。只有你的 GitHub 或 Microsoft 账号能通过，手机和电脑之间的一切都用二维码中的密钥进行端到端加密，每部手机都用其 Secure Enclave 中自己的密钥登录。<a href=\"docs/\">了解工作原理</a>。"
+	},
+	"a539eb4f": {
+		"en": "Replaces the access token and this computer's keys, and forgets every enrolled phone. Every paired phone loses access at once. Use it if you lose your only phone or a pairing link leaks.",
+		"text": "更换访问令牌和这台电脑的密钥，并忘记所有已登记的手机。所有已配对的手机会立即失去访问权限。如果你丢失了唯一的手机或配对链接泄露，请使用它。"
+	},
+	"2614dad9": {
+		"en": "<code>revoke</code> removes one phone at once: its sessions and open terminals end, and it can't come back without being paired again. <code>policy</code> sets which actions ask for Face ID: <code>none</code>, <code>terminal</code> (the default: terminals, coding agents and builds) or <code>terminal+writes</code> (also file and git changes), and with <code>--window</code> how long one check lasts: <code>5m</code> (the default), <code>30m</code> or <code>1h</code>. The app can make it stricter; making it looser from the app asks for Face ID.",
+		"text": "<code>revoke</code> 立即移除一部手机：它的会话和打开的终端会结束，除非重新配对，否则无法回来。<code>policy</code> 设置哪些操作需要 Face ID：<code>none</code>、<code>terminal</code>（默认：终端、编程代理和构建）或 <code>terminal+writes</code>（还包括文件和 git 更改），并用 <code>--window</code> 设置一次验证的有效时长：<code>5m</code>（默认）、<code>30m</code> 或 <code>1h</code>。应用可以让它更严格；在应用中放宽则需要 Face ID。"
+	},
+	"6a38572b": {
+		"en": "Lists the phones enrolled with the folder's running agent, when each enrolled and was last seen, and its Face ID setting. A phone enrolls by itself the first time it connects after scanning the QR code.",
+		"text": "列出已在该文件夹运行中的代理上登记的手机，以及每部手机的登记时间、最后一次出现的时间和 Face ID 设置。手机在扫描二维码后第一次连接时会自行登记。"
+	},
+	"728190e7": {
+		"en": "devices",
+		"text": "devices"
+	},
+	"63ee6e48": {
+		"en": "Every coderemote command and option: up, status, kill, stop, serve, requests, setup, devices, rotate-token, tunnels, login, update and help.",
+		"text": "coderemote 的所有命令和选项：up、status、kill、stop、serve、requests、setup、devices、rotate-token、tunnels、login、update 和 help。"
+	},
+	"0d8a94a8": {
+		"en": "The phones enrolled with each shared folder, and its Face ID setting. Emptied by <code>rotate-token</code>.",
+		"text": "每个共享文件夹已登记的手机及其 Face ID 设置。<code>rotate-token</code> 会将其清空。"
+	},
+	"3b8a0afe": {
+		"en": "This computer's end-to-end key and the certificate phones on your network check. Replaced by <code>rotate-token</code>.",
+		"text": "这台电脑的端到端加密密钥，以及你网络中的手机所校验的证书。由 <code>rotate-token</code> 更换。"
+	},
+	"95dc45ad": {
+		"en": "With <code>coderemote up --allow-anonymous</code> the first check is skipped. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.",
+		"text": "使用 <code>coderemote up --allow-anonymous</code> 时会跳过第一项检查。无论哪种方式，文件和 git 都留在共享文件夹内；终端是以你的用户权限运行的真正 shell。"
+	},
+	"e7aadb51": {
+		"en": "Everything between the phone and the agent is end-to-end encrypted with the computer's key, which the QR code carries: the relay in between only forwards ciphertext. Opening a terminal, typing into or starting a coding agent and starting a build also ask for Face ID. <code>coderemote devices policy</code> sets how strict that is (never, commands, or commands and changes) and how long one check lasts (5 minutes, 30 minutes or an hour).",
+		"text": "手机和代理之间的一切都用电脑的密钥进行端到端加密，这个密钥由二维码携带：中间的中继只转发密文。打开终端、在编程代理中输入或启动它，以及开始构建时，也会要求 Face ID。<code>coderemote devices policy</code> 设置严格程度（从不、命令、或命令和更改）以及一次验证的有效时长（5 分钟、30 分钟或一小时）。"
+	},
+	"c25aa6cf": {
+		"en": "<strong>Your phone.</strong> The token in the QR code lets a phone enroll. From then on it signs in with its own key, made in its Secure Enclave and never leaving it, and the token alone opens nothing else. <code>coderemote devices</code> lists the phones; <code>coderemote devices revoke</code> removes one.",
+		"text": "<strong>你的手机。</strong> 二维码中的令牌让手机可以登记。此后它用自己的密钥登录，这个密钥在其 Secure Enclave 中生成且从不离开，单凭令牌无法打开其他任何东西。<code>coderemote devices</code> 列出手机；<code>coderemote devices revoke</code> 移除其中一部。"
+	},
+	"2856cf98": {
+		"en": "Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.",
+		"text": "在 iPhone 上浏览文件、使用 git、运行终端并打开开发服务器，只需一条命令：<code>npx coderemote up</code>。端到端加密。无需 SSH 密钥、无需端口转发、无需 VPN。"
 	}
 }

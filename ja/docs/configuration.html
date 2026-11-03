@@ -88,9 +88,10 @@
 				<p>デフォルトでは、リクエストは 2 つのチェックを通る必要があります:</p>
 				<ol>
 					<li><strong>あなたのアカウント。</strong>トンネルはプライベートです。Dev Tunnels のリレーは、<code>coderemote up</code> を実行した GitHub または Microsoft アカウントだけを通します。</li>
-					<li><strong>ペアリングトークン。</strong>次に、エージェントが QR コードのランダムなトークンを確認します。トークンは iPhone のキーチェーンに保存されています。</li>
+					<li><strong>あなたのスマートフォン。</strong> QR コードのトークンでスマートフォンを登録できます。その後は Secure Enclave で作られ外に出ない自分の鍵でサインインし、トークンだけではほかに何も開けません。<code>coderemote devices</code> でスマートフォンを一覧表示し、<code>coderemote devices revoke</code> で 1 台を外します。</li>
 				</ol>
-				<p><code>coderemote up --allow-anonymous</code> を使うと、1 つ目のチェックは省略され、トークンだけでアクセスできます。どちらの場合も、ファイルと git は共有フォルダの内側にとどまります。ターミナルは、あなたのユーザー権限を持つ本物のシェルです。</p>
+				<p>スマートフォンとエージェントの間はすべて、QR コードに入っているコンピューターの鍵でエンドツーエンド暗号化されます。間のリレーが中継するのは暗号文だけです。ターミナルを開く、コーディングエージェントに入力する・起動する、ビルドを始めるときも Face ID を求めます。<code>coderemote devices policy</code> でその厳しさ(しない、コマンド、コマンドと変更)と、1 回の確認の長さ(5 分、30 分、1 時間)を設定できます。</p>
+				<p><code>coderemote up --allow-anonymous</code> では 1 つ目の確認が省かれます。どちらの場合も、ファイルと git は共有フォルダーの中にとどまり、ターミナルはあなたのユーザー権限で動く本物のシェルです。</p>
 				<p>プレビューの<a href="preview.html#share">公開リンク</a>は唯一の例外です。終了するまで、リンクを持つ人は誰でも、どちらのチェックもなしでその開発サーバーを開けます。エージェント、そのファイル、ターミナルには届きません。</p>
 
 				<h2 id="files">コンピューター上のファイル</h2>
@@ -98,6 +99,8 @@
 				<table>
 					<tr><th>パス</th><th>内容</th></tr>
 					<tr><td><code>config.json</code></td><td>アクセストークン、このコンピューターのトンネルとそのプレビュー用トンネルの id。これを残せば、すべてのペアリングが維持されます。</td></tr>
+					<tr><td><code>e2e/</code>, <code>lan/</code></td><td>このコンピューターのエンドツーエンド暗号化の鍵と、ネットワーク上のスマートフォンが確認する証明書。<code>rotate-token</code> で置き換わります。</td></tr>
+					<tr><td><code>devices/</code></td><td>共有フォルダーごとに登録されたスマートフォンと、その Face ID の設定。<code>rotate-token</code> で空になります。</td></tr>
 					<tr><td><code>bin/</code></td><td>初回実行時にダウンロードされる Dev Tunnels CLI。</td></tr>
 					<tr><td><code>agents/</code></td><td>実行中のエージェントごとに 1 エントリ。<code>status</code>、<code>kill</code>、<code>stop</code> がそれを見つけるために使います。</td></tr>
 					<tr><td><code>update.json</code></td><td>npm の最新バージョンと、<code>up</code> が最後に問い合わせた時刻(1 日に 1 回まで)。</td></tr>

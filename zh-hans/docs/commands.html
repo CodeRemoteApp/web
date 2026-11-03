@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>命令 · Code Remote 文档</title>
-	<meta name="description" content="coderemote 的所有命令和选项:up、status、kill、stop、serve、requests、setup、rotate-token、tunnels、login、update 和 help。">
+	<meta name="description" content="coderemote 的所有命令和选项：up、status、kill、stop、serve、requests、setup、devices、rotate-token、tunnels、login、update 和 help。">
 	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
 	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,6 +87,7 @@
 					<li><a href="#serve">serve</a></li>
 					<li><a href="#requests">requests</a></li>
 					<li><a href="#setup">setup</a></li>
+					<li><a href="#devices">devices</a></li>
 					<li><a href="#rotate-token">rotate-token</a></li>
 					<li><a href="#tunnels">tunnels</a></li>
 					<li><a href="#login">login</a></li>
@@ -109,6 +110,9 @@
 <span class="p">$ </span>coderemote request &lt;ID&gt;          <span class="c"># headers and bodies of one request</span>
 <span class="p">$ </span>coderemote setup claude          <span class="c"># follow Claude Code sessions in the app</span>
 <span class="p">$ </span>coderemote setup codex           <span class="c"># the same for Codex</span>
+<span class="p">$ </span>coderemote devices               <span class="c"># phones enrolled with this folder</span>
+<span class="p">$ </span>coderemote devices revoke &lt;id&gt;   <span class="c"># remove one phone</span>
+<span class="p">$ </span>coderemote devices policy &lt;level&gt; <span class="c"># how strict Face ID is</span>
 <span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
 <span class="p">$ </span>coderemote tunnels               <span class="c"># your Dev Tunnels account's tunnels</span>
 <span class="p">$ </span>coderemote tunnels delete &lt;id&gt;   <span class="c"># delete ones nothing uses</span>
@@ -194,8 +198,15 @@ Token: …</pre>
 				<pre class="cmd"><span class="p">$ </span>coderemote setup claude
 <span class="p">$ </span>coderemote setup codex</pre>
 
+				<h2 id="devices"><code>devices</code></h2>
+				<p>列出已在该文件夹运行中的代理上登记的手机，以及每部手机的登记时间、最后一次出现的时间和 Face ID 设置。手机在扫描二维码后第一次连接时会自行登记。</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote devices
+<span class="p">$ </span>coderemote devices revoke 94d5                       <span class="c"># an id prefix is enough</span>
+<span class="p">$ </span>coderemote devices policy terminal+writes --window 30m</pre>
+				<p><code>revoke</code> 立即移除一部手机：它的会话和打开的终端会结束，除非重新配对，否则无法回来。<code>policy</code> 设置哪些操作需要 Face ID：<code>none</code>、<code>terminal</code>（默认：终端、编程代理和构建）或 <code>terminal+writes</code>（还包括文件和 git 更改），并用 <code>--window</code> 设置一次验证的有效时长：<code>5m</code>（默认）、<code>30m</code> 或 <code>1h</code>。应用可以让它更严格；在应用中放宽则需要 Face ID。</p>
+
 				<h2 id="rotate-token"><code>rotate-token</code></h2>
-				<p>替换访问令牌。所有已配对的手机和浏览器会立刻失去访问权限。丢了手机或配对链接泄露时使用。</p>
+				<p>更换访问令牌和这台电脑的密钥，并忘记所有已登记的手机。所有已配对的手机会立即失去访问权限。如果你丢失了唯一的手机或配对链接泄露，请使用它。</p>
 				<pre class="cmd"><span class="p">$ </span>coderemote rotate-token
 Token rotated. Re-pair your devices, and restart running agents.</pre>
 				<p>然后重启 <code>coderemote up</code>,并在你仍然信任的设备上扫描新的二维码。</p>

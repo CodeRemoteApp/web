@@ -89,9 +89,10 @@
 				<p>By default a request has to pass two checks:</p>
 				<ol>
 					<li><strong>Your account.</strong> The tunnel is private: the Dev Tunnels relay lets through only the GitHub or Microsoft account that ran <code>coderemote up</code>.</li>
-					<li><strong>The pairing token.</strong> The agent then checks the random token from the QR code, kept in the iPhone Keychain.</li>
+					<li><strong>Your phone.</strong> The token in the QR code lets a phone enroll. From then on it signs in with its own key, made in its Secure Enclave and never leaving it, and the token alone opens nothing else. <code>coderemote devices</code> lists the phones; <code>coderemote devices revoke</code> removes one.</li>
 				</ol>
-				<p>With <code>coderemote up --allow-anonymous</code> the first check is skipped and the token alone grants access. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.</p>
+				<p>Everything between the phone and the agent is end-to-end encrypted with the computer's key, which the QR code carries: the relay in between only forwards ciphertext. Opening a terminal, typing into or starting a coding agent and starting a build also ask for Face ID. <code>coderemote devices policy</code> sets how strict that is (never, commands, or commands and changes) and how long one check lasts (5 minutes, 30 minutes or an hour).</p>
+				<p>With <code>coderemote up --allow-anonymous</code> the first check is skipped. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.</p>
 				<p>A <a href="preview.html#share">public link</a> to a preview is the one exception: until it ends, anyone with it can open that one dev server, with neither check. It never reaches the agent, its files or its terminal.</p>
 
 				<h2 id="files">Files on your computer</h2>
@@ -99,6 +100,8 @@
 				<table>
 					<tr><th>Path</th><th>What it holds</th></tr>
 					<tr><td><code>config.json</code></td><td>The access token, the id of this computer's tunnel and of its preview tunnel. Keeping it keeps every pairing.</td></tr>
+					<tr><td><code>e2e/</code>, <code>lan/</code></td><td>This computer's end-to-end key and the certificate phones on your network check. Replaced by <code>rotate-token</code>.</td></tr>
+					<tr><td><code>devices/</code></td><td>The phones enrolled with each shared folder, and its Face ID setting. Emptied by <code>rotate-token</code>.</td></tr>
 					<tr><td><code>bin/</code></td><td>The Dev Tunnels CLI downloaded on first run.</td></tr>
 					<tr><td><code>agents/</code></td><td>One entry per running agent, so <code>status</code>, <code>kill</code> and <code>stop</code> can find it.</td></tr>
 					<tr><td><code>update.json</code></td><td>The latest version on npm and when <code>up</code> last asked, at most once a day.</td></tr>

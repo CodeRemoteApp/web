@@ -231,10 +231,6 @@
 		"en": "No SSH",
 		"text": "SSH 不要"
 	},
-	"3245e5ca": {
-		"en": "The agent connects outward through a private tunnel. Nothing to install on the phone's network, nothing to join.",
-		"text": "エージェントはプライベートトンネルを通って外向きに接続します。iPhone 側のネットワークに何かを入れる必要も、参加する必要もありません。"
-	},
 	"df62f1c4": {
 		"en": "No VPN",
 		"text": "VPN 不要"
@@ -259,10 +255,6 @@
 		"en": "Terminal: npx coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone",
 		"text": "ターミナル: npx coderemote up がエージェントを起動し、リレーに接続して、iPhone で読み取る QR コードを表示します"
 	},
-	"8d792ea6": {
-		"en": "A laptop and a phone joined by a tunnel, with data travelling between them",
-		"text": "トンネルでつながったノート PC と iPhone。その間をデータが行き来しています"
-	},
 	"e1ebfbbc": {
 		"en": "Free on TestFlight. App Store release coming soon.",
 		"text": "TestFlight で無料。App Store 版は近日公開予定です。"
@@ -274,10 +266,6 @@
 	"90e40d50": {
 		"en": "Get started",
 		"text": "はじめる"
-	},
-	"f11adb20": {
-		"en": "Browse files, review and commit with git, run a real terminal, and open the dev servers on your machine, all from your iPhone. One command on the computer, one QR scan on the phone: <code>npx coderemote up</code>. No SSH keys, no port forwarding, no VPN.",
-		"text": "iPhone から、ファイルの閲覧、git でのレビューとコミット、本物のターミナルの実行、手元のマシンの開発サーバーを開くことまで。コンピューターでコマンドを 1 つ、iPhone で QR をひとつ読み取るだけ: <code>npx coderemote up</code>。SSH 鍵もポート転送も VPN も不要です。"
 	},
 	"553c0fd3": {
 		"en": "Your computer, in your pocket.",
@@ -318,10 +306,6 @@
 	"af74f7c5": {
 		"en": "Copy",
 		"text": "コピー"
-	},
-	"adf27d77": {
-		"en": "Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, over a secure Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.",
-		"text": "iPhone から、ファイルの閲覧、git でのレビューとコミット、開発マシン上の本物のターミナルの実行まで。安全な Microsoft Dev Tunnel 経由です。SSH 鍵もポート転送も VPN も不要。"
 	},
 	"b94af5fc": {
 		"en": "Code Remote: your computer, from your iPhone",
@@ -418,10 +402,6 @@
 	"60fda17b": {
 		"en": "Support · Code Remote",
 		"text": "サポート · Code Remote"
-	},
-	"2c738ac8": {
-		"en": "The agent listens on <code>127.0.0.1</code> only and publishes itself through a private Microsoft Dev Tunnel. Only your GitHub or Microsoft account gets through, and every request also needs the pairing token kept in the iPhone Keychain. <a href=\"docs/\">Read how it works</a>.",
-		"text": "エージェントは <code>127.0.0.1</code> だけで待ち受け、プライベートな Microsoft Dev Tunnel を通して自分自身を公開します。通れるのはあなたの GitHub または Microsoft アカウントだけで、すべてのリクエストには iPhone のキーチェーンに保存されたペアリングトークンも必要です。<a href=\"docs/\">仕組みを読む</a>。"
 	},
 	"d8d86b60": {
 		"en": "What stays simple",
@@ -923,10 +903,6 @@
 		"en": "Lists the tunnels on your Dev Tunnels account and deletes the ones nothing uses any more. An account may keep 10 tunnels. Each computer running coderemote uses one, plus one more for <a href=\"preview.html#how\">previews</a> while its agent runs, and old computers or reinstalls leave theirs behind. Needs coderemote 0.3.6 or later.",
 		"text": "Dev Tunnels アカウントのトンネルを一覧表示し、使われていないものを削除します。アカウントで保持できるトンネルは 10 個です。coderemote を実行するコンピューターごとに 1 つ、エージェントの実行中は<a href=\"preview.html#how\">プレビュー</a>用にもう 1 つ使い、古いコンピューターや再インストールは自分のトンネルを残します。coderemote 0.3.6 以降が必要です。"
 	},
-	"418f5cf8": {
-		"en": "Replaces the access token. Every paired phone and browser loses access at once. Use it if you lose your phone or a pairing link leaks.",
-		"text": "アクセストークンを置き換えます。ペアリング済みのすべての iPhone とブラウザが一度にアクセスできなくなります。iPhone を紛失したときやペアリングリンクが漏れたときに使います。"
-	},
 	"4e118103": {
 		"en": "Installs the Code Remote plugin into Claude Code or Codex, so its sessions show in the app's Agents tab and you can answer their prompts from the phone. Codex runs the plugin's hooks only after you trust them once: open Codex and type <code>/hooks</code>. <code>--remove</code> uninstalls it. See <a href=\"agents.html\">Coding agents</a>.",
 		"text": "Code Remote プラグインを Claude Code または Codex にインストールし、そのセッションをアプリの Agents タブに表示して、iPhone から確認に回答できるようにします。Codex はプラグインの hook を、一度信頼した後でしか実行しません。Codex を開いて <code>/hooks</code> と入力してください。<code>--remove</code> でアンインストールします。<a href=\"agents.html\">コーディングエージェント</a>を参照。"
@@ -1086,10 +1062,6 @@
 	"7c0a25c0": {
 		"en": "up",
 		"text": "up"
-	},
-	"8601c949": {
-		"en": "Every coderemote command and option: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update and help.",
-		"text": "coderemote のすべてのコマンドとオプション: up、status、kill、stop、serve、requests、setup、rotate-token、tunnels、login、update、help。"
 	},
 	"f9b9cfdb": {
 		"en": "Commands · Code Remote Docs",
@@ -1274,14 +1246,6 @@
 	"78ed9e8d": {
 		"en": "A <a href=\"preview.html#share\">public link</a> to a preview is the one exception: until it ends, anyone with it can open that one dev server, with neither check. It never reaches the agent, its files or its terminal.",
 		"text": "プレビューの<a href=\"preview.html#share\">公開リンク</a>は唯一の例外です。終了するまで、リンクを持つ人は誰でも、どちらのチェックもなしでその開発サーバーを開けます。エージェント、そのファイル、ターミナルには届きません。"
-	},
-	"79a66531": {
-		"en": "With <code>coderemote up --allow-anonymous</code> the first check is skipped and the token alone grants access. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.",
-		"text": "<code>coderemote up --allow-anonymous</code> を使うと、1 つ目のチェックは省略され、トークンだけでアクセスできます。どちらの場合も、ファイルと git は共有フォルダの内側にとどまります。ターミナルは、あなたのユーザー権限を持つ本物のシェルです。"
-	},
-	"5d52ec6e": {
-		"en": "<strong>The pairing token.</strong> The agent then checks the random token from the QR code, kept in the iPhone Keychain.",
-		"text": "<strong>ペアリングトークン。</strong>次に、エージェントが QR コードのランダムなトークンを確認します。トークンは iPhone のキーチェーンに保存されています。"
 	},
 	"f29e0373": {
 		"en": "<strong>Your account.</strong> The tunnel is private: the Dev Tunnels relay lets through only the GitHub or Microsoft account that ran <code>coderemote up</code>.",
@@ -1682,5 +1646,89 @@
 	"75a6f4a4": {
 		"en": "<strong>Pair your phone.</strong> Scan the QR code. Only your GitHub or Microsoft account gets through the relay, every request also needs the pairing token, kept in the iPhone Keychain, and the QR code carries your computer's key so the app encrypts everything end to end: the relay only forwards ciphertext.",
 		"text": "<strong>iPhone をペアリングします。</strong>QR コードをスキャンします。リレーを通れるのはあなたの GitHub または Microsoft アカウントだけで、すべてのリクエストには iPhone のキーチェーンに保存されたペアリングトークンも必要です。さらに QR コードにコンピューターの鍵が含まれるため、アプリはすべてをエンドツーエンドで暗号化し、リレーは暗号文を中継するだけです。"
+	},
+	"9ebfd1ca": {
+		"en": "Opening a terminal or starting a coding agent asks for Face ID first. You choose how strict, and for how long one check lasts, per computer.",
+		"text": "ターミナルを開くときやコーディングエージェントを起動するときは、まず Face ID を求めます。厳しさと、1 回の確認がどれだけ続くかは、コンピューターごとに選べます。"
+	},
+	"981e9e97": {
+		"en": "Face ID for commands",
+		"text": "コマンドには Face ID"
+	},
+	"7f7efeac": {
+		"en": "Each iPhone keeps its own key in its Secure Enclave. Remove one from the computer with a single command, and the others carry on.",
+		"text": "iPhone ごとに自分の鍵を Secure Enclave に持ちます。コンピューターから 1 つのコマンドで 1 台を外せて、ほかの端末はそのまま使えます。"
+	},
+	"193e4877": {
+		"en": "A key per phone",
+		"text": "端末ごとに 1 つの鍵"
+	},
+	"51f76ebe": {
+		"en": "The QR code carries your computer's key. Phone and computer encrypt everything between them, so the tunnel's relay only ever forwards ciphertext.",
+		"text": "QR コードにはコンピューターの鍵が入っています。スマートフォンとコンピューターの間はすべて暗号化されるので、トンネルのリレーが中継するのは暗号文だけです。"
+	},
+	"7f5a6512": {
+		"en": "End-to-end encrypted",
+		"text": "エンドツーエンド暗号化"
+	},
+	"78e9a9f0": {
+		"en": "The agent connects outward through a private tunnel, end-to-end encrypted. Nothing to install on the phone's network, nothing to join.",
+		"text": "エージェントは非公開のトンネルを通して外向きに接続し、通信はエンドツーエンドで暗号化されます。スマートフォンのネットワークに入れるものも、参加するものもありません。"
+	},
+	"f6623f83": {
+		"en": "A laptop and a phone joined by a tunnel, with data travelling between them locked end to end",
+		"text": "トンネルでつながったノートパソコンとスマートフォン。間を行き来するデータはエンドツーエンドで鍵がかかっています"
+	},
+	"b6b3afd8": {
+		"en": "Browse files, review and commit with git, and run a real terminal on your dev machine from your iPhone, end-to-end encrypted through a Microsoft Dev Tunnel. No SSH keys, no port forwarding, no VPN.",
+		"text": "ファイルの閲覧、git でのレビューとコミット、本物のターミナルを、開発マシン上で iPhone から。Microsoft Dev Tunnel を通してエンドツーエンドで暗号化されます。SSH 鍵もポート転送も VPN も不要です。"
+	},
+	"8dd369c5": {
+		"en": "The agent listens on <code>127.0.0.1</code> only and publishes itself through a private Microsoft Dev Tunnel. Only your GitHub or Microsoft account gets through, everything between phone and computer is end-to-end encrypted with the key in the QR code, and each phone signs in with its own key from its Secure Enclave. <a href=\"docs/\">Read how it works</a>.",
+		"text": "エージェントは <code>127.0.0.1</code> だけで待ち受け、非公開の Microsoft Dev Tunnel を通して公開されます。通れるのはあなたの GitHub または Microsoft アカウントだけで、スマートフォンとコンピューターの間はすべて QR コードの鍵でエンドツーエンド暗号化され、各スマートフォンは Secure Enclave にある自分の鍵でサインインします。<a href=\"docs/\">仕組みを読む</a>。"
+	},
+	"a539eb4f": {
+		"en": "Replaces the access token and this computer's keys, and forgets every enrolled phone. Every paired phone loses access at once. Use it if you lose your only phone or a pairing link leaks.",
+		"text": "アクセストークンとこのコンピューターの鍵を置き換え、登録済みのスマートフォンをすべて忘れます。ペアリング済みのスマートフォンはすべて、すぐにアクセスできなくなります。唯一のスマートフォンをなくしたときや、ペアリングリンクが漏れたときに使ってください。"
+	},
+	"2614dad9": {
+		"en": "<code>revoke</code> removes one phone at once: its sessions and open terminals end, and it can't come back without being paired again. <code>policy</code> sets which actions ask for Face ID: <code>none</code>, <code>terminal</code> (the default: terminals, coding agents and builds) or <code>terminal+writes</code> (also file and git changes), and with <code>--window</code> how long one check lasts: <code>5m</code> (the default), <code>30m</code> or <code>1h</code>. The app can make it stricter; making it looser from the app asks for Face ID.",
+		"text": "<code>revoke</code> はスマートフォンを 1 台すぐに外します。そのセッションと開いているターミナルは終了し、ペアリングし直さない限り戻れません。<code>policy</code> は Face ID を求める操作を決めます: <code>none</code>、<code>terminal</code>(既定: ターミナル、コーディングエージェント、ビルド)、<code>terminal+writes</code>(ファイルと git の変更も)。<code>--window</code> で 1 回の確認の長さを決めます: <code>5m</code>(既定)、<code>30m</code>、<code>1h</code>。アプリからは厳しくでき、緩めるときは Face ID を求めます。"
+	},
+	"6a38572b": {
+		"en": "Lists the phones enrolled with the folder's running agent, when each enrolled and was last seen, and its Face ID setting. A phone enrolls by itself the first time it connects after scanning the QR code.",
+		"text": "フォルダーで動いているエージェントに登録されたスマートフォンを、登録日時と最後に見えた日時、Face ID の設定とともに一覧表示します。スマートフォンは QR コードをスキャンした後の最初の接続で自分で登録します。"
+	},
+	"728190e7": {
+		"en": "devices",
+		"text": "devices"
+	},
+	"63ee6e48": {
+		"en": "Every coderemote command and option: up, status, kill, stop, serve, requests, setup, devices, rotate-token, tunnels, login, update and help.",
+		"text": "coderemote のすべてのコマンドとオプション: up、status、kill、stop、serve、requests、setup、devices、rotate-token、tunnels、login、update、help。"
+	},
+	"0d8a94a8": {
+		"en": "The phones enrolled with each shared folder, and its Face ID setting. Emptied by <code>rotate-token</code>.",
+		"text": "共有フォルダーごとに登録されたスマートフォンと、その Face ID の設定。<code>rotate-token</code> で空になります。"
+	},
+	"3b8a0afe": {
+		"en": "This computer's end-to-end key and the certificate phones on your network check. Replaced by <code>rotate-token</code>.",
+		"text": "このコンピューターのエンドツーエンド暗号化の鍵と、ネットワーク上のスマートフォンが確認する証明書。<code>rotate-token</code> で置き換わります。"
+	},
+	"95dc45ad": {
+		"en": "With <code>coderemote up --allow-anonymous</code> the first check is skipped. Either way, files and git stay inside the shared folder; a terminal is a real shell with your user's permissions.",
+		"text": "<code>coderemote up --allow-anonymous</code> では 1 つ目の確認が省かれます。どちらの場合も、ファイルと git は共有フォルダーの中にとどまり、ターミナルはあなたのユーザー権限で動く本物のシェルです。"
+	},
+	"e7aadb51": {
+		"en": "Everything between the phone and the agent is end-to-end encrypted with the computer's key, which the QR code carries: the relay in between only forwards ciphertext. Opening a terminal, typing into or starting a coding agent and starting a build also ask for Face ID. <code>coderemote devices policy</code> sets how strict that is (never, commands, or commands and changes) and how long one check lasts (5 minutes, 30 minutes or an hour).",
+		"text": "スマートフォンとエージェントの間はすべて、QR コードに入っているコンピューターの鍵でエンドツーエンド暗号化されます。間のリレーが中継するのは暗号文だけです。ターミナルを開く、コーディングエージェントに入力する・起動する、ビルドを始めるときも Face ID を求めます。<code>coderemote devices policy</code> でその厳しさ(しない、コマンド、コマンドと変更)と、1 回の確認の長さ(5 分、30 分、1 時間)を設定できます。"
+	},
+	"c25aa6cf": {
+		"en": "<strong>Your phone.</strong> The token in the QR code lets a phone enroll. From then on it signs in with its own key, made in its Secure Enclave and never leaving it, and the token alone opens nothing else. <code>coderemote devices</code> lists the phones; <code>coderemote devices revoke</code> removes one.",
+		"text": "<strong>あなたのスマートフォン。</strong> QR コードのトークンでスマートフォンを登録できます。その後は Secure Enclave で作られ外に出ない自分の鍵でサインインし、トークンだけではほかに何も開けません。<code>coderemote devices</code> でスマートフォンを一覧表示し、<code>coderemote devices revoke</code> で 1 台を外します。"
+	},
+	"2856cf98": {
+		"en": "Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.",
+		"text": "ファイルの閲覧、git、ターミナル、開発サーバーを iPhone から。コマンドは 1 つだけ: <code>npx coderemote up</code>。エンドツーエンド暗号化。SSH 鍵もポート転送も VPN も不要です。"
 	}
 }

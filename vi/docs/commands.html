@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Lệnh · Tài liệu Code Remote</title>
-	<meta name="description" content="Mọi lệnh và tùy chọn của coderemote: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update và help.">
+	<meta name="description" content="Mọi lệnh và tuỳ chọn của coderemote: up, status, kill, stop, serve, requests, setup, devices, rotate-token, tunnels, login, update và help.">
 	<link rel="icon" href="../../icon.png?v=1d6f5ee2">
 	<link rel="apple-touch-icon" href="../../icon.png?v=1d6f5ee2">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,6 +87,7 @@
 					<li><a href="#serve">serve</a></li>
 					<li><a href="#requests">requests</a></li>
 					<li><a href="#setup">setup</a></li>
+					<li><a href="#devices">devices</a></li>
 					<li><a href="#rotate-token">rotate-token</a></li>
 					<li><a href="#tunnels">tunnels</a></li>
 					<li><a href="#login">login</a></li>
@@ -109,6 +110,9 @@
 <span class="p">$ </span>coderemote request &lt;ID&gt;          <span class="c"># headers and bodies of one request</span>
 <span class="p">$ </span>coderemote setup claude          <span class="c"># follow Claude Code sessions in the app</span>
 <span class="p">$ </span>coderemote setup codex           <span class="c"># the same for Codex</span>
+<span class="p">$ </span>coderemote devices               <span class="c"># phones enrolled with this folder</span>
+<span class="p">$ </span>coderemote devices revoke &lt;id&gt;   <span class="c"># remove one phone</span>
+<span class="p">$ </span>coderemote devices policy &lt;level&gt; <span class="c"># how strict Face ID is</span>
 <span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
 <span class="p">$ </span>coderemote tunnels               <span class="c"># your Dev Tunnels account's tunnels</span>
 <span class="p">$ </span>coderemote tunnels delete &lt;id&gt;   <span class="c"># delete ones nothing uses</span>
@@ -194,8 +198,15 @@ Token: …</pre>
 				<pre class="cmd"><span class="p">$ </span>coderemote setup claude
 <span class="p">$ </span>coderemote setup codex</pre>
 
+				<h2 id="devices"><code>devices</code></h2>
+				<p>Liệt kê các điện thoại đã đăng ký với agent đang chạy của thư mục, mỗi chiếc đăng ký và được thấy lần cuối khi nào, cùng thiết lập Face ID. Điện thoại tự đăng ký ở lần kết nối đầu tiên sau khi quét mã QR.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote devices
+<span class="p">$ </span>coderemote devices revoke 94d5                       <span class="c"># an id prefix is enough</span>
+<span class="p">$ </span>coderemote devices policy terminal+writes --window 30m</pre>
+				<p><code>revoke</code> gỡ một điện thoại ngay lập tức: các phiên và terminal đang mở của nó kết thúc, và nó không quay lại được nếu không ghép đôi lại. <code>policy</code> đặt những thao tác nào hỏi Face ID: <code>none</code>, <code>terminal</code> (mặc định: terminal, coding agent và build) hoặc <code>terminal+writes</code> (thêm thay đổi file và git), và với <code>--window</code> một lần xác thực kéo dài bao lâu: <code>5m</code> (mặc định), <code>30m</code> hoặc <code>1h</code>. Ứng dụng có thể làm nó chặt hơn; nới lỏng từ ứng dụng thì cần Face ID.</p>
+
 				<h2 id="rotate-token"><code>rotate-token</code></h2>
-				<p>Thay access token. Mọi điện thoại và trình duyệt đã ghép đôi mất quyền truy cập cùng lúc. Dùng khi bạn mất điện thoại hoặc liên kết ghép đôi bị lộ.</p>
+				<p>Thay token truy cập và các khoá của máy tính này, và quên mọi điện thoại đã đăng ký. Mọi điện thoại đã ghép đôi mất quyền truy cập ngay lập tức. Dùng khi bạn mất chiếc điện thoại duy nhất hoặc link ghép đôi bị lộ.</p>
 				<pre class="cmd"><span class="p">$ </span>coderemote rotate-token
 Token rotated. Re-pair your devices, and restart running agents.</pre>
 				<p>Sau đó khởi động lại <code>coderemote up</code> và quét mã QR mới trên các thiết bị bạn vẫn tin tưởng.</p>

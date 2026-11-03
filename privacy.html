@@ -110,6 +110,7 @@
 			<h3>On your iPhone</h3>
 			<ul>
 				<li><strong>Pairings:</strong> the address of each computer you pair with and its access token, stored in the iOS Keychain.</li>
+				<li><strong>Device keys:</strong> for each computer, two keys this iPhone makes in its Secure Enclave, which never leave it, and the id the computer gave it, stored in the iOS Keychain.</li>
 				<li><strong>Tunnel sign-in tokens:</strong> the token Microsoft Dev Tunnels issues after you sign in, stored in the iOS Keychain.</li>
 				<li><strong>Notification keys:</strong> for each computer you turn notifications on for, the key that decrypts its notifications, stored in the iOS Keychain and shared only with the App's notification extension.</li>
 				<li><strong>Settings:</strong> your preferences in the App, stored on the device.</li>
@@ -117,7 +118,7 @@
 			<p>Deleting a computer in the App, or deleting the App, removes this data from your iPhone. It may be included in your own encrypted device backups, under Apple's control.</p>
 
 			<h3>On your computer</h3>
-			<p>The CLI keeps its access token and configuration in <code>~/.coderemote/</code> (readable only by your user account), including, for each iPhone that turned notifications on, its push token, ticket and notification key. Running <code>coderemote rotate-token</code> revokes every paired device and deletes those.</p>
+			<p>The CLI keeps its access token and configuration in <code>~/.coderemote/</code> (readable only by your user account), including the name and public keys of each iPhone enrolled with it, and, for each iPhone that turned notifications on, its push token, ticket and notification key. Running <code>coderemote rotate-token</code> revokes every paired device and deletes those.</p>
 			<p>If you run <code>coderemote setup claude</code> or <code>coderemote setup codex</code>, Claude Code or Codex reports its sessions (prompts, replies, the tools it runs and their output) to the <code>coderemote</code> running on the same computer, which keeps them in memory to show in the App and forgets them when it stops. Nothing of it leaves your computer except through your own connection to the App, and in the encrypted notifications above.</p>
 
 			<h2>Device permissions</h2>
@@ -130,7 +131,7 @@
 			<h2>Third-party services</h2>
 			<p>To reach your computer from anywhere, Code Remote uses services run by other companies. They process data under their own privacy policies, not ours:</p>
 			<ul>
-				<li><strong>Microsoft Dev Tunnels.</strong> Traffic between the App and your computer passes through Microsoft's Dev Tunnels relay, over HTTPS / WSS and, for a computer paired from its current QR code, also encrypted end to end between the App and your computer, so the relay only forwards ciphertext. Media you play, files you upload to a coding agent and some large downloads are not end-to-end encrypted, and neither is a computer paired before this existed (on the same Wi-Fi the App connects to the computer directly instead). The CLI downloads Microsoft's Dev Tunnels command-line tool on first run, and that tool may send diagnostic data to Microsoft. See the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</li>
+				<li><strong>Microsoft Dev Tunnels.</strong> Traffic between the App and your computer passes through Microsoft's Dev Tunnels relay, over HTTPS / WSS and end-to-end encrypted between the App and your computer, so the relay only forwards ciphertext. Media you play, files you upload to a coding agent and some large downloads are not end-to-end encrypted (on the same Wi-Fi the App connects to the computer directly instead). The CLI downloads Microsoft's Dev Tunnels command-line tool on first run, and that tool may send diagnostic data to Microsoft. See the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</li>
 				<li><strong>GitHub or Microsoft sign-in.</strong> When you sign in to Dev Tunnels, you do so on GitHub's or Microsoft's own page in the system browser. We never see your password. See the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
 				<li><strong>Apple Push Notification service and Cloudflare.</strong> Notifications reach your iPhone through Apple's push service, sent by our relay on Cloudflare Workers, as described under <a href="#notifications">Notifications</a>. See <a href="https://www.apple.com/legal/privacy/">Apple's</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's</a> privacy policies.</li>
 				<li><strong>Formspree.</strong> Receives the beta invite form on this website, as described under <a href="#beta">Beta invites</a>.</li>

@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Commands · Code Remote Docs</title>
-	<meta name="description" content="Every coderemote command and option: up, status, kill, stop, serve, requests, setup, rotate-token, tunnels, login, update and help.">
+	<meta name="description" content="Every coderemote command and option: up, status, kill, stop, serve, requests, setup, devices, rotate-token, tunnels, login, update and help.">
 	<link rel="icon" href="../icon.png?v=1d6f5ee2">
 	<link rel="apple-touch-icon" href="../icon.png?v=1d6f5ee2">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,6 +88,7 @@
 					<li><a href="#serve">serve</a></li>
 					<li><a href="#requests">requests</a></li>
 					<li><a href="#setup">setup</a></li>
+					<li><a href="#devices">devices</a></li>
 					<li><a href="#rotate-token">rotate-token</a></li>
 					<li><a href="#tunnels">tunnels</a></li>
 					<li><a href="#login">login</a></li>
@@ -110,6 +111,9 @@
 <span class="p">$ </span>coderemote request &lt;ID&gt;          <span class="c"># headers and bodies of one request</span>
 <span class="p">$ </span>coderemote setup claude          <span class="c"># follow Claude Code sessions in the app</span>
 <span class="p">$ </span>coderemote setup codex           <span class="c"># the same for Codex</span>
+<span class="p">$ </span>coderemote devices               <span class="c"># phones enrolled with this folder</span>
+<span class="p">$ </span>coderemote devices revoke &lt;id&gt;   <span class="c"># remove one phone</span>
+<span class="p">$ </span>coderemote devices policy &lt;level&gt; <span class="c"># how strict Face ID is</span>
 <span class="p">$ </span>coderemote rotate-token          <span class="c"># revoke every paired device</span>
 <span class="p">$ </span>coderemote tunnels               <span class="c"># your Dev Tunnels account's tunnels</span>
 <span class="p">$ </span>coderemote tunnels delete &lt;id&gt;   <span class="c"># delete ones nothing uses</span>
@@ -195,8 +199,15 @@ Token: …</pre>
 				<pre class="cmd"><span class="p">$ </span>coderemote setup claude
 <span class="p">$ </span>coderemote setup codex</pre>
 
+				<h2 id="devices"><code>devices</code></h2>
+				<p>Lists the phones enrolled with the folder's running agent, when each enrolled and was last seen, and its Face ID setting. A phone enrolls by itself the first time it connects after scanning the QR code.</p>
+				<pre class="cmd"><span class="p">$ </span>coderemote devices
+<span class="p">$ </span>coderemote devices revoke 94d5                       <span class="c"># an id prefix is enough</span>
+<span class="p">$ </span>coderemote devices policy terminal+writes --window 30m</pre>
+				<p><code>revoke</code> removes one phone at once: its sessions and open terminals end, and it can't come back without being paired again. <code>policy</code> sets which actions ask for Face ID: <code>none</code>, <code>terminal</code> (the default: terminals, coding agents and builds) or <code>terminal+writes</code> (also file and git changes), and with <code>--window</code> how long one check lasts: <code>5m</code> (the default), <code>30m</code> or <code>1h</code>. The app can make it stricter; making it looser from the app asks for Face ID.</p>
+
 				<h2 id="rotate-token"><code>rotate-token</code></h2>
-				<p>Replaces the access token. Every paired phone and browser loses access at once. Use it if you lose your phone or a pairing link leaks.</p>
+				<p>Replaces the access token and this computer's keys, and forgets every enrolled phone. Every paired phone loses access at once. Use it if you lose your only phone or a pairing link leaks.</p>
 				<pre class="cmd"><span class="p">$ </span>coderemote rotate-token
 Token rotated. Re-pair your devices, and restart running agents.</pre>
 				<p>Then restart <code>coderemote up</code> and scan the new QR code on the devices you still trust.</p>

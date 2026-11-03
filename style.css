@@ -333,6 +333,8 @@ code {
 	stroke-dasharray: 2 10; animation: flow 1.4s linear infinite;
 }
 .hero-art .relay { fill: #faf9f5; stroke: var(--ink); stroke-width: 3; }
+.hero-art .lock-shackle { fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; }
+.hero-art .lock-hole { fill: var(--ink); }
 .hero-art .relay-ring {
 	fill: none; stroke: #faf9f5; stroke-width: 2;
 	transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-out infinite;

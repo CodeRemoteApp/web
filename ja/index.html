@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Code Remote: iPhone から、あなたのコンピューターへ</title>
-	<meta name="description" content="iPhone から、ファイルの閲覧、git でのレビューとコミット、開発マシン上の本物のターミナルの実行まで。安全な Microsoft Dev Tunnel 経由です。SSH 鍵もポート転送も VPN も不要。">
+	<meta name="description" content="ファイルの閲覧、git でのレビューとコミット、本物のターミナルを、開発マシン上で iPhone から。Microsoft Dev Tunnel を通してエンドツーエンドで暗号化されます。SSH 鍵もポート転送も VPN も不要です。">
 	<link rel="icon" href="../icon.png?v=1d6f5ee2">
 	<link rel="apple-touch-icon" href="../icon.png?v=1d6f5ee2">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,14 +77,14 @@
 				<div class="hero-grid">
 					<div class="hero-copy">
 						<h1>あなたのコンピューターを、ポケットに。</h1>
-						<p class="lede">iPhone から、ファイルの閲覧、git でのレビューとコミット、本物のターミナルの実行、手元のマシンの開発サーバーを開くことまで。コンピューターでコマンドを 1 つ、iPhone で QR をひとつ読み取るだけ: <code>npx coderemote up</code>。SSH 鍵もポート転送も VPN も不要です。</p>
+						<p class="lede">ファイルの閲覧、git、ターミナル、開発サーバーを iPhone から。コマンドは 1 つだけ: <code>npx coderemote up</code>。エンドツーエンド暗号化。SSH 鍵もポート転送も VPN も不要です。</p>
 						<div class="actions">
 							<a class="button primary" href="#install">はじめる</a>
 							<a class="button ghost with-icon" href="#beta"><img src="../apple.png" alt="" width="18" height="18">iPhone ベータに参加</a>
 							<span class="note">TestFlight で無料。App Store 版は近日公開予定です。</span>
 						</div>
 					</div>
-					<svg class="hero-art art" viewBox="0 0 480 420" role="img" aria-label="トンネルでつながったノート PC と iPhone。その間をデータが行き来しています">
+					<svg class="hero-art art" viewBox="0 0 480 420" role="img" aria-label="トンネルでつながったノートパソコンとスマートフォン。間を行き来するデータはエンドツーエンドで鍵がかかっています">
 						<path class="blob" d="M78 96C150 22 334 14 414 86c70 62 62 214-14 270-92 68-250 62-322 2C14 304 10 166 78 96Z"/>
 						<g class="spark s1"><path d="M60 58l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/></g>
 						<g class="spark s2"><path d="M430 300l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
@@ -93,7 +93,11 @@
 						<path id="tunnel" class="tunnel" d="M226 214C252 130 240 70 284 60c44-10 22 92 50 112"/>
 						<path class="tunnel-flow" d="M226 214C252 130 240 70 284 60c44-10 22 92 50 112"/>
 						<circle class="relay-ring" cx="284" cy="60" r="16"/>
-						<circle class="relay" cx="284" cy="60" r="9"/>
+						<g class="lock">
+							<path class="lock-shackle" d="M277.5 58v-5a6.5 6.5 0 0 1 13 0v5"/>
+							<rect class="relay" x="273" y="57" width="22" height="16" rx="3.5"/>
+							<circle class="lock-hole" cx="284" cy="64.5" r="2"/>
+						</g>
 						<circle class="packet" r="5">
 							<animateMotion dur="3.2s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.55 1"><mpath href="#tunnel"/></animateMotion>
 						</circle>
@@ -176,7 +180,7 @@
 					</div>
 					<div class="card reveal">
 						<h3>VPN 不要</h3>
-						<p>エージェントはプライベートトンネルを通って外向きに接続します。iPhone 側のネットワークに何かを入れる必要も、参加する必要もありません。</p>
+						<p>エージェントは非公開のトンネルを通して外向きに接続し、通信はエンドツーエンドで暗号化されます。スマートフォンのネットワークに入れるものも、参加するものもありません。</p>
 					</div>
 					<div class="card reveal">
 						<h3>SSH 不要</h3>
@@ -407,6 +411,21 @@
 						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M15 12l-8 8 8 8M25 12l8 8-8 8"/><path class="fill" d="M22 9l-4 22"/></svg>
 						<h3>オープンソース</h3>
 						<p>コンピューター側は AGPL のフリーソフトウェアです。コードはすべて GitHub で読めます。</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="18" width="20" height="15" rx="3"/><path d="M14 18v-4a6 6 0 0 1 12 0v4"/><path class="fill" d="M20 23.5v4"/></svg>
+						<h3>エンドツーエンド暗号化</h3>
+						<p>QR コードにはコンピューターの鍵が入っています。スマートフォンとコンピューターの間はすべて暗号化されるので、トンネルのリレーが中継するのは暗号文だけです。</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="12" y="5" width="16" height="30" rx="4"/><circle class="fill" cx="20" cy="16" r="3"/><path class="fill" d="M20 19v8M20 24h3"/></svg>
+						<h3>端末ごとに 1 つの鍵</h3>
+						<p>iPhone ごとに自分の鍵を Secure Enclave に持ちます。コンピューターから 1 つのコマンドで 1 台を外せて、ほかの端末はそのまま使えます。</p>
+					</div>
+					<div class="card reveal">
+						<svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 14v-4a2 2 0 0 1 2-2h4M26 8h4a2 2 0 0 1 2 2v4M32 26v4a2 2 0 0 1-2 2h-4M14 32h-4a2 2 0 0 1-2-2v-4"/><path class="fill" d="M15 16v2M25 16v2M20 16v6h-1.5M15.5 26c2.5 2 6.5 2 9 0"/></svg>
+						<h3>コマンドには Face ID</h3>
+						<p>ターミナルを開くときやコーディングエージェントを起動するときは、まず Face ID を求めます。厳しさと、1 回の確認がどれだけ続くかは、コンピューターごとに選べます。</p>
 					</div>
 				</div>
 			</div>

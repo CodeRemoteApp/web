@@ -88,9 +88,10 @@
 				<p>Por defecto, una petición tiene que superar dos comprobaciones:</p>
 				<ol>
 					<li><strong>Tu cuenta.</strong> El túnel es privado: el relay de Dev Tunnels solo deja pasar a la cuenta de GitHub o Microsoft que ejecutó <code>coderemote up</code>.</li>
-					<li><strong>El token de emparejamiento.</strong> Después el agente comprueba el token aleatorio del código QR, guardado en el llavero del iPhone.</li>
+					<li><strong>Tu teléfono.</strong> El token del código QR permite registrar un teléfono. A partir de ahí inicia sesión con su propia clave, creada en su Secure Enclave y que nunca sale de ahí, y el token por sí solo no abre nada más. <code>coderemote devices</code> muestra los teléfonos; <code>coderemote devices revoke</code> quita uno.</li>
 				</ol>
-				<p>Con <code>coderemote up --allow-anonymous</code> se omite la primera comprobación y el token por sí solo da acceso. En cualquier caso, los archivos y git se quedan dentro de la carpeta compartida; un terminal es un shell real con los permisos de tu usuario.</p>
+				<p>Todo lo que va entre el teléfono y el agente está cifrado de extremo a extremo con la clave del ordenador, que lleva el código QR: el relé intermedio solo reenvía datos cifrados. Abrir una terminal, escribir en un agente de programación o iniciarlo, y empezar una compilación también piden Face ID. <code>coderemote devices policy</code> establece lo estricto que es (nunca, comandos, o comandos y cambios) y cuánto dura cada comprobación (5 minutos, 30 minutos o una hora).</p>
+				<p>Con <code>coderemote up --allow-anonymous</code> se omite la primera comprobación. En cualquier caso, los archivos y git se quedan dentro de la carpeta compartida; una terminal es una shell real con los permisos de tu usuario.</p>
 				<p>Un <a href="preview.html#share">enlace público</a> a una vista previa es la única excepción: hasta que termina, cualquiera que lo tenga puede abrir ese servidor de desarrollo, sin ninguna de las dos comprobaciones. Nunca llega al agente, a sus archivos ni a su terminal.</p>
 
 				<h2 id="files">Archivos en tu ordenador</h2>
@@ -98,6 +99,8 @@
 				<table>
 					<tr><th>Ruta</th><th>Qué contiene</th></tr>
 					<tr><td><code>config.json</code></td><td>El token de acceso, el id del túnel de este ordenador y el de su túnel de vista previa. Conservarlo conserva todos los emparejamientos.</td></tr>
+					<tr><td><code>e2e/</code>, <code>lan/</code></td><td>La clave de cifrado de extremo a extremo de este ordenador y el certificado que comprueban los teléfonos de tu red. Se sustituye con <code>rotate-token</code>.</td></tr>
+					<tr><td><code>devices/</code></td><td>Los teléfonos registrados con cada carpeta compartida, y su ajuste de Face ID. Se vacía con <code>rotate-token</code>.</td></tr>
 					<tr><td><code>bin/</code></td><td>La CLI de Dev Tunnels descargada en la primera ejecución.</td></tr>
 					<tr><td><code>agents/</code></td><td>Una entrada por agente en ejecución, para que <code>status</code>, <code>kill</code> y <code>stop</code> puedan encontrarlo.</td></tr>
 					<tr><td><code>update.json</code></td><td>La última versión en npm y cuándo preguntó <code>up</code> por última vez, como mucho una vez al día.</td></tr>

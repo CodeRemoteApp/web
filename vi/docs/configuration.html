@@ -88,9 +88,10 @@
 				<p>Theo mặc định một request phải qua hai bước kiểm tra:</p>
 				<ol>
 					<li><strong>Tài khoản của bạn.</strong> Tunnel là riêng tư: relay Dev Tunnels chỉ cho qua tài khoản GitHub hoặc Microsoft đã chạy <code>coderemote up</code>.</li>
-					<li><strong>Pairing token.</strong> Sau đó agent kiểm tra token ngẫu nhiên từ mã QR, được lưu trong Keychain của iPhone.</li>
+					<li><strong>Điện thoại của bạn.</strong> Token trong mã QR cho phép một điện thoại đăng ký. Từ đó nó đăng nhập bằng khoá riêng, tạo trong Secure Enclave và không bao giờ rời khỏi đó, còn token một mình không mở được gì khác. <code>coderemote devices</code> liệt kê các điện thoại; <code>coderemote devices revoke</code> gỡ một chiếc.</li>
 				</ol>
-				<p>Với <code>coderemote up --allow-anonymous</code>, bước kiểm tra đầu tiên bị bỏ qua và chỉ token là đủ để truy cập. Dù thế nào, tệp và git vẫn nằm trong thư mục được chia sẻ; terminal là một shell thật với quyền của người dùng bạn.</p>
+				<p>Mọi thứ giữa điện thoại và agent được mã hoá đầu cuối bằng khoá của máy tính, mà mã QR mang theo: relay ở giữa chỉ chuyển tiếp dữ liệu đã mã hoá. Mở terminal, gõ vào hoặc khởi động một coding agent và khởi động build cũng hỏi Face ID. <code>coderemote devices policy</code> đặt mức chặt chẽ (không bao giờ, các lệnh, hoặc các lệnh và thay đổi) và một lần xác thực kéo dài bao lâu (5 phút, 30 phút hoặc một giờ).</p>
+				<p>Với <code>coderemote up --allow-anonymous</code> bước kiểm tra đầu tiên bị bỏ qua. Dù thế nào, file và git vẫn ở trong thư mục chia sẻ; terminal là shell thật với quyền của người dùng của bạn.</p>
 				<p><a href="preview.html#share">Liên kết công khai</a> tới một bản xem trước là ngoại lệ duy nhất: cho đến khi nó hết hạn, ai có nó cũng mở được dev server đó, không qua kiểm tra nào. Nó không bao giờ chạm tới agent, tệp hay terminal của bạn.</p>
 
 				<h2 id="files">Tệp trên máy tính của bạn</h2>
@@ -98,6 +99,8 @@
 				<table>
 					<tr><th>Đường dẫn</th><th>Nó chứa gì</th></tr>
 					<tr><td><code>config.json</code></td><td>Access token, id tunnel của máy tính này và của preview tunnel của nó. Giữ nó là giữ mọi ghép đôi.</td></tr>
+					<tr><td><code>e2e/</code>, <code>lan/</code></td><td>Khoá mã hoá đầu cuối của máy tính này và chứng chỉ mà điện thoại trong mạng của bạn kiểm tra. Được thay bởi <code>rotate-token</code>.</td></tr>
+					<tr><td><code>devices/</code></td><td>Các điện thoại đã đăng ký với từng thư mục chia sẻ, và thiết lập Face ID của nó. Bị xoá bởi <code>rotate-token</code>.</td></tr>
 					<tr><td><code>bin/</code></td><td>Dev Tunnels CLI được tải ở lần chạy đầu tiên.</td></tr>
 					<tr><td><code>agents/</code></td><td>Một mục cho mỗi agent đang chạy, để <code>status</code>, <code>kill</code> và <code>stop</code> tìm được nó.</td></tr>
 					<tr><td><code>update.json</code></td><td>Phiên bản mới nhất trên npm và lần gần nhất <code>up</code> đã hỏi, tối đa một lần mỗi ngày.</td></tr>

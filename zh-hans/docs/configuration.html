@@ -88,9 +88,10 @@
 				<p>默认情况下,请求需要通过两项检查:</p>
 				<ol>
 					<li><strong>你的账号。</strong>隧道是私有的:Dev Tunnels 中继只放行运行 <code>coderemote up</code> 的那个 GitHub 或 Microsoft 账号。</li>
-					<li><strong>配对令牌。</strong>然后智能体会检查二维码中的随机令牌,它保存在 iPhone 的钥匙串中。</li>
+					<li><strong>你的手机。</strong> 二维码中的令牌让手机可以登记。此后它用自己的密钥登录，这个密钥在其 Secure Enclave 中生成且从不离开，单凭令牌无法打开其他任何东西。<code>coderemote devices</code> 列出手机；<code>coderemote devices revoke</code> 移除其中一部。</li>
 				</ol>
-				<p>使用 <code>coderemote up --allow-anonymous</code> 时会跳过第一项检查,仅凭令牌即可访问。无论哪种方式,文件和 git 都限制在共享文件夹内;终端则是拥有你用户权限的真正 shell。</p>
+				<p>手机和代理之间的一切都用电脑的密钥进行端到端加密，这个密钥由二维码携带：中间的中继只转发密文。打开终端、在编程代理中输入或启动它，以及开始构建时，也会要求 Face ID。<code>coderemote devices policy</code> 设置严格程度（从不、命令、或命令和更改）以及一次验证的有效时长（5 分钟、30 分钟或一小时）。</p>
+				<p>使用 <code>coderemote up --allow-anonymous</code> 时会跳过第一项检查。无论哪种方式，文件和 git 都留在共享文件夹内；终端是以你的用户权限运行的真正 shell。</p>
 				<p>预览的<a href="preview.html#share">公开链接</a>是唯一的例外:在它结束之前,任何拿到链接的人都能打开那一个开发服务器,不需要经过这两项检查。它永远不会触及智能体、它的文件或它的终端。</p>
 
 				<h2 id="files">你电脑上的文件</h2>
@@ -98,6 +99,8 @@
 				<table>
 					<tr><th>路径</th><th>内容</th></tr>
 					<tr><td><code>config.json</code></td><td>访问令牌、这台电脑的隧道 id 以及它的预览隧道 id。保留它就保留了所有配对。</td></tr>
+					<tr><td><code>e2e/</code>, <code>lan/</code></td><td>这台电脑的端到端加密密钥，以及你网络中的手机所校验的证书。由 <code>rotate-token</code> 更换。</td></tr>
+					<tr><td><code>devices/</code></td><td>每个共享文件夹已登记的手机及其 Face ID 设置。<code>rotate-token</code> 会将其清空。</td></tr>
 					<tr><td><code>bin/</code></td><td>首次运行时下载的 Dev Tunnels CLI。</td></tr>
 					<tr><td><code>agents/</code></td><td>每个运行中的智能体一条记录,让 <code>status</code>、<code>kill</code> 和 <code>stop</code> 能找到它。</td></tr>
 					<tr><td><code>update.json</code></td><td>npm 上的最新版本,以及 <code>up</code> 上次询问的时间,每天最多一次。</td></tr>
