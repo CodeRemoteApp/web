@@ -179,17 +179,9 @@
 		"en": "Sending…",
 		"text": "Đang gửi…"
 	},
-	"06041330": {
-		"en": "The iPhone app is in beta on TestFlight. Leave your email and we'll invite you as soon as the first build is ready. The invite comes from Apple's TestFlight; open it on your iPhone.",
-		"text": "App iPhone đang ở giai đoạn beta trên TestFlight. Để lại email, chúng tôi sẽ mời bạn ngay khi bản build đầu tiên sẵn sàng. Lời mời đến từ TestFlight của Apple; hãy mở nó trên iPhone."
-	},
 	"fedb0338": {
 		"en": "Join the iPhone beta.",
 		"text": "Tham gia beta trên iPhone."
-	},
-	"e8371f96": {
-		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (<a href=\"#beta\">ask for a beta invite</a> to get the app on TestFlight). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
-		"text": "Muốn cài đặt lâu dài? Hãy chạy <code>coderemote up</code> trong thư mục dự án rồi quét mã QR bằng iPhone (<a href=\"#beta\">xin lời mời beta</a> để có app trên TestFlight). Cách cập nhật, gỡ cài đặt và những phần còn lại có trong <a href=\"docs/setup.html#install\">hướng dẫn cài đặt</a>."
 	},
 	"12820efb": {
 		"en": "On macOS and Linux.",
@@ -254,14 +246,6 @@
 	"7c89f87d": {
 		"en": "Terminal: npx coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone",
 		"text": "Terminal: npx coderemote up khởi động agent, kết nối với relay và in ra mã QR để quét bằng iPhone"
-	},
-	"e1ebfbbc": {
-		"en": "Free on TestFlight. App Store release coming soon.",
-		"text": "Miễn phí trên TestFlight. Bản App Store sắp ra mắt."
-	},
-	"b09a5e83": {
-		"en": "Join the iPhone beta",
-		"text": "Tham gia beta trên iPhone"
 	},
 	"90e40d50": {
 		"en": "Get started",
@@ -478,10 +462,6 @@
 	"293ee410": {
 		"en": "Free for personal use within Tailscale's limits",
 		"text": "Miễn phí cho cá nhân trong giới hạn của Tailscale"
-	},
-	"db53609a": {
-		"en": "Free iPhone beta, free open-source CLI (AGPL)",
-		"text": "Beta iPhone miễn phí, CLI mã nguồn mở miễn phí (AGPL)"
 	},
 	"64ae43e8": {
 		"en": "Cost",
@@ -1607,10 +1587,6 @@
 		"en": "You don't need SSH, open ports, a VPN or VS Code.",
 		"text": "Bạn không cần SSH, cổng mở, VPN hay VS Code."
 	},
-	"9e9854bf": {
-		"en": "The <strong>Code Remote</strong> app on your iPhone, in beta on TestFlight (<a href=\"../#beta\">ask for an invite</a>).",
-		"text": "App <strong>Code Remote</strong> trên iPhone, đang beta trên TestFlight (<a href=\"../#beta\">xin lời mời</a>)."
-	},
 	"304c2a55": {
 		"en": "A <strong>GitHub</strong> or <strong>Microsoft</strong> account, used to sign in to Microsoft Dev Tunnels.",
 		"text": "Một tài khoản <strong>GitHub</strong> hoặc <strong>Microsoft</strong>, dùng để đăng nhập Microsoft Dev Tunnels."
@@ -1730,5 +1706,29 @@
 	"2856cf98": {
 		"en": "Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.",
 		"text": "Duyệt file, dùng git, chạy terminal và mở các dev server từ iPhone, chỉ với một lệnh: <code>npx coderemote up</code>. Mã hoá đầu cuối. Không cần khoá SSH, không cần mở port, không cần VPN."
+	},
+	"e0fe08c7": {
+		"en": "The iPhone app is on the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. Want new features before they get there? Leave your email and we'll invite you to the beta on TestFlight. The invite comes from Apple's TestFlight; open it on your iPhone.",
+		"text": "App iPhone đã có trên <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. Muốn dùng tính năng mới trước khi chúng lên đó? Để lại email, chúng tôi sẽ mời bạn tham gia bản beta trên TestFlight. Lời mời đến từ TestFlight của Apple; hãy mở nó trên iPhone."
+	},
+	"2caed692": {
+		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (get the app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
+		"text": "Muốn cài đặt lâu dài? Hãy chạy <code>coderemote up</code> trong thư mục dự án rồi quét mã QR bằng iPhone (tải app từ <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Cách cập nhật, gỡ cài đặt và những phần còn lại có trong <a href=\"docs/setup.html#install\">hướng dẫn cài đặt</a>."
+	},
+	"8f1e4eae": {
+		"en": "Free iPhone app. Early builds on <a href=\"#beta\">TestFlight</a>.",
+		"text": "App iPhone miễn phí. Bản dựng sớm có trên <a href=\"#beta\">TestFlight</a>."
+	},
+	"a9096aaa": {
+		"en": "Download on the App Store",
+		"text": "Tải về trên App Store"
+	},
+	"a7ac7666": {
+		"en": "Free iPhone app, free open-source CLI (AGPL)",
+		"text": "App iPhone miễn phí, CLI mã nguồn mở miễn phí (AGPL)"
+	},
+	"53f9ea05": {
+		"en": "The <strong>Code Remote</strong> app on your iPhone, from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>.",
+		"text": "App <strong>Code Remote</strong> trên iPhone, tải từ <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>."
 	}
 }

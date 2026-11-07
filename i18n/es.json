@@ -179,17 +179,9 @@
 		"en": "Sending…",
 		"text": "Enviando…"
 	},
-	"06041330": {
-		"en": "The iPhone app is in beta on TestFlight. Leave your email and we'll invite you as soon as the first build is ready. The invite comes from Apple's TestFlight; open it on your iPhone.",
-		"text": "La app para iPhone está en beta en TestFlight. Deja tu correo y te invitaremos en cuanto la primera compilación esté lista. La invitación llega desde TestFlight de Apple; ábrela en tu iPhone."
-	},
 	"fedb0338": {
 		"en": "Join the iPhone beta.",
 		"text": "Únete a la beta para iPhone."
-	},
-	"e8371f96": {
-		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (<a href=\"#beta\">ask for a beta invite</a> to get the app on TestFlight). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
-		"text": "¿Prefieres una instalación permanente? Ejecuta <code>coderemote up</code> en la carpeta de un proyecto y escanea el código QR con tu iPhone (<a href=\"#beta\">pide una invitación a la beta</a> para obtener la app en TestFlight). La actualización, la desinstalación y el resto están en la <a href=\"docs/setup.html#install\">guía de instalación</a>."
 	},
 	"12820efb": {
 		"en": "On macOS and Linux.",
@@ -254,14 +246,6 @@
 	"7c89f87d": {
 		"en": "Terminal: npx coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone",
 		"text": "Terminal: npx coderemote up inicia el agente, se conecta al relay e imprime un código QR para escanear con el iPhone"
-	},
-	"e1ebfbbc": {
-		"en": "Free on TestFlight. App Store release coming soon.",
-		"text": "Gratis en TestFlight. Lanzamiento en la App Store próximamente."
-	},
-	"b09a5e83": {
-		"en": "Join the iPhone beta",
-		"text": "Únete a la beta para iPhone"
 	},
 	"90e40d50": {
 		"en": "Get started",
@@ -478,10 +462,6 @@
 	"293ee410": {
 		"en": "Free for personal use within Tailscale's limits",
 		"text": "Gratis para uso personal dentro de los límites de Tailscale"
-	},
-	"db53609a": {
-		"en": "Free iPhone beta, free open-source CLI (AGPL)",
-		"text": "Beta de iPhone gratuita, CLI de código abierto gratuita (AGPL)"
 	},
 	"64ae43e8": {
 		"en": "Cost",
@@ -1607,10 +1587,6 @@
 		"en": "You don't need SSH, open ports, a VPN or VS Code.",
 		"text": "No necesitas SSH, puertos abiertos, VPN ni VS Code."
 	},
-	"9e9854bf": {
-		"en": "The <strong>Code Remote</strong> app on your iPhone, in beta on TestFlight (<a href=\"../#beta\">ask for an invite</a>).",
-		"text": "La app <strong>Code Remote</strong> en tu iPhone, en beta en TestFlight (<a href=\"../#beta\">pide una invitación</a>)."
-	},
 	"304c2a55": {
 		"en": "A <strong>GitHub</strong> or <strong>Microsoft</strong> account, used to sign in to Microsoft Dev Tunnels.",
 		"text": "Una cuenta de <strong>GitHub</strong> o <strong>Microsoft</strong>, usada para iniciar sesión en Microsoft Dev Tunnels."
@@ -1730,5 +1706,29 @@
 	"2856cf98": {
 		"en": "Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.",
 		"text": "Explora archivos, usa git, abre una terminal y tus servidores de desarrollo desde tu iPhone, con un solo comando: <code>npx coderemote up</code>. Cifrado de extremo a extremo. Sin claves SSH, sin redirección de puertos, sin VPN."
+	},
+	"e0fe08c7": {
+		"en": "The iPhone app is on the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. Want new features before they get there? Leave your email and we'll invite you to the beta on TestFlight. The invite comes from Apple's TestFlight; open it on your iPhone.",
+		"text": "La app para iPhone ya está en la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. ¿Quieres las novedades antes de que lleguen? Déjanos tu email y te invitaremos a la beta en TestFlight. La invitación llega desde TestFlight de Apple; ábrela en tu iPhone."
+	},
+	"2caed692": {
+		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (get the app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
+		"text": "¿Prefieres una instalación permanente? Ejecuta <code>coderemote up</code> en una carpeta de proyecto y escanea el código QR con tu iPhone (descarga la app desde la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Cómo actualizar, desinstalar y lo demás está en la <a href=\"docs/setup.html#install\">guía de instalación</a>."
+	},
+	"8f1e4eae": {
+		"en": "Free iPhone app. Early builds on <a href=\"#beta\">TestFlight</a>.",
+		"text": "App para iPhone gratis. Versiones anticipadas en <a href=\"#beta\">TestFlight</a>."
+	},
+	"a9096aaa": {
+		"en": "Download on the App Store",
+		"text": "Descargar en la App Store"
+	},
+	"a7ac7666": {
+		"en": "Free iPhone app, free open-source CLI (AGPL)",
+		"text": "App para iPhone gratis, CLI de código abierto gratis (AGPL)"
+	},
+	"53f9ea05": {
+		"en": "The <strong>Code Remote</strong> app on your iPhone, from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>.",
+		"text": "La app <strong>Code Remote</strong> en tu iPhone, desde la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>."
 	}
 }

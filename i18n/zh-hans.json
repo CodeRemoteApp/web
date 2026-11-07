@@ -179,17 +179,9 @@
 		"en": "Sending…",
 		"text": "发送中…"
 	},
-	"06041330": {
-		"en": "The iPhone app is in beta on TestFlight. Leave your email and we'll invite you as soon as the first build is ready. The invite comes from Apple's TestFlight; open it on your iPhone.",
-		"text": "iPhone 应用目前在 TestFlight 上处于 Beta 阶段。留下你的邮箱,第一个构建版本准备好后我们就会邀请你。邀请来自 Apple 的 TestFlight,请在 iPhone 上打开。"
-	},
 	"fedb0338": {
 		"en": "Join the iPhone beta.",
 		"text": "加入 iPhone Beta。"
-	},
-	"e8371f96": {
-		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (<a href=\"#beta\">ask for a beta invite</a> to get the app on TestFlight). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
-		"text": "想要长期安装?在项目文件夹中运行 <code>coderemote up</code>,然后用 iPhone 扫描二维码(<a href=\"#beta\">申请 Beta 邀请</a>即可在 TestFlight 获取应用)。更新、卸载等内容请见<a href=\"docs/setup.html#install\">安装指南</a>。"
 	},
 	"12820efb": {
 		"en": "On macOS and Linux.",
@@ -254,14 +246,6 @@
 	"7c89f87d": {
 		"en": "Terminal: npx coderemote up starts the agent, connects to the relay and prints a QR code to scan with the iPhone",
 		"text": "终端:npx coderemote up 启动智能体、连接中继,并打印出供 iPhone 扫描的二维码"
-	},
-	"e1ebfbbc": {
-		"en": "Free on TestFlight. App Store release coming soon.",
-		"text": "TestFlight 上免费。App Store 版本即将推出。"
-	},
-	"b09a5e83": {
-		"en": "Join the iPhone beta",
-		"text": "加入 iPhone Beta"
 	},
 	"90e40d50": {
 		"en": "Get started",
@@ -478,10 +462,6 @@
 	"293ee410": {
 		"en": "Free for personal use within Tailscale's limits",
 		"text": "在 Tailscale 限额内个人使用免费"
-	},
-	"db53609a": {
-		"en": "Free iPhone beta, free open-source CLI (AGPL)",
-		"text": "免费的 iPhone Beta,免费的开源 CLI(AGPL)"
 	},
 	"64ae43e8": {
 		"en": "Cost",
@@ -1607,10 +1587,6 @@
 		"en": "You don't need SSH, open ports, a VPN or VS Code.",
 		"text": "你不需要 SSH、开放端口、VPN 或 VS Code。"
 	},
-	"9e9854bf": {
-		"en": "The <strong>Code Remote</strong> app on your iPhone, in beta on TestFlight (<a href=\"../#beta\">ask for an invite</a>).",
-		"text": "iPhone 上的 <strong>Code Remote</strong> 应用,目前在 TestFlight 上处于 Beta 阶段(<a href=\"../#beta\">申请邀请</a>)。"
-	},
 	"304c2a55": {
 		"en": "A <strong>GitHub</strong> or <strong>Microsoft</strong> account, used to sign in to Microsoft Dev Tunnels.",
 		"text": "一个 <strong>GitHub</strong> 或 <strong>Microsoft</strong> 账号,用于登录 Microsoft Dev Tunnels。"
@@ -1730,5 +1706,29 @@
 	"2856cf98": {
 		"en": "Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.",
 		"text": "在 iPhone 上浏览文件、使用 git、运行终端并打开开发服务器，只需一条命令：<code>npx coderemote up</code>。端到端加密。无需 SSH 密钥、无需端口转发、无需 VPN。"
+	},
+	"e0fe08c7": {
+		"en": "The iPhone app is on the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. Want new features before they get there? Leave your email and we'll invite you to the beta on TestFlight. The invite comes from Apple's TestFlight; open it on your iPhone.",
+		"text": "iPhone 应用已在 <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> 上架。想抢先体验新功能?留下你的邮箱,我们会邀请你加入 TestFlight 上的 Beta。邀请来自 Apple 的 TestFlight,请在 iPhone 上打开。"
+	},
+	"2caed692": {
+		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (get the app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
+		"text": "想要长期安装?在项目文件夹中运行 <code>coderemote up</code>,然后用 iPhone 扫描二维码(从 <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> 获取应用)。更新、卸载等内容请见<a href=\"docs/setup.html#install\">安装指南</a>。"
+	},
+	"8f1e4eae": {
+		"en": "Free iPhone app. Early builds on <a href=\"#beta\">TestFlight</a>.",
+		"text": "免费的 iPhone 应用。抢先版本见 <a href=\"#beta\">TestFlight</a>。"
+	},
+	"a9096aaa": {
+		"en": "Download on the App Store",
+		"text": "在 App Store 下载"
+	},
+	"a7ac7666": {
+		"en": "Free iPhone app, free open-source CLI (AGPL)",
+		"text": "免费的 iPhone 应用,免费的开源 CLI(AGPL)"
+	},
+	"53f9ea05": {
+		"en": "The <strong>Code Remote</strong> app on your iPhone, from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>.",
+		"text": "iPhone 上的 <strong>Code Remote</strong> 应用,可从 <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> 获取。"
 	}
 }
