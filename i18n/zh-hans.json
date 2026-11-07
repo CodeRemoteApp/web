@@ -807,17 +807,9 @@
 		"en": "Signs in to Microsoft Dev Tunnels. <code>up</code> does this by itself when needed, so you only run it to switch accounts or when there's no browser.",
 		"text": "登录 Microsoft Dev Tunnels。<code>up</code> 会在需要时自动完成,所以只有在切换账号或没有浏览器时才需要手动运行。"
 	},
-	"1e8e3e16": {
-		"en": "You rarely need it by hand: when the account is full, <code>up</code> and previews first delete preview tunnels no agent serves. Only when that doesn't free a slot does <code>up</code> stop, list the account's tunnels and ask you to delete some.",
-		"text": "你很少需要手动执行:账号已满时,<code>up</code> 和预览会先删除没有智能体在使用的预览隧道。只有这样仍腾不出空位时,<code>up</code> 才会停止,列出账号的隧道并请你删除一些。"
-	},
 	"baad8898": {
 		"en": "Delete it anyway. Its URL is gone, so the phones paired with it have to pair again; on this computer the next <code>up</code> makes a new one.",
 		"text": "仍然删除。它的 URL 会失效,与它配对的手机必须重新配对;在这台电脑上,下一次 <code>up</code> 会创建一个新的。"
-	},
-	"cc1ca9cf": {
-		"en": "Deletes those tunnels. One that is online, or that this computer uses, is kept unless you add <code>--force</code>.",
-		"text": "删除这些隧道。在线的,或这台电脑正在使用的,会被保留,除非你加上 <code>--force</code>。"
 	},
 	"86d3c166": {
 		"en": "One line per tunnel on the account you're signed in with.",
@@ -1043,10 +1035,6 @@
 		"en": "The sign-in expired",
 		"text": "登录已过期"
 	},
-	"662b64e7": {
-		"en": "The account is full and none of its tunnels was an idle preview tunnel that could go. The message lists them: delete the ones nothing uses any more, such as an old computer's, with <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete &lt;id&gt;</code></a>, then run <code>coderemote up</code> again.",
-		"text": "账号已满,而且其中没有可以清理的闲置预览隧道。提示信息会列出它们:用 <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete &lt;id&gt;</code></a> 删除不再使用的,例如旧电脑留下的,然后再次运行 <code>coderemote up</code>。"
-	},
 	"cec63cac": {
 		"en": "\"Your Dev Tunnels account already has 10 tunnels\"",
 		"text": "\"Your Dev Tunnels account already has 10 tunnels\""
@@ -1074,10 +1062,6 @@
 	"285ec850": {
 		"en": "Troubleshooting",
 		"text": "故障排查"
-	},
-	"554c7d33": {
-		"en": "The app only shows them: tunnels belong to the computers' owner, so you list and delete them on a computer signed in to the account, with <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a>. Touch and hold a machine in Connections to copy its tunnel ID for that. Removing a machine from the app's list only forgets it on that iPhone.",
-		"text": "应用只负责显示它们:隧道属于电脑的所有者,所以你要在已登录该账号的电脑上,用 <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a> 列出和删除它们。为此,在 Connections 中按住某台机器即可复制它的隧道 ID。从应用列表中移除某台机器,只会让那部 iPhone 忘记它。"
 	},
 	"9a830b19": {
 		"en": "<strong>Settings › Connections</strong> lists the accounts your paired computers connect through. Each shows every computer running coderemote on that account, online or not, whether this iPhone is paired with it, and how many of the account's 10 tunnels are in use. To add a computer, run <code>coderemote up</code> there and scan its QR code.",
@@ -1731,16 +1715,36 @@
 		"en": "Download the free <strong>Code Remote</strong> app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> on your iPhone, if you haven't yet.",
 		"text": "如果还没有,请在 iPhone 上从 <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> 下载免费的 <strong>Code Remote</strong> 应用。"
 	},
-	"4aed03ca": {
-		"en": "Request",
-		"text": "申请"
-	},
 	"e3bfc4ab": {
 		"en": "Request the Android app",
 		"text": "申请 Android 应用"
 	},
-	"a479c9c3": {
-		"en": "Download",
-		"text": "下载"
+	"cbf6cbc3": {
+		"en": "You rarely need it by hand: when the account is full, <code>up</code> and previews first delete preview tunnels no agent serves. Only when that doesn't free a slot does <code>up</code> list the account's tunnels for you to choose ones to delete, then carry on.",
+		"text": "你很少需要手动操作:账号满了时,<code>up</code> 和预览会先删除没有代理在使用的预览隧道。只有这样仍腾不出位置时,<code>up</code> 才会列出账号的隧道让你选择要删除的,然后继续。"
+	},
+	"fe23d0ee": {
+		"en": "Deletes those tunnels, for scripts. One that is online, or that this computer uses, is kept unless you add <code>--force</code>.",
+		"text": "删除这些隧道,适合脚本使用。在线的隧道或这台电脑正在使用的隧道会被保留,除非你加上 <code>--force</code>。"
+	},
+	"5fd9518b": {
+		"en": "Lists the tunnels to choose from: <kbd>↑</kbd>/<kbd>↓</kbd> to move, <kbd>Space</kbd> to choose, <kbd>Enter</kbd> to delete, <kbd>Esc</kbd> to cancel. Ones nothing uses come first; deleting one that is in use asks again.",
+		"text": "列出可选择的隧道:<kbd>↑</kbd>/<kbd>↓</kbd> 移动,<kbd>Space</kbd> 选择,<kbd>Enter</kbd> 删除,<kbd>Esc</kbd> 取消。没人使用的排在前面;删除正在使用的隧道时会再确认一次。"
+	},
+	"2218cc88": {
+		"en": "The account is full and none of its tunnels was an idle preview tunnel that could go. In a terminal, <code>up</code> lists them for you to choose the ones nothing uses any more, such as an old computer's, and carries on once they're deleted. Otherwise delete them with <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete</code></a> and run <code>coderemote up</code> again.",
+		"text": "账号已满,而且没有可以删除的闲置预览隧道。在终端中,<code>up</code> 会列出它们,让你选择不再使用的,例如旧电脑留下的,删除后继续运行。否则,请用 <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete</code></a> 删除,然后再次运行 <code>coderemote up</code>。"
+	},
+	"051dbcef": {
+		"en": "With Pro, swipe a tunnel in Connections to delete it. The iPhone has no access to your Dev Tunnels account, so it asks one of your machines on that account to delete it: at least one of them has to be running <code>coderemote up</code>, and it can't be the tunnel being deleted. When none is running, the app offers no Delete; start one, or run <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete</code></a> on a computer signed in to the account. Removing a machine from the app's list only forgets it on that iPhone.",
+		"text": "使用 Pro 时,在 Connections 中滑动隧道即可删除。iPhone 无法访问你的 Dev Tunnels 账号,所以它会请该账号上你的一台机器代为删除:至少要有一台正在运行 <code>coderemote up</code>,并且不能是要删除的那个隧道本身。没有任何机器在运行时,应用不提供删除;请启动一台,或在登录了该账号的电脑上运行 <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete</code></a>。从应用列表中移除一台机器只会让那台 iPhone 忘记它。"
+	},
+	"83d36aec": {
+		"en": "<small>Download on the</small>App Store",
+		"text": "<small>下载于</small>App Store"
+	},
+	"8369a488": {
+		"en": "<small>Get it on</small>Google Play",
+		"text": "<small>立即获取</small>Google Play"
 	}
 }

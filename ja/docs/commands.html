@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../style.css?v=6cef6e61">
+	<link rel="stylesheet" href="../../style.css?v=f934604c">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/ja/docs/commands.html">
 	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/commands.html">
@@ -218,16 +218,22 @@ Token rotated. Re-pair your devices, and restart running agents.</pre>
   brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
   quiet-fox-3hd8w2c.usw2    coderemote old-laptop
 
-<span class="p">$ </span>coderemote tunnels delete quiet-fox-3hd8w2c
+<span class="p">$ </span>coderemote tunnels delete
+Delete tunnels on your dev tunnels account (3 of 10):
+❯ ◉ quiet-fox-3hd8w2c.usw2    coderemote old-laptop
+  ◯ silent-lake-pqv9b80.usw2  online · this computer's agent on port 31580 · coderemote my-mac
+  ◯ brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
+↑/↓ move · space choose · a all · enter delete (1) · esc cancel
 deleted quiet-fox-3hd8w2c.usw2</pre>
 				<p>各行にはトンネルの id、エージェントがいま提供している場合は <em>online</em>、このコンピューターがそれを何に使っているか、そしてそれを作ったコンピューター名を示す説明が表示されます。id を指定するときは、リージョンの接尾辞(<code>.usw2</code>)は省略できます。</p>
 				<table>
 					<tr><th>コマンドまたはオプション</th><th>動作</th></tr>
 					<tr><td><code>tunnels</code></td><td>サインインしているアカウントのトンネルを 1 行ずつ表示します。</td></tr>
-					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>それらのトンネルを削除します。オンラインのもの、またはこのコンピューターが使っているものは、<code>--force</code> を付けない限り残されます。</td></tr>
+					<tr><td><code>tunnels delete</code></td><td>選べるトンネルを一覧表示します:<kbd>↑</kbd>/<kbd>↓</kbd> で移動、<kbd>Space</kbd> で選択、<kbd>Enter</kbd> で削除、<kbd>Esc</kbd> でキャンセル。使われていないものが先に並び、使用中のものを削除するときはもう一度確認します。</td></tr>
+					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>指定したトンネルを削除します(スクリプト向け)。オンラインのもの、またはこのコンピュータが使っているものは、<code>--force</code> を付けない限り残ります。</td></tr>
 					<tr><td><code>--force</code></td><td>それでも削除します。その URL は失われ、それとペアリングされた iPhone はペアリングし直す必要があります。このコンピューターでは次の <code>up</code> が新しいものを作ります。</td></tr>
 				</table>
-				<p>手動で必要になることはほとんどありません。アカウントがいっぱいのときは、<code>up</code> とプレビューが、どのエージェントも使っていないプレビュー用トンネルを先に削除します。それでも空きができないときだけ、<code>up</code> は停止し、アカウントのトンネルを一覧表示して削除を促します。</p>
+				<p>手で行うことはほとんどありません。アカウントがいっぱいになると、<code>up</code> とプレビューはまず、どのエージェントも使っていないプレビュー用トンネルを削除します。それでも空きができないときだけ、<code>up</code> がアカウントのトンネルを一覧表示し、削除するものを選んだあと処理を続けます。</p>
 
 				<h2 id="login"><code>login</code></h2>
 				<p>Microsoft Dev Tunnels にサインインします。必要なときは <code>up</code> が自動で行うので、アカウントを切り替えるときやブラウザがないときだけ実行します。</p>

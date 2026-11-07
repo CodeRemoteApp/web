@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../style.css?v=6cef6e61">
+	<link rel="stylesheet" href="../../style.css?v=f934604c">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/vi/docs/configuration.html">
 	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/configuration.html">
@@ -132,7 +132,7 @@
 					<li><strong>Machine Info</strong> (menu của một máy) hiện tunnel của nó: địa chỉ, tài khoản, ai vào được, khi nào hết hạn (được lùi lại mỗi lần <code>coderemote up</code> khởi động), các client đang kết nối, lưu lượng đến giờ, và bao nhiêu cổng đang được xem trước.</li>
 					<li><strong>Settings › Connections</strong> liệt kê các tài khoản mà các máy tính đã ghép đôi của bạn kết nối qua. Mỗi tài khoản hiện mọi máy tính chạy coderemote trên tài khoản đó, online hay không, iPhone này đã ghép đôi với nó chưa, và đã dùng bao nhiêu trong 10 tunnel của tài khoản. Để thêm một máy tính, chạy <code>coderemote up</code> ở đó và quét mã QR của nó.</li>
 				</ul>
-				<p>App chỉ hiển thị chúng: tunnel thuộc về chủ sở hữu các máy tính, nên bạn liệt kê và xóa chúng trên một máy tính đã đăng nhập vào tài khoản, bằng <a href="commands.html#tunnels"><code>coderemote tunnels</code></a>. Chạm và giữ một máy trong Connections để sao chép tunnel ID của nó cho việc này. Xóa một máy khỏi danh sách trong app chỉ làm iPhone đó quên nó.</p>
+				<p>Với Pro, vuốt một tunnel trong Connections để xóa nó. iPhone không có quyền vào tài khoản Dev Tunnels của bạn, nên nó nhờ một máy của bạn trên tài khoản đó xóa giúp: ít nhất một máy phải đang chạy <code>coderemote up</code>, và đó không thể là chính tunnel đang bị xóa. Khi không máy nào chạy, app không hiện nút Delete; hãy bật một máy, hoặc chạy <a href="commands.html#tunnels"><code>coderemote tunnels delete</code></a> trên máy tính đã đăng nhập tài khoản đó. Xóa một máy khỏi danh sách trong app chỉ làm iPhone đó quên nó.</p>
 
 				<h2 id="troubleshooting">Khắc phục sự cố</h2>
 				<h3>"Port 31580 is already in use"</h3>
@@ -145,7 +145,7 @@
 				<p>Kiểm tra <code>coderemote up</code> vẫn đang chạy, và máy tính đang bật, có mạng. Đảm bảo điện thoại đã đăng nhập bằng cùng tài khoản máy tính đang dùng (hiện ở dòng <code>Access:</code>).</p>
 
 				<h3 id="tunnel-limit">"Your Dev Tunnels account already has 10 tunnels"</h3>
-				<p>Tài khoản đã đầy và không có tunnel nào là preview tunnel nhàn rỗi có thể xóa. Thông báo liệt kê chúng: hãy xóa những cái không còn dùng, chẳng hạn của một máy tính cũ, bằng <a href="commands.html#tunnels"><code>coderemote tunnels delete &lt;id&gt;</code></a>, rồi chạy <code>coderemote up</code> lần nữa.</p>
+				<p>Tài khoản đã đầy và không có tunnel nào là tunnel preview rảnh có thể xóa. Trong terminal, <code>up</code> liệt kê chúng để bạn chọn những cái không còn dùng nữa, như của một máy cũ, và chạy tiếp sau khi xóa xong. Nếu không, hãy xóa bằng <a href="commands.html#tunnels"><code>coderemote tunnels delete</code></a> rồi chạy lại <code>coderemote up</code>.</p>
 				<h3>Phiên đăng nhập đã hết hạn</h3>
 				<p><code>up</code> nhận ra và mở lại trình duyệt. Nếu không có trình duyệt, chạy <code>coderemote login --device-code</code>.</p>
 

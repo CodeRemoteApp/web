@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=6cef6e61">
+	<link rel="stylesheet" href="../style.css?v=f934604c">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/docs/commands.html">
 	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/commands.html">
@@ -219,16 +219,22 @@ Token rotated. Re-pair your devices, and restart running agents.</pre>
   brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
   quiet-fox-3hd8w2c.usw2    coderemote old-laptop
 
-<span class="p">$ </span>coderemote tunnels delete quiet-fox-3hd8w2c
+<span class="p">$ </span>coderemote tunnels delete
+Delete tunnels on your dev tunnels account (3 of 10):
+❯ ◉ quiet-fox-3hd8w2c.usw2    coderemote old-laptop
+  ◯ silent-lake-pqv9b80.usw2  online · this computer's agent on port 31580 · coderemote my-mac
+  ◯ brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
+↑/↓ move · space choose · a all · enter delete (1) · esc cancel
 deleted quiet-fox-3hd8w2c.usw2</pre>
 				<p>Each line shows the tunnel's id, <em>online</em> when an agent serves it right now, what this computer uses it for, and its description, which names the computer that made it. The region suffix (<code>.usw2</code>) is optional when you give an id.</p>
 				<table>
 					<tr><th>Command or option</th><th>What it does</th></tr>
 					<tr><td><code>tunnels</code></td><td>One line per tunnel on the account you're signed in with.</td></tr>
-					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>Deletes those tunnels. One that is online, or that this computer uses, is kept unless you add <code>--force</code>.</td></tr>
+					<tr><td><code>tunnels delete</code></td><td>Lists the tunnels to choose from: <kbd>↑</kbd>/<kbd>↓</kbd> to move, <kbd>Space</kbd> to choose, <kbd>Enter</kbd> to delete, <kbd>Esc</kbd> to cancel. Ones nothing uses come first; deleting one that is in use asks again.</td></tr>
+					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>Deletes those tunnels, for scripts. One that is online, or that this computer uses, is kept unless you add <code>--force</code>.</td></tr>
 					<tr><td><code>--force</code></td><td>Delete it anyway. Its URL is gone, so the phones paired with it have to pair again; on this computer the next <code>up</code> makes a new one.</td></tr>
 				</table>
-				<p>You rarely need it by hand: when the account is full, <code>up</code> and previews first delete preview tunnels no agent serves. Only when that doesn't free a slot does <code>up</code> stop, list the account's tunnels and ask you to delete some.</p>
+				<p>You rarely need it by hand: when the account is full, <code>up</code> and previews first delete preview tunnels no agent serves. Only when that doesn't free a slot does <code>up</code> list the account's tunnels for you to choose ones to delete, then carry on.</p>
 
 				<h2 id="login"><code>login</code></h2>
 				<p>Signs in to Microsoft Dev Tunnels. <code>up</code> does this by itself when needed, so you only run it to switch accounts or when there's no browser.</p>

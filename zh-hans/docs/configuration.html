@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../style.css?v=6cef6e61">
+	<link rel="stylesheet" href="../../style.css?v=f934604c">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/zh-hans/docs/configuration.html">
 	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/configuration.html">
@@ -132,7 +132,7 @@
 					<li><strong>Machine Info</strong>(机器的菜单)显示它的隧道:地址、账号、谁可以访问、何时过期(每次 <code>coderemote up</code> 启动都会顺延)、当前已连接的客户端、迄今的流量,以及正在预览的端口数。</li>
 					<li><strong>Settings › Connections</strong> 列出你已配对的电脑所连接的账号。每个账号会显示该账号下运行 coderemote 的每台电脑、是否在线、这部 iPhone 是否已与之配对,以及该账号的 10 个隧道中已用了多少个。要添加电脑,请在那台电脑上运行 <code>coderemote up</code> 并扫描它的二维码。</li>
 				</ul>
-				<p>应用只负责显示它们:隧道属于电脑的所有者,所以你要在已登录该账号的电脑上,用 <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> 列出和删除它们。为此,在 Connections 中按住某台机器即可复制它的隧道 ID。从应用列表中移除某台机器,只会让那部 iPhone 忘记它。</p>
+				<p>使用 Pro 时,在 Connections 中滑动隧道即可删除。iPhone 无法访问你的 Dev Tunnels 账号,所以它会请该账号上你的一台机器代为删除:至少要有一台正在运行 <code>coderemote up</code>,并且不能是要删除的那个隧道本身。没有任何机器在运行时,应用不提供删除;请启动一台,或在登录了该账号的电脑上运行 <a href="commands.html#tunnels"><code>coderemote tunnels delete</code></a>。从应用列表中移除一台机器只会让那台 iPhone 忘记它。</p>
 
 				<h2 id="troubleshooting">故障排查</h2>
 				<h3>"Port 31580 is already in use"</h3>
@@ -145,7 +145,7 @@
 				<p>确认 <code>coderemote up</code> 仍在运行,并且电脑处于唤醒和联网状态。确保手机登录的是电脑所使用的同一个账号(显示在 <code>Access:</code> 那一行)。</p>
 
 				<h3 id="tunnel-limit">"Your Dev Tunnels account already has 10 tunnels"</h3>
-				<p>账号已满,而且其中没有可以清理的闲置预览隧道。提示信息会列出它们:用 <a href="commands.html#tunnels"><code>coderemote tunnels delete &lt;id&gt;</code></a> 删除不再使用的,例如旧电脑留下的,然后再次运行 <code>coderemote up</code>。</p>
+				<p>账号已满,而且没有可以删除的闲置预览隧道。在终端中,<code>up</code> 会列出它们,让你选择不再使用的,例如旧电脑留下的,删除后继续运行。否则,请用 <a href="commands.html#tunnels"><code>coderemote tunnels delete</code></a> 删除,然后再次运行 <code>coderemote up</code>。</p>
 				<h3>登录已过期</h3>
 				<p><code>up</code> 会发现这一点并重新打开浏览器。如果没有浏览器,请运行 <code>coderemote login --device-code</code>。</p>
 

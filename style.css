@@ -192,6 +192,22 @@ footer.site .i18n-note { flex-basis: 100%; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .button.with-icon img { filter: invert(1); } }
 :root[data-theme="dark"] .button.with-icon img { filter: invert(1); }
 .button.with-icon img.color { filter: none; }
+.store-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 7px 16px 7px 12px;
+	border-radius: 10px;
+	background: #000;
+	color: #fff;
+	border: 1px solid #a6a6a6;
+	text-decoration: none;
+	line-height: 1.1;
+}
+.store-badge:hover { border-color: var(--accent); }
+.store-badge img.apple { filter: invert(1); margin-top: -3px; }
+.store-badge span { display: flex; flex-direction: column; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; }
+.store-badge small { font-size: 11px; font-weight: 500; letter-spacing: 0.02em; }
 .note { font-size: 14px; color: var(--muted); }
 
 /* Terminal snippet */

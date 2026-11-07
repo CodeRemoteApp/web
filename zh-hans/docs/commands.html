@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../style.css?v=6cef6e61">
+	<link rel="stylesheet" href="../../style.css?v=f934604c">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/zh-hans/docs/commands.html">
 	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/commands.html">
@@ -218,16 +218,22 @@ Token rotated. Re-pair your devices, and restart running agents.</pre>
   brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
   quiet-fox-3hd8w2c.usw2    coderemote old-laptop
 
-<span class="p">$ </span>coderemote tunnels delete quiet-fox-3hd8w2c
+<span class="p">$ </span>coderemote tunnels delete
+Delete tunnels on your dev tunnels account (3 of 10):
+❯ ◉ quiet-fox-3hd8w2c.usw2    coderemote old-laptop
+  ◯ silent-lake-pqv9b80.usw2  online · this computer's agent on port 31580 · coderemote my-mac
+  ◯ brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
+↑/↓ move · space choose · a all · enter delete (1) · esc cancel
 deleted quiet-fox-3hd8w2c.usw2</pre>
 				<p>每一行显示隧道的 id;当有智能体正在提供服务时显示 <em>online</em>;这台电脑用它做什么;以及它的描述,其中写明了创建它的电脑。给出 id 时,区域后缀(<code>.usw2</code>)是可选的。</p>
 				<table>
 					<tr><th>命令或选项</th><th>作用</th></tr>
 					<tr><td><code>tunnels</code></td><td>你所登录账号下的每个隧道占一行。</td></tr>
-					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>删除这些隧道。在线的,或这台电脑正在使用的,会被保留,除非你加上 <code>--force</code>。</td></tr>
+					<tr><td><code>tunnels delete</code></td><td>列出可选择的隧道:<kbd>↑</kbd>/<kbd>↓</kbd> 移动,<kbd>Space</kbd> 选择,<kbd>Enter</kbd> 删除,<kbd>Esc</kbd> 取消。没人使用的排在前面;删除正在使用的隧道时会再确认一次。</td></tr>
+					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>删除这些隧道,适合脚本使用。在线的隧道或这台电脑正在使用的隧道会被保留,除非你加上 <code>--force</code>。</td></tr>
 					<tr><td><code>--force</code></td><td>仍然删除。它的 URL 会失效,与它配对的手机必须重新配对;在这台电脑上,下一次 <code>up</code> 会创建一个新的。</td></tr>
 				</table>
-				<p>你很少需要手动执行:账号已满时,<code>up</code> 和预览会先删除没有智能体在使用的预览隧道。只有这样仍腾不出空位时,<code>up</code> 才会停止,列出账号的隧道并请你删除一些。</p>
+				<p>你很少需要手动操作:账号满了时,<code>up</code> 和预览会先删除没有代理在使用的预览隧道。只有这样仍腾不出位置时,<code>up</code> 才会列出账号的隧道让你选择要删除的,然后继续。</p>
 
 				<h2 id="login"><code>login</code></h2>
 				<p>登录 Microsoft Dev Tunnels。<code>up</code> 会在需要时自动完成,所以只有在切换账号或没有浏览器时才需要手动运行。</p>

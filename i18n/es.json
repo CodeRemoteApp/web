@@ -807,17 +807,9 @@
 		"en": "Signs in to Microsoft Dev Tunnels. <code>up</code> does this by itself when needed, so you only run it to switch accounts or when there's no browser.",
 		"text": "Inicia sesión en Microsoft Dev Tunnels. <code>up</code> lo hace por sí mismo cuando hace falta, así que solo lo ejecutas para cambiar de cuenta o cuando no hay navegador."
 	},
-	"1e8e3e16": {
-		"en": "You rarely need it by hand: when the account is full, <code>up</code> and previews first delete preview tunnels no agent serves. Only when that doesn't free a slot does <code>up</code> stop, list the account's tunnels and ask you to delete some.",
-		"text": "Rara vez lo necesitas a mano: cuando la cuenta está llena, <code>up</code> y las vistas previas eliminan primero los túneles de vista previa que ningún agente sirve. Solo cuando eso no libera un hueco, <code>up</code> se detiene, lista los túneles de la cuenta y te pide eliminar algunos."
-	},
 	"baad8898": {
 		"en": "Delete it anyway. Its URL is gone, so the phones paired with it have to pair again; on this computer the next <code>up</code> makes a new one.",
 		"text": "Elimínalo igualmente. Su URL desaparece, así que los teléfonos emparejados con él tienen que volver a emparejarse; en este ordenador, el siguiente <code>up</code> crea uno nuevo."
-	},
-	"cc1ca9cf": {
-		"en": "Deletes those tunnels. One that is online, or that this computer uses, is kept unless you add <code>--force</code>.",
-		"text": "Elimina esos túneles. Uno que esté en línea, o que use este ordenador, se conserva a menos que añadas <code>--force</code>."
 	},
 	"86d3c166": {
 		"en": "One line per tunnel on the account you're signed in with.",
@@ -1043,10 +1035,6 @@
 		"en": "The sign-in expired",
 		"text": "El inicio de sesión caducó"
 	},
-	"662b64e7": {
-		"en": "The account is full and none of its tunnels was an idle preview tunnel that could go. The message lists them: delete the ones nothing uses any more, such as an old computer's, with <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete &lt;id&gt;</code></a>, then run <code>coderemote up</code> again.",
-		"text": "La cuenta está llena y ninguno de sus túneles era un túnel de vista previa inactivo que pudiera eliminarse. El mensaje los lista: elimina los que ya nadie usa, como los de un ordenador antiguo, con <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete &lt;id&gt;</code></a> y vuelve a ejecutar <code>coderemote up</code>."
-	},
 	"cec63cac": {
 		"en": "\"Your Dev Tunnels account already has 10 tunnels\"",
 		"text": "\"Your Dev Tunnels account already has 10 tunnels\""
@@ -1074,10 +1062,6 @@
 	"285ec850": {
 		"en": "Troubleshooting",
 		"text": "Solución de problemas"
-	},
-	"554c7d33": {
-		"en": "The app only shows them: tunnels belong to the computers' owner, so you list and delete them on a computer signed in to the account, with <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a>. Touch and hold a machine in Connections to copy its tunnel ID for that. Removing a machine from the app's list only forgets it on that iPhone.",
-		"text": "La app solo los muestra: los túneles pertenecen al propietario de los ordenadores, así que los listas y eliminas en un ordenador con la sesión iniciada en la cuenta, con <a href=\"commands.html#tunnels\"><code>coderemote tunnels</code></a>. Mantén pulsada una máquina en Connections para copiar su ID de túnel con ese fin. Quitar una máquina de la lista de la app solo hace que ese iPhone la olvide."
 	},
 	"9a830b19": {
 		"en": "<strong>Settings › Connections</strong> lists the accounts your paired computers connect through. Each shows every computer running coderemote on that account, online or not, whether this iPhone is paired with it, and how many of the account's 10 tunnels are in use. To add a computer, run <code>coderemote up</code> there and scan its QR code.",
@@ -1731,16 +1715,36 @@
 		"en": "Download the free <strong>Code Remote</strong> app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> on your iPhone, if you haven't yet.",
 		"text": "Descarga la app gratuita <strong>Code Remote</strong> desde la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> en tu iPhone, si aún no la tienes."
 	},
-	"4aed03ca": {
-		"en": "Request",
-		"text": "Solicitar"
-	},
 	"e3bfc4ab": {
 		"en": "Request the Android app",
 		"text": "Solicitar la app para Android"
 	},
-	"a479c9c3": {
-		"en": "Download",
-		"text": "Descargar"
+	"cbf6cbc3": {
+		"en": "You rarely need it by hand: when the account is full, <code>up</code> and previews first delete preview tunnels no agent serves. Only when that doesn't free a slot does <code>up</code> list the account's tunnels for you to choose ones to delete, then carry on.",
+		"text": "Rara vez lo necesitas a mano: cuando la cuenta está llena, <code>up</code> y las vistas previas primero eliminan los túneles de vista previa que ningún agente usa. Solo si así no se libera espacio, <code>up</code> lista los túneles de la cuenta para que elijas cuáles eliminar y luego continúa."
+	},
+	"fe23d0ee": {
+		"en": "Deletes those tunnels, for scripts. One that is online, or that this computer uses, is kept unless you add <code>--force</code>.",
+		"text": "Elimina esos túneles, para scripts. Uno que está en línea, o que usa este ordenador, se conserva salvo que añadas <code>--force</code>."
+	},
+	"5fd9518b": {
+		"en": "Lists the tunnels to choose from: <kbd>↑</kbd>/<kbd>↓</kbd> to move, <kbd>Space</kbd> to choose, <kbd>Enter</kbd> to delete, <kbd>Esc</kbd> to cancel. Ones nothing uses come first; deleting one that is in use asks again.",
+		"text": "Lista los túneles para elegir: <kbd>↑</kbd>/<kbd>↓</kbd> para moverte, <kbd>Space</kbd> para elegir, <kbd>Enter</kbd> para eliminar, <kbd>Esc</kbd> para cancelar. Primero aparecen los que nadie usa; eliminar uno en uso pide confirmación otra vez."
+	},
+	"2218cc88": {
+		"en": "The account is full and none of its tunnels was an idle preview tunnel that could go. In a terminal, <code>up</code> lists them for you to choose the ones nothing uses any more, such as an old computer's, and carries on once they're deleted. Otherwise delete them with <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete</code></a> and run <code>coderemote up</code> again.",
+		"text": "La cuenta está llena y ninguno de sus túneles era un túnel de vista previa inactivo que se pudiera eliminar. En una terminal, <code>up</code> los lista para que elijas los que ya no se usan, como los de un ordenador antiguo, y continúa cuando se eliminan. Si no, elimínalos con <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete</code></a> y vuelve a ejecutar <code>coderemote up</code>."
+	},
+	"051dbcef": {
+		"en": "With Pro, swipe a tunnel in Connections to delete it. The iPhone has no access to your Dev Tunnels account, so it asks one of your machines on that account to delete it: at least one of them has to be running <code>coderemote up</code>, and it can't be the tunnel being deleted. When none is running, the app offers no Delete; start one, or run <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete</code></a> on a computer signed in to the account. Removing a machine from the app's list only forgets it on that iPhone.",
+		"text": "Con Pro, desliza un túnel en Connections para eliminarlo. El iPhone no tiene acceso a tu cuenta de Dev Tunnels, así que pide a una de tus máquinas en esa cuenta que lo elimine: al menos una debe estar ejecutando <code>coderemote up</code>, y no puede ser el túnel que se elimina. Si no hay ninguna en marcha, la app no ofrece Eliminar; inicia una o ejecuta <a href=\"commands.html#tunnels\"><code>coderemote tunnels delete</code></a> en un ordenador con sesión iniciada en esa cuenta. Quitar una máquina de la lista de la app solo hace que ese iPhone la olvide."
+	},
+	"83d36aec": {
+		"en": "<small>Download on the</small>App Store",
+		"text": "<small>Descárgalo en el</small>App Store"
+	},
+	"8369a488": {
+		"en": "<small>Get it on</small>Google Play",
+		"text": "<small>Disponible en</small>Google Play"
 	}
 }

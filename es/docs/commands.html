@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../style.css?v=6cef6e61">
+	<link rel="stylesheet" href="../../style.css?v=f934604c">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/es/docs/commands.html">
 	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/commands.html">
@@ -218,16 +218,22 @@ Token rotated. Re-pair your devices, and restart running agents.</pre>
   brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
   quiet-fox-3hd8w2c.usw2    coderemote old-laptop
 
-<span class="p">$ </span>coderemote tunnels delete quiet-fox-3hd8w2c
+<span class="p">$ </span>coderemote tunnels delete
+Delete tunnels on your dev tunnels account (3 of 10):
+❯ ◉ quiet-fox-3hd8w2c.usw2    coderemote old-laptop
+  ◯ silent-lake-pqv9b80.usw2  online · this computer's agent on port 31580 · coderemote my-mac
+  ◯ brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
+↑/↓ move · space choose · a all · enter delete (1) · esc cancel
 deleted quiet-fox-3hd8w2c.usw2</pre>
 				<p>Cada línea muestra el id del túnel, <em>online</em> cuando un agente lo sirve ahora mismo, para qué lo usa este ordenador y su descripción, que nombra el ordenador que lo creó. El sufijo de región (<code>.usw2</code>) es opcional cuando das un id.</p>
 				<table>
 					<tr><th>Comando u opción</th><th>Qué hace</th></tr>
 					<tr><td><code>tunnels</code></td><td>Una línea por túnel de la cuenta con la que iniciaste sesión.</td></tr>
-					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>Elimina esos túneles. Uno que esté en línea, o que use este ordenador, se conserva a menos que añadas <code>--force</code>.</td></tr>
+					<tr><td><code>tunnels delete</code></td><td>Lista los túneles para elegir: <kbd>↑</kbd>/<kbd>↓</kbd> para moverte, <kbd>Space</kbd> para elegir, <kbd>Enter</kbd> para eliminar, <kbd>Esc</kbd> para cancelar. Primero aparecen los que nadie usa; eliminar uno en uso pide confirmación otra vez.</td></tr>
+					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>Elimina esos túneles, para scripts. Uno que está en línea, o que usa este ordenador, se conserva salvo que añadas <code>--force</code>.</td></tr>
 					<tr><td><code>--force</code></td><td>Elimínalo igualmente. Su URL desaparece, así que los teléfonos emparejados con él tienen que volver a emparejarse; en este ordenador, el siguiente <code>up</code> crea uno nuevo.</td></tr>
 				</table>
-				<p>Rara vez lo necesitas a mano: cuando la cuenta está llena, <code>up</code> y las vistas previas eliminan primero los túneles de vista previa que ningún agente sirve. Solo cuando eso no libera un hueco, <code>up</code> se detiene, lista los túneles de la cuenta y te pide eliminar algunos.</p>
+				<p>Rara vez lo necesitas a mano: cuando la cuenta está llena, <code>up</code> y las vistas previas primero eliminan los túneles de vista previa que ningún agente usa. Solo si así no se libera espacio, <code>up</code> lista los túneles de la cuenta para que elijas cuáles eliminar y luego continúa.</p>
 
 				<h2 id="login"><code>login</code></h2>
 				<p>Inicia sesión en Microsoft Dev Tunnels. <code>up</code> lo hace por sí mismo cuando hace falta, así que solo lo ejecutas para cambiar de cuenta o cuando no hay navegador.</p>

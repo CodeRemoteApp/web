@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../style.css?v=6cef6e61">
+	<link rel="stylesheet" href="../../style.css?v=f934604c">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/es/docs/configuration.html">
 	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/configuration.html">
@@ -132,7 +132,7 @@
 					<li><strong>Machine Info</strong> (el menú de una máquina) muestra su túnel: la dirección, la cuenta, quién puede entrar, cuándo caduca (se retrasa cada vez que arranca <code>coderemote up</code>), los clientes conectados ahora, el tráfico hasta el momento y cuántos puertos se están previsualizando.</li>
 					<li><strong>Settings › Connections</strong> lista las cuentas a través de las que se conectan tus ordenadores emparejados. Cada una muestra todos los ordenadores que ejecutan coderemote en esa cuenta, estén en línea o no, si este iPhone está emparejado con él, y cuántos de los 10 túneles de la cuenta están en uso. Para añadir un ordenador, ejecuta allí <code>coderemote up</code> y escanea su código QR.</li>
 				</ul>
-				<p>La app solo los muestra: los túneles pertenecen al propietario de los ordenadores, así que los listas y eliminas en un ordenador con la sesión iniciada en la cuenta, con <a href="commands.html#tunnels"><code>coderemote tunnels</code></a>. Mantén pulsada una máquina en Connections para copiar su ID de túnel con ese fin. Quitar una máquina de la lista de la app solo hace que ese iPhone la olvide.</p>
+				<p>Con Pro, desliza un túnel en Connections para eliminarlo. El iPhone no tiene acceso a tu cuenta de Dev Tunnels, así que pide a una de tus máquinas en esa cuenta que lo elimine: al menos una debe estar ejecutando <code>coderemote up</code>, y no puede ser el túnel que se elimina. Si no hay ninguna en marcha, la app no ofrece Eliminar; inicia una o ejecuta <a href="commands.html#tunnels"><code>coderemote tunnels delete</code></a> en un ordenador con sesión iniciada en esa cuenta. Quitar una máquina de la lista de la app solo hace que ese iPhone la olvide.</p>
 
 				<h2 id="troubleshooting">Solución de problemas</h2>
 				<h3>"Port 31580 is already in use"</h3>
@@ -145,7 +145,7 @@
 				<p>Comprueba que <code>coderemote up</code> sigue en marcha y que el ordenador está encendido y con conexión. Asegúrate de que el teléfono inició sesión con la misma cuenta que usa el ordenador (se muestra en la línea <code>Access:</code>).</p>
 
 				<h3 id="tunnel-limit">"Your Dev Tunnels account already has 10 tunnels"</h3>
-				<p>La cuenta está llena y ninguno de sus túneles era un túnel de vista previa inactivo que pudiera eliminarse. El mensaje los lista: elimina los que ya nadie usa, como los de un ordenador antiguo, con <a href="commands.html#tunnels"><code>coderemote tunnels delete &lt;id&gt;</code></a> y vuelve a ejecutar <code>coderemote up</code>.</p>
+				<p>La cuenta está llena y ninguno de sus túneles era un túnel de vista previa inactivo que se pudiera eliminar. En una terminal, <code>up</code> los lista para que elijas los que ya no se usan, como los de un ordenador antiguo, y continúa cuando se eliminan. Si no, elimínalos con <a href="commands.html#tunnels"><code>coderemote tunnels delete</code></a> y vuelve a ejecutar <code>coderemote up</code>.</p>
 				<h3>El inicio de sesión caducó</h3>
 				<p><code>up</code> lo detecta y vuelve a abrir el navegador. Sin navegador, ejecuta <code>coderemote login --device-code</code>.</p>
 

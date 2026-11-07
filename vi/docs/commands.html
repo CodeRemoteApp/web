@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../style.css?v=6cef6e61">
+	<link rel="stylesheet" href="../../style.css?v=f934604c">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/vi/docs/commands.html">
 	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/commands.html">
@@ -218,16 +218,22 @@ Token rotated. Re-pair your devices, and restart running agents.</pre>
   brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
   quiet-fox-3hd8w2c.usw2    coderemote old-laptop
 
-<span class="p">$ </span>coderemote tunnels delete quiet-fox-3hd8w2c
+<span class="p">$ </span>coderemote tunnels delete
+Delete tunnels on your dev tunnels account (3 of 10):
+❯ ◉ quiet-fox-3hd8w2c.usw2    coderemote old-laptop
+  ◯ silent-lake-pqv9b80.usw2  online · this computer's agent on port 31580 · coderemote my-mac
+  ◯ brave-hill-x7k2m41.usw2   online · this computer's previews on port 31580 · coderemote preview my-mac
+↑/↓ move · space choose · a all · enter delete (1) · esc cancel
 deleted quiet-fox-3hd8w2c.usw2</pre>
 				<p>Mỗi dòng hiện id của tunnel, <em>online</em> khi một agent đang phục vụ nó, máy tính này dùng nó để làm gì, và mô tả của nó, vốn nêu tên máy tính đã tạo ra nó. Hậu tố vùng (<code>.usw2</code>) là tùy chọn khi bạn đưa vào một id.</p>
 				<table>
 					<tr><th>Lệnh hoặc tùy chọn</th><th>Nó làm gì</th></tr>
 					<tr><td><code>tunnels</code></td><td>Một dòng cho mỗi tunnel của tài khoản bạn đang đăng nhập.</td></tr>
-					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>Xóa các tunnel đó. Tunnel đang online, hoặc đang được máy tính này dùng, sẽ được giữ lại trừ khi bạn thêm <code>--force</code>.</td></tr>
+					<tr><td><code>tunnels delete</code></td><td>Liệt kê các tunnel để chọn: <kbd>↑</kbd>/<kbd>↓</kbd> để di chuyển, <kbd>Space</kbd> để chọn, <kbd>Enter</kbd> để xóa, <kbd>Esc</kbd> để hủy. Tunnel không ai dùng nằm trên cùng; xóa tunnel đang được dùng sẽ được hỏi lại.</td></tr>
+					<tr><td><code>tunnels delete &lt;id&gt;...</code></td><td>Xóa các tunnel đó, dùng cho script. Tunnel đang online, hoặc máy này đang dùng, sẽ được giữ lại trừ khi bạn thêm <code>--force</code>.</td></tr>
 					<tr><td><code>--force</code></td><td>Cứ xóa. URL của nó sẽ mất, nên các điện thoại đã ghép đôi với nó phải ghép đôi lại; trên máy tính này, lần <code>up</code> tiếp theo sẽ tạo cái mới.</td></tr>
 				</table>
-				<p>Bạn hiếm khi cần chạy tay: khi tài khoản đã đầy, <code>up</code> và phần xem trước sẽ xóa trước các preview tunnel không agent nào phục vụ. Chỉ khi điều đó không giải phóng được chỗ thì <code>up</code> mới dừng, liệt kê các tunnel của tài khoản và nhờ bạn xóa bớt.</p>
+				<p>Bạn hiếm khi cần làm tay: khi tài khoản đã đầy, <code>up</code> và preview sẽ xóa trước các tunnel preview không còn agent nào phục vụ. Chỉ khi vẫn không có chỗ trống, <code>up</code> mới liệt kê các tunnel của tài khoản để bạn chọn cái cần xóa, rồi chạy tiếp.</p>
 
 				<h2 id="login"><code>login</code></h2>
 				<p>Đăng nhập vào Microsoft Dev Tunnels. <code>up</code> tự làm việc này khi cần, nên bạn chỉ chạy nó để đổi tài khoản hoặc khi không có trình duyệt.</p>

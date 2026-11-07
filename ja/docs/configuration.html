@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../style.css?v=6cef6e61">
+	<link rel="stylesheet" href="../../style.css?v=f934604c">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/ja/docs/configuration.html">
 	<link rel="alternate" hreflang="en" href="https://coderemoteapp.github.io/web/docs/configuration.html">
@@ -132,7 +132,7 @@
 					<li><strong>Machine Info</strong>(マシンのメニュー)には、そのトンネルが表示されます: アドレス、アカウント、アクセスできる人、有効期限(<code>coderemote up</code> を起動するたびに延長されます)、現在接続中のクライアント、これまでのトラフィック、プレビュー中のポートの数。</li>
 					<li><strong>Settings › Connections</strong> には、ペアリング済みのコンピューターが接続しているアカウントが一覧表示されます。各アカウントには、そのアカウントで coderemote を動かしているすべてのコンピューター(オンラインかどうか、この iPhone がペアリング済みかどうか)と、アカウントの 10 個のトンネルのうちいくつ使われているかが表示されます。コンピューターを追加するには、そこで <code>coderemote up</code> を実行して QR コードを読み取ります。</li>
 				</ul>
-				<p>アプリは表示するだけです。トンネルはコンピューターの所有者のものなので、アカウントにサインインしたコンピューターで <a href="commands.html#tunnels"><code>coderemote tunnels</code></a> を使って一覧表示と削除を行います。そのために、Connections でマシンをタッチして長押しすると、そのトンネル ID をコピーできます。アプリの一覧からマシンを削除しても、その iPhone がマシンを忘れるだけです。</p>
+				<p>Pro では、Connections でトンネルをスワイプすると削除できます。iPhone は Dev Tunnels アカウントにアクセスできないため、そのアカウント上のあなたのマシンに削除を頼みます。そのため、少なくとも 1 台が <code>coderemote up</code> を実行中で、かつ削除するトンネル自身ではない必要があります。どれも動いていないときは削除ボタンは表示されません。1 台を起動するか、そのアカウントでサインインしたコンピュータで <a href="commands.html#tunnels"><code>coderemote tunnels delete</code></a> を実行してください。アプリの一覧からマシンを削除しても、その iPhone から忘れるだけです。</p>
 
 				<h2 id="troubleshooting">トラブルシューティング</h2>
 				<h3>"Port 31580 is already in use"</h3>
@@ -145,7 +145,7 @@
 				<p><code>coderemote up</code> が動いていること、コンピューターが起動していてオンラインであることを確認してください。iPhone が、コンピューターと同じアカウントでサインインしていることも確認してください(<code>Access:</code> の行に表示されます)。</p>
 
 				<h3 id="tunnel-limit">"Your Dev Tunnels account already has 10 tunnels"</h3>
-				<p>アカウントがいっぱいで、削除できる使われていないプレビュー用トンネルがありませんでした。メッセージに一覧が表示されます。古いコンピューターのものなど、使われていないものを <a href="commands.html#tunnels"><code>coderemote tunnels delete &lt;id&gt;</code></a> で削除し、もう一度 <code>coderemote up</code> を実行してください。</p>
+				<p>アカウントがいっぱいで、削除できる未使用のプレビュー用トンネルもありませんでした。ターミナルでは <code>up</code> がトンネルを一覧表示するので、古いコンピュータのものなど、もう使っていないものを選ぶと、削除後にそのまま続行します。それ以外の場合は <a href="commands.html#tunnels"><code>coderemote tunnels delete</code></a> で削除し、もう一度 <code>coderemote up</code> を実行してください。</p>
 				<h3>サインインの有効期限が切れた</h3>
 				<p><code>up</code> が検知してブラウザを再び開きます。ブラウザがない場合は <code>coderemote login --device-code</code> を実行してください。</p>
 
