@@ -559,9 +559,10 @@ pre.cmd.has-copy { padding-right: 60px; }
 /* Landing: install section */
 .install-home { max-width: 760px; }
 .install-home .install { margin: 0; }
+.install-home .get-app { margin: 28px 0 0; }
 .install-home .then { margin: 28px 0 0; color: var(--muted); }
 
-/* Landing: beta invite form (beta.js) */
+/* Landing: Android waitlist form (beta.js) */
 .beta-home { max-width: 760px; }
 .beta-home h2 { margin-bottom: 16px; }
 .beta-home .lede { color: var(--muted); margin: 0 0 28px; }

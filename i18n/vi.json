@@ -135,29 +135,9 @@
 		"en": "Everything you need to keep working.",
 		"text": "Mọi thứ bạn cần để tiếp tục làm việc."
 	},
-	"6db4c547": {
-		"en": "We only use your email for the beta invite. See the <a href=\"privacy.html#beta\">privacy policy</a>.",
-		"text": "Chúng tôi chỉ dùng email của bạn để gửi lời mời beta. Xem <a href=\"privacy.html#beta\">chính sách quyền riêng tư</a>."
-	},
-	"07c5e2a6": {
-		"en": "Request an invite",
-		"text": "Xin lời mời"
-	},
-	"1138c15a": {
-		"en": "What you'd like to use Code Remote for",
-		"text": "Bạn muốn dùng Code Remote để làm gì"
-	},
 	"8d8fdd66": {
 		"en": "Message <span class=\"optional\">(optional)</span>",
 		"text": "Lời nhắn <span class=\"optional\">(không bắt buộc)</span>"
-	},
-	"26b1964f": {
-		"en": "Use the email of your Apple Account (the one signed in on your iPhone), so the invite lands where TestFlight expects it.",
-		"text": "Hãy dùng email của Apple Account (tài khoản đang đăng nhập trên iPhone), để lời mời đến đúng nơi TestFlight mong đợi."
-	},
-	"29ad3e53": {
-		"en": "you@icloud.com",
-		"text": "ban@icloud.com"
 	},
 	"84add5b2": {
 		"en": "Email",
@@ -171,17 +151,9 @@
 		"en": "Something went wrong.",
 		"text": "Đã xảy ra lỗi."
 	},
-	"3f718709": {
-		"en": "Thanks! We'll send your TestFlight invite soon.",
-		"text": "Cảm ơn bạn! Chúng tôi sẽ sớm gửi lời mời TestFlight."
-	},
 	"cf765512": {
 		"en": "Sending…",
 		"text": "Đang gửi…"
-	},
-	"fedb0338": {
-		"en": "Join the iPhone beta.",
-		"text": "Tham gia beta trên iPhone."
 	},
 	"12820efb": {
 		"en": "On macOS and Linux.",
@@ -206,10 +178,6 @@
 	"39201eac": {
 		"en": "Install method",
 		"text": "Cách cài đặt"
-	},
-	"d3465c71": {
-		"en": "Install on your computer.",
-		"text": "Cài đặt trên máy tính của bạn."
 	},
 	"8a57f5ba": {
 		"en": "<a href=\"compare.html\">See the full comparison</a>, including when another tool is the better fit.",
@@ -270,10 +238,6 @@
 	"41def7a0": {
 		"en": "Appearance",
 		"text": "Giao diện"
-	},
-	"f03b60f7": {
-		"en": "Beta",
-		"text": "Beta"
 	},
 	"fd6c3ebf": {
 		"en": "Install",
@@ -359,10 +323,6 @@
 		"en": "Common questions",
 		"text": "Câu hỏi thường gặp"
 	},
-	"f5c3c034": {
-		"en": "Then scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).",
-		"text": "Sau đó quét mã QR bằng Camera của iPhone, hoặc bằng nút <strong>+</strong> trong App. Lần chạy đầu tiên sẽ tải Dev Tunnels CLI của Microsoft và yêu cầu bạn đăng nhập bằng GitHub (hoặc chạy <code>coderemote login --microsoft</code> trước để dùng tài khoản Microsoft)."
-	},
 	"0b32e824": {
 		"en": "On your computer (macOS, Windows 10/11 or Linux), install coderemote with the install script, npm or Homebrew (<a href=\"docs/setup.html#install\">every way, for each system</a>), then share a folder:",
 		"text": "Trên máy tính (macOS, Windows 10/11 hoặc Linux), cài coderemote bằng script cài đặt, npm hoặc Homebrew (<a href=\"docs/setup.html#install\">mọi cách, cho từng hệ thống</a>), rồi chia sẻ một thư mục:"
@@ -390,10 +350,6 @@
 	"d8d86b60": {
 		"en": "What stays simple",
 		"text": "Điều gì vẫn đơn giản"
-	},
-	"14116a22": {
-		"en": "<strong>It is not an iPhone.</strong> The Code Remote app is for iPhone. Anything else has to use the tools above.",
-		"text": "<strong>Bạn không dùng iPhone.</strong> App Code Remote chỉ dành cho iPhone. Mọi thiết bị khác phải dùng các công cụ ở trên."
 	},
 	"24c010fd": {
 		"en": "<strong>You already run a VPN and SSH everywhere.</strong> If that is set up and you like it, a terminal app over it works fine. Code Remote is for when you would rather not set it up at all.",
@@ -1707,18 +1663,6 @@
 		"en": "Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.",
 		"text": "Duyệt file, dùng git, chạy terminal và mở các dev server từ iPhone, chỉ với một lệnh: <code>npx coderemote up</code>. Mã hoá đầu cuối. Không cần khoá SSH, không cần mở port, không cần VPN."
 	},
-	"e0fe08c7": {
-		"en": "The iPhone app is on the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. Want new features before they get there? Leave your email and we'll invite you to the beta on TestFlight. The invite comes from Apple's TestFlight; open it on your iPhone.",
-		"text": "App iPhone đã có trên <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. Muốn dùng tính năng mới trước khi chúng lên đó? Để lại email, chúng tôi sẽ mời bạn tham gia bản beta trên TestFlight. Lời mời đến từ TestFlight của Apple; hãy mở nó trên iPhone."
-	},
-	"2caed692": {
-		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (get the app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
-		"text": "Muốn cài đặt lâu dài? Hãy chạy <code>coderemote up</code> trong thư mục dự án rồi quét mã QR bằng iPhone (tải app từ <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Cách cập nhật, gỡ cài đặt và những phần còn lại có trong <a href=\"docs/setup.html#install\">hướng dẫn cài đặt</a>."
-	},
-	"8f1e4eae": {
-		"en": "Free iPhone app. Early builds on <a href=\"#beta\">TestFlight</a>.",
-		"text": "App iPhone miễn phí. Bản dựng sớm có trên <a href=\"#beta\">TestFlight</a>."
-	},
 	"a9096aaa": {
 		"en": "Download on the App Store",
 		"text": "Tải về trên App Store"
@@ -1730,5 +1674,65 @@
 	"53f9ea05": {
 		"en": "The <strong>Code Remote</strong> app on your iPhone, from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>.",
 		"text": "App <strong>Code Remote</strong> trên iPhone, tải từ <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>."
+	},
+	"13446d0c": {
+		"en": "We only use your email to tell you about the Android app. See the <a href=\"privacy.html#android\">privacy policy</a>.",
+		"text": "Chúng tôi chỉ dùng email của bạn để báo tin về app Android. Xem <a href=\"privacy.html#android\">chính sách quyền riêng tư</a>."
+	},
+	"a0d5511a": {
+		"en": "Notify me",
+		"text": "Báo cho tôi"
+	},
+	"6f1297ef": {
+		"en": "Your phone, and what you'd like to use Code Remote for",
+		"text": "Điện thoại bạn dùng, và bạn muốn dùng Code Remote để làm gì"
+	},
+	"50e2b46e": {
+		"en": "you@example.com",
+		"text": "you@example.com"
+	},
+	"b0a3a1c0": {
+		"en": "Thanks! We'll let you know if the Android app happens.",
+		"text": "Cảm ơn bạn! Chúng tôi sẽ báo cho bạn nếu có app Android."
+	},
+	"ddc9f528": {
+		"en": "Code Remote is iPhone only for now. If you'd use it on Android, leave your email. If enough people ask, we'll build the Android app, and you'll be the first to know.",
+		"text": "Hiện tại Code Remote chỉ có trên iPhone. Nếu bạn muốn dùng trên Android, hãy để lại email. Nếu đủ nhiều người cần, chúng tôi sẽ làm app Android, và bạn sẽ là người biết đầu tiên."
+	},
+	"2c016588": {
+		"en": "Want it on Android?",
+		"text": "Bạn muốn dùng trên Android?"
+	},
+	"f65ad263": {
+		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with the app. Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
+		"text": "Muốn cài đặt lâu dài? Hãy chạy <code>coderemote up</code> trong thư mục dự án rồi quét mã QR bằng app. Cách cập nhật, gỡ cài đặt và những phần còn lại có trong <a href=\"docs/setup.html#install\">hướng dẫn cài đặt</a>."
+	},
+	"58dda3ba": {
+		"en": "The free Code Remote app for iPhone, to scan the QR code and pair.",
+		"text": "App Code Remote miễn phí cho iPhone, để quét mã QR và ghép đôi."
+	},
+	"05720692": {
+		"en": "Install on your computer, get the app on your iPhone.",
+		"text": "Cài đặt trên máy tính, tải app về iPhone."
+	},
+	"63f50726": {
+		"en": "Free on the App Store.",
+		"text": "Miễn phí trên App Store."
+	},
+	"d85549f3": {
+		"en": "Install &amp; Download",
+		"text": "Cài đặt &amp; Tải về"
+	},
+	"3304d122": {
+		"en": "Then get the App from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> and scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).",
+		"text": "Sau đó tải App từ <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> rồi quét mã QR bằng Camera của iPhone, hoặc bằng nút <strong>+</strong> trong App. Lần chạy đầu tiên sẽ tải Dev Tunnels CLI của Microsoft và yêu cầu bạn đăng nhập bằng GitHub (hoặc chạy <code>coderemote login --microsoft</code> trước để dùng tài khoản Microsoft)."
+	},
+	"183aaa68": {
+		"en": "<strong>It is not an iPhone.</strong> The Code Remote app is for iPhone. Anything else has to use the tools above for now (<a href=\"./#android\">want it on Android?</a>).",
+		"text": "<strong>Bạn không dùng iPhone.</strong> App Code Remote chỉ dành cho iPhone. Hiện tại mọi thiết bị khác phải dùng các công cụ ở trên (<a href=\"./#android\">muốn có bản Android?</a>)."
+	},
+	"067256a3": {
+		"en": "Download the free <strong>Code Remote</strong> app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> on your iPhone, if you haven't yet.",
+		"text": "Tải app <strong>Code Remote</strong> miễn phí từ <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> về iPhone, nếu bạn chưa có."
 	}
 }

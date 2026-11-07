@@ -1,4 +1,4 @@
-// Beta invite form: sends to Formspree in the background and says how it went next to the
+// Android waitlist form: sends to Formspree in the background and says how it went next to the
 // button. Without JS the form posts normally and Formspree shows its own thank-you page.
 for (const form of document.querySelectorAll('[data-beta]')) {
 	const status = form.querySelector('[data-beta-status]');
@@ -20,7 +20,7 @@ for (const form of document.querySelectorAll('[data-beta]')) {
 				throw new Error(data.errors?.map((e) => e.message).join(' ') || form.dataset.failed ?? 'Something went wrong.');
 			}
 			form.reset();
-			status.textContent = form.dataset.thanks ?? "Thanks! We'll send your TestFlight invite soon.";
+			status.textContent = form.dataset.thanks ?? "Thanks! We'll let you know.";
 		} catch (err) {
 			status.classList.add('error');
 			status.textContent = `${err.message} ${form.dataset.retry ?? 'Please try again, or email trantienthanh2412@gmail.com.'}`;

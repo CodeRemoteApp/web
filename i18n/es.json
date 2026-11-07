@@ -135,29 +135,9 @@
 		"en": "Everything you need to keep working.",
 		"text": "Todo lo que necesitas para seguir trabajando."
 	},
-	"6db4c547": {
-		"en": "We only use your email for the beta invite. See the <a href=\"privacy.html#beta\">privacy policy</a>.",
-		"text": "Solo usamos tu correo para la invitación a la beta. Consulta la <a href=\"privacy.html#beta\">política de privacidad</a>."
-	},
-	"07c5e2a6": {
-		"en": "Request an invite",
-		"text": "Solicitar una invitación"
-	},
-	"1138c15a": {
-		"en": "What you'd like to use Code Remote for",
-		"text": "Para qué te gustaría usar Code Remote"
-	},
 	"8d8fdd66": {
 		"en": "Message <span class=\"optional\">(optional)</span>",
 		"text": "Mensaje <span class=\"optional\">(opcional)</span>"
-	},
-	"26b1964f": {
-		"en": "Use the email of your Apple Account (the one signed in on your iPhone), so the invite lands where TestFlight expects it.",
-		"text": "Usa el correo de tu cuenta de Apple (la que tiene la sesión iniciada en tu iPhone), para que la invitación llegue donde TestFlight la espera."
-	},
-	"29ad3e53": {
-		"en": "you@icloud.com",
-		"text": "tu@icloud.com"
 	},
 	"84add5b2": {
 		"en": "Email",
@@ -171,17 +151,9 @@
 		"en": "Something went wrong.",
 		"text": "Algo salió mal."
 	},
-	"3f718709": {
-		"en": "Thanks! We'll send your TestFlight invite soon.",
-		"text": "¡Gracias! Te enviaremos pronto tu invitación de TestFlight."
-	},
 	"cf765512": {
 		"en": "Sending…",
 		"text": "Enviando…"
-	},
-	"fedb0338": {
-		"en": "Join the iPhone beta.",
-		"text": "Únete a la beta para iPhone."
 	},
 	"12820efb": {
 		"en": "On macOS and Linux.",
@@ -206,10 +178,6 @@
 	"39201eac": {
 		"en": "Install method",
 		"text": "Método de instalación"
-	},
-	"d3465c71": {
-		"en": "Install on your computer.",
-		"text": "Instálalo en tu ordenador."
 	},
 	"8a57f5ba": {
 		"en": "<a href=\"compare.html\">See the full comparison</a>, including when another tool is the better fit.",
@@ -270,10 +238,6 @@
 	"41def7a0": {
 		"en": "Appearance",
 		"text": "Apariencia"
-	},
-	"f03b60f7": {
-		"en": "Beta",
-		"text": "Beta"
 	},
 	"fd6c3ebf": {
 		"en": "Install",
@@ -359,10 +323,6 @@
 		"en": "Common questions",
 		"text": "Preguntas frecuentes"
 	},
-	"f5c3c034": {
-		"en": "Then scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).",
-		"text": "Después escanea el código QR con la cámara del iPhone, o con el botón <strong>+</strong> de la App. La primera ejecución descarga la CLI de Dev Tunnels de Microsoft y te pide iniciar sesión con GitHub (o ejecuta antes <code>coderemote login --microsoft</code> para usar una cuenta de Microsoft)."
-	},
 	"0b32e824": {
 		"en": "On your computer (macOS, Windows 10/11 or Linux), install coderemote with the install script, npm or Homebrew (<a href=\"docs/setup.html#install\">every way, for each system</a>), then share a folder:",
 		"text": "En tu ordenador (macOS, Windows 10/11 o Linux), instala coderemote con el script de instalación, npm o Homebrew (<a href=\"docs/setup.html#install\">todas las formas, para cada sistema</a>) y comparte una carpeta:"
@@ -390,10 +350,6 @@
 	"d8d86b60": {
 		"en": "What stays simple",
 		"text": "Lo que sigue siendo sencillo"
-	},
-	"14116a22": {
-		"en": "<strong>It is not an iPhone.</strong> The Code Remote app is for iPhone. Anything else has to use the tools above.",
-		"text": "<strong>No es un iPhone.</strong> La app de Code Remote es para iPhone. Cualquier otro dispositivo tiene que usar las herramientas de arriba."
 	},
 	"24c010fd": {
 		"en": "<strong>You already run a VPN and SSH everywhere.</strong> If that is set up and you like it, a terminal app over it works fine. Code Remote is for when you would rather not set it up at all.",
@@ -1707,18 +1663,6 @@
 		"en": "Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.",
 		"text": "Explora archivos, usa git, abre una terminal y tus servidores de desarrollo desde tu iPhone, con un solo comando: <code>npx coderemote up</code>. Cifrado de extremo a extremo. Sin claves SSH, sin redirección de puertos, sin VPN."
 	},
-	"e0fe08c7": {
-		"en": "The iPhone app is on the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. Want new features before they get there? Leave your email and we'll invite you to the beta on TestFlight. The invite comes from Apple's TestFlight; open it on your iPhone.",
-		"text": "La app para iPhone ya está en la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. ¿Quieres las novedades antes de que lleguen? Déjanos tu email y te invitaremos a la beta en TestFlight. La invitación llega desde TestFlight de Apple; ábrela en tu iPhone."
-	},
-	"2caed692": {
-		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (get the app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
-		"text": "¿Prefieres una instalación permanente? Ejecuta <code>coderemote up</code> en una carpeta de proyecto y escanea el código QR con tu iPhone (descarga la app desde la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Cómo actualizar, desinstalar y lo demás está en la <a href=\"docs/setup.html#install\">guía de instalación</a>."
-	},
-	"8f1e4eae": {
-		"en": "Free iPhone app. Early builds on <a href=\"#beta\">TestFlight</a>.",
-		"text": "App para iPhone gratis. Versiones anticipadas en <a href=\"#beta\">TestFlight</a>."
-	},
 	"a9096aaa": {
 		"en": "Download on the App Store",
 		"text": "Descargar en la App Store"
@@ -1730,5 +1674,65 @@
 	"53f9ea05": {
 		"en": "The <strong>Code Remote</strong> app on your iPhone, from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>.",
 		"text": "La app <strong>Code Remote</strong> en tu iPhone, desde la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>."
+	},
+	"13446d0c": {
+		"en": "We only use your email to tell you about the Android app. See the <a href=\"privacy.html#android\">privacy policy</a>.",
+		"text": "Solo usamos tu email para avisarte sobre la app para Android. Consulta la <a href=\"privacy.html#android\">política de privacidad</a>."
+	},
+	"a0d5511a": {
+		"en": "Notify me",
+		"text": "Avísame"
+	},
+	"6f1297ef": {
+		"en": "Your phone, and what you'd like to use Code Remote for",
+		"text": "Tu teléfono, y para qué te gustaría usar Code Remote"
+	},
+	"50e2b46e": {
+		"en": "you@example.com",
+		"text": "tu@ejemplo.com"
+	},
+	"b0a3a1c0": {
+		"en": "Thanks! We'll let you know if the Android app happens.",
+		"text": "¡Gracias! Te avisaremos si sale la app para Android."
+	},
+	"ddc9f528": {
+		"en": "Code Remote is iPhone only for now. If you'd use it on Android, leave your email. If enough people ask, we'll build the Android app, and you'll be the first to know.",
+		"text": "Por ahora Code Remote es solo para iPhone. Si lo usarías en Android, déjanos tu email. Si lo pide suficiente gente, haremos la app para Android y serás el primero en saberlo."
+	},
+	"2c016588": {
+		"en": "Want it on Android?",
+		"text": "¿Lo quieres en Android?"
+	},
+	"f65ad263": {
+		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with the app. Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
+		"text": "¿Prefieres una instalación permanente? Ejecuta <code>coderemote up</code> en una carpeta de proyecto y escanea el código QR con la app. Cómo actualizar, desinstalar y lo demás está en la <a href=\"docs/setup.html#install\">guía de instalación</a>."
+	},
+	"58dda3ba": {
+		"en": "The free Code Remote app for iPhone, to scan the QR code and pair.",
+		"text": "La app gratuita de Code Remote para iPhone, para escanear el código QR y emparejar."
+	},
+	"05720692": {
+		"en": "Install on your computer, get the app on your iPhone.",
+		"text": "Instálalo en tu ordenador y descarga la app en tu iPhone."
+	},
+	"63f50726": {
+		"en": "Free on the App Store.",
+		"text": "Gratis en la App Store."
+	},
+	"d85549f3": {
+		"en": "Install &amp; Download",
+		"text": "Instalar y descargar"
+	},
+	"3304d122": {
+		"en": "Then get the App from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> and scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).",
+		"text": "Después descarga la App desde la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> y escanea el código QR con la cámara del iPhone, o con el botón <strong>+</strong> de la App. La primera ejecución descarga la CLI de Dev Tunnels de Microsoft y te pide iniciar sesión con GitHub (o ejecuta antes <code>coderemote login --microsoft</code> para usar una cuenta de Microsoft)."
+	},
+	"183aaa68": {
+		"en": "<strong>It is not an iPhone.</strong> The Code Remote app is for iPhone. Anything else has to use the tools above for now (<a href=\"./#android\">want it on Android?</a>).",
+		"text": "<strong>No es un iPhone.</strong> La app de Code Remote es para iPhone. Por ahora, cualquier otro dispositivo tiene que usar las herramientas de arriba (<a href=\"./#android\">¿la quieres en Android?</a>)."
+	},
+	"067256a3": {
+		"en": "Download the free <strong>Code Remote</strong> app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> on your iPhone, if you haven't yet.",
+		"text": "Descarga la app gratuita <strong>Code Remote</strong> desde la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> en tu iPhone, si aún no la tienes."
 	}
 }

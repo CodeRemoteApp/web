@@ -19,7 +19,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css?v=f54d7871">
+	<link rel="stylesheet" href="style.css?v=aeb2a6d2">
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/privacy.html">
 	<!-- i18n:end head -->
@@ -64,7 +64,7 @@
 			<div class="legal-head">
 				<div>
 					<h1>Privacy Policy</h1>
-					<p class="meta">Effective November 1, 2026</p>
+					<p class="meta">Effective November 7, 2026</p>
 				</div>
 				<svg class="legal-art art" viewBox="0 0 220 200" aria-hidden="true">
 					<path class="blob" d="M38 52C70 12 168 8 196 50c26 40 22 106-16 128-44 26-120 24-150-8C4 142 8 88 38 52Z"/>
@@ -89,7 +89,7 @@
 			</div>
 
 			<div class="callout">
-				<p><strong>In short:</strong> Code Remote doesn't collect, store or sell any personal data. The App and the CLI have no accounts, no analytics and no ads. Your phone connects to your own computer, and what you see and type stays between the two. The one server we run passes notifications on to Apple, can't read them, and keeps nothing. The only personal data we receive is the email you give us if you ask for a beta invite on this website.</p>
+				<p><strong>In short:</strong> Code Remote doesn't collect, store or sell any personal data. The App and the CLI have no accounts, no analytics and no ads. Your phone connects to your own computer, and what you see and type stays between the two. The one server we run passes notifications on to Apple, can't read them, and keeps nothing. The only personal data we receive is the email you give us if you join the Android waitlist on this website.</p>
 			</div>
 
 			<p>This policy covers the Code Remote iPhone app (the "App") and the <code>coderemote</code> command-line tool for your computer (the "CLI"), together "Code Remote". Code Remote is made by Thanh Tran ("we", "us").</p>
@@ -103,8 +103,9 @@
 			<h3 id="website">This website</h3>
 			<p>This website (coderemoteapp.github.io/web) uses Google Analytics to count visits and see which pages are read, so we know what to improve. Google Analytics sets cookies in your browser and receives the pages you visit, your browser and device type, your approximate location (country or city, derived from your IP address, which Google Analytics doesn't store) and the site you came from. We see only aggregated reports, and use them for nothing else. We don't link them to the App or the CLI, and the App and the CLI never load Google Analytics. You can block it with your browser's tracking protection or a content blocker, or with Google's <a href="https://tools.google.com/dlpage/gaoptout">opt-out add-on</a>. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from sites that use its services</a>. The site itself is hosted on GitHub Pages, which may log visitors' IP addresses for security; see the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
 
-			<h3 id="beta">Beta invites</h3>
-			<p>If you ask for a beta invite on this website, the form sends your email address and the message you write (if any) to Formspree, a form service that stores them and forwards them to us by email. We use your email only to invite you to the App's beta on Apple's TestFlight, which means giving it to Apple in App Store Connect; Apple then emails you the invite. We don't use it for newsletters or marketing and don't share it with anyone else. To have it deleted, from Formspree, our inbox and the TestFlight tester list, email us at the address below. See the <a href="https://formspree.io/legal/privacy-policy">Formspree Privacy Policy</a> and Apple's <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.</p>
+			<h3 id="android">Android waitlist</h3>
+			<p>If you join the Android waitlist on this website, the form sends your email address and the message you write (if any) to Formspree, a form service that stores them and forwards them to us by email. We use them only to judge whether to build an Android app and to email you if we do. We don't use your email for newsletters or marketing and don't share it with anyone else. To have it deleted, from Formspree and our inbox, email us at the address below. See the <a href="https://formspree.io/legal/privacy-policy">Formspree Privacy Policy</a>.</p>
+			<p id="beta">If you asked for an iPhone beta invite here before the App reached the App Store, we used that email only to invite you on Apple's TestFlight, which meant giving it to Apple in App Store Connect. Email us to have it deleted from Formspree, our inbox and the TestFlight tester list. See Apple's <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.</p>
 
 			<h2>What stays on your devices</h2>
 			<h3>On your iPhone</h3>
@@ -134,17 +135,17 @@
 				<li><strong>Microsoft Dev Tunnels.</strong> Traffic between the App and your computer passes through Microsoft's Dev Tunnels relay, over HTTPS / WSS and end-to-end encrypted between the App and your computer, so the relay only forwards ciphertext. Media you play, files you upload to a coding agent and some large downloads are not end-to-end encrypted (on the same Wi-Fi the App connects to the computer directly instead). The CLI downloads Microsoft's Dev Tunnels command-line tool on first run, and that tool may send diagnostic data to Microsoft. See the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</li>
 				<li><strong>GitHub or Microsoft sign-in.</strong> When you sign in to Dev Tunnels, you do so on GitHub's or Microsoft's own page in the system browser. We never see your password. See the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
 				<li><strong>Apple Push Notification service and Cloudflare.</strong> Notifications reach your iPhone through Apple's push service, sent by our relay on Cloudflare Workers, as described under <a href="#notifications">Notifications</a>. See <a href="https://www.apple.com/legal/privacy/">Apple's</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's</a> privacy policies.</li>
-				<li><strong>Formspree.</strong> Receives the beta invite form on this website, as described under <a href="#beta">Beta invites</a>.</li>
+				<li><strong>Formspree.</strong> Receives the Android waitlist form on this website, as described under <a href="#android">Android waitlist</a>.</li>
 				<li><strong>npm.</strong> Installing the CLI downloads it from the npm registry, operated by GitHub.</li>
 				<li><strong>Apple.</strong> If you download the App from the App Store, Apple may share anonymous usage and crash statistics with us when you've agreed to that in iOS settings. These are aggregated by Apple and don't identify you.</li>
 			</ul>
 			<p>Commands you run in the terminal, such as <code>git push</code> or a package install, connect wherever those programs connect, exactly as if you ran them at your computer.</p>
 
 			<h2>Children</h2>
-			<p>Code Remote is a developer tool and isn't directed at children under 13. We don't knowingly collect data from children, including through the beta invite form.</p>
+			<p>Code Remote is a developer tool and isn't directed at children under 13. We don't knowingly collect data from children, including through the Android waitlist form.</p>
 
 			<h2>Your rights</h2>
-			<p>The only personal data we may hold about you is the email (and message) you sent through the <a href="#beta">beta invite form</a>; email us to see, correct or delete it. Website analytics are kept by Google, as aggregated reports for us; you can block them as described under <a href="#website">This website</a>. You control everything Code Remote stores, on your own devices, as described above.</p>
+			<p>The only personal data we may hold about you is the email (and message) you sent through the <a href="#android">Android waitlist</a> (or, earlier, the iPhone beta invite form); email us to see, correct or delete it. Website analytics are kept by Google, as aggregated reports for us; you can block them as described under <a href="#website">This website</a>. You control everything Code Remote stores, on your own devices, as described above.</p>
 
 			<h2>Changes</h2>
 			<p>If this policy changes, we'll update it on this page and change the effective date above. If a change ever means Code Remote starts collecting data, we'll say so in the App before it happens.</p>

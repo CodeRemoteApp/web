@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=f54d7871">
+	<link rel="stylesheet" href="../style.css?v=aeb2a6d2">
 	<script>document.documentElement.classList.add("js")</script>
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/ja/">
@@ -37,15 +37,13 @@
 		<div class="wrap">
 			<a class="brand" href="./"><img src="../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
 			<nav class="links">
-				<a class="nav-link" href="#install">インストール</a>
-				<a class="nav-link" href="#beta">ベータ</a>
+				<a class="nav-link" href="#install">インストール &amp; ダウンロード</a>
 				<a class="nav-link" href="compare.html">比較</a>
 				<a class="nav-link" href="docs/">ドキュメント</a>
 				<a class="nav-link" href="support.html">サポート</a>
 				<button class="menu" type="button" popovertarget="nav-menu" aria-label="メニュー" title="メニュー"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
 				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="メニュー">
-					<a role="menuitem" href="#install">インストール</a>
-					<a role="menuitem" href="#beta">ベータ</a>
+					<a role="menuitem" href="#install">インストール &amp; ダウンロード</a>
 					<a role="menuitem" href="compare.html">比較</a>
 					<a role="menuitem" href="docs/">ドキュメント</a>
 					<a role="menuitem" href="support.html">サポート</a>
@@ -81,7 +79,7 @@
 						<div class="actions">
 							<a class="button primary" href="#install">はじめる</a>
 							<a class="button ghost with-icon" href="https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814"><img src="../apple.png" alt="" width="18" height="18">App Store からダウンロード</a>
-							<span class="note">iPhone アプリは無料。先行ビルドは <a href="#beta">TestFlight</a> で。</span>
+							<span class="note">App Store で無料。</span>
 						</div>
 					</div>
 					<svg class="hero-art art" viewBox="0 0 480 420" role="img" aria-label="トンネルでつながったノートパソコンとスマートフォン。間を行き来するデータはエンドツーエンドで鍵がかかっています">
@@ -193,7 +191,7 @@
 
 		<section class="block" id="install">
 			<div class="wrap install-home">
-				<h2 class="reveal">コンピューターにインストール。</h2>
+				<h2 class="reveal">コンピューターにインストールし、iPhone にアプリを入れましょう。</h2>
 				<div class="install reveal" data-tabs>
 					<div class="tabs" role="tablist" aria-label="インストール方法">
 						<button type="button" role="tab" data-tab="unix" aria-selected="true">macOS/Linux</button>
@@ -222,29 +220,32 @@
 						<pre class="cmd" data-copy>brew install coderemoteapp/tap/coderemote</pre>
 					</div>
 				</div>
-				<p class="then reveal">常用したい場合は、プロジェクトのフォルダで <code>coderemote up</code> を実行し、iPhone で QR コードを読み取ってください(アプリは<a href="https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814">App Store</a>から入手できます)。アップデートやアンインストールなどは<a href="docs/setup.html#install">セットアップガイド</a>にあります。</p>
+				<div class="actions get-app reveal">
+					<a class="button ghost with-icon" href="https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814"><img src="../apple.png" alt="" width="18" height="18">App Store からダウンロード</a>
+					<span class="note">iPhone 用の無料アプリ Code Remote。QR コードを読み取ってペアリングします。</span>
+				</div>
+				<p class="then reveal">常用したい場合は、プロジェクトのフォルダで <code>coderemote up</code> を実行し、アプリで QR コードを読み取ってください。アップデートやアンインストールなどは<a href="docs/setup.html#install">セットアップガイド</a>にあります。</p>
 			</div>
 		</section>
 
-		<section class="block" id="beta">
+		<section class="block" id="android">
 			<div class="wrap beta-home">
-				<h2 class="reveal">iPhone ベータに参加。</h2>
-				<p class="lede reveal">iPhone アプリは<a href="https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814">App Store</a>で公開中です。新機能をいち早く試したいですか?メールアドレスを残していただければ、TestFlight のベータ版にご招待します。招待は Apple の TestFlight から届きます。iPhone で開いてください。</p>
-				<form class="beta-form reveal" action="https://formspree.io/f/xbggzywg" method="POST" data-beta data-sending="送信中…" data-thanks="ありがとうございます!まもなく TestFlight の招待をお送りします。" data-failed="問題が発生しました。" data-retry="もう一度お試しいただくか、trantienthanh2412@gmail.com までメールでご連絡ください。">
-					<input type="hidden" name="_subject" value="Code Remote beta request">
+				<h2 class="reveal">Android で使いたいですか?</h2>
+				<p class="lede reveal">Code Remote は今のところ iPhone 専用です。Android で使いたい方は、メールアドレスを残してください。希望が多ければ Android アプリを作り、真っ先にお知らせします。</p>
+				<form class="beta-form reveal" action="https://formspree.io/f/xbggzywg" method="POST" data-beta data-sending="送信中…" data-thanks="ありがとうございます!Android アプリができたらお知らせします。" data-failed="問題が発生しました。" data-retry="もう一度お試しいただくか、trantienthanh2412@gmail.com までメールでご連絡ください。">
+					<input type="hidden" name="_subject" value="Code Remote Android interest">
 					<p class="field">
 						<label for="beta-email">メール</label>
-						<input id="beta-email" type="email" name="email" required autocomplete="email" placeholder="you@icloud.com" aria-describedby="beta-email-hint">
-						<span class="hint" id="beta-email-hint">Apple Account(iPhone でサインインしているもの)のメールアドレスを使ってください。TestFlight が想定する場所に招待が届きます。</span>
+						<input id="beta-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
 					</p>
 					<p class="field">
 						<label for="beta-message">メッセージ <span class="optional">(任意)</span></label>
-						<textarea id="beta-message" name="message" rows="3" placeholder="Code Remote をどのように使いたいか"></textarea>
+						<textarea id="beta-message" name="message" rows="3" placeholder="お使いのスマートフォンと、Code Remote で何をしたいか"></textarea>
 					</p>
 					<p class="trap" aria-hidden="true" translate="no"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
 					<div class="actions">
-						<button class="button primary" type="submit">招待をリクエスト</button>
-						<span class="note" role="status" data-beta-status>メールアドレスはベータ招待のためだけに使います。<a href="../privacy.html#beta">プライバシーポリシー</a>をご覧ください。</span>
+						<button class="button primary" type="submit">通知を受け取る</button>
+						<span class="note" role="status" data-beta-status>メールアドレスは Android アプリのお知らせのためだけに使います。<a href="../privacy.html#android">プライバシーポリシー</a>をご覧ください。</span>
 					</div>
 				</form>
 			</div>
@@ -459,6 +460,6 @@
 	<script src="../lang.js?v=d6fe75c9" defer></script>
 	<!-- i18n:end script -->
 	<script src="../tabs.js?v=6123b019" defer></script>
-	<script src="../beta.js?v=0ff7c96f" defer></script>
+	<script src="../beta.js?v=d4edb94d" defer></script>
 </body>
 </html>

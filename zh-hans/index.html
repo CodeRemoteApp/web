@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css?v=f54d7871">
+	<link rel="stylesheet" href="../style.css?v=aeb2a6d2">
 	<script>document.documentElement.classList.add("js")</script>
 	<!-- i18n:start head -->
 	<link rel="canonical" href="https://coderemoteapp.github.io/web/zh-hans/">
@@ -37,15 +37,13 @@
 		<div class="wrap">
 			<a class="brand" href="./"><img src="../icon.png?v=1d6f5ee2" alt="">Code Remote</a>
 			<nav class="links">
-				<a class="nav-link" href="#install">安装</a>
-				<a class="nav-link" href="#beta">Beta</a>
+				<a class="nav-link" href="#install">安装与下载</a>
 				<a class="nav-link" href="compare.html">对比</a>
 				<a class="nav-link" href="docs/">文档</a>
 				<a class="nav-link" href="support.html">支持</a>
 				<button class="menu" type="button" popovertarget="nav-menu" aria-label="菜单" title="菜单"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
 				<div class="theme-menu nav-menu" id="nav-menu" popover role="menu" aria-label="菜单">
-					<a role="menuitem" href="#install">安装</a>
-					<a role="menuitem" href="#beta">Beta</a>
+					<a role="menuitem" href="#install">安装与下载</a>
 					<a role="menuitem" href="compare.html">对比</a>
 					<a role="menuitem" href="docs/">文档</a>
 					<a role="menuitem" href="support.html">支持</a>
@@ -81,7 +79,7 @@
 						<div class="actions">
 							<a class="button primary" href="#install">开始使用</a>
 							<a class="button ghost with-icon" href="https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814"><img src="../apple.png" alt="" width="18" height="18">在 App Store 下载</a>
-							<span class="note">免费的 iPhone 应用。抢先版本见 <a href="#beta">TestFlight</a>。</span>
+							<span class="note">在 App Store 免费下载。</span>
 						</div>
 					</div>
 					<svg class="hero-art art" viewBox="0 0 480 420" role="img" aria-label="一台笔记本和一部手机由隧道相连，往来的数据经过端到端加锁">
@@ -193,7 +191,7 @@
 
 		<section class="block" id="install">
 			<div class="wrap install-home">
-				<h2 class="reveal">安装到你的电脑上。</h2>
+				<h2 class="reveal">安装到你的电脑上,在 iPhone 上获取应用。</h2>
 				<div class="install reveal" data-tabs>
 					<div class="tabs" role="tablist" aria-label="安装方式">
 						<button type="button" role="tab" data-tab="unix" aria-selected="true">macOS/Linux</button>
@@ -222,29 +220,32 @@
 						<pre class="cmd" data-copy>brew install coderemoteapp/tap/coderemote</pre>
 					</div>
 				</div>
-				<p class="then reveal">想要长期安装?在项目文件夹中运行 <code>coderemote up</code>,然后用 iPhone 扫描二维码(从 <a href="https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814">App Store</a> 获取应用)。更新、卸载等内容请见<a href="docs/setup.html#install">安装指南</a>。</p>
+				<div class="actions get-app reveal">
+					<a class="button ghost with-icon" href="https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814"><img src="../apple.png" alt="" width="18" height="18">在 App Store 下载</a>
+					<span class="note">免费的 iPhone 版 Code Remote 应用,用来扫描二维码并配对。</span>
+				</div>
+				<p class="then reveal">想要长期安装?在项目文件夹中运行 <code>coderemote up</code>,然后用应用扫描二维码。更新、卸载等内容请见<a href="docs/setup.html#install">安装指南</a>。</p>
 			</div>
 		</section>
 
-		<section class="block" id="beta">
+		<section class="block" id="android">
 			<div class="wrap beta-home">
-				<h2 class="reveal">加入 iPhone Beta。</h2>
-				<p class="lede reveal">iPhone 应用已在 <a href="https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814">App Store</a> 上架。想抢先体验新功能?留下你的邮箱,我们会邀请你加入 TestFlight 上的 Beta。邀请来自 Apple 的 TestFlight,请在 iPhone 上打开。</p>
-				<form class="beta-form reveal" action="https://formspree.io/f/xbggzywg" method="POST" data-beta data-sending="发送中…" data-thanks="谢谢!我们很快会发送 TestFlight 邀请。" data-failed="出了点问题。" data-retry="请重试,或发送邮件至 trantienthanh2412@gmail.com。">
-					<input type="hidden" name="_subject" value="Code Remote beta request">
+				<h2 class="reveal">想在 Android 上使用?</h2>
+				<p class="lede reveal">Code Remote 目前只支持 iPhone。如果你想在 Android 上使用,请留下邮箱。如果需要的人够多,我们就会开发 Android 应用,并第一时间通知你。</p>
+				<form class="beta-form reveal" action="https://formspree.io/f/xbggzywg" method="POST" data-beta data-sending="发送中…" data-thanks="谢谢!如果 Android 应用推出,我们会通知你。" data-failed="出了点问题。" data-retry="请重试,或发送邮件至 trantienthanh2412@gmail.com。">
+					<input type="hidden" name="_subject" value="Code Remote Android interest">
 					<p class="field">
 						<label for="beta-email">邮箱</label>
-						<input id="beta-email" type="email" name="email" required autocomplete="email" placeholder="you@icloud.com" aria-describedby="beta-email-hint">
-						<span class="hint" id="beta-email-hint">请使用你的 Apple 账户邮箱(即 iPhone 上登录的那个),这样邀请才会发送到 TestFlight 期望的地方。</span>
+						<input id="beta-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
 					</p>
 					<p class="field">
 						<label for="beta-message">留言 <span class="optional">(可选)</span></label>
-						<textarea id="beta-message" name="message" rows="3" placeholder="你想用 Code Remote 做什么"></textarea>
+						<textarea id="beta-message" name="message" rows="3" placeholder="你用的手机,以及你想用 Code Remote 做什么"></textarea>
 					</p>
 					<p class="trap" aria-hidden="true" translate="no"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
 					<div class="actions">
-						<button class="button primary" type="submit">申请邀请</button>
-						<span class="note" role="status" data-beta-status>我们只会用你的邮箱发送 Beta 邀请。请参阅<a href="../privacy.html#beta">隐私政策</a>。</span>
+						<button class="button primary" type="submit">通知我</button>
+						<span class="note" role="status" data-beta-status>我们只会用你的邮箱通知你 Android 应用的消息。请参阅<a href="../privacy.html#android">隐私政策</a>。</span>
 					</div>
 				</form>
 			</div>
@@ -459,6 +460,6 @@
 	<script src="../lang.js?v=d6fe75c9" defer></script>
 	<!-- i18n:end script -->
 	<script src="../tabs.js?v=6123b019" defer></script>
-	<script src="../beta.js?v=0ff7c96f" defer></script>
+	<script src="../beta.js?v=d4edb94d" defer></script>
 </body>
 </html>

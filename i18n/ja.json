@@ -135,29 +135,9 @@
 		"en": "Everything you need to keep working.",
 		"text": "作業を続けるために必要なものを、すべて。"
 	},
-	"6db4c547": {
-		"en": "We only use your email for the beta invite. See the <a href=\"privacy.html#beta\">privacy policy</a>.",
-		"text": "メールアドレスはベータ招待のためだけに使います。<a href=\"privacy.html#beta\">プライバシーポリシー</a>をご覧ください。"
-	},
-	"07c5e2a6": {
-		"en": "Request an invite",
-		"text": "招待をリクエスト"
-	},
-	"1138c15a": {
-		"en": "What you'd like to use Code Remote for",
-		"text": "Code Remote をどのように使いたいか"
-	},
 	"8d8fdd66": {
 		"en": "Message <span class=\"optional\">(optional)</span>",
 		"text": "メッセージ <span class=\"optional\">(任意)</span>"
-	},
-	"26b1964f": {
-		"en": "Use the email of your Apple Account (the one signed in on your iPhone), so the invite lands where TestFlight expects it.",
-		"text": "Apple Account(iPhone でサインインしているもの)のメールアドレスを使ってください。TestFlight が想定する場所に招待が届きます。"
-	},
-	"29ad3e53": {
-		"en": "you@icloud.com",
-		"text": "you@icloud.com"
 	},
 	"84add5b2": {
 		"en": "Email",
@@ -171,17 +151,9 @@
 		"en": "Something went wrong.",
 		"text": "問題が発生しました。"
 	},
-	"3f718709": {
-		"en": "Thanks! We'll send your TestFlight invite soon.",
-		"text": "ありがとうございます!まもなく TestFlight の招待をお送りします。"
-	},
 	"cf765512": {
 		"en": "Sending…",
 		"text": "送信中…"
-	},
-	"fedb0338": {
-		"en": "Join the iPhone beta.",
-		"text": "iPhone ベータに参加。"
 	},
 	"12820efb": {
 		"en": "On macOS and Linux.",
@@ -206,10 +178,6 @@
 	"39201eac": {
 		"en": "Install method",
 		"text": "インストール方法"
-	},
-	"d3465c71": {
-		"en": "Install on your computer.",
-		"text": "コンピューターにインストール。"
 	},
 	"8a57f5ba": {
 		"en": "<a href=\"compare.html\">See the full comparison</a>, including when another tool is the better fit.",
@@ -270,10 +238,6 @@
 	"41def7a0": {
 		"en": "Appearance",
 		"text": "外観"
-	},
-	"f03b60f7": {
-		"en": "Beta",
-		"text": "ベータ"
 	},
 	"fd6c3ebf": {
 		"en": "Install",
@@ -359,10 +323,6 @@
 		"en": "Common questions",
 		"text": "よくある質問"
 	},
-	"f5c3c034": {
-		"en": "Then scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).",
-		"text": "次に、iPhone のカメラ、またはアプリの <strong>+</strong> ボタンで QR コードを読み取ります。初回は Microsoft の Dev Tunnels CLI がダウンロードされ、GitHub でのサインインが求められます(Microsoft アカウントを使うには、先に <code>coderemote login --microsoft</code> を実行)。"
-	},
 	"0b32e824": {
 		"en": "On your computer (macOS, Windows 10/11 or Linux), install coderemote with the install script, npm or Homebrew (<a href=\"docs/setup.html#install\">every way, for each system</a>), then share a folder:",
 		"text": "コンピューター(macOS、Windows 10/11、Linux)に、インストールスクリプト、npm、Homebrew のいずれかで coderemote をインストールし(<a href=\"docs/setup.html#install\">各システムでのすべての方法</a>)、フォルダを共有します:"
@@ -390,10 +350,6 @@
 	"d8d86b60": {
 		"en": "What stays simple",
 		"text": "シンプルなままの部分"
-	},
-	"14116a22": {
-		"en": "<strong>It is not an iPhone.</strong> The Code Remote app is for iPhone. Anything else has to use the tools above.",
-		"text": "<strong>iPhone ではない場合。</strong>Code Remote アプリは iPhone 向けです。それ以外は、上のツールを使ってください。"
 	},
 	"24c010fd": {
 		"en": "<strong>You already run a VPN and SSH everywhere.</strong> If that is set up and you like it, a terminal app over it works fine. Code Remote is for when you would rather not set it up at all.",
@@ -1707,18 +1663,6 @@
 		"en": "Browse files, use git, run a terminal and open your dev servers from your iPhone, with one command: <code>npx coderemote up</code>. End-to-end encrypted. No SSH keys, no port forwarding, no VPN.",
 		"text": "ファイルの閲覧、git、ターミナル、開発サーバーを iPhone から。コマンドは 1 つだけ: <code>npx coderemote up</code>。エンドツーエンド暗号化。SSH 鍵もポート転送も VPN も不要です。"
 	},
-	"e0fe08c7": {
-		"en": "The iPhone app is on the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>. Want new features before they get there? Leave your email and we'll invite you to the beta on TestFlight. The invite comes from Apple's TestFlight; open it on your iPhone.",
-		"text": "iPhone アプリは<a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>で公開中です。新機能をいち早く試したいですか?メールアドレスを残していただければ、TestFlight のベータ版にご招待します。招待は Apple の TestFlight から届きます。iPhone で開いてください。"
-	},
-	"2caed692": {
-		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with your iPhone (get the app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>). Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
-		"text": "常用したい場合は、プロジェクトのフォルダで <code>coderemote up</code> を実行し、iPhone で QR コードを読み取ってください(アプリは<a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>から入手できます)。アップデートやアンインストールなどは<a href=\"docs/setup.html#install\">セットアップガイド</a>にあります。"
-	},
-	"8f1e4eae": {
-		"en": "Free iPhone app. Early builds on <a href=\"#beta\">TestFlight</a>.",
-		"text": "iPhone アプリは無料。先行ビルドは <a href=\"#beta\">TestFlight</a> で。"
-	},
 	"a9096aaa": {
 		"en": "Download on the App Store",
 		"text": "App Store からダウンロード"
@@ -1730,5 +1674,65 @@
 	"53f9ea05": {
 		"en": "The <strong>Code Remote</strong> app on your iPhone, from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>.",
 		"text": "iPhone の <strong>Code Remote</strong> アプリ。<a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>から入手できます。"
+	},
+	"13446d0c": {
+		"en": "We only use your email to tell you about the Android app. See the <a href=\"privacy.html#android\">privacy policy</a>.",
+		"text": "メールアドレスは Android アプリのお知らせのためだけに使います。<a href=\"privacy.html#android\">プライバシーポリシー</a>をご覧ください。"
+	},
+	"a0d5511a": {
+		"en": "Notify me",
+		"text": "通知を受け取る"
+	},
+	"6f1297ef": {
+		"en": "Your phone, and what you'd like to use Code Remote for",
+		"text": "お使いのスマートフォンと、Code Remote で何をしたいか"
+	},
+	"50e2b46e": {
+		"en": "you@example.com",
+		"text": "you@example.com"
+	},
+	"b0a3a1c0": {
+		"en": "Thanks! We'll let you know if the Android app happens.",
+		"text": "ありがとうございます!Android アプリができたらお知らせします。"
+	},
+	"ddc9f528": {
+		"en": "Code Remote is iPhone only for now. If you'd use it on Android, leave your email. If enough people ask, we'll build the Android app, and you'll be the first to know.",
+		"text": "Code Remote は今のところ iPhone 専用です。Android で使いたい方は、メールアドレスを残してください。希望が多ければ Android アプリを作り、真っ先にお知らせします。"
+	},
+	"2c016588": {
+		"en": "Want it on Android?",
+		"text": "Android で使いたいですか?"
+	},
+	"f65ad263": {
+		"en": "Prefer a permanent install? Then run <code>coderemote up</code> in a project folder and scan the QR code with the app. Updating, uninstalling and the rest are in the <a href=\"docs/setup.html#install\">setup guide</a>.",
+		"text": "常用したい場合は、プロジェクトのフォルダで <code>coderemote up</code> を実行し、アプリで QR コードを読み取ってください。アップデートやアンインストールなどは<a href=\"docs/setup.html#install\">セットアップガイド</a>にあります。"
+	},
+	"58dda3ba": {
+		"en": "The free Code Remote app for iPhone, to scan the QR code and pair.",
+		"text": "iPhone 用の無料アプリ Code Remote。QR コードを読み取ってペアリングします。"
+	},
+	"05720692": {
+		"en": "Install on your computer, get the app on your iPhone.",
+		"text": "コンピューターにインストールし、iPhone にアプリを入れましょう。"
+	},
+	"63f50726": {
+		"en": "Free on the App Store.",
+		"text": "App Store で無料。"
+	},
+	"d85549f3": {
+		"en": "Install &amp; Download",
+		"text": "インストール &amp; ダウンロード"
+	},
+	"3304d122": {
+		"en": "Then get the App from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> and scan the QR code with your iPhone Camera, or with the <strong>+</strong> button in the App. The first run downloads Microsoft's Dev Tunnels CLI and asks you to sign in with GitHub (or run <code>coderemote login --microsoft</code> first to use a Microsoft account).",
+		"text": "次に、<a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>からアプリを入手し、iPhone のカメラ、またはアプリの <strong>+</strong> ボタンで QR コードを読み取ります。初回は Microsoft の Dev Tunnels CLI がダウンロードされ、GitHub でのサインインが求められます(Microsoft アカウントを使うには、先に <code>coderemote login --microsoft</code> を実行)。"
+	},
+	"183aaa68": {
+		"en": "<strong>It is not an iPhone.</strong> The Code Remote app is for iPhone. Anything else has to use the tools above for now (<a href=\"./#android\">want it on Android?</a>).",
+		"text": "<strong>iPhone ではない場合。</strong>Code Remote アプリは iPhone 向けです。今のところ、それ以外は上のツールを使ってください(<a href=\"./#android\">Android 版をご希望ですか?</a>)。"
+	},
+	"067256a3": {
+		"en": "Download the free <strong>Code Remote</strong> app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> on your iPhone, if you haven't yet.",
+		"text": "まだの場合は、iPhone で<a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a>から無料の <strong>Code Remote</strong> アプリをダウンロードしてください。"
 	}
 }
