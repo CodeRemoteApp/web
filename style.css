@@ -191,6 +191,7 @@ footer.site .i18n-note { flex-basis: 100%; }
 .button.with-icon img { margin-top: -2px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .button.with-icon img { filter: invert(1); } }
 :root[data-theme="dark"] .button.with-icon img { filter: invert(1); }
+.button.with-icon img.color { filter: none; }
 .note { font-size: 14px; color: var(--muted); }
 
 /* Terminal snippet */

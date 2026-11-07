@@ -1715,10 +1715,6 @@
 		"en": "Install on your computer, get the app on your iPhone.",
 		"text": "Instálalo en tu ordenador y descarga la app en tu iPhone."
 	},
-	"63f50726": {
-		"en": "Free on the App Store.",
-		"text": "Gratis en la App Store."
-	},
 	"d85549f3": {
 		"en": "Install &amp; Download",
 		"text": "Instalar y descargar"
@@ -1734,5 +1730,17 @@
 	"067256a3": {
 		"en": "Download the free <strong>Code Remote</strong> app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> on your iPhone, if you haven't yet.",
 		"text": "Descarga la app gratuita <strong>Code Remote</strong> desde la <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> en tu iPhone, si aún no la tienes."
+	},
+	"4aed03ca": {
+		"en": "Request",
+		"text": "Solicitar"
+	},
+	"e3bfc4ab": {
+		"en": "Request the Android app",
+		"text": "Solicitar la app para Android"
+	},
+	"a479c9c3": {
+		"en": "Download",
+		"text": "Descargar"
 	}
 }

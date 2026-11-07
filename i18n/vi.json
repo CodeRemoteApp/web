@@ -1715,10 +1715,6 @@
 		"en": "Install on your computer, get the app on your iPhone.",
 		"text": "Cài đặt trên máy tính, tải app về iPhone."
 	},
-	"63f50726": {
-		"en": "Free on the App Store.",
-		"text": "Miễn phí trên App Store."
-	},
 	"d85549f3": {
 		"en": "Install &amp; Download",
 		"text": "Cài đặt &amp; Tải về"
@@ -1734,5 +1730,17 @@
 	"067256a3": {
 		"en": "Download the free <strong>Code Remote</strong> app from the <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> on your iPhone, if you haven't yet.",
 		"text": "Tải app <strong>Code Remote</strong> miễn phí từ <a href=\"https://apps.apple.com/app/code-remote-ai-mobile-ide/id6827182814\">App Store</a> về iPhone, nếu bạn chưa có."
+	},
+	"4aed03ca": {
+		"en": "Request",
+		"text": "Đăng ký"
+	},
+	"e3bfc4ab": {
+		"en": "Request the Android app",
+		"text": "Đăng ký nhận app Android"
+	},
+	"a479c9c3": {
+		"en": "Download",
+		"text": "Tải về"
 	}
 }
