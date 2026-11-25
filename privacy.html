@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 	<title>Privacy Policy · Code Remote</title>
-	<meta name="description" content="How Code Remote handles your data: it collects none.">
+	<meta name="description" content="How Code Remote handles your data: no analytics or ads, and only what an optional Code Remote Cloud account needs.">
 	<link rel="icon" href="icon.png?v=1d6f5ee2">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@
 			<div class="legal-head">
 				<div>
 					<h1>Privacy Policy</h1>
-					<p class="meta">Effective November 7, 2026</p>
+					<p class="meta">Effective November 25, 2026</p>
 				</div>
 				<svg class="legal-art art" viewBox="0 0 220 200" aria-hidden="true">
 					<path class="blob" d="M38 52C70 12 168 8 196 50c26 40 22 106-16 128-44 26-120 24-150-8C4 142 8 88 38 52Z"/>
@@ -89,13 +89,24 @@
 			</div>
 
 			<div class="callout">
-				<p><strong>In short:</strong> Code Remote doesn't collect, store or sell any personal data. The App and the CLI have no accounts, no analytics and no ads. Your phone connects to your own computer, and what you see and type stays between the two. The one server we run passes notifications on to Apple, can't read them, and keeps nothing. The only personal data we receive is the email you give us if you join the Android waitlist on this website.</p>
+				<p><strong>In short:</strong> Code Remote doesn't sell any personal data, and the App and the CLI have no analytics and no ads. Your phone connects to your own computer, and what you see and type stays between the two, end-to-end encrypted. Accounts are optional: only if you sign in to <a href="#cloud">Code Remote Cloud</a> do we keep your email and what we need to route your phone to your computers. Our notification relay can't read what it passes on and keeps nothing. The only other personal data we receive is the email you give us if you join the Android waitlist on this website.</p>
 			</div>
 
 			<p>This policy covers the Code Remote iPhone app (the "App") and the <code>coderemote</code> command-line tool for your computer (the "CLI"), together "Code Remote". Code Remote is made by Thanh Tran ("we", "us").</p>
 
 			<h2>What we collect</h2>
-			<p>Nothing, in the App or the CLI. They don't use analytics, crash reporting, advertising or tracking SDKs, and we don't track you across other apps or websites. We have no way to see your files, your git repositories, your terminal sessions, your coding agents' sessions or the commands you run.</p>
+			<p>Unless you use Code Remote Cloud, nothing, in the App or the CLI. They don't use analytics, crash reporting, advertising or tracking SDKs, and we don't track you across other apps or websites. Whether or not you use Code Remote Cloud, we have no way to see your files, your git repositories, your terminal sessions, your coding agents' sessions or the commands you run.</p>
+
+			<h3 id="cloud">Code Remote Cloud (optional)</h3>
+			<p>Code Remote Cloud is an optional way to reach your computers, instead of Microsoft Dev Tunnels. It needs an account, which you create by signing in with Apple or Google, in the App or, for a computer, in the browser when <code>coderemote up</code> asks. The account is the same one as our Commit+ app, so signing in to either signs you in to both. If you use Code Remote Cloud, we keep:</p>
+			<ul>
+				<li><strong>Your account:</strong> your email address (or the private relay address Apple gives us, if you chose to hide yours), the account's ID and which sign-in you used, kept by Google Firebase Authentication; and, on our servers, the account's ID, its email, its plan and when it was created.</li>
+				<li><strong>Your computers:</strong> for each computer you sign in, its name (as the computer calls itself, for example "Jane's MacBook Air"), a hash of the credential it signs in with (never the credential itself), the Cloudflare tunnel it uses, and when it was added and last seen.</li>
+				<li><strong>Your shared folders:</strong> for each folder you share with <code>coderemote up</code>, its web address on our domain, the local port it runs on, the ID of that <code>coderemote</code>, and when it was last seen. Unless you turn off pairing through the account (<code>coderemote up --no-cloud-pair</code>), also the folder's name (not its path) and the public key it encrypts with, so the App can list the folder and pair with it without a QR code. Anyone signed in to your account can therefore pair a phone with your shared folders; the computer says so in its terminal each time.</li>
+				<li><strong>Sign-in codes:</strong> while a computer signs in, the short code it shows and its name, for at most 10 minutes, then deleted within a day.</li>
+			</ul>
+			<p>Traffic between the App and your computer goes through Cloudflare Tunnel and our gateway on Cloudflare Workers, which lets through only requests signed in as the folder's owner. It's end-to-end encrypted between the App and your computer, so Cloudflare and we only forward ciphertext; media you play, files you upload to a coding agent and some large downloads are the exception, as with Dev Tunnels. Our Code Remote Cloud servers keep no request logs, and never log the contents, headers or cookies of a request. To limit abuse, they count requests for a minute at a time, by IP address or by a hash of the credential used.</p>
+			<p>Folders not reported for 30 days are removed, and so is the tunnel of a computer with no shared folder for 30 days. You can remove a computer from your account in the App's Cloud tab, which stops all its folders at once, and delete your account in the App under Profile, which deletes everything above from our servers and then your sign-in from Firebase. Because the account is shared with Commit+, deleting it also ends your Commit+ sign-in.</p>
 
 			<h3 id="notifications">Notifications</h3>
 			<p>If you turn on notifications for a computer (optional), that computer can tell your iPhone when a coding agent such as Claude Code needs an answer or has finished. Apple only delivers notifications sent with the app's own key, so your computer sends them through a small relay we run on Cloudflare Workers, which adds that key and passes them to Apple's push service right away. The relay receives your iPhone's push token, a ticket that lets your computer notify that iPhone, and the notification. What the notification says (the session, the command, the question) is encrypted on your computer with a key that only your iPhone and that computer have; the relay and Apple see only a generic "A session needs your attention". The relay has no database and no request logs, and keeps nothing once it has passed a notification on; the only state is a short-lived counter, keyed by a hash of the push token, that limits how many notifications one device can get per minute. Its source code is public in the <a href="https://github.com/CodeRemoteApp/coderemote/tree/main/apps/push-relay">coderemote repository</a>.</p>
@@ -113,13 +124,14 @@
 				<li><strong>Pairings:</strong> the address of each computer you pair with and its access token, stored in the iOS Keychain.</li>
 				<li><strong>Device keys:</strong> for each computer, two keys this iPhone makes in its Secure Enclave, which never leave it, and the id the computer gave it, stored in the iOS Keychain.</li>
 				<li><strong>Tunnel sign-in tokens:</strong> the token Microsoft Dev Tunnels issues after you sign in, stored in the iOS Keychain.</li>
+				<li><strong>Code Remote Cloud sign-in:</strong> if you sign in, your account's email, ID and the tokens Firebase issues to keep you signed in, stored in the iOS Keychain. Signing out deletes them.</li>
 				<li><strong>Notification keys:</strong> for each computer you turn notifications on for, the key that decrypts its notifications, stored in the iOS Keychain and shared only with the App's notification extension.</li>
 				<li><strong>Settings:</strong> your preferences in the App, stored on the device.</li>
 			</ul>
 			<p>Deleting a computer in the App, or deleting the App, removes this data from your iPhone. It may be included in your own encrypted device backups, under Apple's control.</p>
 
 			<h3>On your computer</h3>
-			<p>The CLI keeps its access token and configuration in <code>~/.coderemote/</code> (readable only by your user account), including the name and public keys of each iPhone enrolled with it, and, for each iPhone that turned notifications on, its push token, ticket and notification key. Running <code>coderemote rotate-token</code> revokes every paired device and deletes those.</p>
+			<p>The CLI keeps its access token and configuration in <code>~/.coderemote/</code> (readable only by your user account), including the name and public keys of each iPhone enrolled with it, and, for each iPhone that turned notifications on, its push token, ticket and notification key. Running <code>coderemote rotate-token</code> revokes every paired device and deletes those. A computer signed in to Code Remote Cloud also keeps its Cloud credential, account email and folder addresses there.</p>
 			<p>If you run <code>coderemote setup claude</code> or <code>coderemote setup codex</code>, Claude Code or Codex reports its sessions (prompts, replies, the tools it runs and their output) to the <code>coderemote</code> running on the same computer, which keeps them in memory to show in the App and forgets them when it stops. Nothing of it leaves your computer except through your own connection to the App, and in the encrypted notifications above.</p>
 
 			<h2>Device permissions</h2>
@@ -133,6 +145,8 @@
 			<p>To reach your computer from anywhere, Code Remote uses services run by other companies. They process data under their own privacy policies, not ours:</p>
 			<ul>
 				<li><strong>Microsoft Dev Tunnels.</strong> Traffic between the App and your computer passes through Microsoft's Dev Tunnels relay, over HTTPS / WSS and end-to-end encrypted between the App and your computer, so the relay only forwards ciphertext. Media you play, files you upload to a coding agent and some large downloads are not end-to-end encrypted (on the same Wi-Fi the App connects to the computer directly instead). The CLI downloads Microsoft's Dev Tunnels command-line tool on first run, and that tool may send diagnostic data to Microsoft. See the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</li>
+				<li><strong>Cloudflare.</strong> Code Remote Cloud runs on Cloudflare Workers and Cloudflare D1, and its traffic passes through Cloudflare Tunnel, as described under <a href="#cloud">Code Remote Cloud</a>. A computer using it downloads Cloudflare's <code>cloudflared</code> tool from GitHub on first use. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>.</li>
+				<li><strong>Google Firebase, Sign in with Apple and Google Sign-In.</strong> Code Remote Cloud accounts are kept by Firebase Authentication, a Google service; you sign in on Apple's or Google's own screen and we never see your password. See <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>, <a href="https://policies.google.com/privacy">Google's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's</a>.</li>
 				<li><strong>GitHub or Microsoft sign-in.</strong> When you sign in to Dev Tunnels, you do so on GitHub's or Microsoft's own page in the system browser. We never see your password. See the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
 				<li><strong>Apple Push Notification service and Cloudflare.</strong> Notifications reach your iPhone through Apple's push service, sent by our relay on Cloudflare Workers, as described under <a href="#notifications">Notifications</a>. See <a href="https://www.apple.com/legal/privacy/">Apple's</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's</a> privacy policies.</li>
 				<li><strong>Formspree.</strong> Receives the Android waitlist form on this website, as described under <a href="#android">Android waitlist</a>.</li>
@@ -145,10 +159,10 @@
 			<p>Code Remote is a developer tool and isn't directed at children under 13. We don't knowingly collect data from children, including through the Android waitlist form.</p>
 
 			<h2>Your rights</h2>
-			<p>The only personal data we may hold about you is the email (and message) you sent through the <a href="#android">Android waitlist</a> (or, earlier, the iPhone beta invite form); email us to see, correct or delete it. Website analytics are kept by Google, as aggregated reports for us; you can block them as described under <a href="#website">This website</a>. You control everything Code Remote stores, on your own devices, as described above.</p>
+			<p>The personal data we may hold about you is your <a href="#cloud">Code Remote Cloud</a> account, if you created one, and the email (and message) you sent through the <a href="#android">Android waitlist</a> (or, earlier, the iPhone beta invite form). You can delete your Code Remote Cloud account yourself in the App; email us to see, correct or delete any of it. Website analytics are kept by Google, as aggregated reports for us; you can block them as described under <a href="#website">This website</a>. You control everything Code Remote stores, on your own devices, as described above.</p>
 
 			<h2>Changes</h2>
-			<p>If this policy changes, we'll update it on this page and change the effective date above. If a change ever means Code Remote starts collecting data, we'll say so in the App before it happens.</p>
+			<p>If this policy changes, we'll update it on this page and change the effective date above. If a change ever means Code Remote collects more data, we'll say so in the App before it happens.</p>
 
 			<h2>Contact</h2>
 			<p>Questions about privacy: <a href="mailto:trantienthanh2412@gmail.com">trantienthanh2412@gmail.com</a>.</p>
